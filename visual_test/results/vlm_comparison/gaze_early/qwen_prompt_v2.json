@@ -1,0 +1,29 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "device": "Apple GPU / MLX (not PyTorch MPS)",
+  "loadSeconds": 3.5521937090088613,
+  "elapsedSeconds": 29.40301208299934,
+  "inputTokens": 4659,
+  "outputTokens": 139,
+  "peakMemoryGB": 7.856984064,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [],\n  \"bothWristsStillIntervals\": [],\n  \"handFaceCoverIntervals\": [],\n  \"nonFrontFacingIntervals\": [\n    [\n      5.4,\n      12.0\n    ]\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"completedHandMotionCount\": null,\n  \"limitations\": [\n    \"Wrist visibility not confirmed; both wrists absent from frames.\",\n    \"Stillness cannot be verified without wrist visibility.\",\n    \"Hand face cover not observed; hands not visible.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillIntervals": [],
+    "handFaceCoverIntervals": [],
+    "nonFrontFacingIntervals": [
+      [
+        5.4,
+        12.0
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "completedHandMotionCount": null,
+    "limitations": [
+      "Wrist visibility not confirmed; both wrists absent from frames.",
+      "Stillness cannot be verified without wrist visibility.",
+      "Hand face cover not observed; hands not visible."
+    ]
+  },
+  "status": "OK"
+}

@@ -1,0 +1,28 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "device": "Apple GPU / MLX (not PyTorch MPS)",
+  "loadSeconds": 3.5521937090088613,
+  "elapsedSeconds": 29.481017375015654,
+  "inputTokens": 4690,
+  "outputTokens": 141,
+  "peakMemoryGB": 7.857262592,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [],\n  \"bothWristsStillIntervals\": [],\n  \"handFaceCoverIntervals\": [],\n  \"nonFrontFacingIntervals\": [\n    [\n      10.0,\n      13.8\n    ]\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"completedHandMotionCount\": null,\n  \"limitations\": [\n    \"Wrist visibility not confirmed in sampled frames; intervals for wrist-related metrics remain empty.\",\n    \"Hand motion count cannot be determined due to lack of visible hand movement in the provided frames.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillIntervals": [],
+    "handFaceCoverIntervals": [],
+    "nonFrontFacingIntervals": [
+      [
+        10.0,
+        13.8
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "completedHandMotionCount": null,
+    "limitations": [
+      "Wrist visibility not confirmed in sampled frames; intervals for wrist-related metrics remain empty.",
+      "Hand motion count cannot be determined due to lack of visible hand movement in the provided frames."
+    ]
+  },
+  "status": "OK"
+}

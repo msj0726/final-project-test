@@ -1,0 +1,12 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "device": "Apple GPU / MLX (not PyTorch MPS)",
+  "loadSeconds": 2.7538148750027176,
+  "elapsedSeconds": 31.652251250008703,
+  "inputTokens": 4494,
+  "outputTokens": 182,
+  "peakMemoryGB": 7.85565696,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    []\n  ],\n  \"bothWristsStillIntervals\": [\n    []\n  ],\n  \"handFaceCoverIntervals\": [\n    []\n  ],\n  \"nonFrontFacingIntervals\": [\n    [5.2, 11.8]\n  ],\n  \"gazeUnobservableIntervals\": [\n    [5.2, 11.8]\n  ],\n  \"completedHandMotionCount\": 0,\n  \"limitations\": [\n    \"Hands are not visible in the provided frames, preventing analysis of wrist visibility, stillness, or hand-face covering.\",\n    \"Head turns away from the camera starting at 5.2s, making gaze direction unobservable for the remainder of the interval.\"\n  ]\n}",
+  "status": "INVALID_OUTPUT",
+  "error": "invalid interval"
+}

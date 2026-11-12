@@ -1,0 +1,6 @@
+{
+  "model": "MercuriusDream/Qwen3.5-35B-A3B-MLX-2bit",
+  "status": "ERROR",
+  "error": "'NoneType' object has no attribute 'patch_embed'",
+  "elapsedSeconds": 1.4360095000010915
+}

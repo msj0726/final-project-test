@@ -1,0 +1,67 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 11.035258083007648,
+  "usage": {
+    "input_tokens": 4586,
+    "input_tokens_details": {
+      "cache_write_tokens": 4583,
+      "cached_tokens": 0
+    },
+    "output_tokens": 366,
+    "output_tokens_details": {
+      "reasoning_tokens": 178
+    },
+    "total_tokens": 4952
+  },
+  "costUsdUpperBound": 0.012832,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [[0.8, 5.6], [6.4, 6.8], [7.4, 8]],\n  \"bothWristsStillIntervals\": [],\n  \"handFaceCoverIntervals\": [],\n  \"nonFrontFacingIntervals\": [[0, 0.2], [3, 4], [5.4, 6], [6.4, 7.6], [7.8, 8]],\n  \"gazeUnobservableIntervals\": [],\n  \"completedHandMotionCount\": 8,\n  \"limitations\": [\n    \"The presenter is small in the frames, limiting wrist-position and motion-stop precision.\",\n    \"An audience member intermittently obscures the presenter's lower arms and torso.\",\n    \"Sampling every 0.2 seconds may miss brief movements or stops.\"\n  ]\n}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        0.8,
+        5.6
+      ],
+      [
+        6.4,
+        6.8
+      ],
+      [
+        7.4,
+        8
+      ]
+    ],
+    "bothWristsStillIntervals": [],
+    "handFaceCoverIntervals": [],
+    "nonFrontFacingIntervals": [
+      [
+        0,
+        0.2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5.4,
+        6
+      ],
+      [
+        6.4,
+        7.6
+      ],
+      [
+        7.8,
+        8
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "completedHandMotionCount": 8,
+    "limitations": [
+      "The presenter is small in the frames, limiting wrist-position and motion-stop precision.",
+      "An audience member intermittently obscures the presenter's lower arms and torso.",
+      "Sampling every 0.2 seconds may miss brief movements or stops."
+    ]
+  },
+  "status": "OK"
+}

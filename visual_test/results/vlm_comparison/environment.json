@@ -1,0 +1,20 @@
+{
+  "platform": "macOS-26.1-arm64-arm-64bit",
+  "memoryGB": 16,
+  "gpu": "Apple M5",
+  "qwenRuntimeEnv": {
+    "MLX_METAL_GPU_ARCH": "agx16g"
+  },
+  "packages": {
+    "torch": "2.15.0",
+    "transformers": "5.22.2",
+    "mlx": "0.32.4",
+    "mlx-vlm": "0.7.12",
+    "mlx-metal": "0.32.4",
+    "kernels": "0.17.3"
+  },
+  "qwenModel": "mlx-community/Qwen3.5-9B-4bit",
+  "qwenRevision": "8b2b98c00a6b4d291155e4890773ca8f769aee53",
+  "apiModel": "gpt-6.1-sol",
+  "apiBudgetUsd": 5
+}

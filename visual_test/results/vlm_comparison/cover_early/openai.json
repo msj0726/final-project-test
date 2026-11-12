@@ -1,0 +1,47 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 7.45859883299272,
+  "usage": {
+    "input_tokens": 5186,
+    "input_tokens_details": {
+      "cache_write_tokens": 5183,
+      "cached_tokens": 0
+    },
+    "output_tokens": 207,
+    "output_tokens_details": {
+      "reasoning_tokens": 100
+    },
+    "total_tokens": 5393
+  },
+  "costUsdUpperBound": 0.012442,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[26.2,29]],\"bothWristsStillIntervals\":[],\"handFaceCoverIntervals\":[[22.4,29]],\"nonFrontFacingIntervals\":[],\"gazeUnobservableIntervals\":[[22.4,29]],\"completedHandMotionCount\":3,\"limitations\":[\"Both wrists are not visible before 26.2 seconds; movements outside the frame cannot be assessed.\",\"Hand occlusion limits observation of the eyes and face direction.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        26.2,
+        29
+      ]
+    ],
+    "bothWristsStillIntervals": [],
+    "handFaceCoverIntervals": [
+      [
+        22.4,
+        29
+      ]
+    ],
+    "nonFrontFacingIntervals": [],
+    "gazeUnobservableIntervals": [
+      [
+        22.4,
+        29
+      ]
+    ],
+    "completedHandMotionCount": 3,
+    "limitations": [
+      "Both wrists are not visible before 26.2 seconds; movements outside the frame cannot be assessed.",
+      "Hand occlusion limits observation of the eyes and face direction."
+    ]
+  },
+  "status": "OK"
+}

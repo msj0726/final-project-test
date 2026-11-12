@@ -1,0 +1,478 @@
+{
+  "stillness_and_objects": {
+    "durationSeconds": 62.8,
+    "handObservableSeconds": 8.6,
+    "handCoverageRatio": 0.13694267515923567,
+    "handStillSeconds": 0,
+    "gestureEvents": [],
+    "handFaceCandidates": [
+      {
+        "eventId": "vision-hand_face_overlap_candidate-1",
+        "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+        "startSec": 2.2,
+        "endSec": 6.6,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-hand_face_overlap_candidate-1-evidence"
+        ]
+      },
+      {
+        "eventId": "vision-hand_face_overlap_candidate-2",
+        "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+        "startSec": 8.2,
+        "endSec": 8.6,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-hand_face_overlap_candidate-2-evidence"
+        ]
+      },
+      {
+        "eventId": "vision-hand_face_overlap_candidate-3",
+        "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+        "startSec": 9.2,
+        "endSec": 13.6,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-hand_face_overlap_candidate-3-evidence"
+        ]
+      },
+      {
+        "eventId": "vision-hand_face_overlap_candidate-4",
+        "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+        "startSec": 14.0,
+        "endSec": 15.6,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-hand_face_overlap_candidate-4-evidence"
+        ]
+      },
+      {
+        "eventId": "vision-hand_face_overlap_candidate-5",
+        "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+        "startSec": 19.6,
+        "endSec": 20.2,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-hand_face_overlap_candidate-5-evidence"
+        ]
+      },
+      {
+        "eventId": "vision-hand_face_overlap_candidate-6",
+        "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+        "startSec": 44.8,
+        "endSec": 49.0,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-hand_face_overlap_candidate-6-evidence"
+        ]
+      },
+      {
+        "eventId": "vision-hand_face_overlap_candidate-7",
+        "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+        "startSec": 52.2,
+        "endSec": 53.8,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-hand_face_overlap_candidate-7-evidence"
+        ]
+      }
+    ],
+    "gazeUnknownIntervals": [
+      {
+        "criterionKey": "GAZE",
+        "startSec": 2.4,
+        "endSec": 3.0,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 3.4,
+        "endSec": 4.0,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 4.2,
+        "endSec": 4.4,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 4.8,
+        "endSec": 5.2,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 5.4,
+        "endSec": 5.8,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 6.0,
+        "endSec": 6.4,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 8.0,
+        "endSec": 8.2,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 8.2,
+        "endSec": 8.6,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 8.6,
+        "endSec": 9.2,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 9.2,
+        "endSec": 13.6,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 13.6,
+        "endSec": 14.0,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 14.0,
+        "endSec": 15.6,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 15.6,
+        "endSec": 15.8,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 15.8,
+        "endSec": 16.0,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 30.2,
+        "endSec": 31.0,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 31.6,
+        "endSec": 34.4,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 34.6,
+        "endSec": 36.4,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 36.6,
+        "endSec": 36.8,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 38.0,
+        "endSec": 38.2,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 38.6,
+        "endSec": 44.8,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 44.8,
+        "endSec": 49.0,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      }
+    ],
+    "lateralRuns": [
+      {
+        "side": "IMAGE_LEFT",
+        "startSec": 49.6,
+        "endSec": 50.4,
+        "durationSeconds": 0.8
+      },
+      {
+        "side": "IMAGE_RIGHT",
+        "startSec": 51.4,
+        "endSec": 54.2,
+        "durationSeconds": 2.8
+      },
+      {
+        "side": "IMAGE_LEFT",
+        "startSec": 56.0,
+        "endSec": 57.8,
+        "durationSeconds": 1.8
+      },
+      {
+        "side": "IMAGE_LEFT",
+        "startSec": 61.0,
+        "endSec": 61.6,
+        "durationSeconds": 0.6
+      }
+    ],
+    "experimentalMotionEpisodeCounts": {
+      "0.04": 1,
+      "0.08": 2
+    },
+    "experimentalMotionEvents04": [
+      {
+        "startSec": 20.4,
+        "endSec": 21.8
+      }
+    ]
+  },
+  "gaze_and_cover": {
+    "durationSeconds": 36.2,
+    "handObservableSeconds": 7.0,
+    "handCoverageRatio": 0.19337016574585633,
+    "handStillSeconds": 0,
+    "gestureEvents": [],
+    "handFaceCandidates": [
+      {
+        "eventId": "vision-hand_face_overlap_candidate-1",
+        "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+        "startSec": 22.4,
+        "endSec": 26.0,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-hand_face_overlap_candidate-1-evidence"
+        ]
+      }
+    ],
+    "gazeUnknownIntervals": [
+      {
+        "criterionKey": "GAZE",
+        "startSec": 22.4,
+        "endSec": 25.8,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 26.2,
+        "endSec": 26.4,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 26.4,
+        "endSec": 33.2,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      }
+    ],
+    "lateralRuns": [
+      {
+        "side": "IMAGE_LEFT",
+        "startSec": 5.4,
+        "endSec": 14.0,
+        "durationSeconds": 8.6
+      }
+    ],
+    "experimentalMotionEpisodeCounts": {
+      "0.04": 2,
+      "0.08": 1
+    },
+    "experimentalMotionEvents04": [
+      {
+        "startSec": 24.4,
+        "endSec": 24.8
+      },
+      {
+        "startSec": 27.4,
+        "endSec": 28.0
+      }
+    ]
+  },
+  "prior_negative_sample": {
+    "durationSeconds": 40.2,
+    "handObservableSeconds": 0,
+    "handCoverageRatio": 0.0,
+    "handStillSeconds": null,
+    "gestureEvents": [],
+    "handFaceCandidates": [
+      {
+        "eventId": "vision-hand_face_overlap_candidate-1",
+        "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+        "startSec": 2.0,
+        "endSec": 4.6,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-hand_face_overlap_candidate-1-evidence"
+        ]
+      },
+      {
+        "eventId": "vision-hand_face_overlap_candidate-2",
+        "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+        "startSec": 6.4,
+        "endSec": 7.6,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-hand_face_overlap_candidate-2-evidence"
+        ]
+      },
+      {
+        "eventId": "vision-hand_face_overlap_candidate-3",
+        "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+        "startSec": 7.8,
+        "endSec": 8.6,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-hand_face_overlap_candidate-3-evidence"
+        ]
+      },
+      {
+        "eventId": "vision-hand_face_overlap_candidate-4",
+        "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+        "startSec": 9.0,
+        "endSec": 9.8,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-hand_face_overlap_candidate-4-evidence"
+        ]
+      },
+      {
+        "eventId": "vision-hand_face_overlap_candidate-5",
+        "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+        "startSec": 13.0,
+        "endSec": 13.8,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-hand_face_overlap_candidate-5-evidence"
+        ]
+      },
+      {
+        "eventId": "vision-hand_face_overlap_candidate-6",
+        "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+        "startSec": 14.2,
+        "endSec": 14.8,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-hand_face_overlap_candidate-6-evidence"
+        ]
+      },
+      {
+        "eventId": "vision-hand_face_overlap_candidate-7",
+        "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+        "startSec": 15.2,
+        "endSec": 15.6,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-hand_face_overlap_candidate-7-evidence"
+        ]
+      }
+    ],
+    "gazeUnknownIntervals": [
+      {
+        "criterionKey": "GAZE",
+        "startSec": 0.2,
+        "endSec": 0.4,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 2.0,
+        "endSec": 4.6,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 6.4,
+        "endSec": 7.6,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 7.6,
+        "endSec": 7.8,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 7.8,
+        "endSec": 8.6,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 8.6,
+        "endSec": 9.0,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 9.0,
+        "endSec": 9.6,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 11.6,
+        "endSec": 12.0,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 12.0,
+        "endSec": 12.6,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 12.6,
+        "endSec": 16.2,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      }
+    ],
+    "lateralRuns": [
+      {
+        "side": "IMAGE_LEFT",
+        "startSec": 17.2,
+        "endSec": 18.0,
+        "durationSeconds": 0.8
+      },
+      {
+        "side": "IMAGE_RIGHT",
+        "startSec": 18.8,
+        "endSec": 19.0,
+        "durationSeconds": 0.2
+      },
+      {
+        "side": "IMAGE_LEFT",
+        "startSec": 32.2,
+        "endSec": 33.0,
+        "durationSeconds": 0.8
+      },
+      {
+        "side": "IMAGE_LEFT",
+        "startSec": 39.0,
+        "endSec": 39.2,
+        "durationSeconds": 0.2
+      }
+    ],
+    "experimentalMotionEpisodeCounts": {
+      "0.04": 0,
+      "0.08": 0
+    },
+    "experimentalMotionEvents04": []
+  }
+}

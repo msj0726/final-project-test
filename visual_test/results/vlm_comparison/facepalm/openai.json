@@ -1,0 +1,48 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 8.18089995799528,
+  "usage": {
+    "input_tokens": 2382,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 2379
+    },
+    "output_tokens": 247,
+    "output_tokens_details": {
+      "reasoning_tokens": 123
+    },
+    "total_tokens": 2629
+  },
+  "costUsdUpperBound": 0.007234,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[],\"bothWristsStillIntervals\":[],\"handFaceCoverIntervals\":[[1.4,3.4]],\"nonFrontFacingIntervals\":[[1.6,3.4]],\"gazeUnobservableIntervals\":[[1.4,3.4]],\"completedHandMotionCount\":1,\"limitations\":[\"Both wrists are never visible together; the other hand remains outside the frame.\",\"Low lighting and motion blur limit detail during the hand raise.\",\"The interval is shorter than the five seconds required to report sustained wrist stillness.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillIntervals": [],
+    "handFaceCoverIntervals": [
+      [
+        1.4,
+        3.4
+      ]
+    ],
+    "nonFrontFacingIntervals": [
+      [
+        1.6,
+        3.4
+      ]
+    ],
+    "gazeUnobservableIntervals": [
+      [
+        1.4,
+        3.4
+      ]
+    ],
+    "completedHandMotionCount": 1,
+    "limitations": [
+      "Both wrists are never visible together; the other hand remains outside the frame.",
+      "Low lighting and motion blur limit detail during the hand raise.",
+      "The interval is shorter than the five seconds required to report sustained wrist stillness."
+    ]
+  },
+  "status": "OK"
+}

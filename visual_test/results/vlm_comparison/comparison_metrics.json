@@ -1,0 +1,268 @@
+{
+  "baseline": {
+    "completed": 9,
+    "total": 9,
+    "jsonFormatValid": 9,
+    "jsonFormatIssues": [],
+    "totalInferenceSeconds": 45.62,
+    "apiCostUsdUpperBound": 0,
+    "gazeExclusionOverlap": [],
+    "semanticIssues": [],
+    "metrics": {
+      "bothWristsStillIntervals": {
+        "tp": 0,
+        "fn": 70,
+        "fp": 0,
+        "tn": 0,
+        "missingPositive": 0,
+        "missingNegative": 0
+      },
+      "nonFrontFacingIntervals": {
+        "tp": 40,
+        "fn": 0,
+        "fp": 0,
+        "tn": 0,
+        "missingPositive": 0,
+        "missingNegative": 0
+      },
+      "handFaceCoverIntervals": {
+        "tp": 18,
+        "fn": 8,
+        "fp": 0,
+        "tn": 7,
+        "missingPositive": 0,
+        "missingNegative": 0
+      },
+      "bothWristsVisibleIntervals": {
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 40,
+        "missingPositive": 0,
+        "missingNegative": 0
+      }
+    }
+  },
+  "openai": {
+    "completed": 9,
+    "total": 9,
+    "jsonFormatValid": 9,
+    "jsonFormatIssues": [],
+    "totalInferenceSeconds": 69.65,
+    "apiCostUsdUpperBound": 0.10234,
+    "gazeExclusionOverlap": [
+      {
+        "clipId": "facepalm",
+        "overlapSeconds": 1.8
+      }
+    ],
+    "semanticIssues": [],
+    "metrics": {
+      "bothWristsStillIntervals": {
+        "tp": 52,
+        "fn": 18,
+        "fp": 0,
+        "tn": 0,
+        "missingPositive": 0,
+        "missingNegative": 0
+      },
+      "nonFrontFacingIntervals": {
+        "tp": 39,
+        "fn": 1,
+        "fp": 0,
+        "tn": 0,
+        "missingPositive": 0,
+        "missingNegative": 0
+      },
+      "handFaceCoverIntervals": {
+        "tp": 26,
+        "fn": 0,
+        "fp": 0,
+        "tn": 7,
+        "missingPositive": 0,
+        "missingNegative": 0
+      },
+      "bothWristsVisibleIntervals": {
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 40,
+        "missingPositive": 0,
+        "missingNegative": 0
+      }
+    }
+  },
+  "qwen": {
+    "completed": 7,
+    "total": 9,
+    "jsonFormatValid": 7,
+    "jsonFormatIssues": [
+      {
+        "clipId": "gaze_early",
+        "reason": "invalid interval"
+      },
+      {
+        "clipId": "multi_person",
+        "reason": "Unterminated string starting at: line 38 column 5 (char 2591)"
+      }
+    ],
+    "totalInferenceSeconds": 270.17,
+    "apiCostUsdUpperBound": 0,
+    "gazeExclusionOverlap": [
+      {
+        "clipId": "stillness",
+        "overlapSeconds": 0.2
+      },
+      {
+        "clipId": "gaze_late",
+        "overlapSeconds": 3.8
+      },
+      {
+        "clipId": "cover_early",
+        "overlapSeconds": 2.8
+      },
+      {
+        "clipId": "facepalm",
+        "overlapSeconds": 2.0
+      }
+    ],
+    "semanticIssues": [
+      {
+        "clipId": "gaze_late",
+        "kind": "STILLNESS_UNDER_5_SECONDS",
+        "interval": [
+          14.0,
+          17.8
+        ]
+      },
+      {
+        "clipId": "gaze_late",
+        "kind": "STILLNESS_WITHOUT_VISIBLE_WRISTS",
+        "interval": [
+          14.0,
+          17.8
+        ]
+      },
+      {
+        "clipId": "cover_early",
+        "kind": "STILLNESS_UNDER_5_SECONDS",
+        "interval": [
+          26.4,
+          29.0
+        ]
+      },
+      {
+        "clipId": "facepalm",
+        "kind": "STILLNESS_UNDER_5_SECONDS",
+        "interval": [
+          0,
+          1.4
+        ]
+      }
+    ],
+    "metrics": {
+      "bothWristsStillIntervals": {
+        "tp": 68,
+        "fn": 2,
+        "fp": 0,
+        "tn": 0,
+        "missingPositive": 0,
+        "missingNegative": 0
+      },
+      "nonFrontFacingIntervals": {
+        "tp": 9,
+        "fn": 1,
+        "fp": 0,
+        "tn": 0,
+        "missingPositive": 30,
+        "missingNegative": 0
+      },
+      "handFaceCoverIntervals": {
+        "tp": 26,
+        "fn": 0,
+        "fp": 0,
+        "tn": 7,
+        "missingPositive": 0,
+        "missingNegative": 0
+      },
+      "bothWristsVisibleIntervals": {
+        "tp": 0,
+        "fn": 0,
+        "fp": 40,
+        "tn": 0,
+        "missingPositive": 0,
+        "missingNegative": 0
+      }
+    }
+  },
+  "qwen_prompt_v2": {
+    "completed": 9,
+    "total": 9,
+    "jsonFormatValid": 9,
+    "jsonFormatIssues": [],
+    "totalInferenceSeconds": 250.74,
+    "apiCostUsdUpperBound": 0,
+    "gazeExclusionOverlap": [
+      {
+        "clipId": "stillness",
+        "overlapSeconds": 0.2
+      },
+      {
+        "clipId": "facepalm",
+        "overlapSeconds": 2.0
+      }
+    ],
+    "semanticIssues": [
+      {
+        "clipId": "cover_early",
+        "kind": "STILLNESS_UNDER_5_SECONDS",
+        "interval": [
+          26.4,
+          29.0
+        ]
+      },
+      {
+        "clipId": "multi_person",
+        "kind": "STILLNESS_UNDER_5_SECONDS",
+        "interval": [
+          0.0,
+          1.8
+        ]
+      }
+    ],
+    "metrics": {
+      "bothWristsStillIntervals": {
+        "tp": 69,
+        "fn": 1,
+        "fp": 0,
+        "tn": 0,
+        "missingPositive": 0,
+        "missingNegative": 0
+      },
+      "nonFrontFacingIntervals": {
+        "tp": 39,
+        "fn": 1,
+        "fp": 0,
+        "tn": 0,
+        "missingPositive": 0,
+        "missingNegative": 0
+      },
+      "handFaceCoverIntervals": {
+        "tp": 26,
+        "fn": 0,
+        "fp": 0,
+        "tn": 7,
+        "missingPositive": 0,
+        "missingNegative": 0
+      },
+      "bothWristsVisibleIntervals": {
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 40,
+        "missingPositive": 0,
+        "missingNegative": 0
+      }
+    }
+  }
+}

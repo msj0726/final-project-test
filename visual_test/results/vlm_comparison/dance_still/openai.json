@@ -1,0 +1,41 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 5.713668541997322,
+  "usage": {
+    "input_tokens": 4586,
+    "input_tokens_details": {
+      "cache_write_tokens": 4583,
+      "cached_tokens": 0
+    },
+    "output_tokens": 157,
+    "output_tokens_details": {
+      "reasoning_tokens": 75
+    },
+    "total_tokens": 4743
+  },
+  "costUsdUpperBound": 0.010742,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[43,51]],\"bothWristsStillIntervals\":[[43,48.2]],\"handFaceCoverIntervals\":[],\"nonFrontFacingIntervals\":[],\"gazeUnobservableIntervals\":[],\"completedHandMotionCount\":2,\"limitations\":[\"Frames sampled every 0.2 seconds may miss brief movements or occlusions.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        43,
+        51
+      ]
+    ],
+    "bothWristsStillIntervals": [
+      [
+        43,
+        48.2
+      ]
+    ],
+    "handFaceCoverIntervals": [],
+    "nonFrontFacingIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "completedHandMotionCount": 2,
+    "limitations": [
+      "Frames sampled every 0.2 seconds may miss brief movements or occlusions."
+    ]
+  },
+  "status": "OK"
+}

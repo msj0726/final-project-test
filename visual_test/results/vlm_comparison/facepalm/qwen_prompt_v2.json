@@ -1,0 +1,38 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "device": "Apple GPU / MLX (not PyTorch MPS)",
+  "loadSeconds": 3.5521937090088613,
+  "elapsedSeconds": 17.63771466599428,
+  "inputTokens": 2258,
+  "outputTokens": 166,
+  "peakMemoryGB": 7.857262592,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [],\n  \"bothWristsStillIntervals\": [],\n  \"handFaceCoverIntervals\": [\n    [1.4, 3.4]\n  ],\n  \"nonFrontFacingIntervals\": [\n    [1.4, 3.4]\n  ],\n  \"gazeUnobservableIntervals\": [\n    [1.4, 3.4]\n  ],\n  \"completedHandMotionCount\": null,\n  \"limitations\": [\n    \"Wrist visibility not confirmed; hand obscures face and head turns away from camera simultaneously.\",\n    \"Gaze unobservable due to head turn and face cover; non-front-facing and face-cover intervals overlap.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillIntervals": [],
+    "handFaceCoverIntervals": [
+      [
+        1.4,
+        3.4
+      ]
+    ],
+    "nonFrontFacingIntervals": [
+      [
+        1.4,
+        3.4
+      ]
+    ],
+    "gazeUnobservableIntervals": [
+      [
+        1.4,
+        3.4
+      ]
+    ],
+    "completedHandMotionCount": null,
+    "limitations": [
+      "Wrist visibility not confirmed; hand obscures face and head turns away from camera simultaneously.",
+      "Gaze unobservable due to head turn and face cover; non-front-facing and face-cover intervals overlap."
+    ]
+  },
+  "status": "OK"
+}

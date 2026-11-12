@@ -1,0 +1,42 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "device": "Apple GPU / MLX (not PyTorch MPS)",
+  "loadSeconds": 3.5521937090088613,
+  "elapsedSeconds": 30.573171541997,
+  "inputTokens": 4690,
+  "outputTokens": 168,
+  "peakMemoryGB": 7.857262592,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [27.0, 33.0]\n  ],\n  \"bothWristsStillIntervals\": [\n    [27.0, 33.0]\n  ],\n  \"handFaceCoverIntervals\": [\n    [27.0, 33.0]\n  ],\n  \"nonFrontFacingIntervals\": [],\n  \"gazeUnobservableIntervals\": [\n    [27.0, 33.0]\n  ],\n  \"completedHandMotionCount\": 1,\n  \"limitations\": [\n    \"Hand motion count inferred from transition at 33.0s where hands move away from face.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        27.0,
+        33.0
+      ]
+    ],
+    "bothWristsStillIntervals": [
+      [
+        27.0,
+        33.0
+      ]
+    ],
+    "handFaceCoverIntervals": [
+      [
+        27.0,
+        33.0
+      ]
+    ],
+    "nonFrontFacingIntervals": [],
+    "gazeUnobservableIntervals": [
+      [
+        27.0,
+        33.0
+      ]
+    ],
+    "completedHandMotionCount": 1,
+    "limitations": [
+      "Hand motion count inferred from transition at 33.0s where hands move away from face."
+    ]
+  },
+  "status": "OK"
+}

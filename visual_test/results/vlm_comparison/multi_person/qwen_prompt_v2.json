@@ -1,0 +1,42 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "device": "Apple GPU / MLX (not PyTorch MPS)",
+  "loadSeconds": 3.5521937090088613,
+  "elapsedSeconds": 27.81379487499362,
+  "inputTokens": 4168,
+  "outputTokens": 169,
+  "peakMemoryGB": 7.857262592,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [0.0, 8.0]\n  ],\n  \"bothWristsStillIntervals\": [\n    [0.0, 1.8],\n    [2.2, 8.0]\n  ],\n  \"handFaceCoverIntervals\": [],\n  \"nonFrontFacingIntervals\": [\n    [3.2, 8.0]\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"completedHandMotionCount\": 1,\n  \"limitations\": [\n    \"Wrist visibility is intermittent; stillness intervals are conservative.\",\n    \"Presenter turns away from camera after 3.2s, making gaze unobservable.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        0.0,
+        8.0
+      ]
+    ],
+    "bothWristsStillIntervals": [
+      [
+        0.0,
+        1.8
+      ],
+      [
+        2.2,
+        8.0
+      ]
+    ],
+    "handFaceCoverIntervals": [],
+    "nonFrontFacingIntervals": [
+      [
+        3.2,
+        8.0
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "completedHandMotionCount": 1,
+    "limitations": [
+      "Wrist visibility is intermittent; stillness intervals are conservative.",
+      "Presenter turns away from camera after 3.2s, making gaze unobservable."
+    ]
+  },
+  "status": "OK"
+}

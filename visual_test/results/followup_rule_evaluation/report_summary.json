@@ -1,0 +1,80 @@
+{
+  "developmentStillnessKnownLabelSeconds": [
+    21,
+    27
+  ],
+  "developmentStillnessBaselineEvents": [],
+  "developmentStillnessRelaxedEvent": {
+    "startSec": 21.2,
+    "endSec": 27.0,
+    "unobservedSecondsInside": 0.2
+  },
+  "holdoutDanceStillnessCoarseLabelSeconds": [
+    43,
+    51
+  ],
+  "holdoutDanceStillnessBaselineEvents": [],
+  "holdoutDanceStillnessRelaxedEvent": {
+    "startSec": 42.4,
+    "endSec": 48.4,
+    "unobservedSecondsInside": 0.0
+  },
+  "holdoutDanceMotionCoarseMinimumTransitions": 11,
+  "holdoutDanceCompletedMotionBouts": 12,
+  "signingStressMovingSeconds": 55.4,
+  "signingStressCompletedMotionBouts": 0,
+  "signingStressUnfinishedBouts": 4,
+  "developmentFaceCoverBaseline": [
+    {
+      "eventId": "vision-hand_face_overlap_candidate-1",
+      "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+      "startSec": 22.4,
+      "endSec": 26.0,
+      "confidence": null,
+      "evidenceRefs": [
+        "vision-hand_face_overlap_candidate-1-evidence"
+      ]
+    }
+  ],
+  "developmentFaceCoverTrackedOneSecond": [
+    {
+      "startSec": 22.4,
+      "endSec": 26.0,
+      "unobservedSecondsInside": 0.0
+    },
+    {
+      "startSec": 26.2,
+      "endSec": 27.4,
+      "unobservedSecondsInside": 0.0
+    }
+  ],
+  "developmentFaceCoverTrackedSevenSecondsExploratory": [
+    {
+      "startSec": 22.4,
+      "endSec": 26.0,
+      "unobservedSecondsInside": 0.0
+    },
+    {
+      "startSec": 26.2,
+      "endSec": 33.4,
+      "unobservedSecondsInside": 0.0
+    }
+  ],
+  "holdoutFacepalmPositiveFrames": 8,
+  "holdoutFacepalmDetectedPositiveFrames": {
+    "baseline": 0,
+    "shortOneSecond": 2,
+    "longSevenSeconds": 6
+  },
+  "holdoutFacepalmNegativeFrames": 7,
+  "holdoutFacepalmFalsePositiveFrames": {
+    "baseline": 0,
+    "shortOneSecond": 0,
+    "longSevenSeconds": 0
+  },
+  "holdoutPresentationBodyFrames": 5,
+  "holdoutPresentationFaceFrames": 0,
+  "holdoutPresentationHandFrames": 0,
+  "holdoutCloseupHandObservableSeconds": 0,
+  "scoringReady": false
+}

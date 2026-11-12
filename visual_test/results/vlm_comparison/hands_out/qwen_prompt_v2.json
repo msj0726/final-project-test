@@ -1,0 +1,23 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "device": "Apple GPU / MLX (not PyTorch MPS)",
+  "loadSeconds": 3.5521937090088613,
+  "elapsedSeconds": 25.54610649999813,
+  "inputTokens": 4168,
+  "outputTokens": 112,
+  "peakMemoryGB": 7.857262592,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [],\n  \"bothWristsStillIntervals\": [],\n  \"handFaceCoverIntervals\": [],\n  \"nonFrontFacingIntervals\": [],\n  \"gazeUnobservableIntervals\": [],\n  \"completedHandMotionCount\": null,\n  \"limitations\": [\n    \"Wrist visibility not supported; hands/microphone present but wrists not detectable.\",\n    \"Gaze observable throughout; no non-front or unobservable intervals.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillIntervals": [],
+    "handFaceCoverIntervals": [],
+    "nonFrontFacingIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "completedHandMotionCount": null,
+    "limitations": [
+      "Wrist visibility not supported; hands/microphone present but wrists not detectable.",
+      "Gaze observable throughout; no non-front or unobservable intervals."
+    ]
+  },
+  "status": "OK"
+}

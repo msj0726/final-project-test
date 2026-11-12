@@ -1,0 +1,106 @@
+{
+  "provenance": "Existing user-labelled intervals plus prior assistant visual review; not independent human annotation or unseen holdout",
+  "selectionBias": "All videos were previously inspected. No current model output used to tune this protocol.",
+  "criteria": {
+    "bothWristsStillIntervals": [
+      {
+        "clipId": "stillness",
+        "positive": [
+          [
+            21,
+            27
+          ]
+        ],
+        "negative": [],
+        "source": "USER_SPECIFIED"
+      },
+      {
+        "clipId": "dance_still",
+        "positive": [
+          [
+            43,
+            51
+          ]
+        ],
+        "negative": [],
+        "source": "PRIOR_ASSISTANT_VISUAL_REVIEW_COARSE_1S"
+      }
+    ],
+    "nonFrontFacingIntervals": [
+      {
+        "clipId": "gaze_early",
+        "positive": [
+          [
+            6,
+            12
+          ]
+        ],
+        "negative": [],
+        "source": "USER_SPECIFIED_6_TO_14"
+      },
+      {
+        "clipId": "gaze_late",
+        "positive": [
+          [
+            12,
+            14
+          ]
+        ],
+        "negative": [],
+        "source": "USER_SPECIFIED_DEDUPLICATED_OVERLAP"
+      }
+    ],
+    "handFaceCoverIntervals": [
+      {
+        "clipId": "facepalm",
+        "positive": [
+          [
+            1.8,
+            3.4
+          ]
+        ],
+        "negative": [
+          [
+            0,
+            1.4
+          ]
+        ],
+        "source": "PRIOR_ASSISTANT_VISUAL_REVIEW_0_2S"
+      },
+      {
+        "clipId": "cover_early",
+        "positive": [
+          [
+            22.4,
+            26
+          ]
+        ],
+        "negative": [],
+        "source": "USER_CONFIRMED_EYE_COVER"
+      }
+    ],
+    "bothWristsVisibleIntervals": [
+      {
+        "clipId": "hands_out",
+        "positive": [],
+        "negative": [
+          [
+            0,
+            8
+          ]
+        ],
+        "source": "PRIOR_ASSISTANT_VISUAL_REVIEW_SAMPLED_ONLY"
+      }
+    ]
+  },
+  "motionCount": "NO_EXACT_GROUND_TRUTH; do not report counting accuracy or extrapolate 8/minute",
+  "unlabelledWindows": [
+    "cover_late",
+    "multi_person"
+  ],
+  "notes": [
+    "Gaze overlapping windows deduplicated at 12 seconds",
+    "Positive-only intervals cannot establish precision/F1",
+    "Window boundaries truncate events; event boundary error is not evaluated"
+  ]
+}

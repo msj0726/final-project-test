@@ -1,0 +1,32 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "device": "Apple GPU / MLX (not PyTorch MPS)",
+  "loadSeconds": 2.7538148750027176,
+  "elapsedSeconds": 25.573131708006258,
+  "inputTokens": 4003,
+  "outputTokens": 105,
+  "peakMemoryGB": 7.85590272,
+  "rawResponse": "```json\n{\n  \"bothWristsVisibleIntervals\": [[0, 8]],\n  \"bothWristsStillIntervals\": [[0, 8]],\n  \"handFaceCoverIntervals\": [],\n  \"nonFrontFacingIntervals\": [],\n  \"gazeUnobservableIntervals\": [],\n  \"completedHandMotionCount\": 0,\n  \"limitations\": [\n    \"Right wrist is not visible in the provided frames.\"\n  ]\n}\n```",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        0,
+        8
+      ]
+    ],
+    "bothWristsStillIntervals": [
+      [
+        0,
+        8
+      ]
+    ],
+    "handFaceCoverIntervals": [],
+    "nonFrontFacingIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "completedHandMotionCount": 0,
+    "limitations": [
+      "Right wrist is not visible in the provided frames."
+    ]
+  },
+  "status": "OK"
+}

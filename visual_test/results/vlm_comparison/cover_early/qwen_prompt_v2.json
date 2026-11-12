@@ -1,0 +1,43 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "device": "Apple GPU / MLX (not PyTorch MPS)",
+  "loadSeconds": 3.5521937090088613,
+  "elapsedSeconds": 31.29104008397553,
+  "inputTokens": 4690,
+  "outputTokens": 183,
+  "peakMemoryGB": 7.857262592,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [26.0, 29.0]\n  ],\n  \"bothWristsStillIntervals\": [\n    [26.4, 29.0]\n  ],\n  \"handFaceCoverIntervals\": [\n    [22.4, 26.0]\n  ],\n  \"nonFrontFacingIntervals\": [],\n  \"gazeUnobservableIntervals\": [\n    [22.4, 26.0]\n  ],\n  \"completedHandMotionCount\": 1,\n  \"limitations\": [\n    \"Hand motion count inferred from sequence start/stop rather than continuous tracking.\",\n    \"Gaze unobservable during face cover; non-front-facing intervals empty as head remains frontal.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        26.0,
+        29.0
+      ]
+    ],
+    "bothWristsStillIntervals": [
+      [
+        26.4,
+        29.0
+      ]
+    ],
+    "handFaceCoverIntervals": [
+      [
+        22.4,
+        26.0
+      ]
+    ],
+    "nonFrontFacingIntervals": [],
+    "gazeUnobservableIntervals": [
+      [
+        22.4,
+        26.0
+      ]
+    ],
+    "completedHandMotionCount": 1,
+    "limitations": [
+      "Hand motion count inferred from sequence start/stop rather than continuous tracking.",
+      "Gaze unobservable during face cover; non-front-facing intervals empty as head remains frontal."
+    ]
+  },
+  "status": "OK"
+}

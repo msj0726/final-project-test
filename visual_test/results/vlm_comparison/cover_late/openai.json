@@ -1,0 +1,52 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 8.190591917009442,
+  "usage": {
+    "input_tokens": 5186,
+    "input_tokens_details": {
+      "cache_write_tokens": 5183,
+      "cached_tokens": 0
+    },
+    "output_tokens": 223,
+    "output_tokens_details": {
+      "reasoning_tokens": 115
+    },
+    "total_tokens": 5409
+  },
+  "costUsdUpperBound": 0.012602,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[27,33.4]],\"bothWristsStillIntervals\":[[27,33]],\"handFaceCoverIntervals\":[[27,33.4]],\"nonFrontFacingIntervals\":[],\"gazeUnobservableIntervals\":[[27,33.2]],\"completedHandMotionCount\":0,\"limitations\":[\"Hands leave the frame while lowering, so the movement's stop is not observed.\",\"Face covering prevents assessment of gaze during most of the interval.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        27,
+        33.4
+      ]
+    ],
+    "bothWristsStillIntervals": [
+      [
+        27,
+        33
+      ]
+    ],
+    "handFaceCoverIntervals": [
+      [
+        27,
+        33.4
+      ]
+    ],
+    "nonFrontFacingIntervals": [],
+    "gazeUnobservableIntervals": [
+      [
+        27,
+        33.2
+      ]
+    ],
+    "completedHandMotionCount": 0,
+    "limitations": [
+      "Hands leave the frame while lowering, so the movement's stop is not observed.",
+      "Face covering prevents assessment of gaze during most of the interval."
+    ]
+  },
+  "status": "OK"
+}

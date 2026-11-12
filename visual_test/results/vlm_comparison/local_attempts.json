@@ -1,0 +1,22 @@
+[
+  {
+    "model": "Qwen/Qwen3.5-9B",
+    "runtime": "PyTorch MPS MetalConfig 4bit",
+    "status": "STOPPED_DURING_LOADING",
+    "reason": "Host swap usage reached approximately 14.7 GiB; interrupted to avoid further memory pressure; no inference result",
+    "dependencies": "transformers 5.22.2 / torch 2.15.0 / kernels 0.17.3",
+    "earlierEnvironmentIssue": "kernels 0.18.2 was outside transformers supported range; corrected to 0.17.3"
+  },
+  {
+    "model": "Qwen/Qwen3.5-9B",
+    "runtime": "PyTorch MPS MetalConfig 4bit, sequential loading",
+    "status": "STOPPED_DURING_LOADING",
+    "reason": "Host-wide swap observed at approximately 22 GiB; interrupted. This is host swap, not a measured model-only peak. No inference result."
+  },
+  {
+    "model": "mlx-community/Qwen3.5-9B-4bit",
+    "runtime": "MLX 0.32.4 default GPU architecture",
+    "status": "KERNEL_ERROR",
+    "reason": "unsupported deferred-static-alloca-size in NAX bfloat16 kernel; retry uses MLX_METAL_GPU_ARCH=agx16g to select older GPU kernel path, verified with a matrix multiplication smoke test"
+  }
+]

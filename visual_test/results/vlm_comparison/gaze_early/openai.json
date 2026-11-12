@@ -1,0 +1,37 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 4.788669332992868,
+  "usage": {
+    "input_tokens": 5186,
+    "input_tokens_details": {
+      "cache_write_tokens": 5183,
+      "cached_tokens": 0
+    },
+    "output_tokens": 99,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 5285
+  },
+  "costUsdUpperBound": 0.011362,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[],\"bothWristsStillIntervals\":[],\"handFaceCoverIntervals\":[],\"nonFrontFacingIntervals\":[[5.4,12]],\"gazeUnobservableIntervals\":[],\"completedHandMotionCount\":null,\"limitations\":[\"Both hands and wrists are outside the frame throughout, so wrist stillness and completed hand motions cannot be determined.\",\"Frames are sampled every 0.2 seconds; events between samples may not be observed.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillIntervals": [],
+    "handFaceCoverIntervals": [],
+    "nonFrontFacingIntervals": [
+      [
+        5.4,
+        12
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "completedHandMotionCount": null,
+    "limitations": [
+      "Both hands and wrists are outside the frame throughout, so wrist stillness and completed hand motions cannot be determined.",
+      "Frames are sampled every 0.2 seconds; events between samples may not be observed."
+    ]
+  },
+  "status": "OK"
+}

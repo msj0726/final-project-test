@@ -1,0 +1,13 @@
+{
+  "source": "https://commons.wikimedia.org/wiki/File:Bicycle_in_Ghanaian_sign_language_interpretation.webm",
+  "license": "CC0",
+  "scope": "TECHNICAL_HAND_MOTION_STRESS_TEST_NOT_PRESENTATION_GESTURE_GROUND_TRUTH",
+  "frames": 300,
+  "handObservableSeconds": 52.4,
+  "bothWristsVisibleSeconds": 59.4,
+  "handStillSeconds": 0,
+  "handStillEvents": [],
+  "motionEpisodeCount04": 0,
+  "motionEpisodeCount08": 0,
+  "motionEpisodes04": []
+}

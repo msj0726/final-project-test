@@ -1,0 +1,46 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 16.994042082995293,
+  "usage": {
+    "input_tokens": 5186,
+    "input_tokens_details": {
+      "cache_write_tokens": 5183,
+      "cached_tokens": 0
+    },
+    "output_tokens": 366,
+    "output_tokens_details": {
+      "reasoning_tokens": 274
+    },
+    "total_tokens": 5552
+  },
+  "costUsdUpperBound": 0.014032,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[20,28]],\"bothWristsStillIntervals\":[[20.6,26.2]],\"handFaceCoverIntervals\":[[20,20.4]],\"nonFrontFacingIntervals\":[],\"gazeUnobservableIntervals\":[],\"completedHandMotionCount\":2,\"limitations\":[\"Motion and interval boundaries are approximate because frames are sampled every 0.2 seconds.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        20,
+        28
+      ]
+    ],
+    "bothWristsStillIntervals": [
+      [
+        20.6,
+        26.2
+      ]
+    ],
+    "handFaceCoverIntervals": [
+      [
+        20,
+        20.4
+      ]
+    ],
+    "nonFrontFacingIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "completedHandMotionCount": 2,
+    "limitations": [
+      "Motion and interval boundaries are approximate because frames are sampled every 0.2 seconds."
+    ]
+  },
+  "status": "OK"
+}

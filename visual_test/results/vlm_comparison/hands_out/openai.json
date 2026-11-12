@@ -1,0 +1,31 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 3.9551045000116574,
+  "usage": {
+    "input_tokens": 4586,
+    "input_tokens_details": {
+      "cache_write_tokens": 4583,
+      "cached_tokens": 0
+    },
+    "output_tokens": 76,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 4662
+  },
+  "costUsdUpperBound": 0.009932,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[],\"bothWristsStillIntervals\":[],\"handFaceCoverIntervals\":[],\"nonFrontFacingIntervals\":[],\"gazeUnobservableIntervals\":[],\"completedHandMotionCount\":null,\"limitations\":[\"The presenter's hands and wrists are outside the frame throughout, so wrist stillness and completed hand motions cannot be determined.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillIntervals": [],
+    "handFaceCoverIntervals": [],
+    "nonFrontFacingIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "completedHandMotionCount": null,
+    "limitations": [
+      "The presenter's hands and wrists are outside the frame throughout, so wrist stillness and completed hand motions cannot be determined."
+    ]
+  },
+  "status": "OK"
+}

@@ -1,0 +1,40 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "device": "Apple GPU / MLX (not PyTorch MPS)",
+  "loadSeconds": 2.7538148750027176,
+  "elapsedSeconds": 29.51119208399905,
+  "inputTokens": 4525,
+  "outputTokens": 123,
+  "peakMemoryGB": 7.85590272,
+  "rawResponse": "```json\n{\n  \"bothWristsVisibleIntervals\": [[27.0, 34.8]],\n  \"bothWristsStillIntervals\": [[27.0, 33.0]],\n  \"handFaceCoverIntervals\": [[27.0, 33.0]],\n  \"nonFrontFacingIntervals\": [],\n  \"gazeUnobservableIntervals\": [[27.0, 33.0]],\n  \"completedHandMotionCount\": 1,\n  \"limitations\": []\n}\n```",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        27.0,
+        34.8
+      ]
+    ],
+    "bothWristsStillIntervals": [
+      [
+        27.0,
+        33.0
+      ]
+    ],
+    "handFaceCoverIntervals": [
+      [
+        27.0,
+        33.0
+      ]
+    ],
+    "nonFrontFacingIntervals": [],
+    "gazeUnobservableIntervals": [
+      [
+        27.0,
+        33.0
+      ]
+    ],
+    "completedHandMotionCount": 1,
+    "limitations": []
+  },
+  "status": "OK"
+}

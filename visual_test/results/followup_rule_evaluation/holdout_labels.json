@@ -1,0 +1,59 @@
+{
+  "initialLabelsCreatedBeforeModelInference": true,
+  "labelsRevisedAfterInference": "Dance hand lesson 33-34 seconds: original negative face-cover label corrected after high-resolution inspection; excluded from independent accuracy claims",
+  "samplingSeconds": 0.2,
+  "labels": [
+    {
+      "clipId": "malaysia_presentation",
+      "source": "https://commons.wikimedia.org/wiki/File:Wikimedia_Malaysia_presentation_at_17th_Asia-Pacific_RCE_Regional_Meeting_in_Zhejiang,_China.webm",
+      "evaluatedStartSec": 0,
+      "evaluatedEndSec": 60,
+      "manualReview": "Cropped 1-second contact sheets, 0-59 seconds, reviewed before inference",
+      "faceCoverNegativeSampleTimesSec": "integer seconds 0 through 59",
+      "faceCoverPositiveIntervals": [],
+      "handStillPositiveIntervals": [],
+      "handStillLabelStatus": "UNLABELED_EXACT_INTERVALS",
+      "handMotionCountStatus": "UNLABELED_EXACT_COUNT",
+      "gazeLabelStatus": "UNLABELED_CAMERA_NOT_AUDIENCE_CENTER",
+      "notes": "Presenter holds a microphone and gestures. Presenter partly leaves camera view around 21-34 seconds. A 1-second visual audit does not establish that no brief face occlusion occurred between samples."
+    },
+    {
+      "clipId": "facepalm",
+      "source": "https://commons.wikimedia.org/wiki/File:Facepalm.webm",
+      "evaluatedStartSec": 0,
+      "evaluatedEndSec": 3.4,
+      "manualReview": "0.2-second contact sheet, reviewed before inference",
+      "faceCoverNegativeIntervals": [[0, 1.4]],
+      "faceCoverTransitionIntervals": [[1.4, 1.8]],
+      "faceCoverPositiveIntervals": [[1.8, 3.4]],
+      "presentationStatus": "NOT_A_PRESENTATION",
+      "notes": "A short visual positive control for hand over face, not a presentation scoring sample."
+    },
+    {
+      "clipId": "dance_hand_lesson",
+      "source": "https://commons.wikimedia.org/wiki/File:Double_hand_gestures_lesson_in_Bharatanatyam_dance_(2019).webm",
+      "evaluatedStartSec": 5,
+      "evaluatedEndSec": 60,
+      "manualReview": "1-second contact sheets, 5-59 seconds, reviewed before inference",
+      "faceCoverNegativeSampleTimesSec": "integer seconds 5 through 59, except 33 and 34 after high-resolution review",
+      "handStillPositiveIntervals": [[43, 51]],
+      "handStillInterpretation": "Wrists remain near a held crossed-hand pose; finger motion may continue",
+      "clearHandPositionTransitionsApproxSec": [17, 20, 23, 26, 29, 32, 35, 38, 42, 52, 57],
+      "handMotionCountStatus": "COARSE_LOWER_BOUND_11_POSITION_TRANSITIONS_NOT_EXACT_MOVE_STOP_LABELS",
+      "presentationStatus": "DANCE_HAND_LESSON_NOT_A_PRESENTATION",
+      "postInferenceReview": "At 33-34 seconds a high-resolution check showed hands partially cover the mouth. The original 1-second negative label was corrected after model output; this interval is excluded from independent occlusion accuracy claims.",
+      "notes": "Technical holdout for visible wrist motion. The 8/min presentation scoring rule is not validated by this genre."
+    },
+    {
+      "clipId": "ian_presentation",
+      "source": "https://commons.wikimedia.org/wiki/File:Ian_Wachtmeister_presentation_2014.webm",
+      "evaluatedStartSec": 0,
+      "evaluatedEndSec": 59,
+      "manualReview": "5-second contact sheet, reviewed before inference",
+      "handVisibilityStatus": "HANDS_OUT_OF_FRAME_THROUGHOUT_SAMPLED_CHECK",
+      "handStillLabelStatus": "UNOBSERVABLE",
+      "handMotionCountStatus": "UNOBSERVABLE",
+      "notes": "The close-up excludes both hands. This tests abstention, not hand-action accuracy."
+    }
+  ]
+}

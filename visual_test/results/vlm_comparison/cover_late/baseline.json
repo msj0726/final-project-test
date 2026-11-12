@@ -1,0 +1,106 @@
+{
+  "status": "OK",
+  "model": "YOLO11n-pose + YOLO5Face + YOLO11n-seg + MediaPipe Hands",
+  "device": "CPU",
+  "loadSeconds": 4.74232358300651,
+  "elapsedSeconds": 5.672108375001699,
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        27.0,
+        33.2
+      ]
+    ],
+    "bothWristsStillIntervals": [],
+    "handFaceCoverIntervals": [],
+    "nonFrontFacingIntervals": [],
+    "gazeUnobservableIntervals": [
+      [
+        27.0,
+        33.2
+      ]
+    ],
+    "completedHandMotionCount": 0,
+    "limitations": [
+      "Face cover output is geometric candidate, not confirmed occlusion",
+      "Hand motion counter is experimental"
+    ]
+  },
+  "originalSummary": {
+    "schemaVersion": "vision-observation-v4-experiment",
+    "observationConfigVersion": "vision-20261111-v4-nonfront5-eye-occlusion",
+    "sourceStartSec": 0,
+    "sourceEndSec": 35,
+    "sampleDurationSeconds": 35,
+    "isScoringReady": false,
+    "vision": {
+      "gaze": {
+        "observableSeconds": 1.8,
+        "frontFacingSeconds": 1.8,
+        "frontFacingRatio": 1.0,
+        "coverageRatio": 0.05142857142857143,
+        "method": "EXPERIMENTAL_5_POINT_FACE_GEOMETRY",
+        "nonFrontFacingEvents": []
+      },
+      "handObservableSeconds": 5.2,
+      "handStillSeconds": 0,
+      "bothWristsVisibleSeconds": 6.2,
+      "handCoverageRatio": 0.14857142857142858,
+      "gestureEvents": [],
+      "candidateEvents": [],
+      "interactionDiagnostics": {
+        "nearWristDetectionCount": 0,
+        "insufficientHistoryCount": 0,
+        "motionMismatchCount": 0,
+        "insufficientMotionCount": 0,
+        "comovingDetectionCount": 0,
+        "unit": "DETECTION_INSTANCES_NOT_EVENTS"
+      },
+      "unobservableIntervalsStatus": "GENERATED",
+      "unobservableIntervals": [
+        {
+          "criterionKey": "GAZE",
+          "startSec": 27.0,
+          "endSec": 33.2,
+          "reasonCode": "NO_ASSOCIATED_FACE"
+        },
+        {
+          "criterionKey": "HAND_STILLNESS",
+          "startSec": 27.0,
+          "endSec": 28.0,
+          "reasonCode": "TEMPORAL_WARMUP"
+        },
+        {
+          "criterionKey": "HAND_STILLNESS",
+          "startSec": 33.2,
+          "endSec": 35.0,
+          "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+        }
+      ],
+      "criterionStatus": {
+        "HAND_STILLNESS": "EVALUATED",
+        "FACE_OCCLUSION": "CANDIDATE_ONLY",
+        "UNRELATED_OBJECT_TOUCH": "NOT_EVALUATED"
+      }
+    },
+    "evidence": [],
+    "contextJudgments": [
+      {
+        "criterionKey": "UNRELATED_OBJECT_TOUCH",
+        "status": "NOT_RUN",
+        "verdict": null,
+        "reason": "LLM_NOT_EXECUTED",
+        "evidenceRefs": []
+      }
+    ],
+    "limitations": [
+      "점수 환산 보류; 이 결과는 루브릭 입력용 관찰값이며 최종 Report가 아님.",
+      "양손 정지는 손목 기준 5초; 손가락 움직임은 판정하지 않음.",
+      "카메라 정면은 얼굴 5점 기하의 추정이며 실제 눈동자 시선이 아님. 손·물건이 눈 영역과 겹치면 관찰 불가로 제외.",
+      "물건의 실제 얼굴 가림·접촉·발표 관련성은 확정하지 않음.",
+      "0.4초 물건 추적 ID만 유지하며 미검출 프레임은 보간하지 않음.",
+      "실험 임계값은 독립 정확도 검증 전; 미검출은 행동 부재가 아님.",
+      "손 특징점 외곽과 얼굴 박스의 2D 겹침은 실제 가림을 확정하지 않음."
+    ]
+  }
+}
