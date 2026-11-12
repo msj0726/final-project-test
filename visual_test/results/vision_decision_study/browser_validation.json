@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "javascriptErrors": [],
+  "jsonDownload": true,
+  "videoPlayback": {
+    "width": 960,
+    "duration": 10
+  },
+  "desktopAndMobileNoOverflow": true
+}

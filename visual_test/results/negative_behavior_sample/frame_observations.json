@@ -1,0 +1,5707 @@
+[
+  {
+    "second": 0.0,
+    "actualSecond": 0.0,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.14548128843307495,
+      0.30363109707832336
+    ],
+    "wristPoints": [
+      [
+        1058.615234375,
+        1044.9022216796875
+      ],
+      [
+        388.2270812988281,
+        888.2325439453125
+      ]
+    ],
+    "shoulderWidth": 873.2465602895812,
+    "objects": []
+  },
+  {
+    "second": 0.2,
+    "actualSecond": 0.2,
+    "hasSelectedBody": false,
+    "hasAssociatedFace": false,
+    "isCameraFacing": null,
+    "gazeReason": "NO_ASSOCIATED_FACE",
+    "wristConfidence": [
+      null,
+      null
+    ],
+    "wristPoints": [
+      null,
+      null
+    ],
+    "shoulderWidth": null,
+    "objects": [
+      {
+        "label": "chair",
+        "confidence": 0.2861728370189667,
+        "box": [
+          552.101318359375,
+          682.6585083007812,
+          695.9669799804688,
+          900.7312622070312
+        ],
+        "faceOverlapRatio": null
+      }
+    ]
+  },
+  {
+    "second": 0.4,
+    "actualSecond": 0.4,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.11696820706129074,
+      0.3926564157009125
+    ],
+    "wristPoints": [
+      [
+        1051.3621826171875,
+        1043.2139892578125
+      ],
+      [
+        302.6983337402344,
+        535.8341064453125
+      ]
+    ],
+    "shoulderWidth": 726.204868681321,
+    "objects": []
+  },
+  {
+    "second": 0.6,
+    "actualSecond": 0.6,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.05346338078379631,
+      0.15911242365837097
+    ],
+    "wristPoints": [
+      [
+        1090.308837890625,
+        1047.703125
+      ],
+      [
+        115.51524353027344,
+        1018.1411743164062
+      ]
+    ],
+    "shoulderWidth": 813.0620068006239,
+    "objects": []
+  },
+  {
+    "second": 0.8,
+    "actualSecond": 0.8,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.009515292011201382,
+      0.01040168572217226
+    ],
+    "wristPoints": [
+      [
+        1100.8519287109375,
+        1054.1485595703125
+      ],
+      [
+        486.3242492675781,
+        1058.8302001953125
+      ]
+    ],
+    "shoulderWidth": 751.8604971187148,
+    "objects": []
+  },
+  {
+    "second": 1.0,
+    "actualSecond": 1.0,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.009866011328995228,
+      0.01089974120259285
+    ],
+    "wristPoints": [
+      [
+        1106.533447265625,
+        1054.297607421875
+      ],
+      [
+        479.95159912109375,
+        1060.712890625
+      ]
+    ],
+    "shoulderWidth": 749.2838540183799,
+    "objects": []
+  },
+  {
+    "second": 1.2,
+    "actualSecond": 1.2,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.01012491900473833,
+      0.011052269488573074
+    ],
+    "wristPoints": [
+      [
+        1105.4349365234375,
+        1055.8656005859375
+      ],
+      [
+        479.74005126953125,
+        1063.308837890625
+      ]
+    ],
+    "shoulderWidth": 745.2192907135361,
+    "objects": []
+  },
+  {
+    "second": 1.4,
+    "actualSecond": 1.4,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.01020228210836649,
+      0.010395901277661324
+    ],
+    "wristPoints": [
+      [
+        1103.937744140625,
+        1052.8690185546875
+      ],
+      [
+        493.4922180175781,
+        1060.5948486328125
+      ]
+    ],
+    "shoulderWidth": 745.1520600083824,
+    "objects": []
+  },
+  {
+    "second": 1.6,
+    "actualSecond": 1.6,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.009946851991117,
+      0.010776827111840248
+    ],
+    "wristPoints": [
+      [
+        1106.723388671875,
+        1051.45263671875
+      ],
+      [
+        483.0748291015625,
+        1061.1123046875
+      ]
+    ],
+    "shoulderWidth": 747.6418304542913,
+    "objects": []
+  },
+  {
+    "second": 1.8,
+    "actualSecond": 1.8,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.008684647269546986,
+      0.008863883092999458
+    ],
+    "wristPoints": [
+      [
+        1093.60107421875,
+        1049.8060302734375
+      ],
+      [
+        514.2146606445312,
+        1063.3902587890625
+      ]
+    ],
+    "shoulderWidth": 757.0475873444256,
+    "objects": []
+  },
+  {
+    "second": 2.0,
+    "actualSecond": 2.0,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.14605170488357544,
+      0.22857147455215454
+    ],
+    "wristPoints": [
+      [
+        1032.962158203125,
+        964.0899047851562
+      ],
+      [
+        581.0119018554688,
+        813.6326293945312
+      ]
+    ],
+    "shoulderWidth": 720.1303032348175,
+    "objects": []
+  },
+  {
+    "second": 2.2,
+    "actualSecond": 2.2,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.1253904104232788,
+      0.293606698513031
+    ],
+    "wristPoints": [
+      [
+        1051.4451904296875,
+        1059.654052734375
+      ],
+      [
+        591.3732299804688,
+        790.7362060546875
+      ]
+    ],
+    "shoulderWidth": 774.4491250916283,
+    "objects": []
+  },
+  {
+    "second": 2.4,
+    "actualSecond": 2.4,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.18485800921916962,
+      0.32255983352661133
+    ],
+    "wristPoints": [
+      [
+        996.0693359375,
+        1048.5306396484375
+      ],
+      [
+        632.3856811523438,
+        827.0064697265625
+      ]
+    ],
+    "shoulderWidth": 756.7007035702508,
+    "objects": []
+  },
+  {
+    "second": 2.6,
+    "actualSecond": 2.6,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.291518896818161,
+      0.40528178215026855
+    ],
+    "wristPoints": [
+      [
+        809.5020751953125,
+        949.5113525390625
+      ],
+      [
+        710.1926879882812,
+        867.1937866210938
+      ]
+    ],
+    "shoulderWidth": 706.2945770282531,
+    "objects": []
+  },
+  {
+    "second": 2.8,
+    "actualSecond": 2.8,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.35551077127456665,
+      0.47843044996261597
+    ],
+    "wristPoints": [
+      [
+        835.9635620117188,
+        936.74462890625
+      ],
+      [
+        736.2901000976562,
+        848.5435791015625
+      ]
+    ],
+    "shoulderWidth": 665.9833924026841,
+    "objects": []
+  },
+  {
+    "second": 3.0,
+    "actualSecond": 3.0,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.09116864949464798,
+      0.19003646075725555
+    ],
+    "wristPoints": [
+      [
+        936.2206420898438,
+        1007.3422241210938
+      ],
+      [
+        686.2887573242188,
+        864.3565063476562
+      ]
+    ],
+    "shoulderWidth": 792.3415284567137,
+    "objects": []
+  },
+  {
+    "second": 3.2,
+    "actualSecond": 3.2,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.11090735346078873,
+      0.24057704210281372
+    ],
+    "wristPoints": [
+      [
+        930.3470458984375,
+        1007.8236694335938
+      ],
+      [
+        689.8810424804688,
+        851.4402465820312
+      ]
+    ],
+    "shoulderWidth": 772.1786397292634,
+    "objects": []
+  },
+  {
+    "second": 3.4,
+    "actualSecond": 3.4,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.3663281202316284,
+      0.47281473875045776
+    ],
+    "wristPoints": [
+      [
+        818.5194702148438,
+        908.2696533203125
+      ],
+      [
+        750.964111328125,
+        858.6550903320312
+      ]
+    ],
+    "shoulderWidth": 686.8463091148966,
+    "objects": []
+  },
+  {
+    "second": 3.6,
+    "actualSecond": 3.6,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.12792664766311646,
+      0.23780414462089539
+    ],
+    "wristPoints": [
+      [
+        941.1022338867188,
+        996.542236328125
+      ],
+      [
+        693.692626953125,
+        845.669677734375
+      ]
+    ],
+    "shoulderWidth": 766.2537321204688,
+    "objects": []
+  },
+  {
+    "second": 3.8,
+    "actualSecond": 3.8,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.13625475764274597,
+      0.2634229063987732
+    ],
+    "wristPoints": [
+      [
+        911.0921630859375,
+        994.4075927734375
+      ],
+      [
+        695.8118896484375,
+        845.6937255859375
+      ]
+    ],
+    "shoulderWidth": 765.558903384806,
+    "objects": []
+  },
+  {
+    "second": 4.0,
+    "actualSecond": 4.0,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.39405807852745056,
+      0.5237037539482117
+    ],
+    "wristPoints": [
+      [
+        806.1231079101562,
+        918.092041015625
+      ],
+      [
+        741.6213989257812,
+        854.6412353515625
+      ]
+    ],
+    "shoulderWidth": 688.3468386593017,
+    "objects": []
+  },
+  {
+    "second": 4.2,
+    "actualSecond": 4.2,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.13648691773414612,
+      0.27777165174484253
+    ],
+    "wristPoints": [
+      [
+        1049.6395263671875,
+        1070.43212890625
+      ],
+      [
+        653.0166625976562,
+        842.2532958984375
+      ]
+    ],
+    "shoulderWidth": 762.4309241756617,
+    "objects": []
+  },
+  {
+    "second": 4.4,
+    "actualSecond": 4.4,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.3157864212989807,
+      0.42692384123802185
+    ],
+    "wristPoints": [
+      [
+        826.9136962890625,
+        971.6489868164062
+      ],
+      [
+        706.6404418945312,
+        932.6436157226562
+      ]
+    ],
+    "shoulderWidth": 718.2695802453574,
+    "objects": []
+  },
+  {
+    "second": 4.6,
+    "actualSecond": 4.6,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.006214064545929432,
+      0.016256026923656464
+    ],
+    "wristPoints": [
+      [
+        1071.640625,
+        1080.0
+      ],
+      [
+        539.0160522460938,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 758.2135783790951,
+    "objects": []
+  },
+  {
+    "second": 4.8,
+    "actualSecond": 4.8,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.00968970824033022,
+      0.010889161378145218
+    ],
+    "wristPoints": [
+      [
+        1104.0286865234375,
+        1050.2938232421875
+      ],
+      [
+        499.6260070800781,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 759.0178794369493,
+    "objects": [
+      {
+        "label": "chair",
+        "confidence": 0.2521616220474243,
+        "box": [
+          559.2277221679688,
+          682.0294799804688,
+          697.046875,
+          901.6505126953125
+        ],
+        "faceOverlapRatio": 0.027503267652764313
+      }
+    ]
+  },
+  {
+    "second": 5.0,
+    "actualSecond": 5.0,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.009751812554895878,
+      0.010177221149206161
+    ],
+    "wristPoints": [
+      [
+        1104.6689453125,
+        1053.5347900390625
+      ],
+      [
+        507.1926574707031,
+        1078.0908203125
+      ]
+    ],
+    "shoulderWidth": 767.0621887353806,
+    "objects": [
+      {
+        "label": "chair",
+        "confidence": 0.2639908492565155,
+        "box": [
+          903.0034790039062,
+          697.0337524414062,
+          984.6547241210938,
+          843.2080078125
+        ],
+        "faceOverlapRatio": 0.021607949989545232
+      }
+    ]
+  },
+  {
+    "second": 5.2,
+    "actualSecond": 5.2,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.00993378832936287,
+      0.010158974677324295
+    ],
+    "wristPoints": [
+      [
+        1111.0418701171875,
+        1055.9407958984375
+      ],
+      [
+        495.9777526855469,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 763.5295070018586,
+    "objects": []
+  },
+  {
+    "second": 5.4,
+    "actualSecond": 5.4,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.00866495631635189,
+      0.00971002597361803
+    ],
+    "wristPoints": [
+      [
+        1100.5760498046875,
+        1051.3406982421875
+      ],
+      [
+        497.35015869140625,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 766.991047224849,
+    "objects": []
+  },
+  {
+    "second": 5.6,
+    "actualSecond": 5.6,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.00990153569728136,
+      0.011313561350107193
+    ],
+    "wristPoints": [
+      [
+        1106.7725830078125,
+        1056.75341796875
+      ],
+      [
+        499.2643127441406,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 764.5614451575021,
+    "objects": []
+  },
+  {
+    "second": 5.8,
+    "actualSecond": 5.8,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.006305072922259569,
+      0.01863078773021698
+    ],
+    "wristPoints": [
+      [
+        1130.102294921875,
+        1080.0
+      ],
+      [
+        515.957763671875,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 766.803850910388,
+    "objects": []
+  },
+  {
+    "second": 6.0,
+    "actualSecond": 6.0,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.006311346311122179,
+      0.019213903695344925
+    ],
+    "wristPoints": [
+      [
+        1133.835205078125,
+        1080.0
+      ],
+      [
+        512.8302612304688,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 764.0001153778521,
+    "objects": []
+  },
+  {
+    "second": 6.2,
+    "actualSecond": 6.2,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.009728857316076756,
+      0.009937657974660397
+    ],
+    "wristPoints": [
+      [
+        1070.3060302734375,
+        1050.6326904296875
+      ],
+      [
+        543.6962280273438,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 766.8305184323616,
+    "objects": []
+  },
+  {
+    "second": 6.4,
+    "actualSecond": 6.4,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.04735739529132843,
+      0.06065678223967552
+    ],
+    "wristPoints": [
+      [
+        892.655029296875,
+        1035.1624755859375
+      ],
+      [
+        694.83154296875,
+        953.9301147460938
+      ]
+    ],
+    "shoulderWidth": 772.5806607047327,
+    "objects": []
+  },
+  {
+    "second": 6.6,
+    "actualSecond": 6.6,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.04079992324113846,
+      0.04439753293991089
+    ],
+    "wristPoints": [
+      [
+        912.4580688476562,
+        999.0336303710938
+      ],
+      [
+        696.6327514648438,
+        893.6061401367188
+      ]
+    ],
+    "shoulderWidth": 746.1371533307164,
+    "objects": []
+  },
+  {
+    "second": 6.8,
+    "actualSecond": 6.8,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.03069923259317875,
+      0.022155718877911568
+    ],
+    "wristPoints": [
+      [
+        1011.095703125,
+        1039.5771484375
+      ],
+      [
+        649.174072265625,
+        922.2005004882812
+      ]
+    ],
+    "shoulderWidth": 746.8899556323775,
+    "objects": []
+  },
+  {
+    "second": 7.0,
+    "actualSecond": 7.0,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.0397757962346077,
+      0.04350413382053375
+    ],
+    "wristPoints": [
+      [
+        978.3551025390625,
+        1023.2028198242188
+      ],
+      [
+        695.1697998046875,
+        911.2978515625
+      ]
+    ],
+    "shoulderWidth": 754.7054415654617,
+    "objects": []
+  },
+  {
+    "second": 7.2,
+    "actualSecond": 7.2,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.04021059721708298,
+      0.04805336892604828
+    ],
+    "wristPoints": [
+      [
+        955.7297973632812,
+        1016.37744140625
+      ],
+      [
+        714.7693481445312,
+        904.2201538085938
+      ]
+    ],
+    "shoulderWidth": 752.7443218852521,
+    "objects": []
+  },
+  {
+    "second": 7.4,
+    "actualSecond": 7.402,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.04431834816932678,
+      0.04823021590709686
+    ],
+    "wristPoints": [
+      [
+        996.8147583007812,
+        1037.2091064453125
+      ],
+      [
+        708.3402709960938,
+        912.7348022460938
+      ]
+    ],
+    "shoulderWidth": 746.0578411268755,
+    "objects": []
+  },
+  {
+    "second": 7.6,
+    "actualSecond": 7.602,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": false,
+    "isCameraFacing": null,
+    "gazeReason": "NO_ASSOCIATED_FACE",
+    "wristConfidence": [
+      0.038767680525779724,
+      0.03786506503820419
+    ],
+    "wristPoints": [
+      [
+        1026.3743896484375,
+        1050.1298828125
+      ],
+      [
+        694.488525390625,
+        909.114013671875
+      ]
+    ],
+    "shoulderWidth": 745.3385836432202,
+    "objects": []
+  },
+  {
+    "second": 7.8,
+    "actualSecond": 7.802,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.04124889895319939,
+      0.0397813580930233
+    ],
+    "wristPoints": [
+      [
+        1028.6263427734375,
+        1056.5645751953125
+      ],
+      [
+        694.1985473632812,
+        912.2392578125
+      ]
+    ],
+    "shoulderWidth": 749.7830996621204,
+    "objects": []
+  },
+  {
+    "second": 8.0,
+    "actualSecond": 8.002,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.048831891268491745,
+      0.0457070991396904
+    ],
+    "wristPoints": [
+      [
+        1032.3446044921875,
+        1055.7918701171875
+      ],
+      [
+        700.1503295898438,
+        907.3933715820312
+      ]
+    ],
+    "shoulderWidth": 743.7912255200825,
+    "objects": []
+  },
+  {
+    "second": 8.2,
+    "actualSecond": 8.202,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.052414558827877045,
+      0.05095725506544113
+    ],
+    "wristPoints": [
+      [
+        1010.263427734375,
+        1045.239990234375
+      ],
+      [
+        707.3264770507812,
+        903.2946166992188
+      ]
+    ],
+    "shoulderWidth": 744.9528049726383,
+    "objects": []
+  },
+  {
+    "second": 8.4,
+    "actualSecond": 8.402,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.05127299949526787,
+      0.050023503601551056
+    ],
+    "wristPoints": [
+      [
+        997.3363037109375,
+        1038.28955078125
+      ],
+      [
+        711.1370239257812,
+        896.3562622070312
+      ]
+    ],
+    "shoulderWidth": 746.8744958145749,
+    "objects": []
+  },
+  {
+    "second": 8.6,
+    "actualSecond": 8.602,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": false,
+    "isCameraFacing": null,
+    "gazeReason": "NO_ASSOCIATED_FACE",
+    "wristConfidence": [
+      0.04198243096470833,
+      0.0381421335041523
+    ],
+    "wristPoints": [
+      [
+        1015.8641967773438,
+        1043.6815185546875
+      ],
+      [
+        703.6631469726562,
+        901.9876708984375
+      ]
+    ],
+    "shoulderWidth": 752.7750748842367,
+    "objects": []
+  },
+  {
+    "second": 8.8,
+    "actualSecond": 8.802,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": false,
+    "isCameraFacing": null,
+    "gazeReason": "NO_ASSOCIATED_FACE",
+    "wristConfidence": [
+      0.04085742309689522,
+      0.03490935638546944
+    ],
+    "wristPoints": [
+      [
+        1036.7578125,
+        1048.57470703125
+      ],
+      [
+        701.1346435546875,
+        898.4351196289062
+      ]
+    ],
+    "shoulderWidth": 745.3796371785402,
+    "objects": []
+  },
+  {
+    "second": 9.0,
+    "actualSecond": 9.002,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.03622008115053177,
+      0.03490988910198212
+    ],
+    "wristPoints": [
+      [
+        1036.1796875,
+        1052.504150390625
+      ],
+      [
+        695.840087890625,
+        898.5595703125
+      ]
+    ],
+    "shoulderWidth": 742.6141525489797,
+    "objects": []
+  },
+  {
+    "second": 9.2,
+    "actualSecond": 9.202,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.041459325700998306,
+      0.0417478121817112
+    ],
+    "wristPoints": [
+      [
+        1025.03466796875,
+        1047.434326171875
+      ],
+      [
+        707.1017456054688,
+        899.3394165039062
+      ]
+    ],
+    "shoulderWidth": 739.9072952923717,
+    "objects": []
+  },
+  {
+    "second": 9.4,
+    "actualSecond": 9.402,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.031605374068021774,
+      0.038540180772542953
+    ],
+    "wristPoints": [
+      [
+        1005.9754028320312,
+        1044.9620361328125
+      ],
+      [
+        706.1867065429688,
+        914.1949462890625
+      ]
+    ],
+    "shoulderWidth": 758.2579061766061,
+    "objects": []
+  },
+  {
+    "second": 9.6,
+    "actualSecond": 9.602,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.05242442339658737,
+      0.09562519937753677
+    ],
+    "wristPoints": [
+      [
+        935.1737060546875,
+        1066.122802734375
+      ],
+      [
+        706.4755249023438,
+        1013.9229125976562
+      ]
+    ],
+    "shoulderWidth": 757.2066773439072,
+    "objects": []
+  },
+  {
+    "second": 9.8,
+    "actualSecond": 9.802,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.006181074772030115,
+      0.01552868913859129
+    ],
+    "wristPoints": [
+      [
+        1049.66845703125,
+        1080.0
+      ],
+      [
+        567.8991088867188,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 785.2578170916759,
+    "objects": []
+  },
+  {
+    "second": 10.0,
+    "actualSecond": 10.002,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.004226719960570335,
+      0.01324359979480505
+    ],
+    "wristPoints": [
+      [
+        1095.5797119140625,
+        1080.0
+      ],
+      [
+        508.6156311035156,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 779.9584115520772,
+    "objects": []
+  },
+  {
+    "second": 10.2,
+    "actualSecond": 10.202,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.004629792645573616,
+      0.014889477752149105
+    ],
+    "wristPoints": [
+      [
+        1081.85205078125,
+        1080.0
+      ],
+      [
+        501.6599426269531,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 770.1506487048719,
+    "objects": []
+  },
+  {
+    "second": 10.4,
+    "actualSecond": 10.402,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.008050426840782166,
+      0.009542182087898254
+    ],
+    "wristPoints": [
+      [
+        1077.2540283203125,
+        1060.1993408203125
+      ],
+      [
+        493.6048583984375,
+        1079.4027099609375
+      ]
+    ],
+    "shoulderWidth": 772.8806368753404,
+    "objects": [
+      {
+        "label": "chair",
+        "confidence": 0.27841296792030334,
+        "box": [
+          900.0851440429688,
+          691.4375,
+          988.4102172851562,
+          841.7208862304688
+        ],
+        "faceOverlapRatio": 0.018355198325300467
+      }
+    ]
+  },
+  {
+    "second": 10.6,
+    "actualSecond": 10.602,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.007462748792022467,
+      0.00840237457305193
+    ],
+    "wristPoints": [
+      [
+        1081.2701416015625,
+        1063.30517578125
+      ],
+      [
+        493.2722473144531,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 780.4442996087053,
+    "objects": [
+      {
+        "label": "chair",
+        "confidence": 0.28759947419166565,
+        "box": [
+          902.1856079101562,
+          691.6354370117188,
+          988.7681274414062,
+          841.0987548828125
+        ],
+        "faceOverlapRatio": 0.01832755258111298
+      }
+    ]
+  },
+  {
+    "second": 10.8,
+    "actualSecond": 10.802,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.004559497348964214,
+      0.013457206077873707
+    ],
+    "wristPoints": [
+      [
+        1081.458984375,
+        1080.0
+      ],
+      [
+        510.11810302734375,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 775.8522556486898,
+    "objects": [
+      {
+        "label": "chair",
+        "confidence": 0.25421440601348877,
+        "box": [
+          900.2448120117188,
+          691.8267211914062,
+          988.3905639648438,
+          840.3572998046875
+        ],
+        "faceOverlapRatio": 0.01644618806636867
+      }
+    ]
+  },
+  {
+    "second": 11.0,
+    "actualSecond": 11.002,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.00432977918535471,
+      0.012065107934176922
+    ],
+    "wristPoints": [
+      [
+        1067.434814453125,
+        1080.0
+      ],
+      [
+        526.8912353515625,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 777.4495637308154,
+    "objects": []
+  },
+  {
+    "second": 11.2,
+    "actualSecond": 11.202,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.005268271546810865,
+      0.012962599284946918
+    ],
+    "wristPoints": [
+      [
+        1108.554443359375,
+        1080.0
+      ],
+      [
+        538.3016357421875,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 770.8160024326447,
+    "objects": []
+  },
+  {
+    "second": 11.4,
+    "actualSecond": 11.402,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.006534251384437084,
+      0.013063669204711914
+    ],
+    "wristPoints": [
+      [
+        1075.39404296875,
+        1080.0
+      ],
+      [
+        606.0589599609375,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 809.7148702742082,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.7173141241073608,
+        "box": [
+          772.728759765625,
+          729.5272827148438,
+          1051.0433349609375,
+          1080.0
+        ],
+        "faceOverlapRatio": 0.05519071235326801
+      }
+    ]
+  },
+  {
+    "second": 11.6,
+    "actualSecond": 11.602,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.07245136797428131,
+      0.12131502479314804
+    ],
+    "wristPoints": [
+      [
+        1002.3113403320312,
+        1080.0
+      ],
+      [
+        586.09716796875,
+        1022.89453125
+      ]
+    ],
+    "shoulderWidth": 719.7305322018184,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.45545151829719543,
+        "box": [
+          691.9793701171875,
+          447.34259033203125,
+          920.9274291992188,
+          913.6608276367188
+        ],
+        "faceOverlapRatio": 0.5295733274682055
+      }
+    ]
+  },
+  {
+    "second": 11.8,
+    "actualSecond": 11.802,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.05075237900018692,
+      0.09015613049268723
+    ],
+    "wristPoints": [
+      [
+        1061.7501220703125,
+        1080.0
+      ],
+      [
+        574.4140625,
+        1008.0276489257812
+      ]
+    ],
+    "shoulderWidth": 773.9769792623513,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.46403780579566956,
+        "box": [
+          649.3564453125,
+          378.2336120605469,
+          877.3803100585938,
+          810.88525390625
+        ],
+        "faceOverlapRatio": 0.53296498283208
+      }
+    ]
+  },
+  {
+    "second": 12.0,
+    "actualSecond": 12.002,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": false,
+    "isCameraFacing": null,
+    "gazeReason": "NO_ASSOCIATED_FACE",
+    "wristConfidence": [
+      0.06051280349493027,
+      0.10628648102283478
+    ],
+    "wristPoints": [
+      [
+        1066.0538330078125,
+        1080.0
+      ],
+      [
+        578.898193359375,
+        1010.6898193359375
+      ]
+    ],
+    "shoulderWidth": 761.0696027509391,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.44582468271255493,
+        "box": [
+          679.5402221679688,
+          398.7151794433594,
+          893.8212280273438,
+          825.1350708007812
+        ],
+        "faceOverlapRatio": null
+      }
+    ]
+  },
+  {
+    "second": 12.2,
+    "actualSecond": 12.202,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": false,
+    "isCameraFacing": null,
+    "gazeReason": "NO_ASSOCIATED_FACE",
+    "wristConfidence": [
+      0.0744478702545166,
+      0.1253664344549179
+    ],
+    "wristPoints": [
+      [
+        1060.0108642578125,
+        1080.0
+      ],
+      [
+        582.80029296875,
+        1015.1940307617188
+      ]
+    ],
+    "shoulderWidth": 764.4486545257065,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.4054235816001892,
+        "box": [
+          691.5670166015625,
+          403.76702880859375,
+          900.7974853515625,
+          817.6869506835938
+        ],
+        "faceOverlapRatio": null
+      }
+    ]
+  },
+  {
+    "second": 12.4,
+    "actualSecond": 12.402,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": false,
+    "isCameraFacing": null,
+    "gazeReason": "NO_ASSOCIATED_FACE",
+    "wristConfidence": [
+      0.06994526833295822,
+      0.12088492512702942
+    ],
+    "wristPoints": [
+      [
+        1052.2431640625,
+        1080.0
+      ],
+      [
+        591.7758178710938,
+        1009.50146484375
+      ]
+    ],
+    "shoulderWidth": 769.561394769262,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.4538462460041046,
+        "box": [
+          686.0923461914062,
+          405.7066650390625,
+          898.6196899414062,
+          826.3233642578125
+        ],
+        "faceOverlapRatio": null
+      }
+    ]
+  },
+  {
+    "second": 12.6,
+    "actualSecond": 12.602,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.0694139152765274,
+      0.1159992590546608
+    ],
+    "wristPoints": [
+      [
+        1052.2032470703125,
+        1080.0
+      ],
+      [
+        590.3079223632812,
+        1017.1550903320312
+      ]
+    ],
+    "shoulderWidth": 764.9476911793968,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.4589305520057678,
+        "box": [
+          690.8704833984375,
+          408.7698974609375,
+          898.0476684570312,
+          821.822265625
+        ],
+        "faceOverlapRatio": 0.4654395436631423
+      }
+    ]
+  },
+  {
+    "second": 12.8,
+    "actualSecond": 12.802,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.06735747307538986,
+      0.11593488603830338
+    ],
+    "wristPoints": [
+      [
+        1046.5452880859375,
+        1080.0
+      ],
+      [
+        598.8253784179688,
+        1005.7191162109375
+      ]
+    ],
+    "shoulderWidth": 768.1063667928867,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.4572691023349762,
+        "box": [
+          691.3712768554688,
+          406.0907287597656,
+          898.0559692382812,
+          816.1210327148438
+        ],
+        "faceOverlapRatio": 0.4525233732623908
+      }
+    ]
+  },
+  {
+    "second": 13.0,
+    "actualSecond": 13.002,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.06555850803852081,
+      0.11049343645572662
+    ],
+    "wristPoints": [
+      [
+        1046.8363037109375,
+        1080.0
+      ],
+      [
+        598.366455078125,
+        1009.40234375
+      ]
+    ],
+    "shoulderWidth": 766.617992766338,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.4842177629470825,
+        "box": [
+          690.6913452148438,
+          409.7177734375,
+          901.59619140625,
+          826.2700805664062
+        ],
+        "faceOverlapRatio": 0.44408452760512107
+      }
+    ]
+  },
+  {
+    "second": 13.2,
+    "actualSecond": 13.202,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.07686690986156464,
+      0.12280711531639099
+    ],
+    "wristPoints": [
+      [
+        1047.6353759765625,
+        1080.0
+      ],
+      [
+        599.732177734375,
+        1011.439208984375
+      ]
+    ],
+    "shoulderWidth": 759.9015000008148,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.5283154249191284,
+        "box": [
+          689.7029418945312,
+          410.1456298828125,
+          900.4315185546875,
+          826.9630126953125
+        ],
+        "faceOverlapRatio": 0.4468065203317604
+      }
+    ]
+  },
+  {
+    "second": 13.4,
+    "actualSecond": 13.402,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.07261348515748978,
+      0.1186089813709259
+    ],
+    "wristPoints": [
+      [
+        1064.6444091796875,
+        1080.0
+      ],
+      [
+        601.282470703125,
+        1009.3238525390625
+      ]
+    ],
+    "shoulderWidth": 764.1494866917344,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.49134358763694763,
+        "box": [
+          691.4927368164062,
+          411.097412109375,
+          897.912109375,
+          821.37744140625
+        ],
+        "faceOverlapRatio": 0.44475200703378254
+      }
+    ]
+  },
+  {
+    "second": 13.6,
+    "actualSecond": 13.602,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.06791768968105316,
+      0.1081642210483551
+    ],
+    "wristPoints": [
+      [
+        1042.5653076171875,
+        1080.0
+      ],
+      [
+        604.0726928710938,
+        1009.1697387695312
+      ]
+    ],
+    "shoulderWidth": 763.6035565332401,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.5341064929962158,
+        "box": [
+          691.80126953125,
+          410.24365234375,
+          896.5060424804688,
+          819.7590942382812
+        ],
+        "faceOverlapRatio": 0.43417193122686343
+      }
+    ]
+  },
+  {
+    "second": 13.8,
+    "actualSecond": 13.802,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.06683019548654556,
+      0.11257345229387283
+    ],
+    "wristPoints": [
+      [
+        1040.88818359375,
+        1080.0
+      ],
+      [
+        606.396240234375,
+        1007.063720703125
+      ]
+    ],
+    "shoulderWidth": 766.703022043369,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.5480983257293701,
+        "box": [
+          693.1283569335938,
+          413.0440979003906,
+          899.0887451171875,
+          819.7109375
+        ],
+        "faceOverlapRatio": 0.43613400430647165
+      }
+    ]
+  },
+  {
+    "second": 14.0,
+    "actualSecond": 14.002,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.06641298532485962,
+      0.11503464728593826
+    ],
+    "wristPoints": [
+      [
+        1041.564697265625,
+        1080.0
+      ],
+      [
+        603.33984375,
+        1009.7505493164062
+      ]
+    ],
+    "shoulderWidth": 761.964043446227,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.5755796432495117,
+        "box": [
+          693.3364868164062,
+          411.7409362792969,
+          899.3917236328125,
+          817.4358520507812
+        ],
+        "faceOverlapRatio": 0.4479385905866292
+      }
+    ]
+  },
+  {
+    "second": 14.2,
+    "actualSecond": 14.202,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.07164609432220459,
+      0.11410593241453171
+    ],
+    "wristPoints": [
+      [
+        1056.9305419921875,
+        1080.0
+      ],
+      [
+        605.6243286132812,
+        1008.11083984375
+      ]
+    ],
+    "shoulderWidth": 762.8119390644968,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.484719842672348,
+        "box": [
+          697.5403442382812,
+          413.686279296875,
+          903.4033813476562,
+          818.92919921875
+        ],
+        "faceOverlapRatio": 0.4559179426479096
+      }
+    ]
+  },
+  {
+    "second": 14.4,
+    "actualSecond": 14.402,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.07232087850570679,
+      0.12281520664691925
+    ],
+    "wristPoints": [
+      [
+        1054.2352294921875,
+        1080.0
+      ],
+      [
+        601.5587768554688,
+        1008.8170776367188
+      ]
+    ],
+    "shoulderWidth": 762.347806984984,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.4952505826950073,
+        "box": [
+          695.9056396484375,
+          407.9944152832031,
+          902.7088012695312,
+          813.6096801757812
+        ],
+        "faceOverlapRatio": 0.45618288396495765
+      }
+    ]
+  },
+  {
+    "second": 14.6,
+    "actualSecond": 14.602,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.07649840414524078,
+      0.11916232109069824
+    ],
+    "wristPoints": [
+      [
+        1044.6480712890625,
+        1080.0
+      ],
+      [
+        605.9740600585938,
+        1004.1910400390625
+      ]
+    ],
+    "shoulderWidth": 764.5519604576531,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.5390211343765259,
+        "box": [
+          696.7841796875,
+          411.5450134277344,
+          903.1956787109375,
+          818.5888061523438
+        ],
+        "faceOverlapRatio": 0.4624593837511746
+      }
+    ]
+  },
+  {
+    "second": 14.8,
+    "actualSecond": 14.802,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.0709519311785698,
+      0.1238083764910698
+    ],
+    "wristPoints": [
+      [
+        1041.378662109375,
+        1080.0
+      ],
+      [
+        608.123779296875,
+        1006.182373046875
+      ]
+    ],
+    "shoulderWidth": 762.4090095304089,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.5214440226554871,
+        "box": [
+          696.1325073242188,
+          412.07916259765625,
+          902.9312133789062,
+          820.4339599609375
+        ],
+        "faceOverlapRatio": 0.455825978167924
+      }
+    ]
+  },
+  {
+    "second": 15.0,
+    "actualSecond": 15.002,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.07355133444070816,
+      0.11925097554922104
+    ],
+    "wristPoints": [
+      [
+        1059.417724609375,
+        1080.0
+      ],
+      [
+        607.530029296875,
+        1008.520263671875
+      ]
+    ],
+    "shoulderWidth": 764.0885763096471,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.5608739256858826,
+        "box": [
+          693.3446655273438,
+          411.9088134765625,
+          901.3137817382812,
+          819.48193359375
+        ],
+        "faceOverlapRatio": 0.4509917243598688
+      }
+    ]
+  },
+  {
+    "second": 15.2,
+    "actualSecond": 15.202,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.07674665749073029,
+      0.11568072438240051
+    ],
+    "wristPoints": [
+      [
+        1075.353759765625,
+        1080.0
+      ],
+      [
+        609.3236083984375,
+        1019.360107421875
+      ]
+    ],
+    "shoulderWidth": 748.5903104903736,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.5010379552841187,
+        "box": [
+          700.1928100585938,
+          418.0958251953125,
+          905.7836303710938,
+          825.125732421875
+        ],
+        "faceOverlapRatio": 0.44714675820373695
+      }
+    ]
+  },
+  {
+    "second": 15.4,
+    "actualSecond": 15.402,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.06987497955560684,
+      0.10597961395978928
+    ],
+    "wristPoints": [
+      [
+        1080.1912841796875,
+        1080.0
+      ],
+      [
+        609.1303100585938,
+        1023.2240600585938
+      ]
+    ],
+    "shoulderWidth": 751.3415816459996,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.5508028268814087,
+        "box": [
+          698.4208984375,
+          419.10986328125,
+          905.0693969726562,
+          825.7208862304688
+        ],
+        "faceOverlapRatio": 0.4500631580452264
+      }
+    ]
+  },
+  {
+    "second": 15.6,
+    "actualSecond": 15.602,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.08780128508806229,
+      0.13968443870544434
+    ],
+    "wristPoints": [
+      [
+        1049.0345458984375,
+        1080.0
+      ],
+      [
+        632.2759399414062,
+        1021.7348022460938
+      ]
+    ],
+    "shoulderWidth": 739.8641340046096,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.5906761884689331,
+        "box": [
+          701.2623901367188,
+          422.2391357421875,
+          909.8526000976562,
+          834.16259765625
+        ],
+        "faceOverlapRatio": 0.4812310998713969
+      }
+    ]
+  },
+  {
+    "second": 15.8,
+    "actualSecond": 15.802,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.0852140337228775,
+      0.1484871655702591
+    ],
+    "wristPoints": [
+      [
+        1071.8050537109375,
+        1080.0
+      ],
+      [
+        594.439453125,
+        1019.2576904296875
+      ]
+    ],
+    "shoulderWidth": 750.873354276333,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.6233440041542053,
+        "box": [
+          680.1906127929688,
+          418.0082702636719,
+          891.2131958007812,
+          834.5958862304688
+        ],
+        "faceOverlapRatio": 0.4548390176586035
+      }
+    ]
+  },
+  {
+    "second": 16.0,
+    "actualSecond": 16.002,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.0840943232178688,
+      0.16990509629249573
+    ],
+    "wristPoints": [
+      [
+        1067.8712158203125,
+        1080.0
+      ],
+      [
+        453.9867248535156,
+        1021.712890625
+      ]
+    ],
+    "shoulderWidth": 711.6700009324646,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.832455575466156,
+        "box": [
+          573.8629760742188,
+          426.8726806640625,
+          787.6986083984375,
+          860.7704467773438
+        ],
+        "faceOverlapRatio": 0.357071707542049
+      }
+    ]
+  },
+  {
+    "second": 16.2,
+    "actualSecond": 16.202,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.04952453449368477,
+      0.1535196602344513
+    ],
+    "wristPoints": [
+      [
+        1074.8909912109375,
+        1063.374267578125
+      ],
+      [
+        196.74034118652344,
+        1006.8009643554688
+      ]
+    ],
+    "shoulderWidth": 787.7886764462041,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.8723779320716858,
+        "box": [
+          221.29595947265625,
+          410.69427490234375,
+          470.39776611328125,
+          829.4456787109375
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 16.4,
+    "actualSecond": 16.402,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.007902942597866058,
+      0.008562284521758556
+    ],
+    "wristPoints": [
+      [
+        1083.4659423828125,
+        1057.460693359375
+      ],
+      [
+        515.7890014648438,
+        1078.5360107421875
+      ]
+    ],
+    "shoulderWidth": 763.3014338021524,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.5371043682098389,
+        "box": [
+          0.32901692390441895,
+          619.3277587890625,
+          104.94091796875,
+          838.1775512695312
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 16.6,
+    "actualSecond": 16.602,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.0049814400263130665,
+      0.013171292841434479
+    ],
+    "wristPoints": [
+      [
+        1122.935546875,
+        1080.0
+      ],
+      [
+        560.27783203125,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 754.2723554979594,
+    "objects": []
+  },
+  {
+    "second": 16.8,
+    "actualSecond": 16.802,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.005205144174396992,
+      0.01396983116865158
+    ],
+    "wristPoints": [
+      [
+        1125.5484619140625,
+        1080.0
+      ],
+      [
+        551.7459716796875,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 752.9195069644707,
+    "objects": []
+  },
+  {
+    "second": 17.0,
+    "actualSecond": 17.002,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.005169927608221769,
+      0.01116497814655304
+    ],
+    "wristPoints": [
+      [
+        1115.747314453125,
+        1080.0
+      ],
+      [
+        534.5018920898438,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 760.4367286949204,
+    "objects": []
+  },
+  {
+    "second": 17.2,
+    "actualSecond": 17.202,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.005102156195789576,
+      0.012175365351140499
+    ],
+    "wristPoints": [
+      [
+        1101.351318359375,
+        1080.0
+      ],
+      [
+        485.73553466796875,
+        1046.9862060546875
+      ]
+    ],
+    "shoulderWidth": 732.5277890553747,
+    "objects": []
+  },
+  {
+    "second": 17.4,
+    "actualSecond": 17.402,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.009299696423113346,
+      0.00848440919071436
+    ],
+    "wristPoints": [
+      [
+        1113.95556640625,
+        1080.0
+      ],
+      [
+        532.3104248046875,
+        1068.7967529296875
+      ]
+    ],
+    "shoulderWidth": 741.1618582084192,
+    "objects": []
+  },
+  {
+    "second": 17.6,
+    "actualSecond": 17.602,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.006480291485786438,
+      0.010520550422370434
+    ],
+    "wristPoints": [
+      [
+        1140.3880615234375,
+        1080.0
+      ],
+      [
+        581.65234375,
+        1048.531982421875
+      ]
+    ],
+    "shoulderWidth": 736.6398737401835,
+    "objects": []
+  },
+  {
+    "second": 17.8,
+    "actualSecond": 17.802,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.006004753988236189,
+      0.009388687089085579
+    ],
+    "wristPoints": [
+      [
+        1140.6077880859375,
+        1080.0
+      ],
+      [
+        613.6074829101562,
+        1064.21240234375
+      ]
+    ],
+    "shoulderWidth": 754.0254325616326,
+    "objects": []
+  },
+  {
+    "second": 18.0,
+    "actualSecond": 18.002,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.006095952354371548,
+      0.010187957435846329
+    ],
+    "wristPoints": [
+      [
+        1151.64453125,
+        1080.0
+      ],
+      [
+        641.238037109375,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 789.205225255747,
+    "objects": []
+  },
+  {
+    "second": 18.2,
+    "actualSecond": 18.202,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.012449079193174839,
+      0.014226899482309818
+    ],
+    "wristPoints": [
+      [
+        1141.68408203125,
+        1032.8115234375
+      ],
+      [
+        678.9275512695312,
+        1019.7346801757812
+      ]
+    ],
+    "shoulderWidth": 810.7651843543812,
+    "objects": []
+  },
+  {
+    "second": 18.4,
+    "actualSecond": 18.402,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.009284749627113342,
+      0.015246625058352947
+    ],
+    "wristPoints": [
+      [
+        1164.2900390625,
+        1080.0
+      ],
+      [
+        573.36279296875,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 845.5253257506495,
+    "objects": []
+  },
+  {
+    "second": 18.6,
+    "actualSecond": 18.602,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.013654639013111591,
+      0.018346548080444336
+    ],
+    "wristPoints": [
+      [
+        1171.20556640625,
+        1080.0
+      ],
+      [
+        527.501708984375,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 823.8803477269669,
+    "objects": []
+  },
+  {
+    "second": 18.8,
+    "actualSecond": 18.802,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.014222385361790657,
+      0.02015070989727974
+    ],
+    "wristPoints": [
+      [
+        1178.30224609375,
+        1080.0
+      ],
+      [
+        504.206787109375,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 818.6803770237622,
+    "objects": []
+  },
+  {
+    "second": 19.0,
+    "actualSecond": 19.002,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.014004429802298546,
+      0.015716472640633583
+    ],
+    "wristPoints": [
+      [
+        1120.0596923828125,
+        1032.897216796875
+      ],
+      [
+        572.0346069335938,
+        1019.5120239257812
+      ]
+    ],
+    "shoulderWidth": 788.3141475921115,
+    "objects": []
+  },
+  {
+    "second": 19.2,
+    "actualSecond": 19.202,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.012519481591880322,
+      0.014232203364372253
+    ],
+    "wristPoints": [
+      [
+        1106.6534423828125,
+        1048.0618896484375
+      ],
+      [
+        571.9185791015625,
+        1005.964111328125
+      ]
+    ],
+    "shoulderWidth": 824.3007319400231,
+    "objects": []
+  },
+  {
+    "second": 19.4,
+    "actualSecond": 19.402,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.006631157360970974,
+      0.01213532593101263
+    ],
+    "wristPoints": [
+      [
+        1125.6876220703125,
+        1058.0540771484375
+      ],
+      [
+        570.8307495117188,
+        1013.4638061523438
+      ]
+    ],
+    "shoulderWidth": 845.3638347553756,
+    "objects": []
+  },
+  {
+    "second": 19.6,
+    "actualSecond": 19.602,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.007008426357060671,
+      0.012535721063613892
+    ],
+    "wristPoints": [
+      [
+        1143.6881103515625,
+        1054.70361328125
+      ],
+      [
+        569.199462890625,
+        1007.5722045898438
+      ]
+    ],
+    "shoulderWidth": 831.1042370786612,
+    "objects": []
+  },
+  {
+    "second": 19.8,
+    "actualSecond": 19.802,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.01139414869248867,
+      0.01461258064955473
+    ],
+    "wristPoints": [
+      [
+        1153.5635986328125,
+        1050.1456298828125
+      ],
+      [
+        610.5439453125,
+        1000.0069580078125
+      ]
+    ],
+    "shoulderWidth": 804.4327087311085,
+    "objects": []
+  },
+  {
+    "second": 20.0,
+    "actualSecond": 20.002,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.012165911495685577,
+      0.010760684497654438
+    ],
+    "wristPoints": [
+      [
+        1156.0804443359375,
+        1036.906005859375
+      ],
+      [
+        601.6199951171875,
+        1003.3126220703125
+      ]
+    ],
+    "shoulderWidth": 788.7237289150287,
+    "objects": []
+  },
+  {
+    "second": 20.2,
+    "actualSecond": 20.202,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.01163155771791935,
+      0.009555341675877571
+    ],
+    "wristPoints": [
+      [
+        1149.1650390625,
+        1028.2947998046875
+      ],
+      [
+        616.40576171875,
+        1003.1238403320312
+      ]
+    ],
+    "shoulderWidth": 783.3154861576922,
+    "objects": []
+  },
+  {
+    "second": 20.4,
+    "actualSecond": 20.402,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.01176384836435318,
+      0.009651844389736652
+    ],
+    "wristPoints": [
+      [
+        1146.0155029296875,
+        1030.252685546875
+      ],
+      [
+        613.9481201171875,
+        1003.252685546875
+      ]
+    ],
+    "shoulderWidth": 791.0818806210655,
+    "objects": []
+  },
+  {
+    "second": 20.6,
+    "actualSecond": 20.602,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.012296575121581554,
+      0.009749657474458218
+    ],
+    "wristPoints": [
+      [
+        1144.4654541015625,
+        1032.3868408203125
+      ],
+      [
+        608.0060424804688,
+        999.0626220703125
+      ]
+    ],
+    "shoulderWidth": 790.9014883639848,
+    "objects": []
+  },
+  {
+    "second": 20.8,
+    "actualSecond": 20.802,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.012456648983061314,
+      0.009703191928565502
+    ],
+    "wristPoints": [
+      [
+        1147.310791015625,
+        1031.1219482421875
+      ],
+      [
+        608.9476928710938,
+        999.4761962890625
+      ]
+    ],
+    "shoulderWidth": 787.063227295268,
+    "objects": []
+  },
+  {
+    "second": 21.0,
+    "actualSecond": 21.002,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.012764750979840755,
+      0.009917869232594967
+    ],
+    "wristPoints": [
+      [
+        1149.0048828125,
+        1029.6678466796875
+      ],
+      [
+        603.7769165039062,
+        992.747314453125
+      ]
+    ],
+    "shoulderWidth": 784.5713232457267,
+    "objects": []
+  },
+  {
+    "second": 21.2,
+    "actualSecond": 21.202,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.01330267172306776,
+      0.010360468178987503
+    ],
+    "wristPoints": [
+      [
+        1147.328125,
+        1031.32421875
+      ],
+      [
+        608.3486328125,
+        998.9342651367188
+      ]
+    ],
+    "shoulderWidth": 782.8516891111483,
+    "objects": []
+  },
+  {
+    "second": 21.4,
+    "actualSecond": 21.402,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.012764126062393188,
+      0.009963475167751312
+    ],
+    "wristPoints": [
+      [
+        1147.226318359375,
+        1032.1566162109375
+      ],
+      [
+        612.4138793945312,
+        998.1657104492188
+      ]
+    ],
+    "shoulderWidth": 782.4904371492572,
+    "objects": []
+  },
+  {
+    "second": 21.6,
+    "actualSecond": 21.602,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.04256730526685715,
+      0.06227470561861992
+    ],
+    "wristPoints": [
+      [
+        1365.25048828125,
+        1060.8260498046875
+      ],
+      [
+        327.6695556640625,
+        1030.261474609375
+      ]
+    ],
+    "shoulderWidth": 776.3094880989322,
+    "objects": []
+  },
+  {
+    "second": 21.8,
+    "actualSecond": 21.802,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.0735480859875679,
+      0.033005088567733765
+    ],
+    "wristPoints": [
+      [
+        1201.37548828125,
+        966.0525512695312
+      ],
+      [
+        349.5118103027344,
+        992.442138671875
+      ]
+    ],
+    "shoulderWidth": 744.1107104813806,
+    "objects": []
+  },
+  {
+    "second": 22.0,
+    "actualSecond": 22.002,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.09419243037700653,
+      0.057403333485126495
+    ],
+    "wristPoints": [
+      [
+        1191.906005859375,
+        929.4447021484375
+      ],
+      [
+        350.51971435546875,
+        947.7554321289062
+      ]
+    ],
+    "shoulderWidth": 712.3738927059937,
+    "objects": []
+  },
+  {
+    "second": 22.2,
+    "actualSecond": 22.203,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.0994090884923935,
+      0.05898086726665497
+    ],
+    "wristPoints": [
+      [
+        1186.268798828125,
+        948.5997314453125
+      ],
+      [
+        344.2539367675781,
+        957.531982421875
+      ]
+    ],
+    "shoulderWidth": 717.1036864250842,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.2918088436126709,
+        "box": [
+          590.7606201171875,
+          659.2017822265625,
+          699.6547241210938,
+          894.682373046875
+        ],
+        "faceOverlapRatio": 0.04286374986150989
+      }
+    ]
+  },
+  {
+    "second": 22.4,
+    "actualSecond": 22.403,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.103294238448143,
+      0.061361994594335556
+    ],
+    "wristPoints": [
+      [
+        1186.89697265625,
+        950.3875122070312
+      ],
+      [
+        347.6086730957031,
+        956.2620239257812
+      ]
+    ],
+    "shoulderWidth": 712.8926108519212,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.3518058657646179,
+        "box": [
+          590.8805541992188,
+          658.4158325195312,
+          699.8648681640625,
+          894.4024658203125
+        ],
+        "faceOverlapRatio": 0.04043509591430582
+      }
+    ]
+  },
+  {
+    "second": 22.6,
+    "actualSecond": 22.603,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.09672916680574417,
+      0.057311926037073135
+    ],
+    "wristPoints": [
+      [
+        1196.744873046875,
+        958.3938598632812
+      ],
+      [
+        348.3990478515625,
+        959.3024291992188
+      ]
+    ],
+    "shoulderWidth": 703.608226320038,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.2922838628292084,
+        "box": [
+          591.0288696289062,
+          658.4082641601562,
+          701.6576538085938,
+          894.4542236328125
+        ],
+        "faceOverlapRatio": 0.03958553484258726
+      }
+    ]
+  },
+  {
+    "second": 22.8,
+    "actualSecond": 22.803,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.11128546297550201,
+      0.06405399739742279
+    ],
+    "wristPoints": [
+      [
+        1203.4326171875,
+        953.1952514648438
+      ],
+      [
+        348.14324951171875,
+        960.6116333007812
+      ]
+    ],
+    "shoulderWidth": 708.0203702353474,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.35835182666778564,
+        "box": [
+          591.2443237304688,
+          661.5156860351562,
+          703.016357421875,
+          893.5639038085938
+        ],
+        "faceOverlapRatio": 0.037866759605623586
+      }
+    ]
+  },
+  {
+    "second": 23.0,
+    "actualSecond": 23.003,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.1164574846625328,
+      0.0679105818271637
+    ],
+    "wristPoints": [
+      [
+        1212.683837890625,
+        956.9553833007812
+      ],
+      [
+        344.0496520996094,
+        961.5960693359375
+      ]
+    ],
+    "shoulderWidth": 693.8607028894534,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.3516966998577118,
+        "box": [
+          588.2027587890625,
+          662.3510131835938,
+          703.9208374023438,
+          892.6890869140625
+        ],
+        "faceOverlapRatio": 0.034717788006153806
+      }
+    ]
+  },
+  {
+    "second": 23.2,
+    "actualSecond": 23.203,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.11125108599662781,
+      0.075017049908638
+    ],
+    "wristPoints": [
+      [
+        1209.5201416015625,
+        949.229248046875
+      ],
+      [
+        343.22259521484375,
+        946.986328125
+      ]
+    ],
+    "shoulderWidth": 680.3840558115058,
+    "objects": []
+  },
+  {
+    "second": 23.4,
+    "actualSecond": 23.403,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.1176619753241539,
+      0.07527334243059158
+    ],
+    "wristPoints": [
+      [
+        1209.5543212890625,
+        944.8513793945312
+      ],
+      [
+        349.36456298828125,
+        940.2389526367188
+      ]
+    ],
+    "shoulderWidth": 672.5154942183433,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.32011497020721436,
+        "box": [
+          561.7734375,
+          665.8260498046875,
+          701.0635986328125,
+          898.0569458007812
+        ],
+        "faceOverlapRatio": 0.02897013555076323
+      }
+    ]
+  },
+  {
+    "second": 23.6,
+    "actualSecond": 23.603,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.1144845113158226,
+      0.08536043763160706
+    ],
+    "wristPoints": [
+      [
+        1220.2816162109375,
+        947.9218139648438
+      ],
+      [
+        346.10687255859375,
+        932.7936401367188
+      ]
+    ],
+    "shoulderWidth": 673.7854622569189,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.30916398763656616,
+        "box": [
+          566.45849609375,
+          670.6946411132812,
+          697.5152587890625,
+          894.37255859375
+        ],
+        "faceOverlapRatio": 0.027844537295224084
+      }
+    ]
+  },
+  {
+    "second": 23.8,
+    "actualSecond": 23.803,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.11762462556362152,
+      0.09435141831636429
+    ],
+    "wristPoints": [
+      [
+        1224.1544189453125,
+        952.0654907226562
+      ],
+      [
+        331.9344787597656,
+        934.8267211914062
+      ]
+    ],
+    "shoulderWidth": 688.9996569770175,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.438249796628952,
+        "box": [
+          570.4866943359375,
+          667.2747802734375,
+          694.8955688476562,
+          898.1349487304688
+        ],
+        "faceOverlapRatio": 0.028433036638527996
+      }
+    ]
+  },
+  {
+    "second": 24.0,
+    "actualSecond": 24.003,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.10608024895191193,
+      0.0795184001326561
+    ],
+    "wristPoints": [
+      [
+        1224.5059814453125,
+        951.9442749023438
+      ],
+      [
+        334.5954284667969,
+        945.8296508789062
+      ]
+    ],
+    "shoulderWidth": 688.0216914509493,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.4235977530479431,
+        "box": [
+          570.2440795898438,
+          665.794677734375,
+          694.8302001953125,
+          899.1695556640625
+        ],
+        "faceOverlapRatio": 0.028657442378600823
+      }
+    ]
+  },
+  {
+    "second": 24.2,
+    "actualSecond": 24.203,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.09943240135908127,
+      0.07431919127702713
+    ],
+    "wristPoints": [
+      [
+        1225.8358154296875,
+        952.2840576171875
+      ],
+      [
+        332.9496765136719,
+        942.1797485351562
+      ]
+    ],
+    "shoulderWidth": 691.5030845945062,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.38300541043281555,
+        "box": [
+          570.46533203125,
+          663.508544921875,
+          695.279541015625,
+          896.4283447265625
+        ],
+        "faceOverlapRatio": 0.03129939684153842
+      }
+    ]
+  },
+  {
+    "second": 24.4,
+    "actualSecond": 24.403,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.09090162068605423,
+      0.06865467876195908
+    ],
+    "wristPoints": [
+      [
+        1225.854736328125,
+        953.9344482421875
+      ],
+      [
+        332.91595458984375,
+        941.919189453125
+      ]
+    ],
+    "shoulderWidth": 694.007798956779,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.4069671034812927,
+        "box": [
+          571.378173828125,
+          666.336181640625,
+          697.4308471679688,
+          899.0948486328125
+        ],
+        "faceOverlapRatio": 0.03059875241798813
+      }
+    ]
+  },
+  {
+    "second": 24.6,
+    "actualSecond": 24.603,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.09193572402000427,
+      0.06454883515834808
+    ],
+    "wristPoints": [
+      [
+        1222.9920654296875,
+        952.8887329101562
+      ],
+      [
+        333.91790771484375,
+        943.9463500976562
+      ]
+    ],
+    "shoulderWidth": 692.8195358609202,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.45521947741508484,
+        "box": [
+          572.1887817382812,
+          667.1286010742188,
+          697.6859130859375,
+          896.7620849609375
+        ],
+        "faceOverlapRatio": 0.03125424947371795
+      }
+    ]
+  },
+  {
+    "second": 24.8,
+    "actualSecond": 24.803,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.09126224368810654,
+      0.06138382852077484
+    ],
+    "wristPoints": [
+      [
+        1225.2425537109375,
+        952.3819580078125
+      ],
+      [
+        331.146240234375,
+        950.7531127929688
+      ]
+    ],
+    "shoulderWidth": 696.9996811033458,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.4910959303379059,
+        "box": [
+          572.2471313476562,
+          666.8654174804688,
+          696.9841918945312,
+          895.8153076171875
+        ],
+        "faceOverlapRatio": 0.031236938551358832
+      }
+    ]
+  },
+  {
+    "second": 25.0,
+    "actualSecond": 25.003,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.09721978008747101,
+      0.06620559841394424
+    ],
+    "wristPoints": [
+      [
+        1219.4046630859375,
+        951.8502197265625
+      ],
+      [
+        327.97314453125,
+        954.9407958984375
+      ]
+    ],
+    "shoulderWidth": 695.5694536378005,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.4660045802593231,
+        "box": [
+          571.1380004882812,
+          667.1295166015625,
+          697.0565795898438,
+          895.7401733398438
+        ],
+        "faceOverlapRatio": 0.031770339649918856
+      }
+    ]
+  },
+  {
+    "second": 25.2,
+    "actualSecond": 25.203,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.09273488819599152,
+      0.0652993842959404
+    ],
+    "wristPoints": [
+      [
+        1217.3277587890625,
+        952.76611328125
+      ],
+      [
+        325.8722839355469,
+        955.4073486328125
+      ]
+    ],
+    "shoulderWidth": 695.8664943280081,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.45218154788017273,
+        "box": [
+          571.9014282226562,
+          667.2073974609375,
+          697.0800170898438,
+          897.8565673828125
+        ],
+        "faceOverlapRatio": 0.031559060180341755
+      }
+    ]
+  },
+  {
+    "second": 25.4,
+    "actualSecond": 25.403,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.09741605818271637,
+      0.0683991014957428
+    ],
+    "wristPoints": [
+      [
+        1218.2413330078125,
+        952.5597534179688
+      ],
+      [
+        322.208251953125,
+        958.1203002929688
+      ]
+    ],
+    "shoulderWidth": 695.9511650513336,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.42492589354515076,
+        "box": [
+          571.642578125,
+          665.5646362304688,
+          695.6769409179688,
+          898.0620727539062
+        ],
+        "faceOverlapRatio": 0.032048992103053495
+      }
+    ]
+  },
+  {
+    "second": 25.6,
+    "actualSecond": 25.603,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.0932905375957489,
+      0.06335239112377167
+    ],
+    "wristPoints": [
+      [
+        1218.1624755859375,
+        953.914306640625
+      ],
+      [
+        326.61309814453125,
+        963.61962890625
+      ]
+    ],
+    "shoulderWidth": 696.9850099993973,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.44020646810531616,
+        "box": [
+          571.5020751953125,
+          664.190185546875,
+          694.7993774414062,
+          897.137451171875
+        ],
+        "faceOverlapRatio": 0.032991698612015764
+      }
+    ]
+  },
+  {
+    "second": 25.8,
+    "actualSecond": 25.803,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.08503715693950653,
+      0.058092158287763596
+    ],
+    "wristPoints": [
+      [
+        1216.5067138671875,
+        952.1373901367188
+      ],
+      [
+        326.2567138671875,
+        962.427734375
+      ]
+    ],
+    "shoulderWidth": 700.0529046246874,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.49114537239074707,
+        "box": [
+          571.3692626953125,
+          663.7190551757812,
+          694.8961181640625,
+          895.1626586914062
+        ],
+        "faceOverlapRatio": 0.033385180643439
+      }
+    ]
+  },
+  {
+    "second": 26.0,
+    "actualSecond": 26.003,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.08791407942771912,
+      0.06997708976268768
+    ],
+    "wristPoints": [
+      [
+        1237.100830078125,
+        958.9953002929688
+      ],
+      [
+        274.08502197265625,
+        940.3582763671875
+      ]
+    ],
+    "shoulderWidth": 725.7382294604618,
+    "objects": [
+      {
+        "label": "donut",
+        "confidence": 0.26840561628341675,
+        "box": [
+          222.6116485595703,
+          581.320556640625,
+          465.44927978515625,
+          743.4677734375
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 26.2,
+    "actualSecond": 26.203,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.009574241936206818,
+      0.00931972824037075
+    ],
+    "wristPoints": [
+      [
+        1059.1331787109375,
+        1076.5023193359375
+      ],
+      [
+        516.6668090820312,
+        1080.0
+      ]
+    ],
+    "shoulderWidth": 802.7052841668451,
+    "objects": []
+  },
+  {
+    "second": 26.4,
+    "actualSecond": 26.403,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.007838177494704723,
+      0.006916930433362722
+    ],
+    "wristPoints": [
+      [
+        1086.794677734375,
+        1070.5767822265625
+      ],
+      [
+        408.0473327636719,
+        1075.009033203125
+      ]
+    ],
+    "shoulderWidth": 821.2027124864968,
+    "objects": []
+  },
+  {
+    "second": 26.6,
+    "actualSecond": 26.603,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.01234288141131401,
+      0.008850093930959702
+    ],
+    "wristPoints": [
+      [
+        1109.464111328125,
+        985.8013916015625
+      ],
+      [
+        355.7933044433594,
+        1016.5653076171875
+      ]
+    ],
+    "shoulderWidth": 807.5501957697578,
+    "objects": []
+  },
+  {
+    "second": 26.8,
+    "actualSecond": 26.803,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.013252182863652706,
+      0.009504081681370735
+    ],
+    "wristPoints": [
+      [
+        1115.8502197265625,
+        980.481201171875
+      ],
+      [
+        357.6219787597656,
+        1021.0619506835938
+      ]
+    ],
+    "shoulderWidth": 830.8039599927406,
+    "objects": []
+  },
+  {
+    "second": 27.0,
+    "actualSecond": 27.003,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.011938482522964478,
+      0.010124537162482738
+    ],
+    "wristPoints": [
+      [
+        1117.8262939453125,
+        961.6159057617188
+      ],
+      [
+        364.79449462890625,
+        1024.420166015625
+      ]
+    ],
+    "shoulderWidth": 817.0064387901342,
+    "objects": []
+  },
+  {
+    "second": 27.2,
+    "actualSecond": 27.203,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.009885440580546856,
+      0.010405588895082474
+    ],
+    "wristPoints": [
+      [
+        1154.230712890625,
+        1022.9180908203125
+      ],
+      [
+        459.88250732421875,
+        1027.231689453125
+      ]
+    ],
+    "shoulderWidth": 824.2867186648368,
+    "objects": []
+  },
+  {
+    "second": 27.4,
+    "actualSecond": 27.403,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.010333881713449955,
+      0.010306977666914463
+    ],
+    "wristPoints": [
+      [
+        1163.2738037109375,
+        1017.1905517578125
+      ],
+      [
+        515.0363159179688,
+        1044.0855712890625
+      ]
+    ],
+    "shoulderWidth": 791.9350712119976,
+    "objects": []
+  },
+  {
+    "second": 27.6,
+    "actualSecond": 27.603,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.012612865306437016,
+      0.014498305507004261
+    ],
+    "wristPoints": [
+      [
+        1167.3636474609375,
+        1012.4833984375
+      ],
+      [
+        488.6637268066406,
+        1031.0804443359375
+      ]
+    ],
+    "shoulderWidth": 771.4248126859104,
+    "objects": [
+      {
+        "label": "bottle",
+        "confidence": 0.6719720363616943,
+        "box": [
+          1.5318975448608398,
+          241.79652404785156,
+          423.8658752441406,
+          1059.077880859375
+        ],
+        "faceOverlapRatio": 0.0
+      },
+      {
+        "label": "wine glass",
+        "confidence": 0.5766880512237549,
+        "box": [
+          1.0599145889282227,
+          239.8761444091797,
+          424.4155578613281,
+          1057.51513671875
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 27.8,
+    "actualSecond": 27.803,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.05615193024277687,
+      0.1557188332080841
+    ],
+    "wristPoints": [
+      [
+        1136.2088623046875,
+        1078.9100341796875
+      ],
+      [
+        176.4323272705078,
+        1007.1299438476562
+      ]
+    ],
+    "shoulderWidth": 824.375071686998,
+    "objects": [
+      {
+        "label": "wine glass",
+        "confidence": 0.8982793092727661,
+        "box": [
+          275.18603515625,
+          266.5606994628906,
+          653.196533203125,
+          981.66845703125
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 28.0,
+    "actualSecond": 28.003,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.050403982400894165,
+      0.14965376257896423
+    ],
+    "wristPoints": [
+      [
+        1150.3189697265625,
+        1074.494384765625
+      ],
+      [
+        228.38853454589844,
+        1027.351318359375
+      ]
+    ],
+    "shoulderWidth": 781.4555093770701,
+    "objects": [
+      {
+        "label": "wine glass",
+        "confidence": 0.5476593375205994,
+        "box": [
+          334.120361328125,
+          290.5818176269531,
+          681.5657958984375,
+          982.9400634765625
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 28.2,
+    "actualSecond": 28.203,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.06798156350851059,
+      0.1922091841697693
+    ],
+    "wristPoints": [
+      [
+        1153.0010986328125,
+        1080.0
+      ],
+      [
+        233.046142578125,
+        1039.5460205078125
+      ]
+    ],
+    "shoulderWidth": 756.0042594518469,
+    "objects": [
+      {
+        "label": "wine glass",
+        "confidence": 0.8279799222946167,
+        "box": [
+          330.4981384277344,
+          315.2234802246094,
+          678.9932861328125,
+          993.2785034179688
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 28.4,
+    "actualSecond": 28.403,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.055528342723846436,
+      0.1662655472755432
+    ],
+    "wristPoints": [
+      [
+        1151.285400390625,
+        1080.0
+      ],
+      [
+        230.37205505371094,
+        1049.2735595703125
+      ]
+    ],
+    "shoulderWidth": 759.6118521365165,
+    "objects": [
+      {
+        "label": "wine glass",
+        "confidence": 0.6397258639335632,
+        "box": [
+          331.53851318359375,
+          337.59039306640625,
+          677.2337646484375,
+          1019.3040161132812
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 28.6,
+    "actualSecond": 28.603,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.05019085481762886,
+      0.1470099538564682
+    ],
+    "wristPoints": [
+      [
+        1145.9385986328125,
+        1080.0
+      ],
+      [
+        232.92269897460938,
+        1056.3984375
+      ]
+    ],
+    "shoulderWidth": 766.3449204414451,
+    "objects": [
+      {
+        "label": "wine glass",
+        "confidence": 0.7582676410675049,
+        "box": [
+          335.4887390136719,
+          358.42523193359375,
+          676.9060668945312,
+          1029.47998046875
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 28.8,
+    "actualSecond": 28.803,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.041608430445194244,
+      0.12473519891500473
+    ],
+    "wristPoints": [
+      [
+        1148.9542236328125,
+        1077.3468017578125
+      ],
+      [
+        247.18128967285156,
+        1068.05322265625
+      ]
+    ],
+    "shoulderWidth": 778.386933654055,
+    "objects": [
+      {
+        "label": "wine glass",
+        "confidence": 0.8348807692527771,
+        "box": [
+          339.3059997558594,
+          365.50885009765625,
+          682.3556518554688,
+          1040.2000732421875
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 29.0,
+    "actualSecond": 29.003,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.038910601288080215,
+      0.1231500506401062
+    ],
+    "wristPoints": [
+      [
+        1148.082275390625,
+        1076.5250244140625
+      ],
+      [
+        239.42431640625,
+        1071.515380859375
+      ]
+    ],
+    "shoulderWidth": 754.2301451148005,
+    "objects": [
+      {
+        "label": "wine glass",
+        "confidence": 0.72069251537323,
+        "box": [
+          336.09991455078125,
+          237.49217224121094,
+          679.6376342773438,
+          1041.9825439453125
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 29.2,
+    "actualSecond": 29.203,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.04304763302206993,
+      0.13151904940605164
+    ],
+    "wristPoints": [
+      [
+        1147.8775634765625,
+        1078.0240478515625
+      ],
+      [
+        238.4949188232422,
+        1067.02099609375
+      ]
+    ],
+    "shoulderWidth": 757.7458900831805,
+    "objects": [
+      {
+        "label": "wine glass",
+        "confidence": 0.6730632185935974,
+        "box": [
+          334.9972839355469,
+          377.0519104003906,
+          682.1669311523438,
+          1042.0888671875
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 29.4,
+    "actualSecond": 29.403,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.04445003345608711,
+      0.13543514907360077
+    ],
+    "wristPoints": [
+      [
+        1149.91357421875,
+        1080.0
+      ],
+      [
+        240.83555603027344,
+        1070.6466064453125
+      ]
+    ],
+    "shoulderWidth": 755.6912110622034,
+    "objects": [
+      {
+        "label": "wine glass",
+        "confidence": 0.6898836493492126,
+        "box": [
+          332.9488220214844,
+          191.23150634765625,
+          681.1472778320312,
+          1044.538818359375
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 29.6,
+    "actualSecond": 29.603,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.04182051494717598,
+      0.13219799101352692
+    ],
+    "wristPoints": [
+      [
+        1143.812255859375,
+        1077.6475830078125
+      ],
+      [
+        242.25050354003906,
+        1063.1466064453125
+      ]
+    ],
+    "shoulderWidth": 745.7968655329882,
+    "objects": [
+      {
+        "label": "wine glass",
+        "confidence": 0.4770384132862091,
+        "box": [
+          332.5718688964844,
+          193.01853942871094,
+          679.8905639648438,
+          1041.875244140625
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 29.8,
+    "actualSecond": 29.803,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.047519441694021225,
+      0.14782680571079254
+    ],
+    "wristPoints": [
+      [
+        1144.0902099609375,
+        1079.7119140625
+      ],
+      [
+        259.6433410644531,
+        1058.945556640625
+      ]
+    ],
+    "shoulderWidth": 736.9452675212692,
+    "objects": [
+      {
+        "label": "wine glass",
+        "confidence": 0.8112285137176514,
+        "box": [
+          326.2053527832031,
+          375.9363708496094,
+          670.1492309570312,
+          1040.5552978515625
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 30.0,
+    "actualSecond": 30.003,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.04727622866630554,
+      0.1488891839981079
+    ],
+    "wristPoints": [
+      [
+        1146.3739013671875,
+        1080.0
+      ],
+      [
+        249.10653686523438,
+        1056.7535400390625
+      ]
+    ],
+    "shoulderWidth": 739.4473410364967,
+    "objects": [
+      {
+        "label": "wine glass",
+        "confidence": 0.8401265144348145,
+        "box": [
+          317.0287780761719,
+          364.7239685058594,
+          662.8141479492188,
+          1039.57177734375
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 30.2,
+    "actualSecond": 30.203,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.04583578556776047,
+      0.14094610512256622
+    ],
+    "wristPoints": [
+      [
+        1141.9822998046875,
+        1080.0
+      ],
+      [
+        242.8750457763672,
+        1047.9796142578125
+      ]
+    ],
+    "shoulderWidth": 757.4423050961464,
+    "objects": [
+      {
+        "label": "wine glass",
+        "confidence": 0.8193197250366211,
+        "box": [
+          307.3949279785156,
+          376.9283142089844,
+          651.2496948242188,
+          1040.0921630859375
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 30.4,
+    "actualSecond": 30.403,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.0444452203810215,
+      0.12989480793476105
+    ],
+    "wristPoints": [
+      [
+        1138.50634765625,
+        1080.0
+      ],
+      [
+        223.3910369873047,
+        1041.79248046875
+      ]
+    ],
+    "shoulderWidth": 800.345933863966,
+    "objects": [
+      {
+        "label": "wine glass",
+        "confidence": 0.617932140827179,
+        "box": [
+          287.5943603515625,
+          293.7440490722656,
+          635.6143188476562,
+          1019.1242065429688
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 30.6,
+    "actualSecond": 30.603,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.036126233637332916,
+      0.11039859056472778
+    ],
+    "wristPoints": [
+      [
+        1142.2276611328125,
+        1080.0
+      ],
+      [
+        186.2628936767578,
+        1015.978515625
+      ]
+    ],
+    "shoulderWidth": 834.0114420547984,
+    "objects": [
+      {
+        "label": "wine glass",
+        "confidence": 0.6824208498001099,
+        "box": [
+          257.7928161621094,
+          361.7016296386719,
+          605.08837890625,
+          1039.882080078125
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 30.8,
+    "actualSecond": 30.803,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.029354488477110863,
+      0.10002957284450531
+    ],
+    "wristPoints": [
+      [
+        1128.5977783203125,
+        1041.0670166015625
+      ],
+      [
+        92.4960708618164,
+        996.0771484375
+      ]
+    ],
+    "shoulderWidth": 845.4689439128146,
+    "objects": [
+      {
+        "label": "wine glass",
+        "confidence": 0.8735270500183105,
+        "box": [
+          170.2803955078125,
+          320.8810119628906,
+          535.1666870117188,
+          1037.9180908203125
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 31.0,
+    "actualSecond": 31.003,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.013941235840320587,
+      0.01493672002106905
+    ],
+    "wristPoints": [
+      [
+        1153.2952880859375,
+        1014.70263671875
+      ],
+      [
+        538.007568359375,
+        1016.8392333984375
+      ]
+    ],
+    "shoulderWidth": 755.5921185252164,
+    "objects": [
+      {
+        "label": "bottle",
+        "confidence": 0.7549574971199036,
+        "box": [
+          0.6623404026031494,
+          247.28729248046875,
+          286.8974609375,
+          1051.7100830078125
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 31.2,
+    "actualSecond": 31.203,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.013783225789666176,
+      0.011710700578987598
+    ],
+    "wristPoints": [
+      [
+        1154.014404296875,
+        1015.2833251953125
+      ],
+      [
+        564.5706176757812,
+        1026.8602294921875
+      ]
+    ],
+    "shoulderWidth": 761.5907541425269,
+    "objects": []
+  },
+  {
+    "second": 31.4,
+    "actualSecond": 31.403,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.015360594727098942,
+      0.011643590405583382
+    ],
+    "wristPoints": [
+      [
+        1150.30419921875,
+        1022.1226196289062
+      ],
+      [
+        547.0801391601562,
+        1029.59814453125
+      ]
+    ],
+    "shoulderWidth": 772.4410606420374,
+    "objects": []
+  },
+  {
+    "second": 31.6,
+    "actualSecond": 31.603,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.015670863911509514,
+      0.01240693498402834
+    ],
+    "wristPoints": [
+      [
+        1145.489990234375,
+        1022.423828125
+      ],
+      [
+        518.4601440429688,
+        1015.2083740234375
+      ]
+    ],
+    "shoulderWidth": 782.2520891731151,
+    "objects": []
+  },
+  {
+    "second": 31.8,
+    "actualSecond": 31.803,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.014471534639596939,
+      0.011092472821474075
+    ],
+    "wristPoints": [
+      [
+        1141.154296875,
+        1026.4071044921875
+      ],
+      [
+        501.2056579589844,
+        1009.1110229492188
+      ]
+    ],
+    "shoulderWidth": 784.6697066604089,
+    "objects": []
+  },
+  {
+    "second": 32.0,
+    "actualSecond": 32.003,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.009833811782300472,
+      0.021634137257933617
+    ],
+    "wristPoints": [
+      [
+        1159.32080078125,
+        1080.0
+      ],
+      [
+        432.1387023925781,
+        1071.5765380859375
+      ]
+    ],
+    "shoulderWidth": 821.0106618488051,
+    "objects": []
+  },
+  {
+    "second": 32.2,
+    "actualSecond": 32.203,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.01985801011323929,
+      0.011760229244828224
+    ],
+    "wristPoints": [
+      [
+        1130.090087890625,
+        1028.265380859375
+      ],
+      [
+        498.4698486328125,
+        1005.5411376953125
+      ]
+    ],
+    "shoulderWidth": 773.6535733284967,
+    "objects": []
+  },
+  {
+    "second": 32.4,
+    "actualSecond": 32.403,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.019998699426651,
+      0.010722165927290916
+    ],
+    "wristPoints": [
+      [
+        1128.9664306640625,
+        1030.7520751953125
+      ],
+      [
+        496.1700439453125,
+        1004.486328125
+      ]
+    ],
+    "shoulderWidth": 780.6709112847954,
+    "objects": []
+  },
+  {
+    "second": 32.6,
+    "actualSecond": 32.603,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.01142152026295662,
+      0.00471112597733736
+    ],
+    "wristPoints": [
+      [
+        1107.6541748046875,
+        1078.992431640625
+      ],
+      [
+        419.6096496582031,
+        1073.2974853515625
+      ]
+    ],
+    "shoulderWidth": 839.2020284904253,
+    "objects": []
+  },
+  {
+    "second": 32.8,
+    "actualSecond": 32.803,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.0222503412514925,
+      0.009002037346363068
+    ],
+    "wristPoints": [
+      [
+        1130.2093505859375,
+        1009.7135620117188
+      ],
+      [
+        356.7781677246094,
+        983.7568969726562
+      ]
+    ],
+    "shoulderWidth": 807.8305014592514,
+    "objects": []
+  },
+  {
+    "second": 33.0,
+    "actualSecond": 33.003,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.06426866352558136,
+      0.09789053350687027
+    ],
+    "wristPoints": [
+      [
+        1112.9495849609375,
+        1073.672607421875
+      ],
+      [
+        92.77597045898438,
+        997.0120239257812
+      ]
+    ],
+    "shoulderWidth": 929.0373057880975,
+    "objects": []
+  },
+  {
+    "second": 33.2,
+    "actualSecond": 33.203,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.016923027113080025,
+      0.022720275446772575
+    ],
+    "wristPoints": [
+      [
+        1107.009765625,
+        1055.2958984375
+      ],
+      [
+        167.5592041015625,
+        1022.697998046875
+      ]
+    ],
+    "shoulderWidth": 969.4322225002173,
+    "objects": []
+  },
+  {
+    "second": 33.4,
+    "actualSecond": 33.403,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.03213000297546387,
+      0.06523259729146957
+    ],
+    "wristPoints": [
+      [
+        1129.7978515625,
+        1057.984619140625
+      ],
+      [
+        215.60548400878906,
+        1032.7484130859375
+      ]
+    ],
+    "shoulderWidth": 918.5225436860336,
+    "objects": []
+  },
+  {
+    "second": 33.6,
+    "actualSecond": 33.603,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.011476054787635803,
+      0.011884746141731739
+    ],
+    "wristPoints": [
+      [
+        1179.7713623046875,
+        1023.77099609375
+      ],
+      [
+        463.1723327636719,
+        1037.916748046875
+      ]
+    ],
+    "shoulderWidth": 839.337786869571,
+    "objects": []
+  },
+  {
+    "second": 33.8,
+    "actualSecond": 33.803,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.010767468251287937,
+      0.009555833414196968
+    ],
+    "wristPoints": [
+      [
+        1185.9228515625,
+        975.9633178710938
+      ],
+      [
+        526.9004516601562,
+        1014.4539184570312
+      ]
+    ],
+    "shoulderWidth": 756.9106953582271,
+    "objects": []
+  },
+  {
+    "second": 34.0,
+    "actualSecond": 34.003,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.051089439541101456,
+      0.19397009909152985
+    ],
+    "wristPoints": [
+      [
+        1158.4754638671875,
+        1032.791259765625
+      ],
+      [
+        153.81422424316406,
+        870.5784912109375
+      ]
+    ],
+    "shoulderWidth": 791.7147588638388,
+    "objects": [
+      {
+        "label": "chair",
+        "confidence": 0.2592955231666565,
+        "box": [
+          662.9069213867188,
+          683.1342163085938,
+          804.1653442382812,
+          896.4251708984375
+        ],
+        "faceOverlapRatio": 0.02594239396425909
+      }
+    ]
+  },
+  {
+    "second": 34.2,
+    "actualSecond": 34.203,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.05140699818730354,
+      0.10208673775196075
+    ],
+    "wristPoints": [
+      [
+        1175.9739990234375,
+        953.4707641601562
+      ],
+      [
+        377.2010803222656,
+        884.7394409179688
+      ]
+    ],
+    "shoulderWidth": 702.1344754925485,
+    "objects": [
+      {
+        "label": "donut",
+        "confidence": 0.27801400423049927,
+        "box": [
+          483.1036682128906,
+          388.3458251953125,
+          678.1387939453125,
+          661.5833740234375
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 34.4,
+    "actualSecond": 34.403,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.027455756440758705,
+      0.08289681375026703
+    ],
+    "wristPoints": [
+      [
+        1167.8087158203125,
+        1047.2239990234375
+      ],
+      [
+        448.6955871582031,
+        924.2659301757812
+      ]
+    ],
+    "shoulderWidth": 735.3911979655433,
+    "objects": []
+  },
+  {
+    "second": 34.6,
+    "actualSecond": 34.603,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.018057838082313538,
+      0.036368001252412796
+    ],
+    "wristPoints": [
+      [
+        1168.537841796875,
+        1046.5418701171875
+      ],
+      [
+        431.0605773925781,
+        1037.290283203125
+      ]
+    ],
+    "shoulderWidth": 756.815120012231,
+    "objects": []
+  },
+  {
+    "second": 34.8,
+    "actualSecond": 34.803,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.017941180616617203,
+      0.03676633536815643
+    ],
+    "wristPoints": [
+      [
+        1177.5177001953125,
+        1049.2783203125
+      ],
+      [
+        423.0334167480469,
+        1044.387451171875
+      ]
+    ],
+    "shoulderWidth": 779.5826688743125,
+    "objects": [
+      {
+        "label": "apple",
+        "confidence": 0.34843507409095764,
+        "box": [
+          453.4831848144531,
+          596.621826171875,
+          604.6041870117188,
+          835.083740234375
+        ],
+        "faceOverlapRatio": 0.0
+      }
+    ]
+  },
+  {
+    "second": 35.0,
+    "actualSecond": 35.003,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.021444424986839294,
+      0.04546502232551575
+    ],
+    "wristPoints": [
+      [
+        1175.1119384765625,
+        1054.6339111328125
+      ],
+      [
+        426.3622131347656,
+        1044.911865234375
+      ]
+    ],
+    "shoulderWidth": 771.4352683987777,
+    "objects": []
+  },
+  {
+    "second": 35.2,
+    "actualSecond": 35.203,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.015739858150482178,
+      0.03087449073791504
+    ],
+    "wristPoints": [
+      [
+        1174.4996337890625,
+        1051.42431640625
+      ],
+      [
+        437.2498779296875,
+        1045.9464111328125
+      ]
+    ],
+    "shoulderWidth": 770.5216829631132,
+    "objects": []
+  },
+  {
+    "second": 35.4,
+    "actualSecond": 35.403,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.016224747523665428,
+      0.032293651252985
+    ],
+    "wristPoints": [
+      [
+        1176.6671142578125,
+        1052.45947265625
+      ],
+      [
+        436.226806640625,
+        1037.377685546875
+      ]
+    ],
+    "shoulderWidth": 767.4153624672465,
+    "objects": []
+  },
+  {
+    "second": 35.6,
+    "actualSecond": 35.603,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.01511174626648426,
+      0.030180003494024277
+    ],
+    "wristPoints": [
+      [
+        1179.291748046875,
+        1052.7135009765625
+      ],
+      [
+        438.5771484375,
+        1038.1204833984375
+      ]
+    ],
+    "shoulderWidth": 767.9550123099806,
+    "objects": []
+  },
+  {
+    "second": 35.8,
+    "actualSecond": 35.803,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.016400286927819252,
+      0.033285271376371384
+    ],
+    "wristPoints": [
+      [
+        1177.6259765625,
+        1053.905029296875
+      ],
+      [
+        430.8877868652344,
+        1042.40673828125
+      ]
+    ],
+    "shoulderWidth": 765.1711368191746,
+    "objects": []
+  },
+  {
+    "second": 36.0,
+    "actualSecond": 36.003,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.01550506055355072,
+      0.031102780252695084
+    ],
+    "wristPoints": [
+      [
+        1176.2625732421875,
+        1053.407470703125
+      ],
+      [
+        438.2416076660156,
+        1046.878173828125
+      ]
+    ],
+    "shoulderWidth": 764.7326383394466,
+    "objects": []
+  },
+  {
+    "second": 36.2,
+    "actualSecond": 36.203,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.01748376153409481,
+      0.0375603586435318
+    ],
+    "wristPoints": [
+      [
+        1177.00537109375,
+        1053.292724609375
+      ],
+      [
+        431.69677734375,
+        1043.224853515625
+      ]
+    ],
+    "shoulderWidth": 763.5242276801777,
+    "objects": []
+  },
+  {
+    "second": 36.4,
+    "actualSecond": 36.403,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.016320979222655296,
+      0.03291014954447746
+    ],
+    "wristPoints": [
+      [
+        1176.2083740234375,
+        1053.1771240234375
+      ],
+      [
+        437.0162048339844,
+        1042.3614501953125
+      ]
+    ],
+    "shoulderWidth": 770.2912735561993,
+    "objects": []
+  },
+  {
+    "second": 36.6,
+    "actualSecond": 36.603,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.016170166432857513,
+      0.03192610666155815
+    ],
+    "wristPoints": [
+      [
+        1177.09033203125,
+        1053.4171142578125
+      ],
+      [
+        434.94927978515625,
+        1049.9495849609375
+      ]
+    ],
+    "shoulderWidth": 769.5118179327277,
+    "objects": [
+      {
+        "label": "cell phone",
+        "confidence": 0.28568655252456665,
+        "box": [
+          652.7655639648438,
+          678.1407470703125,
+          802.0512084960938,
+          898.876708984375
+        ],
+        "faceOverlapRatio": 0.03310086260008803
+      }
+    ]
+  },
+  {
+    "second": 36.8,
+    "actualSecond": 36.805,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.014630566351115704,
+      0.02929077483713627
+    ],
+    "wristPoints": [
+      [
+        1174.395263671875,
+        1052.7047119140625
+      ],
+      [
+        433.6464538574219,
+        1052.370849609375
+      ]
+    ],
+    "shoulderWidth": 775.0354594192514,
+    "objects": []
+  },
+  {
+    "second": 37.0,
+    "actualSecond": 37.005,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.016745926812291145,
+      0.033783551305532455
+    ],
+    "wristPoints": [
+      [
+        1177.7958984375,
+        1053.3206787109375
+      ],
+      [
+        425.602294921875,
+        1049.445556640625
+      ]
+    ],
+    "shoulderWidth": 774.0422624101715,
+    "objects": []
+  },
+  {
+    "second": 37.2,
+    "actualSecond": 37.205,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.016681738197803497,
+      0.03276681527495384
+    ],
+    "wristPoints": [
+      [
+        1178.1015625,
+        1054.5870361328125
+      ],
+      [
+        428.92620849609375,
+        1051.8685302734375
+      ]
+    ],
+    "shoulderWidth": 777.6662417671507,
+    "objects": []
+  },
+  {
+    "second": 37.4,
+    "actualSecond": 37.405,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.017319034785032272,
+      0.03474218770861626
+    ],
+    "wristPoints": [
+      [
+        1180.2581787109375,
+        1055.703857421875
+      ],
+      [
+        426.75836181640625,
+        1051.5108642578125
+      ]
+    ],
+    "shoulderWidth": 776.4049520463136,
+    "objects": []
+  },
+  {
+    "second": 37.6,
+    "actualSecond": 37.605,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.01718602515757084,
+      0.035663705319166183
+    ],
+    "wristPoints": [
+      [
+        1178.4393310546875,
+        1055.1041259765625
+      ],
+      [
+        429.6864013671875,
+        1047.978515625
+      ]
+    ],
+    "shoulderWidth": 777.2873877747962,
+    "objects": []
+  },
+  {
+    "second": 37.8,
+    "actualSecond": 37.805,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.015914186835289,
+      0.03226057067513466
+    ],
+    "wristPoints": [
+      [
+        1173.7923583984375,
+        1053.4686279296875
+      ],
+      [
+        433.7534484863281,
+        1049.9246826171875
+      ]
+    ],
+    "shoulderWidth": 776.3833611933838,
+    "objects": []
+  },
+  {
+    "second": 38.0,
+    "actualSecond": 38.005,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.017473852261900902,
+      0.03695482388138771
+    ],
+    "wristPoints": [
+      [
+        1171.46728515625,
+        1052.6263427734375
+      ],
+      [
+        431.8348693847656,
+        1046.726318359375
+      ]
+    ],
+    "shoulderWidth": 772.9757031148273,
+    "objects": []
+  },
+  {
+    "second": 38.2,
+    "actualSecond": 38.205,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.013927025720477104,
+      0.029135476797819138
+    ],
+    "wristPoints": [
+      [
+        1171.3643798828125,
+        1055.79443359375
+      ],
+      [
+        431.58843994140625,
+        1051.3355712890625
+      ]
+    ],
+    "shoulderWidth": 780.8887816492188,
+    "objects": []
+  },
+  {
+    "second": 38.4,
+    "actualSecond": 38.405,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.021054105833172798,
+      0.03318333998322487
+    ],
+    "wristPoints": [
+      [
+        1153.59765625,
+        965.905517578125
+      ],
+      [
+        398.943603515625,
+        994.3307495117188
+      ]
+    ],
+    "shoulderWidth": 760.1284380590661,
+    "objects": []
+  },
+  {
+    "second": 38.6,
+    "actualSecond": 38.605,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.02189601957798004,
+      0.06992130726575851
+    ],
+    "wristPoints": [
+      [
+        1139.9412841796875,
+        1075.9691162109375
+      ],
+      [
+        136.93179321289062,
+        957.8621826171875
+      ]
+    ],
+    "shoulderWidth": 851.4658984158073,
+    "objects": []
+  },
+  {
+    "second": 38.8,
+    "actualSecond": 38.805,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.016315864399075508,
+      0.008153490722179413
+    ],
+    "wristPoints": [
+      [
+        1155.442138671875,
+        1032.22998046875
+      ],
+      [
+        552.1305541992188,
+        1032.763427734375
+      ]
+    ],
+    "shoulderWidth": 791.8412547945414,
+    "objects": []
+  },
+  {
+    "second": 39.0,
+    "actualSecond": 39.005,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": false,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.016431283205747604,
+      0.008116078563034534
+    ],
+    "wristPoints": [
+      [
+        1155.0859375,
+        1046.0289306640625
+      ],
+      [
+        506.72637939453125,
+        1025.89697265625
+      ]
+    ],
+    "shoulderWidth": 805.8486931988509,
+    "objects": []
+  },
+  {
+    "second": 39.2,
+    "actualSecond": 39.205,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.011024676263332367,
+      0.011694910936057568
+    ],
+    "wristPoints": [
+      [
+        1127.8599853515625,
+        1080.0
+      ],
+      [
+        386.590087890625,
+        1070.670166015625
+      ]
+    ],
+    "shoulderWidth": 878.4451489507793,
+    "objects": []
+  },
+  {
+    "second": 39.4,
+    "actualSecond": 39.405,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.013479341752827168,
+      0.010244288481771946
+    ],
+    "wristPoints": [
+      [
+        1144.701904296875,
+        1029.4305419921875
+      ],
+      [
+        489.549072265625,
+        1035.47216796875
+      ]
+    ],
+    "shoulderWidth": 820.2634408251032,
+    "objects": []
+  },
+  {
+    "second": 39.6,
+    "actualSecond": 39.605,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.012918144464492798,
+      0.011330877430737019
+    ],
+    "wristPoints": [
+      [
+        1164.7930908203125,
+        1024.908447265625
+      ],
+      [
+        592.0388793945312,
+        1031.908935546875
+      ]
+    ],
+    "shoulderWidth": 779.2891244003847,
+    "objects": []
+  },
+  {
+    "second": 39.8,
+    "actualSecond": 39.805,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.011238603852689266,
+      0.011108762584626675
+    ],
+    "wristPoints": [
+      [
+        1150.9005126953125,
+        996.6963500976562
+      ],
+      [
+        625.3934936523438,
+        1008.7453002929688
+      ]
+    ],
+    "shoulderWidth": 740.714649922003,
+    "objects": []
+  },
+  {
+    "second": 40.0,
+    "actualSecond": 40.005,
+    "hasSelectedBody": true,
+    "hasAssociatedFace": true,
+    "isCameraFacing": true,
+    "gazeReason": null,
+    "wristConfidence": [
+      0.01196144800633192,
+      0.011962123215198517
+    ],
+    "wristPoints": [
+      [
+        1150.0648193359375,
+        998.5586547851562
+      ],
+      [
+        630.6399536132812,
+        1006.8628540039062
+      ]
+    ],
+    "shoulderWidth": 725.7530583691804,
+    "objects": []
+  }
+]

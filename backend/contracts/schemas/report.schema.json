@@ -1,0 +1,340 @@
+{
+  "$defs": {
+    "Coaching": {
+      "additionalProperties": false,
+      "properties": {
+        "strengths": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Strengths",
+          "type": "array"
+        },
+        "improvements": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Improvements",
+          "type": "array"
+        },
+        "actions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Actions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "strengths",
+        "improvements",
+        "actions"
+      ],
+      "title": "Coaching",
+      "type": "object"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "fromSec": {
+          "minimum": 0,
+          "title": "Fromsec",
+          "type": "number"
+        },
+        "toSec": {
+          "minimum": 0,
+          "title": "Tosec",
+          "type": "number"
+        },
+        "signal": {
+          "title": "Signal",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Reason"
+        }
+      },
+      "required": [
+        "fromSec",
+        "toSec",
+        "signal",
+        "value",
+        "reason"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "ExpectedQuestion": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "text"
+      ],
+      "title": "ExpectedQuestion",
+      "type": "object"
+    },
+    "ItemScore": {
+      "additionalProperties": false,
+      "properties": {
+        "rubricItemId": {
+          "format": "uuid",
+          "title": "Rubricitemid",
+          "type": "string"
+        },
+        "itemKey": {
+          "title": "Itemkey",
+          "type": "string"
+        },
+        "score": {
+          "maximum": 100,
+          "minimum": 0,
+          "title": "Score",
+          "type": "integer"
+        },
+        "weight": {
+          "exclusiveMinimum": 0,
+          "title": "Weight",
+          "type": "number"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "minItems": 1,
+          "title": "Evidence",
+          "type": "array"
+        }
+      },
+      "required": [
+        "rubricItemId",
+        "itemKey",
+        "score",
+        "weight",
+        "evidence"
+      ],
+      "title": "ItemScore",
+      "type": "object"
+    },
+    "Segment": {
+      "additionalProperties": false,
+      "properties": {
+        "fromSec": {
+          "minimum": 0,
+          "title": "Fromsec",
+          "type": "number"
+        },
+        "toSec": {
+          "minimum": 0,
+          "title": "Tosec",
+          "type": "number"
+        },
+        "kind": {
+          "title": "Kind",
+          "type": "string"
+        },
+        "feedback": {
+          "title": "Feedback",
+          "type": "string"
+        }
+      },
+      "required": [
+        "fromSec",
+        "toSec",
+        "kind",
+        "feedback"
+      ],
+      "title": "Segment",
+      "type": "object"
+    },
+    "TimeCheck": {
+      "additionalProperties": false,
+      "properties": {
+        "actualMinutes": {
+          "minimum": 0,
+          "title": "Actualminutes",
+          "type": "number"
+        },
+        "deltaMinutes": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Deltaminutes"
+        }
+      },
+      "required": [
+        "actualMinutes",
+        "deltaMinutes"
+      ],
+      "title": "TimeCheck",
+      "type": "object"
+    },
+    "Versions": {
+      "additionalProperties": false,
+      "properties": {
+        "model": {
+          "title": "Model",
+          "type": "string"
+        },
+        "rubric": {
+          "title": "Rubric",
+          "type": "string"
+        }
+      },
+      "required": [
+        "model",
+        "rubric"
+      ],
+      "title": "Versions",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "analysisId": {
+      "format": "uuid",
+      "title": "Analysisid",
+      "type": "string"
+    },
+    "projectId": {
+      "format": "uuid",
+      "title": "Projectid",
+      "type": "string"
+    },
+    "roundNo": {
+      "minimum": 1,
+      "title": "Roundno",
+      "type": "integer"
+    },
+    "status": {
+      "const": "DONE",
+      "title": "Status",
+      "type": "string"
+    },
+    "totalScore": {
+      "maximum": 100,
+      "minimum": 0,
+      "title": "Totalscore",
+      "type": "integer"
+    },
+    "scores": {
+      "items": {
+        "$ref": "#/$defs/ItemScore"
+      },
+      "maxItems": 4,
+      "minItems": 4,
+      "title": "Scores",
+      "type": "array"
+    },
+    "versions": {
+      "$ref": "#/$defs/Versions"
+    },
+    "segments": {
+      "items": {
+        "$ref": "#/$defs/Segment"
+      },
+      "title": "Segments",
+      "type": "array"
+    },
+    "timeline": {
+      "additionalProperties": {
+        "items": {
+          "$ref": "#/$defs/Evidence"
+        },
+        "type": "array"
+      },
+      "title": "Timeline",
+      "type": "object"
+    },
+    "coaching": {
+      "$ref": "#/$defs/Coaching"
+    },
+    "targetMinutes": {
+      "minimum": 0,
+      "title": "Targetminutes",
+      "type": "integer"
+    },
+    "timeCheck": {
+      "$ref": "#/$defs/TimeCheck"
+    },
+    "contentCheck": {
+      "title": "Contentcheck",
+      "type": "null"
+    },
+    "expectedQuestions": {
+      "items": {
+        "$ref": "#/$defs/ExpectedQuestion"
+      },
+      "title": "Expectedquestions",
+      "type": "array"
+    },
+    "quality": {
+      "enum": [
+        "NORMAL",
+        "DEGRADED"
+      ],
+      "title": "Quality",
+      "type": "string"
+    },
+    "limitations": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Limitations",
+      "type": "array"
+    }
+  },
+  "required": [
+    "analysisId",
+    "projectId",
+    "roundNo",
+    "status",
+    "totalScore",
+    "scores",
+    "versions",
+    "segments",
+    "timeline",
+    "coaching",
+    "targetMinutes",
+    "timeCheck",
+    "contentCheck",
+    "expectedQuestions",
+    "quality",
+    "limitations"
+  ],
+  "title": "Report",
+  "type": "object"
+}

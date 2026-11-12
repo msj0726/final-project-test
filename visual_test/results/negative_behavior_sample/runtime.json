@@ -1,0 +1,10 @@
+{
+  "videoDurationSeconds": 40.2,
+  "wallSeconds": 23.03,
+  "samplingFps": 5,
+  "models": [
+    "YOLO11n-pose",
+    "YOLO5Face",
+    "YOLO11n-seg"
+  ]
+}

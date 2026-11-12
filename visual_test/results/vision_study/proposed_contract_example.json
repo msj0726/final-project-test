@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "VISION_CONTRACT_DRAFT_NOT_IMPLEMENTED",
+  "observationConfigVersion": null,
+  "isScoringReady": false,
+  "vision": {
+    "gaze": {
+      "observableSeconds": 10.0,
+      "frontFacingSeconds": 9.6,
+      "frontFacingRatio": 0.96,
+      "coverageRatio": 1.0,
+      "method": "EXPERIMENTAL_5_POINT_FACE_GEOMETRY"
+    },
+    "handObservableSeconds": 6.4,
+    "handStillSeconds": 0,
+    "bothWristsVisibleSeconds": 7.4,
+    "gestureEvents": [],
+    "unobservableIntervalsStatus": "NOT_GENERATED",
+    "unobservableIntervals": [],
+    "candidateEvents": [
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-smartphone-1",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 7.8,
+        "endSec": 8.4,
+        "objectLabel": "smartphone",
+        "objectLabelConfidence": null,
+        "confidence": null,
+        "observationMethod": "HAND_POINTS_TO_OBJECT_BOX_PROXIMITY",
+        "evidenceRefs": [
+          "evidence-example-1"
+        ]
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "evidenceId": "evidence-example-1",
+      "sourceType": "VISION",
+      "startSec": 7.8,
+      "endSec": 8.4,
+      "description": "기존 후보의 시간 참조만 제공. 물건 접촉·종류를 확정한 근거가 아님."
+    }
+  ],
+  "contextJudgments": [
+    {
+      "criterionKey": "UNRELATED_OBJECT_TOUCH",
+      "status": "NOT_RUN",
+      "verdict": null,
+      "reason": "LLM_NOT_EXECUTED",
+      "evidenceRefs": [
+        "evidence-example-1"
+      ]
+    }
+  ],
+  "limitations": [
+    "신규 계약 설계 예시이며 실행 결과 아님",
+    "관찰 설정 버전과 물건 라벨 신뢰도 집계 미확정",
+    "LLM 문맥 전달 정책 미확정"
+  ]
+}

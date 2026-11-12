@@ -1,0 +1,13 @@
+{
+  "matched_frames": 5400,
+  "different_frames_by_field": {
+    "person_count": 0,
+    "face_count": 0,
+    "arm_raised": 0,
+    "large_wrist_motion_proxy": 0,
+    "face_boxes_xyxy_conf": 0,
+    "person_box_xyxy": 11,
+    "shoulder_elbow_wrist_xy_valid": 49
+  },
+  "note": "Predictions from the same 5400 offline frames; categorical agreement is not ground-truth accuracy."
+}

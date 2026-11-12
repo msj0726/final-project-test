@@ -1,0 +1,29 @@
+{
+  "observationConfigVersion": "vision-20261111-v1",
+  "models": [
+    "yolo11n-pose.pt",
+    "yolov5n-face.pt",
+    "yolo11n-seg.pt"
+  ],
+  "userDecisions": {
+    "stillMinimumSeconds": 5,
+    "scoreConversion": "WITHHELD",
+    "interactionRule": "WRIST_PROXIMITY_AND_COMOTION",
+    "faceOverlap": "SEPARATE_CANDIDATE"
+  },
+  "experimentalParameters": {
+    "sampleFps": 5,
+    "motionWindowSeconds": 1,
+    "wristStillRangeShoulderWidths": 0.04,
+    "objectConfidence": 0.25,
+    "trackMinIou": 0.3,
+    "wristsToBoxDistanceShoulderWidths": 0.12,
+    "comotionWindowSeconds": 1,
+    "minimumMotionShoulderWidths": 0.03,
+    "minimumMotionCosine": 0.8,
+    "maximumMotionResidualShoulderWidths": 0.05,
+    "candidateMinimumSeconds": 0.4,
+    "faceOverlapFraction": 0.1
+  },
+  "parameterStatus": "EXPERIMENTAL_NOT_OPTIMIZED_OR_ACCURACY_VALIDATED"
+}

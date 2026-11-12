@@ -1,0 +1,12 @@
+{
+  "error": {
+    "code": "QA_NOT_ELIGIBLE",
+    "message": "분석이 끝난 발표 영상이 있어야 질의응답을 시작할 수 있어요.",
+    "fields": {},
+    "details": {
+      "analyzedRounds": 0
+    },
+    "retryable": false,
+    "requestId": "req_example"
+  }
+}

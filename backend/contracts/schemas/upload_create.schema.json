@@ -1,0 +1,36 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "fileName": {
+      "title": "Filename",
+      "type": "string"
+    },
+    "sizeBytes": {
+      "maximum": 524288000,
+      "minimum": 1,
+      "title": "Sizebytes",
+      "type": "integer"
+    },
+    "contentType": {
+      "enum": [
+        "video/mp4",
+        "video/quicktime"
+      ],
+      "title": "Contenttype",
+      "type": "string"
+    },
+    "checksum": {
+      "pattern": "^[a-fA-F0-9]{64}$",
+      "title": "Checksum",
+      "type": "string"
+    }
+  },
+  "required": [
+    "fileName",
+    "sizeBytes",
+    "contentType",
+    "checksum"
+  ],
+  "title": "UploadCreate",
+  "type": "object"
+}

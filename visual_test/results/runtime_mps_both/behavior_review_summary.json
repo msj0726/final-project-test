@@ -1,0 +1,72 @@
+{
+  "arm": {
+    "offline": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 1,
+      "tn": 170,
+      "missing": 0,
+      "unknown_prediction": 0,
+      "samples": 176,
+      "positives": 6,
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1": 0.9090909090909091
+    },
+    "paced": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 1,
+      "tn": 170,
+      "missing": 0,
+      "unknown_prediction": 0,
+      "samples": 176,
+      "positives": 6,
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1": 0.9090909090909091
+    },
+    "model_event_timing": {
+      "offline_model_events_ge_0.1s": 9,
+      "paced_missed": 0,
+      "model_onset_to_paced_output_ms_median": 22.18449999782024,
+      "model_onset_to_paced_output_ms_p95": 26.83670899568824,
+      "note": "Onsets are defined by the offline model, not independent human behavior annotations."
+    }
+  },
+  "large_wrist_motion": {
+    "offline": {
+      "tp": 16,
+      "fp": 2,
+      "fn": 7,
+      "tn": 149,
+      "missing": 0,
+      "unknown_prediction": 0,
+      "samples": 174,
+      "positives": 23,
+      "precision": 0.8888888888888888,
+      "recall": 0.6956521739130435,
+      "f1": 0.7804878048780488
+    },
+    "paced": {
+      "tp": 16,
+      "fp": 2,
+      "fn": 7,
+      "tn": 149,
+      "missing": 0,
+      "unknown_prediction": 0,
+      "samples": 174,
+      "positives": 23,
+      "precision": 0.8888888888888888,
+      "recall": 0.6956521739130435,
+      "f1": 0.7804878048780488
+    },
+    "model_event_timing": {
+      "offline_model_events_ge_0.1s": 33,
+      "paced_missed": 0,
+      "model_onset_to_paced_output_ms_median": 26.255208329530433,
+      "model_onset_to_paced_output_ms_p95": 32.84916667325888,
+      "note": "Onsets are defined by the offline model, not independent human behavior annotations."
+    }
+  }
+}

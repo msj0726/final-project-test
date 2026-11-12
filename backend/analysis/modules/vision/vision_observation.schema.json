@@ -1,0 +1,343 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "observationConfigVersion",
+    "isScoringReady",
+    "vision",
+    "evidence",
+    "contextJudgments",
+    "limitations"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "vision-observation-v4-experiment"
+    },
+    "observationConfigVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "isScoringReady": {
+      "const": false
+    },
+    "vision": {
+      "type": "object",
+      "required": [
+        "gaze",
+        "handObservableSeconds",
+        "handStillSeconds",
+        "gestureEvents",
+        "candidateEvents",
+        "unobservableIntervalsStatus",
+        "unobservableIntervals",
+        "criterionStatus"
+      ],
+      "properties": {
+        "gaze": {
+          "type": "object",
+          "required": [
+            "observableSeconds",
+            "frontFacingSeconds",
+            "frontFacingRatio",
+            "coverageRatio",
+            "method",
+            "nonFrontFacingEvents"
+          ],
+          "properties": {
+            "observableSeconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "frontFacingSeconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "frontFacingRatio": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1
+            },
+            "coverageRatio": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1
+            },
+            "method": {
+              "type": "string"
+            },
+            "nonFrontFacingEvents": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["eventId", "kind", "startSec", "endSec", "confidence", "evidenceRefs"],
+                "properties": {
+                  "eventId": {"type": "string", "minLength": 1},
+                  "kind": {"const": "FACE_NONFRONT_CANDIDATE"},
+                  "startSec": {"type": "number", "minimum": 0},
+                  "endSec": {"type": "number", "minimum": 0},
+                  "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+                  "evidenceRefs": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+                }
+              }
+            }
+          }
+        },
+        "handObservableSeconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "handStillSeconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "bothWristsVisibleSeconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "handCoverageRatio": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "gestureEvents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "eventId",
+              "kind",
+              "startSec",
+              "endSec",
+              "confidence",
+              "evidenceRefs"
+            ],
+            "properties": {
+              "eventId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "enum": [
+                  "HAND_STILLNESS",
+                  "OBJECT_INTERACTION_CANDIDATE",
+                  "OBJECT_FACE_OVERLAP_CANDIDATE",
+                  "HAND_FACE_OVERLAP_CANDIDATE"
+                ]
+              },
+              "startSec": {
+                "type": "number",
+                "minimum": 0
+              },
+              "endSec": {
+                "type": "number",
+                "minimum": 0
+              },
+              "confidence": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 1
+              },
+              "evidenceRefs": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string"
+                }
+              },
+              "objectLabelConfidence": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 1
+              }
+            }
+          }
+        },
+        "candidateEvents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "eventId",
+              "kind",
+              "startSec",
+              "endSec",
+              "confidence",
+              "evidenceRefs"
+            ],
+            "properties": {
+              "eventId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "enum": [
+                  "HAND_STILLNESS",
+                  "OBJECT_INTERACTION_CANDIDATE",
+                  "OBJECT_FACE_OVERLAP_CANDIDATE",
+                  "HAND_FACE_OVERLAP_CANDIDATE"
+                ]
+              },
+              "startSec": {
+                "type": "number",
+                "minimum": 0
+              },
+              "endSec": {
+                "type": "number",
+                "minimum": 0
+              },
+              "confidence": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 1
+              },
+              "evidenceRefs": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string"
+                }
+              },
+              "objectLabelConfidence": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 1
+              }
+            }
+          }
+        },
+        "unobservableIntervalsStatus": {
+          "const": "GENERATED"
+        },
+        "unobservableIntervals": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "criterionKey",
+              "startSec",
+              "endSec",
+              "reasonCode"
+            ],
+            "properties": {
+              "criterionKey": {
+                "enum": [
+                  "GAZE",
+                  "HAND_STILLNESS"
+                ]
+              },
+              "startSec": {
+                "type": "number",
+                "minimum": 0
+              },
+              "endSec": {
+                "type": "number",
+                "minimum": 0
+              },
+              "reasonCode": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "evidenceId",
+          "sourceType",
+          "startSec",
+          "endSec",
+          "description"
+        ],
+        "properties": {
+          "evidenceId": {
+            "type": "string"
+          },
+          "sourceType": {
+            "const": "VISION"
+          },
+          "startSec": {
+            "type": "number",
+            "minimum": 0
+          },
+          "endSec": {
+            "type": "number",
+            "minimum": 0
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "contextJudgments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "criterionKey",
+          "status",
+          "verdict",
+          "reason",
+          "evidenceRefs"
+        ],
+        "properties": {
+          "criterionKey": {
+            "const": "UNRELATED_OBJECT_TOUCH"
+          },
+          "status": {
+            "const": "NOT_RUN"
+          },
+          "verdict": {
+            "type": "null"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "evidenceRefs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

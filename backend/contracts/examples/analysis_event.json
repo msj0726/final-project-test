@@ -1,0 +1,12 @@
+{
+  "eventId": "00000000-0000-4000-8000-000000000005",
+  "analysisId": "00000000-0000-4000-8000-000000000002",
+  "attempt": 1,
+  "status": "DONE",
+  "stage": "DONE",
+  "progress": 100,
+  "occurredAt": "2026-11-10T00:00:00Z",
+  "result": {
+    "reportKey": "example-report-key"
+  }
+}

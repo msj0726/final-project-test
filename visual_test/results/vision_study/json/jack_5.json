@@ -1,0 +1,380 @@
+{
+  "schemaVersion": "vision-experiment-v1",
+  "clipId": "jack_5",
+  "sourceVideo": "jack_andraka_talk_2013",
+  "sourceStartSec": 5.0,
+  "sourceEndSec": 15.0,
+  "sampleDurationSeconds": 10,
+  "vision": {
+    "gaze": {
+      "observableSeconds": 10.0,
+      "frontFacingSeconds": 9.6,
+      "frontFacingRatio": 0.96,
+      "coverageRatio": 1.0,
+      "method": "EXPERIMENTAL_5_POINT_FACE_GEOMETRY"
+    },
+    "handObservableSeconds": 6.4,
+    "handStillSeconds": 0,
+    "bothWristsVisibleSeconds": 7.4,
+    "gestureEvents": [],
+    "criterionStatus": {
+      "HAND_STILLNESS": "EVALUATED",
+      "FACE_OCCLUSION": "CANDIDATE_ONLY",
+      "UNRELATED_OBJECT_TOUCH": "PENDING_CONTEXT_JUDGMENT"
+    },
+    "candidateEvents": [
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-haircut-1",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 5.0,
+        "endSec": 5.4,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "haircut",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-haircut-2",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 5.6,
+        "endSec": 6.0,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "haircut",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-haircut-3",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 6.2,
+        "endSec": 7.6,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "haircut",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-haircut-4",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 8.2,
+        "endSec": 9.0,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "haircut",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-haircut-5",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 9.2,
+        "endSec": 15.0,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "haircut",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-hairstyle-1",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 7.6,
+        "endSec": 8.2,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "hairstyle",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-sculptor-1",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 11.8,
+        "endSec": 12.2,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "sculptor",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-summer evening-1",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 5.2,
+        "endSec": 6.6,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "summer evening",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-summer evening-2",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 7.6,
+        "endSec": 9.4,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "summer evening",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-belt-1",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 5.6,
+        "endSec": 6.0,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "belt",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-belt-2",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 7.2,
+        "endSec": 7.6,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "belt",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-bracelet-1",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 6.2,
+        "endSec": 6.6,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "bracelet",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-business suit-1",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 6.6,
+        "endSec": 7.4,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "business suit",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-dress suit-1",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 5.2,
+        "endSec": 5.8,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "dress suit",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-dress suit-2",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 6.0,
+        "endSec": 6.4,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "dress suit",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-dress suit-3",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 7.8,
+        "endSec": 8.8,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "dress suit",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-iphone-1",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 5.0,
+        "endSec": 5.8,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "iphone",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-iphone-2",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 6.0,
+        "endSec": 6.6,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "iphone",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-lab coat-1",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 10.4,
+        "endSec": 10.8,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "lab coat",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-light show-1",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 10.2,
+        "endSec": 10.6,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "light show",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-light show-2",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 10.8,
+        "endSec": 11.2,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "light show",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-martial arts gym-1",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 11.2,
+        "endSec": 12.4,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "martial arts gym",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-military uniform-1",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 9.0,
+        "endSec": 9.8,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "military uniform",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-military uniform-2",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 11.0,
+        "endSec": 12.0,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "military uniform",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-sculptor-1",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 11.8,
+        "endSec": 12.2,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "sculptor",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-smartphone-1",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 7.8,
+        "endSec": 8.4,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "smartphone",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-summer evening-1",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 5.2,
+        "endSec": 7.2,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "summer evening",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-summer evening-2",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 7.6,
+        "endSec": 9.8,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "summer evening",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-waistband-1",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 6.6,
+        "endSec": 7.2,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "waistband",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-waistband-2",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 11.0,
+        "endSec": 11.4,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "waistband",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_5-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-waistband-3",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 11.6,
+        "endSec": 12.0,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "waistband",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      }
+    ]
+  },
+  "limitations": [
+    "실험용 임계값, 독립 정확도 검증 전, 실제 감점 없음",
+    "5 FPS 표본마다 0.2초를 대표하므로 시간은 표본 기반 추정",
+    "handObservableSeconds는 양손목·어깨 및 1초 연속 이력을 모두 확보한 시간",
+    "양손 정지는 손목 기준이며 손가락만의 움직임을 배제하지 못함",
+    "정면은 5개 얼굴 점의 기하학적 대리 지표, 실제 눈동자 시선 아님",
+    "물건/손 영역 겹침 및 근접은 가림/접촉의 확정 근거가 아님",
+    "LLM 미실행, 물건의 발표 관련성 미판정",
+    "가장 큰 단일 인물 선택은 발표자 신원을 보장하지 않음"
+  ],
+  "isScoringReady": false
+}

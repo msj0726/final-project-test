@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "vision-occlusion-extension-proposal",
+  "isProductionContract": false,
+  "handFaceOverlapCandidates": [
+    {
+      "eventId": "vision-hand_face_overlap_candidate-1",
+      "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+      "startSec": 2.2,
+      "endSec": 6.6,
+      "confidence": null,
+      "evidenceRefs": [
+        "vision-hand_face_overlap_candidate-1-evidence"
+      ]
+    },
+    {
+      "eventId": "vision-hand_face_overlap_candidate-2",
+      "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+      "startSec": 8.2,
+      "endSec": 8.6,
+      "confidence": null,
+      "evidenceRefs": [
+        "vision-hand_face_overlap_candidate-2-evidence"
+      ]
+    },
+    {
+      "eventId": "vision-hand_face_overlap_candidate-3",
+      "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+      "startSec": 9.2,
+      "endSec": 13.6,
+      "confidence": null,
+      "evidenceRefs": [
+        "vision-hand_face_overlap_candidate-3-evidence"
+      ]
+    },
+    {
+      "eventId": "vision-hand_face_overlap_candidate-4",
+      "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+      "startSec": 14.0,
+      "endSec": 15.6,
+      "confidence": null,
+      "evidenceRefs": [
+        "vision-hand_face_overlap_candidate-4-evidence"
+      ]
+    },
+    {
+      "eventId": "vision-hand_face_overlap_candidate-5",
+      "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+      "startSec": 19.6,
+      "endSec": 20.2,
+      "confidence": null,
+      "evidenceRefs": [
+        "vision-hand_face_overlap_candidate-5-evidence"
+      ]
+    },
+    {
+      "eventId": "vision-hand_face_overlap_candidate-6",
+      "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+      "startSec": 44.8,
+      "endSec": 49.0,
+      "confidence": null,
+      "evidenceRefs": [
+        "vision-hand_face_overlap_candidate-6-evidence"
+      ]
+    },
+    {
+      "eventId": "vision-hand_face_overlap_candidate-7",
+      "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+      "startSec": 52.2,
+      "endSec": 53.8,
+      "confidence": null,
+      "evidenceRefs": [
+        "vision-hand_face_overlap_candidate-7-evidence"
+      ]
+    }
+  ],
+  "gazeExclusionExperiment": {
+    "method": "HAND_HULL_OR_OBJECT_POLYGON_FACE_OVERLAP_GE_0_1",
+    "excludedObservableSeconds": 17.6,
+    "observableSeconds": 31.8,
+    "frontFacingSeconds": 26.4,
+    "frontFacingRatio": 0.8301886792452831
+  }
+}

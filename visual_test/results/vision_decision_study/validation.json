@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "actualJsonFiles": 9,
+  "actualVideoFrames": 450,
+  "syntheticBehaviorChecks": 14,
+  "negativeChecks": 3,
+  "nonEmptyCandidateSchemaTest": "SYNTHETIC_ONLY",
+  "checks": [
+    "schema",
+    "time sums",
+    "null semantics",
+    "reference integrity",
+    "NOT_RUN vs verdict",
+    "no score fields",
+    "video decode"
+  ]
+}

@@ -1,0 +1,291 @@
+Project ProPitch_ERD_v8 {
+  database_type: 'PostgreSQL'
+  Note: '공통/전문가 기준에 음성·영상 행동과 발표 내용 의미 평가를 포함한다. AI가 각각 채점한 뒤 정책 가중치로 최종 점수 하나를 만든다. 전문가 직접 채점은 없다. PDF 자료 대조는 READY 자료가 있을 때 수행한다.'
+}
+
+Table users {
+  id uuid [pk]
+  email varchar [not null, unique]
+  name varchar [not null]
+  password_hash varchar [not null]
+  role varchar [not null, note: 'USER 또는 ADMIN']
+  status varchar [not null]
+  created_at timestamp [not null]
+  deleted_at timestamp
+}
+
+Table auth_sessions {
+  id uuid [pk]
+  user_id uuid [not null, ref: > users.id]
+  refresh_token_hash varchar [not null]
+  expires_at timestamp [not null]
+  revoked_at timestamp
+  created_at timestamp [not null]
+}
+
+Table password_reset_tokens {
+  id uuid [pk]
+  user_id uuid [not null, ref: > users.id]
+  token_hash varchar [not null]
+  expires_at timestamp [not null]
+  used_at timestamp
+  created_at timestamp [not null]
+}
+
+Table agreements {
+  id uuid [pk]
+  user_id uuid [not null, unique, ref: > users.id]
+  terms boolean [not null]
+  privacy boolean [not null]
+  ai_analysis boolean [not null]
+  terms_version varchar [not null]
+  privacy_version varchar [not null]
+  ai_analysis_version varchar [not null]
+  agreed_at timestamp [not null]
+  created_at timestamp [not null]
+  Note: '회원가입 시 users와 같은 트랜잭션에서 만들고 사용자당 현재 동의 한 행만 유지한다. 이전 동의 이력은 보관하지 않는다.'
+}
+
+Table idempotency_keys {
+  key varchar [not null]
+  user_id uuid [not null, ref: > users.id]
+  endpoint varchar [not null]
+  request_hash varchar [not null]
+  response jsonb [not null]
+  created_at timestamp [not null]
+
+  indexes {
+    (user_id, key) [pk]
+  }
+}
+
+Table projects {
+  id uuid [pk]
+  user_id uuid [not null, ref: > users.id]
+  scoring_policy_id uuid [not null, ref: > scoring_policies.id]
+  name varchar [not null]
+  topic varchar [not null]
+  final_date date
+  target_minutes int [not null]
+  done boolean [not null]
+  created_at timestamp [not null]
+  deleted_at timestamp
+}
+
+Table materials {
+  id uuid [pk]
+  project_id uuid [not null, ref: > projects.id]
+  file_name varchar [not null]
+  size_bytes int [not null]
+  content_type varchar [not null, note: 'application/pdf만 허용. MIME뿐 아니라 PDF 본문도 검사.']
+  storage_key varchar [not null, unique, note: '자료 저장소 키는 불변·고유. 분석 근거의 자료 ID를 매핑하는 데 사용']
+  index_status varchar [not null]
+  confidential_confirmed boolean [not null]
+  created_at timestamp [not null]
+  deleted_at timestamp
+}
+
+Table material_chunks {
+  id uuid [pk]
+  material_id uuid [not null, ref: > materials.id]
+  page_no int [not null, note: 'PDF의 1부터 시작하는 페이지 번호. v7의 slide_no를 이름 변경']
+  text text [not null]
+  embedding vector [not null]
+  created_at timestamp [not null]
+}
+
+Table uploads {
+  id uuid [pk]
+  project_id uuid [not null, ref: > projects.id]
+  file_name varchar [not null]
+  size_bytes int [not null]
+  content_type varchar [not null]
+  checksum varchar [not null]
+  storage_key varchar [not null]
+  status varchar [not null]
+  expires_at timestamp [not null]
+  created_at timestamp [not null]
+}
+
+Table rounds {
+  id uuid [pk]
+  project_id uuid [not null, ref: > projects.id]
+  round_no int [not null]
+  upload_id uuid [not null, unique, ref: > uploads.id]
+  video_key varchar [not null]
+  duration_sec numeric [not null]
+  status varchar [not null]
+  created_at timestamp [not null]
+  deleted_at timestamp
+
+  indexes {
+    (project_id, round_no) [unique]
+  }
+  Note: '회차 생성과 업로드 준비 행은 한 트랜잭션으로 만들고 실패 시 함께 롤백. 각 저장된 회차는 업로드 하나와 짝을 이룬다.'
+}
+
+Table analysis_jobs {
+  id uuid [pk]
+  round_id uuid [not null, ref: > rounds.id]
+  attempt int [not null]
+  status varchar [not null]
+  progress int [not null]
+  failure_code varchar
+  model_ver varchar [not null, note: '서비스 전체에 공통 적용한 AI 코드/모델 버전의 기록. 영상별 설정값 아님.']
+  scoring_policy_id uuid [not null, ref: > scoring_policies.id]
+  input_snapshot jsonb [not null, note: '접수 시점 projectTopic과 READY materialId/storageKey 목록. 이후 프로젝트/자료 변경이 기존 결과에 영향을 주지 않음']
+  started_at timestamp [not null]
+  finished_at timestamp
+  created_at timestamp [not null]
+  indexes {
+    (round_id, attempt) [unique]
+  }
+}
+
+Table reports {
+  id uuid [pk]
+  round_id uuid [not null, unique, ref: > rounds.id]
+  job_id uuid [not null, unique, ref: > analysis_jobs.id]
+  common_score int [not null]
+  expert_score int [not null]
+  total_score int [not null, note: '두 기준의 AI 점수에 정책 가중치를 적용한 최종 점수']
+  target_minutes int [not null]
+  time_delta_minutes numeric
+  timeline jsonb [not null]
+  content_check jsonb [note: 'READY PDF와 발표 전사를 대조한 COVERED/PARTIAL/MISSING 결과. 자료 없으면 null. 내용 점수 전체와는 별개']
+  expected_questions jsonb [not null, note: '전사와 자료의 내용 분석에서 생성한 예상 질문 배열']
+  coaching jsonb [not null, note: '강점·개선점·실행 코칭. LLM은 루브릭 숫자 점수를 변경하지 않음']
+  quality varchar [not null]
+  limitations jsonb [not null]
+  created_at timestamp [not null]
+}
+
+Table report_scores {
+  id uuid [pk]
+  report_id uuid [not null, ref: > reports.id]
+  rubric_item_id uuid [not null, ref: > rubric_items.id]
+  score int [not null]
+  evidence jsonb [not null, note: '항목 점수의 근거 배열. 영상 fromSec/toSec와 관찰 신호 또는 transcript 발화, PDF materialId/pageNo/chunkId/excerpt 포함']
+  created_at timestamp [not null]
+  indexes {
+    (report_id, rubric_item_id) [unique]
+  }
+}
+
+Table report_segments {
+  id uuid [pk]
+  report_id uuid [not null, ref: > reports.id]
+  from_sec numeric [not null]
+  to_sec numeric [not null]
+  kind varchar [not null]
+  feedback text [not null]
+  created_at timestamp [not null]
+}
+
+Table qa_sessions {
+  id uuid [pk]
+  project_id uuid [not null, ref: > projects.id]
+  base_round_id uuid [not null, ref: > rounds.id]
+  status varchar [not null]
+  planned_count int [not null]
+  max_questions int [not null]
+  asked_count int [not null]
+  added_count int [not null]
+  ended_early boolean [not null]
+  consent_camera_mic boolean [not null]
+  started_at timestamp [not null]
+  ended_at timestamp
+  created_at timestamp [not null]
+
+  Note: 'READY/LIVE/WRAP_UP 상태에서 프로젝트당 진행 중 세션 하나만 허용. 부분 고유 인덱스는 별도 SQL로 구현.'
+}
+
+Table qa_reports {
+  id uuid [pk]
+  qa_session_id uuid [not null, unique, ref: > qa_sessions.id]
+  summary jsonb [not null]
+  quality varchar [not null]
+  limitations jsonb [not null]
+  model_ver varchar [not null]
+  rubric_ver varchar [not null]
+  created_at timestamp [not null]
+}
+
+Table qa_topics {
+  id uuid [pk]
+  qa_session_id uuid [not null, ref: > qa_sessions.id]
+  order_no int [not null]
+  kind varchar [not null]
+  title varchar [not null]
+  status varchar [not null]
+  result varchar
+  comment text
+  created_at timestamp [not null]
+}
+
+Table qa_questions {
+  id uuid [pk]
+  qa_session_id uuid [not null, ref: > qa_sessions.id]
+  qa_topic_id uuid [not null, ref: > qa_topics.id]
+  seq int [not null]
+  follow_up boolean [not null]
+  follow_up_kind varchar
+  text text [not null]
+  asked_at timestamp [not null]
+  created_at timestamp [not null]
+}
+
+Table qa_answers {
+  id uuid [pk]
+  qa_question_id uuid [not null, unique, ref: > qa_questions.id]
+  transcript text [not null]
+  started_at timestamp [not null]
+  ended_at timestamp [not null]
+  media_key varchar [note: '보관 여부 미확정. 보관하지 않으면 이 컬럼 제외.']
+  created_at timestamp [not null]
+}
+
+Table qa_evidences {
+  id uuid [pk]
+  qa_question_id uuid [not null, ref: > qa_questions.id]
+  kind varchar [not null]
+  ref varchar [not null]
+  excerpt text [not null]
+  created_at timestamp [not null]
+}
+
+Table rubrics {
+  id uuid [pk]
+  kind varchar [not null, note: 'COMMON 또는 EXPERT']
+  source_name varchar [note: '전문가 기준을 제공한 조직 또는 위원회']
+  version varchar [not null, unique]
+  memo text
+  created_by uuid [not null, ref: > users.id]
+  created_at timestamp [not null]
+}
+
+Table rubric_items {
+  id uuid [pk]
+  rubric_id uuid [not null, ref: > rubrics.id]
+  item_key varchar [not null]
+  name varchar [not null]
+  description text [not null]
+  scoring_guide text [not null, note: 'AI에 전달할 항목별 채점 기준']
+  evaluation_domain varchar [not null, note: 'DELIVERY | CONTENT | MIXED. 콘텐츠 항목도 자료 없이 전사+주제로 채점 가능해야 함']
+  weight numeric [not null, note: '총점 산출에 쓰는 항목 가중치']
+  created_at timestamp [not null]
+}
+
+Table scoring_policies {
+  id uuid [pk]
+  version varchar [not null, unique]
+  common_rubric_id uuid [not null, ref: > rubrics.id]
+  expert_rubric_id uuid [not null, ref: > rubrics.id]
+  common_weight numeric [not null]
+  expert_weight numeric [not null]
+  status varchar [not null]
+  created_by uuid [not null, ref: > users.id]
+  created_at timestamp [not null]
+  Note: '두 가중치의 합은 1. 루브릭 종류는 각각 COMMON/EXPERT. 운영 중에는 활성 정책 하나를 공통으로 적용하고 변경 시 새 버전을 만든다.'
+}
+

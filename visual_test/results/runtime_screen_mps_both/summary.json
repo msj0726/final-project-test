@@ -1,0 +1,113 @@
+{
+  "setup": {
+    "hardware": "macOS-26.1-arm64-arm-64bit",
+    "torch": "2.15.0",
+    "opencv": "5.0.0",
+    "pose_device": "mps",
+    "face_device": "mps",
+    "parallel_stages": false,
+    "torch_threads": 1,
+    "models": [
+      "yolo11n-pose.pt",
+      "yolov5n-face.pt"
+    ],
+    "pose_conf": 0.5,
+    "face_conf": 0.5,
+    "keypoint_conf": 0.5,
+    "image_size": 640,
+    "arm_rule": "wrist_y < shoulder_y - 0.1 * shoulder_width",
+    "gesture_rule": "wrist-minus-shoulder displacement >= 0.25 shoulder widths in 0.5s",
+    "videos": 6,
+    "windows": 18,
+    "seconds_per_window": 1,
+    "source_fps": 30,
+    "warmup_frames": 5,
+    "face_ground_truth": "unavailable: faces masked",
+    "behavior_ground_truth": "unavailable: no arm/gesture time labels"
+  },
+  "offline": {
+    "frames": 540,
+    "elapsed_s": 8.0,
+    "throughput_fps": 67.52,
+    "read_ms": {
+      "median": 0.55,
+      "p95": 0.61,
+      "p99": 1.07
+    },
+    "face_ms": {
+      "median": 7.36,
+      "p95": 9.34,
+      "p99": 9.97
+    },
+    "pose_ms": {
+      "median": 4.86,
+      "p95": 7.29,
+      "p99": 7.5
+    },
+    "action_ms": {
+      "median": 0.64,
+      "p95": 0.73,
+      "p99": 0.9
+    },
+    "end_to_end_ms": {
+      "median": 13.63,
+      "p95": 17.49,
+      "p99": 19.29
+    }
+  },
+  "paced": {
+    "decoded_frames": 540,
+    "output_frames": 540,
+    "overwritten_frames": 0,
+    "drop_rate": 0.0,
+    "elapsed_s": 17.83,
+    "output_fps": 30.0,
+    "wall_output_fps": 30.29,
+    "read_ms": {
+      "median": 0.75,
+      "p95": 0.92,
+      "p99": 1.21
+    },
+    "face_ms": {
+      "median": 11.07,
+      "p95": 13.02,
+      "p99": 13.33
+    },
+    "pose_ms": {
+      "median": 7.91,
+      "p95": 9.89,
+      "p99": 10.32
+    },
+    "action_ms": {
+      "median": 0.72,
+      "p95": 1.0,
+      "p99": 1.17
+    },
+    "queue_ms": {
+      "median": 10.05,
+      "p95": 10.06,
+      "p99": 10.18
+    },
+    "capture_to_output_ms": {
+      "median": 29.57,
+      "p95": 34.19,
+      "p99": 34.82
+    }
+  },
+  "outputs": {
+    "offline": {
+      "face_output_rate": 0.0481,
+      "person_output_rate": 1.0,
+      "arm_yes_rate": 0.0593,
+      "gesture_yes_rate": 0.0519,
+      "gesture_unknown_rate": 0.413
+    },
+    "paced": {
+      "face_output_rate": 0.0481,
+      "person_output_rate": 1.0,
+      "arm_yes_rate": 0.0593,
+      "gesture_yes_rate": 0.0519,
+      "gesture_unknown_rate": 0.413
+    }
+  }
+}

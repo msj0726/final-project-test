@@ -1,0 +1,30 @@
+{
+  "strict": {
+    "trackCount": 58,
+    "nearDetectionCount": 33,
+    "reasons": {
+      "TEMPORAL_WARMUP": 29,
+      "MOTION_MISMATCH": 4
+    },
+    "interactionCandidates": 0
+  },
+  "gap04SixSamples": {
+    "trackCount": 46,
+    "nearDetectionCount": 33,
+    "reasons": {
+      "TEMPORAL_WARMUP": 29,
+      "MOTION_MISMATCH": 4
+    },
+    "interactionCandidates": 0
+  },
+  "gap04FourSamples": {
+    "trackCount": 46,
+    "nearDetectionCount": 33,
+    "reasons": {
+      "TEMPORAL_WARMUP": 28,
+      "MOTION_MISMATCH": 5
+    },
+    "interactionCandidates": 0
+  },
+  "note": "Same cached selected-model outputs. Gap-ID retention and 4-of-6 temporal observations separated in three variants; no coordinate interpolation."
+}

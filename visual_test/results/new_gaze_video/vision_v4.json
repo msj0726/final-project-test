@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "vision-observation-v4-experiment",
+  "observationConfigVersion": "vision-20261111-v4-nonfront5-eye-occlusion",
+  "sourceStartSec": 0,
+  "sourceEndSec": 36.2,
+  "sampleDurationSeconds": 36.2,
+  "isScoringReady": false,
+  "vision": {
+    "gaze": {
+      "observableSeconds": 25.8,
+      "frontFacingSeconds": 17.2,
+      "frontFacingRatio": 0.6666666666666666,
+      "coverageRatio": 0.712707182320442,
+      "method": "EXPERIMENTAL_5_POINT_FACE_GEOMETRY",
+      "nonFrontFacingEvents": [
+        {
+          "eventId": "vision-face_nonfront_candidate-1",
+          "kind": "FACE_NONFRONT_CANDIDATE",
+          "startSec": 5.4,
+          "endSec": 14.0,
+          "confidence": null,
+          "evidenceRefs": [
+            "vision-face_nonfront_candidate-1-evidence"
+          ]
+        }
+      ]
+    },
+    "handObservableSeconds": 7.0,
+    "handStillSeconds": 0,
+    "bothWristsVisibleSeconds": 9.2,
+    "handCoverageRatio": 0.19337016574585633,
+    "gestureEvents": [],
+    "candidateEvents": [
+      {
+        "eventId": "vision-hand_face_overlap_candidate-1",
+        "kind": "HAND_FACE_OVERLAP_CANDIDATE",
+        "startSec": 22.4,
+        "endSec": 26.0,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-hand_face_overlap_candidate-1-evidence"
+        ]
+      }
+    ],
+    "interactionDiagnostics": {
+      "nearWristDetectionCount": 0,
+      "insufficientHistoryCount": 0,
+      "motionMismatchCount": 0,
+      "insufficientMotionCount": 0,
+      "comovingDetectionCount": 0,
+      "unit": "DETECTION_INSTANCES_NOT_EVENTS"
+    },
+    "unobservableIntervalsStatus": "GENERATED",
+    "unobservableIntervals": [
+      {
+        "criterionKey": "GAZE",
+        "startSec": 22.4,
+        "endSec": 25.8,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 26.2,
+        "endSec": 26.4,
+        "reasonCode": "EYE_REGION_OVERLAP"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 26.4,
+        "endSec": 33.2,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 0.0,
+        "endSec": 23.4,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 23.4,
+        "endSec": 24.4,
+        "reasonCode": "TEMPORAL_WARMUP"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 25.6,
+        "endSec": 26.0,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 26.0,
+        "endSec": 26.2,
+        "reasonCode": "TEMPORAL_WARMUP"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 26.2,
+        "endSec": 26.4,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 26.4,
+        "endSec": 27.4,
+        "reasonCode": "TEMPORAL_WARMUP"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 33.2,
+        "endSec": 36.2,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      }
+    ],
+    "criterionStatus": {
+      "HAND_STILLNESS": "EVALUATED",
+      "FACE_OCCLUSION": "CANDIDATE_ONLY",
+      "UNRELATED_OBJECT_TOUCH": "NOT_EVALUATED"
+    }
+  },
+  "evidence": [
+    {
+      "evidenceId": "vision-face_nonfront_candidate-1-evidence",
+      "sourceType": "VISION",
+      "startSec": 5.4,
+      "endSec": 14.0,
+      "description": "얼굴 방향이 중앙 카메라 기준 비정면으로 5초 이상 연속 판정된 후보; 눈동자 시선·관객 응시 미확정"
+    },
+    {
+      "evidenceId": "vision-hand_face_overlap_candidate-1-evidence",
+      "sourceType": "VISION",
+      "startSec": 22.4,
+      "endSec": 26.0,
+      "description": "손 특징점 외곽과 얼굴 박스의 겹침 후보; 실제 가림 미확정"
+    }
+  ],
+  "contextJudgments": [
+    {
+      "criterionKey": "UNRELATED_OBJECT_TOUCH",
+      "status": "NOT_RUN",
+      "verdict": null,
+      "reason": "LLM_NOT_EXECUTED",
+      "evidenceRefs": []
+    }
+  ],
+  "limitations": [
+    "점수 환산 보류; 이 결과는 루브릭 입력용 관찰값이며 최종 Report가 아님.",
+    "양손 정지는 손목 기준 5초; 손가락 움직임은 판정하지 않음.",
+    "카메라 정면은 얼굴 5점 기하의 추정이며 실제 눈동자 시선이 아님. 손·물건이 눈 영역과 겹치면 관찰 불가로 제외.",
+    "물건의 실제 얼굴 가림·접촉·발표 관련성은 확정하지 않음.",
+    "0.4초 물건 추적 ID만 유지하며 미검출 프레임은 보간하지 않음.",
+    "실험 임계값은 독립 정확도 검증 전; 미검출은 행동 부재가 아님.",
+    "손 특징점 외곽과 얼굴 박스의 2D 겹침은 실제 가림을 확정하지 않음."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "cameraAssumption": "AUDIENCE_CENTER_NEAR_CAMERA",
+  "positiveRule": "FACE_DIRECTION_TOWARD_CAMERA_OR_FRONT_AUDIENCE_PROXY",
+  "negativeRule": "CONTINUOUS_OBSERVABLE_AWAY_AT_LEAST_5_SECONDS",
+  "humanLabel": {
+    "startSec": 6,
+    "endSec": 14,
+    "kind": "AWAY_FROM_CENTER"
+  },
+  "modelAwayInterval": {
+    "startSec": 5.4,
+    "endSec": 14,
+    "durationSeconds": 8.6
+  },
+  "humanLabeledFrames": 40,
+  "correctlyClassifiedAwayFrames": 40,
+  "negativeCandidateDetected": true,
+  "scoringReady": false,
+  "gazeBeforeOcclusionExclusion": {
+    "observableSeconds": 29.4,
+    "frontFacingSeconds": 20.8,
+    "frontFacingRatio": 0.7074829931972789,
+    "coverageRatio": 0.8121546961325966,
+    "method": "EXPERIMENTAL_5_POINT_FACE_GEOMETRY"
+  },
+  "knownIssue": "Eye-region 2D overlap may still misclassify depth or miss occlusion when hands are not detected",
+  "gazeAfterEyeOcclusionExclusion": {
+    "observableSeconds": 25.8,
+    "frontFacingSeconds": 17.2,
+    "frontFacingRatio": 0.6666666666666666,
+    "coverageRatio": 0.712707182320442,
+    "method": "EXPERIMENTAL_5_POINT_FACE_GEOMETRY"
+  },
+  "gazeExclusionStatus": "IMPLEMENTED_IN_BACKEND_VISION"
+}

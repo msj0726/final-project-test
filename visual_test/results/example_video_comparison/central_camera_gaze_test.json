@@ -1,0 +1,95 @@
+{
+  "source": "예시.mov",
+  "cameraAssumption": "AUDIENCE_CENTER_NEAR_CAMERA",
+  "positiveMeaning": "FACE_DIRECTION_TOWARD_CENTER_CAMERA_OR_FRONT_AUDIENCE_PROXY",
+  "negativeRule": "CONTINUOUS_OBSERVABLE_AWAY_AT_LEAST_5_SECONDS",
+  "faceDirectionOnly": true,
+  "awayIntervals": [
+    {
+      "startSec": 9.2,
+      "endSec": 9.4,
+      "durationSeconds": 0.2
+    },
+    {
+      "startSec": 14.0,
+      "endSec": 14.2,
+      "durationSeconds": 0.2
+    },
+    {
+      "startSec": 24.4,
+      "endSec": 25.0,
+      "durationSeconds": 0.6
+    },
+    {
+      "startSec": 25.4,
+      "endSec": 25.8,
+      "durationSeconds": 0.4
+    },
+    {
+      "startSec": 49.6,
+      "endSec": 50.4,
+      "durationSeconds": 0.8
+    },
+    {
+      "startSec": 51.4,
+      "endSec": 54.2,
+      "durationSeconds": 2.8
+    },
+    {
+      "startSec": 56.0,
+      "endSec": 57.8,
+      "durationSeconds": 1.8
+    },
+    {
+      "startSec": 61.0,
+      "endSec": 61.6,
+      "durationSeconds": 0.6
+    }
+  ],
+  "negativeCandidateEvents": [],
+  "strictOverlapMaskComparison": {
+    "awayIntervals": [
+      {
+        "startSec": 24.4,
+        "endSec": 25.0,
+        "durationSeconds": 0.6
+      },
+      {
+        "startSec": 25.4,
+        "endSec": 25.8,
+        "durationSeconds": 0.4
+      },
+      {
+        "startSec": 49.6,
+        "endSec": 50.4,
+        "durationSeconds": 0.8
+      },
+      {
+        "startSec": 51.4,
+        "endSec": 52.2,
+        "durationSeconds": 0.8
+      },
+      {
+        "startSec": 53.8,
+        "endSec": 54.2,
+        "durationSeconds": 0.4
+      },
+      {
+        "startSec": 56.0,
+        "endSec": 57.8,
+        "durationSeconds": 1.8
+      },
+      {
+        "startSec": 61.0,
+        "endSec": 61.6,
+        "durationSeconds": 0.6
+      }
+    ],
+    "negativeCandidateEvents": [],
+    "status": "DIAGNOSTIC_ONLY_OVEREXCLUDES_SIDE_LOOKING_WITH_HAND_NEAR_FACE"
+  },
+  "coverageSeconds": 49.4,
+  "videoSeconds": 62.8,
+  "humanLabel": "NO_INTENTIONAL_LONG_AWAY_IN_THIS_VIDEO_USER_CONFIRMED",
+  "eyeGazeValidated": false
+}

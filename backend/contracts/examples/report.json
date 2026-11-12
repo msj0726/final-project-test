@@ -1,0 +1,115 @@
+{
+  "analysisId": "00000000-0000-4000-8000-000000000002",
+  "projectId": "00000000-0000-4000-8000-000000000003",
+  "roundNo": 1,
+  "status": "DONE",
+  "totalScore": 75,
+  "scores": [
+    {
+      "rubricItemId": "00000000-0000-4000-8000-000000000004",
+      "itemKey": "SPEECH_RATE",
+      "score": 72,
+      "weight": 0.25,
+      "evidence": [
+        {
+          "fromSec": 0,
+          "toSec": 1,
+          "signal": "example_signal",
+          "value": 1,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "rubricItemId": "00000000-0000-4000-8000-000000000005",
+      "itemKey": "FLUENCY",
+      "score": 68,
+      "weight": 0.25,
+      "evidence": [
+        {
+          "fromSec": 0,
+          "toSec": 1,
+          "signal": "example_signal",
+          "value": 1,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "rubricItemId": "00000000-0000-4000-8000-000000000006",
+      "itemKey": "GESTURE",
+      "score": 76,
+      "weight": 0.25,
+      "evidence": [
+        {
+          "fromSec": 0,
+          "toSec": 1,
+          "signal": "example_signal",
+          "value": 1,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "rubricItemId": "00000000-0000-4000-8000-000000000007",
+      "itemKey": "GAZE",
+      "score": 84,
+      "weight": 0.25,
+      "evidence": [
+        {
+          "fromSec": 0,
+          "toSec": 1,
+          "signal": "example_signal",
+          "value": 1,
+          "reason": null
+        }
+      ]
+    }
+  ],
+  "versions": {
+    "model": "example-model-v1",
+    "rubric": "example-rubric-v1"
+  },
+  "segments": [
+    {
+      "fromSec": 0,
+      "toSec": 1,
+      "kind": "EXAMPLE",
+      "feedback": "계약 형식을 보여주는 예시입니다."
+    }
+  ],
+  "timeline": {
+    "example_signal": [
+      {
+        "fromSec": 0,
+        "toSec": 1,
+        "signal": "example_signal",
+        "value": 1,
+        "reason": null
+      }
+    ]
+  },
+  "coaching": {
+    "strengths": [
+      "계약 형식 예시"
+    ],
+    "improvements": [],
+    "actions": []
+  },
+  "targetMinutes": 0,
+  "timeCheck": {
+    "actualMinutes": 0.016666666666666666,
+    "deltaMinutes": null
+  },
+  "contentCheck": null,
+  "expectedQuestions": [
+    {
+      "kind": "EXAMPLE",
+      "text": "계약 예시 질문입니다."
+    }
+  ],
+  "quality": "DEGRADED",
+  "limitations": [
+    "CONTRACT_EXAMPLE_ONLY"
+  ]
+}

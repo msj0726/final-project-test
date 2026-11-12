@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "originalName": "ProPitch_사용자_API_명세_v3.5_DB영상_STT_단일루브릭.md",
+      "storedName": "user-api-v3.5.md",
+      "sha256": "b8e7e8399d773b0a342b304c07837c2cf1507e37ed0b50298d1061f57a598255"
+    },
+    {
+      "originalName": "ProPitch_AI_내부_API_명세_v1.4_4항목_규칙_LLM평가.md",
+      "storedName": "analysis-api-v1.4.md",
+      "sha256": "65d8e42c29edd889c1d6b98558a99ad26cbe3de3beed91e2c0daa3bbf1744430"
+    },
+    {
+      "originalName": "01_ProPitch_ERD_v10_4항목_규칙_LLM평가.dbml",
+      "storedName": "erd-v10.dbml",
+      "sha256": "089d3b57a9643b16beca03ad03c8ccc5c9ed5a3c009cf8a3691f14be45f846f0"
+    },
+    {
+      "originalName": "ProPitch_ERD_v10_Guide.html",
+      "storedName": "erd-v10-guide.html",
+      "sha256": "44578ce65b226222f86900951df24a9a7368dd42e8c35005e9170535840dc0a3"
+    }
+  ]
+}

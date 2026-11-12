@@ -1,0 +1,57 @@
+{
+  "$defs": {
+    "Utterance": {
+      "additionalProperties": false,
+      "properties": {
+        "seq": {
+          "minimum": 1,
+          "title": "Seq",
+          "type": "integer"
+        },
+        "startSec": {
+          "minimum": 0,
+          "title": "Startsec",
+          "type": "number"
+        },
+        "endSec": {
+          "minimum": 0,
+          "title": "Endsec",
+          "type": "number"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "seq",
+        "startSec",
+        "endSec",
+        "text"
+      ],
+      "title": "Utterance",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "utterances": {
+      "items": {
+        "$ref": "#/$defs/Utterance"
+      },
+      "title": "Utterances",
+      "type": "array"
+    },
+    "attempt": {
+      "minimum": 1,
+      "title": "Attempt",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "utterances",
+    "attempt"
+  ],
+  "title": "UtterancesWrite",
+  "type": "object"
+}

@@ -1,0 +1,38 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "topic": {
+      "title": "Topic",
+      "type": "string"
+    },
+    "finalDate": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Finaldate"
+    },
+    "targetMinutes": {
+      "default": 30,
+      "minimum": 0,
+      "title": "Targetminutes",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "name",
+    "topic"
+  ],
+  "title": "ProjectCreate",
+  "type": "object"
+}

@@ -1,0 +1,44 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+credentials*.json
+# Dependencies and build outputs
+node_modules/
+dist/
+build/
+.next/
+coverage/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+.gradle/
+target/
+# Local files
+.DS_Store
+/tmp/
+.idea/
+*.log
+# Data, uploads and model weights (share through approved storage)
+/data/
+/datasets/
+/uploads/
+/models/
+/checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+
+# Local Vision dependencies and downloaded model files
+visual_test/.report_tools/
+visual_test/models/

@@ -1,0 +1,119 @@
+{
+  "$defs": {
+    "Failure": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "minLength": 1,
+          "title": "Code",
+          "type": "string"
+        },
+        "retryable": {
+          "title": "Retryable",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "code",
+        "retryable"
+      ],
+      "title": "Failure",
+      "type": "object"
+    },
+    "JobStatus": {
+      "enum": [
+        "QUEUED",
+        "EXTRACTING",
+        "ANALYZING",
+        "SCORING",
+        "DONE",
+        "FAILED"
+      ],
+      "title": "JobStatus",
+      "type": "string"
+    },
+    "ResultRef": {
+      "additionalProperties": false,
+      "properties": {
+        "reportKey": {
+          "minLength": 1,
+          "title": "Reportkey",
+          "type": "string"
+        }
+      },
+      "required": [
+        "reportKey"
+      ],
+      "title": "ResultRef",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "eventId": {
+      "format": "uuid",
+      "title": "Eventid",
+      "type": "string"
+    },
+    "analysisId": {
+      "format": "uuid",
+      "title": "Analysisid",
+      "type": "string"
+    },
+    "attempt": {
+      "minimum": 1,
+      "title": "Attempt",
+      "type": "integer"
+    },
+    "status": {
+      "$ref": "#/$defs/JobStatus"
+    },
+    "stage": {
+      "enum": [
+        "QUEUED",
+        "PREPROCESS",
+        "AUDIO",
+        "VIDEO",
+        "ALIGN",
+        "RUBRIC_RULE",
+        "RUBRIC_HEURISTIC",
+        "SCORE_AGGREGATE",
+        "FEEDBACK",
+        "DONE",
+        "FAILED"
+      ],
+      "title": "Stage",
+      "type": "string"
+    },
+    "progress": {
+      "maximum": 100,
+      "minimum": 0,
+      "title": "Progress",
+      "type": "integer"
+    },
+    "occurredAt": {
+      "format": "date-time",
+      "title": "Occurredat",
+      "type": "string"
+    },
+    "result": {
+      "$ref": "#/$defs/ResultRef",
+      "default": null
+    },
+    "failure": {
+      "$ref": "#/$defs/Failure",
+      "default": null
+    }
+  },
+  "required": [
+    "eventId",
+    "analysisId",
+    "attempt",
+    "status",
+    "stage",
+    "progress",
+    "occurredAt"
+  ],
+  "title": "AnalysisEvent",
+  "type": "object"
+}

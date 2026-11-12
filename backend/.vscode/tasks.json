@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Setup",
+      "type": "shell",
+      "command": "uv sync --locked",
+      "problemMatcher": []
+    },
+    {
+      "label": "Check",
+      "type": "shell",
+      "command": "uv run --locked ruff check . && uv run --locked ruff format --check . && uv run --locked pytest",
+      "problemMatcher": []
+    }
+  ]
+}

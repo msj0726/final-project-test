@@ -1,0 +1,8 @@
+{
+  "jobId": "00000000-0000-4000-8000-000000000001",
+  "analysisId": "00000000-0000-4000-8000-000000000002",
+  "attempt": 1,
+  "modelVersion": "example-model-v1",
+  "rubricVersion": "example-rubric-v1",
+  "targetMinutes": 0
+}

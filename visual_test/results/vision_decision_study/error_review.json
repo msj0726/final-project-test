@@ -1,0 +1,32 @@
+[
+  {
+    "image": "erik_10_000.jpg",
+    "title": "손이 안 보이는 경우: 관찰 불가를 정상으로 처리하지 않음",
+    "description": "손목은 화면 밖이다. 양손 정지 판정 시간 0초, handStillSeconds=null이며 관찰 불가 구간과 이유를 기록했다. 정지 사건 0건이나 미검출을 100점으로 환산하지 않는다.",
+    "reviewType": "ASSISTANT_POST_HOC_VISUAL_REVIEW"
+  },
+  {
+    "image": "jack_65_025.jpg",
+    "title": "우산 오검출: 근접만으로는 사건이 생김",
+    "description": "70.003초에 무대 영역을 umbrella로 검출했다. 손목과 가까운 출력이 이어져 단순 근접 기준에선 후보가 되지만 동반 이동 기준의 실제 확정 후보에는 들어가지 않았다. 다만 다른 장면의 오검출까지 해결했다는 근거는 없다.",
+    "reviewType": "ASSISTANT_POST_HOC_VISUAL_REVIEW"
+  },
+  {
+    "image": "jack_5_000.jpg",
+    "title": "작은 손 안 물건: 후보 0개가 행동 없음은 아님",
+    "description": "5.005초 손 주변에는 작은 어두운 물체가 보인다. 이 프레임의 YOLO11n-seg 비사람 물건 출력은 없다. 작은 물건을 놓치면 추적·동반 이동을 추가해도 복구할 수 없다. 정확한 물건 종류는 확정하지 않았다.",
+    "reviewType": "ASSISTANT_POST_HOC_VISUAL_REVIEW"
+  },
+  {
+    "image": "jack_105_000.jpg",
+    "title": "정면 기하 규칙: 고개 숙임 오판 위험이 남음",
+    "description": "105.005초에 고개가 아래쪽으로 숙여 보이지만 카메라 정면 규칙은 YES다. 눈동자 방향은 평가하지 않으며 실제 고개 각도 정답이 없어 확정 오류율은 계산하지 않았다.",
+    "reviewType": "ASSISTANT_POST_HOC_VISUAL_REVIEW"
+  },
+  {
+    "image": "jack_325_000.jpg",
+    "title": "정면 비율 100%와 낮은 관찰률을 함께 표시",
+    "description": "325–335초 중 얼굴 방향을 관찰한 시간은 0.6초다. 정면 비율은 1.0이지만 관찰률은 0.06이다. 사용자 결정대로 비율·시간만 제공하고 점수는 만들지 않았다.",
+    "reviewType": "ASSISTANT_POST_HOC_VISUAL_REVIEW"
+  }
+]

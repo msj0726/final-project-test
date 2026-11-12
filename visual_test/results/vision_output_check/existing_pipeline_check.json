@@ -1,0 +1,79 @@
+{
+  "purpose": "Existing CPU pipeline output smoke check, not behavior accuracy evaluation",
+  "requestedJsonProduced": false,
+  "checks": [
+    {
+      "video": "erik_hanberg_lightning_2024",
+      "startSec": 10,
+      "frames": 30,
+      "cpuElapsedSeconds": 1.775,
+      "returnedKeys": [
+        "action_ms",
+        "arm_raised",
+        "face_boxes_xyxy_conf",
+        "face_count",
+        "face_ms",
+        "inference_ms",
+        "large_wrist_motion_proxy",
+        "person_box_xyxy",
+        "person_count",
+        "pose_ms",
+        "shoulder_elbow_wrist_xy_valid"
+      ],
+      "missingRequestedFields": [
+        "gaze",
+        "handObservableSeconds",
+        "handStillSeconds",
+        "gestureEvents",
+        "criterionStatus"
+      ],
+      "faceOutputFrames": 30,
+      "personOutputFrames": 30,
+      "bothWristsValidFrames": 0,
+      "largeWristMotionUnknownFrames": 30,
+      "rawFaceTensorShape": [
+        1,
+        16
+      ]
+    },
+    {
+      "video": "jack_andraka_talk_2013",
+      "startSec": 175,
+      "frames": 30,
+      "cpuElapsedSeconds": 1.829,
+      "returnedKeys": [
+        "action_ms",
+        "arm_raised",
+        "face_boxes_xyxy_conf",
+        "face_count",
+        "face_ms",
+        "inference_ms",
+        "large_wrist_motion_proxy",
+        "person_box_xyxy",
+        "person_count",
+        "pose_ms",
+        "shoulder_elbow_wrist_xy_valid"
+      ],
+      "missingRequestedFields": [
+        "gaze",
+        "handObservableSeconds",
+        "handStillSeconds",
+        "gestureEvents",
+        "criterionStatus"
+      ],
+      "faceOutputFrames": 0,
+      "personOutputFrames": 0,
+      "bothWristsValidFrames": 0,
+      "largeWristMotionUnknownFrames": 30,
+      "rawFaceTensorShape": [
+        0,
+        16
+      ]
+    }
+  ],
+  "notes": [
+    "No gaze, hand stillness, event aggregation or criterion status implementation exists in the current pipeline.",
+    "Face landmarks are not saved and current face preprocessing rescales boxes only.",
+    "30 sequential frames per video; no full-video duration statistics or accuracy claims."
+  ]
+}

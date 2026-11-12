@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "vision-observation-v2-experiment",
+  "observationConfigVersion": "vision-20261111-v2-gap04-min6",
+  "sourceStartSec": 0,
+  "sourceEndSec": 40.2,
+  "sampleDurationSeconds": 40.2,
+  "isScoringReady": false,
+  "vision": {
+    "gaze": {
+      "observableSeconds": 38.8,
+      "frontFacingSeconds": 34.2,
+      "frontFacingRatio": 0.8814432989690723,
+      "coverageRatio": 0.9651741293532337,
+      "method": "EXPERIMENTAL_5_POINT_FACE_GEOMETRY"
+    },
+    "handObservableSeconds": 0,
+    "handStillSeconds": null,
+    "bothWristsVisibleSeconds": 0,
+    "handCoverageRatio": 0.0,
+    "gestureEvents": [],
+    "candidateEvents": [
+      {
+        "eventId": "vision-object_face_overlap_candidate-object-6-1",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 11.6,
+        "endSec": 12.0,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-object_face_overlap_candidate-object-6-1-evidence"
+        ],
+        "objectTrackId": "object-6",
+        "objectLabel": "cell phone",
+        "objectLabelConfidence": 0.46
+      },
+      {
+        "eventId": "vision-object_face_overlap_candidate-object-6-2",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 12.6,
+        "endSec": 16.2,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-object_face_overlap_candidate-object-6-2-evidence"
+        ],
+        "objectTrackId": "object-6",
+        "objectLabel": "cell phone",
+        "objectLabelConfidence": 0.531
+      }
+    ],
+    "interactionDiagnostics": {
+      "nearWristDetectionCount": 0,
+      "insufficientHistoryCount": 0,
+      "motionMismatchCount": 0,
+      "insufficientMotionCount": 0,
+      "comovingDetectionCount": 0,
+      "unit": "DETECTION_INSTANCES_NOT_EVENTS"
+    },
+    "unobservableIntervalsStatus": "GENERATED",
+    "unobservableIntervals": [
+      {
+        "criterionKey": "GAZE",
+        "startSec": 0.2,
+        "endSec": 0.4,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 7.6,
+        "endSec": 7.8,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 8.6,
+        "endSec": 9.0,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 12.0,
+        "endSec": 12.6,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 0.0,
+        "endSec": 0.2,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 0.2,
+        "endSec": 0.4,
+        "reasonCode": "NO_BODY"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 0.4,
+        "endSec": 40.2,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      }
+    ],
+    "criterionStatus": {
+      "HAND_STILLNESS": "UNOBSERVABLE",
+      "FACE_OCCLUSION": "CANDIDATE_ONLY",
+      "UNRELATED_OBJECT_TOUCH": "NOT_EVALUATED"
+    }
+  },
+  "evidence": [
+    {
+      "evidenceId": "vision-object_face_overlap_candidate-object-6-1-evidence",
+      "sourceType": "VISION",
+      "startSec": 11.6,
+      "endSec": 12.0,
+      "description": "물건 마스크와 얼굴 박스의 겹침 후보; 실제 가림 미확정"
+    },
+    {
+      "evidenceId": "vision-object_face_overlap_candidate-object-6-2-evidence",
+      "sourceType": "VISION",
+      "startSec": 12.6,
+      "endSec": 16.2,
+      "description": "물건 마스크와 얼굴 박스의 겹침 후보; 실제 가림 미확정"
+    }
+  ],
+  "contextJudgments": [
+    {
+      "criterionKey": "UNRELATED_OBJECT_TOUCH",
+      "status": "NOT_RUN",
+      "verdict": null,
+      "reason": "LLM_NOT_EXECUTED",
+      "evidenceRefs": []
+    }
+  ],
+  "limitations": [
+    "점수 환산 보류; 이 결과는 루브릭 입력용 관찰값이며 최종 Report가 아님.",
+    "양손 정지는 손목 기준 5초; 손가락 움직임은 판정하지 않음.",
+    "카메라 정면은 얼굴 5점 기하의 추정이며 실제 눈동자 시선이 아님.",
+    "물건의 실제 얼굴 가림·접촉·발표 관련성은 확정하지 않음.",
+    "0.4초 물건 추적 ID만 유지하며 미검출 프레임은 보간하지 않음.",
+    "실험 임계값은 독립 정확도 검증 전; 미검출은 행동 부재가 아님."
+  ]
+}

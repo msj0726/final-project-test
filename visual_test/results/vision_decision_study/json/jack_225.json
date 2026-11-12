@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "vision-observation-v2-experiment",
+  "observationConfigVersion": "vision-20261111-v2-gap04-min6",
+  "clipId": "jack_225",
+  "sourceVideo": "jack_andraka_talk_2013",
+  "sourceStartSec": 225.0,
+  "sourceEndSec": 235.0,
+  "sampleDurationSeconds": 10,
+  "isScoringReady": false,
+  "vision": {
+    "gaze": {
+      "observableSeconds": 9.8,
+      "frontFacingSeconds": 3.8,
+      "frontFacingRatio": 0.38775510204081626,
+      "coverageRatio": 0.9800000000000001,
+      "method": "EXPERIMENTAL_5_POINT_FACE_GEOMETRY"
+    },
+    "handObservableSeconds": 0.0,
+    "handStillSeconds": null,
+    "bothWristsVisibleSeconds": 0.8,
+    "handCoverageRatio": 0.0,
+    "gestureEvents": [],
+    "candidateEvents": [],
+    "interactionDiagnostics": {
+      "nearWristDetectionCount": 1,
+      "insufficientHistoryCount": 1,
+      "motionMismatchCount": 0,
+      "insufficientMotionCount": 0,
+      "comovingDetectionCount": 0,
+      "unit": "DETECTION_INSTANCES_NOT_EVENTS"
+    },
+    "unobservableIntervalsStatus": "GENERATED",
+    "unobservableIntervals": [
+      {
+        "criterionKey": "GAZE",
+        "startSec": 227.6,
+        "endSec": 227.79999999999998,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 225.0,
+        "endSec": 227.6,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 227.6,
+        "endSec": 227.79999999999998,
+        "reasonCode": "NO_BODY"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 227.8,
+        "endSec": 229.2,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 229.2,
+        "endSec": 229.39999999999998,
+        "reasonCode": "TEMPORAL_WARMUP"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 229.4,
+        "endSec": 229.6,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 229.6,
+        "endSec": 229.79999999999998,
+        "reasonCode": "TEMPORAL_WARMUP"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 229.8,
+        "endSec": 230.0,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 230.0,
+        "endSec": 230.2,
+        "reasonCode": "TEMPORAL_WARMUP"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 230.2,
+        "endSec": 230.39999999999998,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 230.4,
+        "endSec": 230.6,
+        "reasonCode": "TEMPORAL_WARMUP"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 230.6,
+        "endSec": 235.0,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      }
+    ],
+    "criterionStatus": {
+      "HAND_STILLNESS": "UNOBSERVABLE",
+      "FACE_OCCLUSION": "CANDIDATE_ONLY",
+      "UNRELATED_OBJECT_TOUCH": "NOT_EVALUATED"
+    }
+  },
+  "evidence": [],
+  "contextJudgments": [
+    {
+      "criterionKey": "UNRELATED_OBJECT_TOUCH",
+      "status": "NOT_RUN",
+      "verdict": null,
+      "reason": "LLM_NOT_EXECUTED",
+      "evidenceRefs": []
+    }
+  ],
+  "limitations": [
+    "사용자 결정으로 점수 환산 보류. 실제 점수 필드 없음.",
+    "양손 정지는 손목 기준 5초, 손가락 전용 모델 미사용.",
+    "5 FPS·기존에 본 공개 영상 재사용, 독립 정확도 평가 아님.",
+    "1초 동반 이동 규칙은 실험자가 정한 미검증 설정. 정지 상태로 물건을 든 행동은 포착하지 못함.",
+    "같은 라벨·IoU로 임시 추적. 0.4초 누락까지 ID만 유지하고 빈 프레임의 좌표·사건을 보간하지 않음.",
+    "물건 미검출은 물건이 없다는 뜻이 아님. 물건 사건의 recall 및 관찰률은 계산하지 않음.",
+    "머리 방향과 물건 가림·접촉의 정확도 미검증. LLM 관련성 판단 미실행."
+  ]
+}

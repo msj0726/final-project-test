@@ -1,0 +1,32 @@
+[
+  {
+    "video": "erik_hanberg_lightning_2024.webm",
+    "frames": 3095,
+    "last_timestamp_s": 128.93,
+    "approx_input_fps": 24.01,
+    "any_face_output_frames": 3095,
+    "any_person_output_frames": 3095,
+    "selected_pose_all_6_major_points_valid_frames": 0,
+    "arm_raised_yes_frames": 0,
+    "large_wrist_motion_yes_frames": 0,
+    "large_wrist_motion_unknown_frames": 3095,
+    "note": "Outputs are not ground truth. Largest person may be audience; any face may be audience.",
+    "arm_raised_evaluable_frames": 0,
+    "large_wrist_motion_evaluable_frames": 0
+  },
+  {
+    "video": "jack_andraka_talk_2013.webm",
+    "frames": 11990,
+    "last_timestamp_s": 400.03,
+    "approx_input_fps": 29.97,
+    "any_face_output_frames": 8030,
+    "any_person_output_frames": 8460,
+    "selected_pose_all_6_major_points_valid_frames": 6234,
+    "arm_raised_yes_frames": 139,
+    "large_wrist_motion_yes_frames": 4333,
+    "large_wrist_motion_unknown_frames": 5723,
+    "note": "Outputs are not ground truth. Largest person may be audience; any face may be audience.",
+    "arm_raised_evaluable_frames": 6444,
+    "large_wrist_motion_evaluable_frames": 6267
+  }
+]

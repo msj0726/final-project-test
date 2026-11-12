@@ -1,0 +1,7 @@
+{
+  "method": "Revision after reviewing all raw upper-body sheets at higher resolution and spot-checking model disagreements. This revision is post-hoc and cannot serve as independent final ground truth. For each 10-second window, samples 0..9 compare frame t to t+0.5s; arm is judged on the second frame. All unlisted samples are negative. Single reviewer only.",
+  "arm_positive": ["10:2", "16:2", "16:3", "17:3", "17:4", "17:5"],
+  "arm_uncertain": ["09:5", "14:3", "16:7", "16:8"],
+  "large_wrist_motion_positive": ["08:2", "09:1", "09:5", "09:7", "09:8", "10:2", "10:3", "10:5", "10:8", "10:9", "11:4", "11:5", "13:0", "13:2", "14:3", "14:4", "15:0", "16:7", "16:9", "17:3", "17:6", "17:8", "17:9"],
+  "large_wrist_motion_uncertain": ["08:0", "08:1", "10:0", "11:3", "16:2", "17:2"]
+}

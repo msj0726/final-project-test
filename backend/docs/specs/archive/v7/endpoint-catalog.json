@@ -1,0 +1,781 @@
+{
+  "note": "첨부 DOCX 표의 경로 목록. 구현된 API 목록/OpenAPI가 아님. 본문에만 있는 health/ready/WS/analyses는 SPEC_ALIGNMENT.md 참조. sourceCells는 v3.2 원문이며 ERD v7과 충돌하면 적용하지 않음.",
+  "endpoints": [
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/auth/signup",
+      "implementation": "needs_v7_contract",
+      "sourceCells": [
+        "POST /auth/signup",
+        "회원가입 (USER 전용)",
+        "name, email, password, agreements{terms,privacy,aiAnalysis,expertReview}",
+        "201 data{user:User}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/auth/login",
+      "implementation": "planned",
+      "sourceCells": [
+        "POST /auth/login",
+        "로그인",
+        "email, password",
+        "data{user:User,tokens:TokenPair}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/auth/refresh",
+      "implementation": "planned",
+      "sourceCells": [
+        "POST /auth/refresh",
+        "토큰 재발급 (회전)",
+        "refreshToken",
+        "data{tokens:TokenPair}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/auth/logout",
+      "implementation": "planned",
+      "sourceCells": [
+        "POST /auth/logout",
+        "로그아웃",
+        "refreshToken",
+        "204"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/auth/password-reset",
+      "implementation": "planned",
+      "sourceCells": [
+        "POST /auth/password-reset",
+        "재설정 메일 요청",
+        "email",
+        "202 (가입 여부 비노출)"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/auth/password-reset/confirm",
+      "implementation": "planned",
+      "sourceCells": [
+        "POST /auth/password-reset/confirm",
+        "새 비밀번호 설정",
+        "token, newPassword",
+        "204"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/me",
+      "implementation": "planned",
+      "sourceCells": [
+        "GET /me",
+        "내 정보",
+        "-",
+        "data{user:User,agreements}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "PATCH",
+      "path": "/me",
+      "implementation": "planned",
+      "sourceCells": [
+        "PATCH /me",
+        "이름·비밀번호 변경",
+        "name?, currentPassword?, newPassword?",
+        "data{user:User}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "DELETE",
+      "path": "/me",
+      "implementation": "planned",
+      "sourceCells": [
+        "DELETE /me",
+        "탈퇴 (삭제 예약)",
+        "password",
+        "204"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/projects",
+      "implementation": "planned",
+      "sourceCells": [
+        "GET /projects",
+        "내 프로젝트 목록 (카드)",
+        "status?, page, size",
+        "data[{project:Project,roundCount,qaCount,latestScore,materialStatus,qaEligible}]"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/projects",
+      "implementation": "planned",
+      "sourceCells": [
+        "POST /projects",
+        "프로젝트 생성",
+        "name, topic, finalDate?, targetMinutes?",
+        "201 data{project:Project}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/projects/{projectId}",
+      "implementation": "planned",
+      "sourceCells": [
+        "GET /projects/{projectId}",
+        "상세",
+        "-",
+        "data{project:Project,rounds,material,qaEligible}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "PATCH",
+      "path": "/projects/{projectId}",
+      "implementation": "planned",
+      "sourceCells": [
+        "PATCH /projects/{projectId}",
+        "수정",
+        "name?, topic?, finalDate?, targetMinutes?, done?",
+        "data{project:Project}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "DELETE",
+      "path": "/projects/{projectId}",
+      "implementation": "planned",
+      "sourceCells": [
+        "DELETE /projects/{projectId}",
+        "삭제 예약",
+        "-",
+        "204"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/projects/{projectId}/material",
+      "implementation": "planned",
+      "sourceCells": [
+        "POST /projects/{projectId}/material",
+        "자료 등록·교체",
+        "multipart: file, confidentialConfirmed=true. Idempotency-Key",
+        "202 data{material{fileName,sizeBytes,indexStatus}}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/projects/{projectId}/material",
+      "implementation": "planned",
+      "sourceCells": [
+        "GET /projects/{projectId}/material",
+        "자료 상태",
+        "-",
+        "data{material"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "DELETE",
+      "path": "/projects/{projectId}/material",
+      "implementation": "planned",
+      "sourceCells": [
+        "DELETE /projects/{projectId}/material",
+        "자료·색인 삭제 예약",
+        "-",
+        "204"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/projects/{projectId}/uploads",
+      "implementation": "planned",
+      "sourceCells": [
+        "POST /projects/{projectId}/uploads",
+        "업로드 시작",
+        "fileName, sizeBytes, contentType, durationSec?, checksum. Idempotency-Key",
+        "201 data{uploadId,roundNo,putUrl,headers,expiresAt}"
+      ]
+    },
+    {
+      "service": "object-storage",
+      "method": "PUT",
+      "path": "{putUrl}",
+      "implementation": "planned",
+      "sourceCells": [
+        "PUT {putUrl}",
+        "영상 직접 전송 (스토리지)",
+        "바이너리",
+        "200"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/uploads/{uploadId}/complete",
+      "implementation": "planned",
+      "sourceCells": [
+        "POST /uploads/{uploadId}/complete",
+        "전송 완료·분석 요청",
+        "etag?. Idempotency-Key",
+        "202 data{analysisRef:AnalysisRef,status:QUEUED}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "DELETE",
+      "path": "/uploads/{uploadId}",
+      "implementation": "planned",
+      "sourceCells": [
+        "DELETE /uploads/{uploadId}",
+        "업로드 취소",
+        "-",
+        "204"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/projects/{projectId}/rounds",
+      "implementation": "planned",
+      "sourceCells": [
+        "GET /projects/{projectId}/rounds",
+        "회차 목록",
+        "-",
+        "data[{roundNo,analysisId,status,progress,totalScore,createdAt}]"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/projects/{projectId}/rounds/{roundNo}/status",
+      "implementation": "planned",
+      "sourceCells": [
+        "GET /projects/{projectId}/rounds/{roundNo}/status",
+        "진행 조회 (폴링 3~5초)",
+        "-",
+        "data{status,progress,stage,etaSec?,failure?{code,retryable}}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/projects/{projectId}/rounds/{roundNo}/retry",
+      "implementation": "planned",
+      "sourceCells": [
+        "POST /projects/{projectId}/rounds/{roundNo}/retry",
+        "FAILED 재분석",
+        "Idempotency-Key",
+        "202 data{status:QUEUED}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/projects/{projectId}/rounds/{roundNo}/report",
+      "implementation": "needs_v7_contract",
+      "sourceCells": [
+        "GET /projects/{projectId}/rounds/{roundNo}/report",
+        "분석 리포트",
+        "versions?",
+        "data{report:Report}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/projects/{projectId}/compare",
+      "implementation": "planned",
+      "sourceCells": [
+        "GET /projects/{projectId}/compare",
+        "회차 비교",
+        "from, to",
+        "data{items[],deltas[]}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/projects/{projectId}/rounds/{roundNo}/video",
+      "implementation": "planned",
+      "sourceCells": [
+        "GET /projects/{projectId}/rounds/{roundNo}/video",
+        "재생 URL",
+        "-",
+        "data{url,expiresAt} (서명 URL)"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "DELETE",
+      "path": "/projects/{projectId}/rounds/{roundNo}",
+      "implementation": "planned",
+      "sourceCells": [
+        "DELETE /projects/{projectId}/rounds/{roundNo}",
+        "회차·영상 삭제 예약",
+        "-",
+        "204"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/schedule",
+      "implementation": "planned",
+      "sourceCells": [
+        "GET /schedule",
+        "발표 일정 (D-day)",
+        "month?",
+        "data[{projectId,name,finalDate,dday}]"
+      ]
+    },
+    {
+      "service": "analysis-api",
+      "method": "POST",
+      "path": "/analysis/jobs",
+      "implementation": "needs_v7_contract",
+      "sourceCells": [
+        "analysis-api",
+        "POST /analysis/jobs",
+        "작업 생성: jobId, analysisId, videoKey, materialKey?, targetMinutes?, versions"
+      ]
+    },
+    {
+      "service": "analysis-api",
+      "method": "GET",
+      "path": "/analysis/jobs/{jobId}",
+      "implementation": "planned",
+      "sourceCells": [
+        "analysis-api",
+        "GET /analysis/jobs/{jobId}",
+        "작업 상태 조회"
+      ]
+    },
+    {
+      "service": "analysis-api",
+      "method": "POST",
+      "path": "/analysis/jobs/{jobId}/cancel",
+      "implementation": "planned",
+      "sourceCells": [
+        "analysis-api",
+        "POST /analysis/jobs/{jobId}/cancel",
+        "취소"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/internal/analysis-jobs/{jobId}/events",
+      "implementation": "planned",
+      "sourceCells": [
+        "api",
+        "POST /internal/analysis-jobs/{jobId}/events",
+        "진행·완료·실패 보고 (status, progress, result?, failure?)"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/projects/{projectId}/qa/eligibility",
+      "implementation": "planned",
+      "sourceCells": [
+        "GET /projects/{projectId}/qa/eligibility",
+        "시작 가능 여부",
+        "-",
+        "data{eligible,rounds[{roundNo,analysisId,createdAt}],defaultRoundNo,materialStatus}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/projects/{projectId}/qa/sessions",
+      "implementation": "planned",
+      "sourceCells": [
+        "POST /projects/{projectId}/qa/sessions",
+        "세션 생성",
+        "baseRoundNo?, consentCameraMic(true). Idempotency-Key",
+        "201 data{sessionId,status:READY,plan,wsUrl,wsTicket,wsTicketExpiresAt}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/qa/sessions/{sessionId}",
+      "implementation": "planned",
+      "sourceCells": [
+        "GET /qa/sessions/{sessionId}",
+        "세션 조회",
+        "-",
+        "data{session}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/qa/sessions/{sessionId}/ticket",
+      "implementation": "planned",
+      "sourceCells": [
+        "POST /qa/sessions/{sessionId}/ticket",
+        "WS 티켓 재발급 (재연결)",
+        "-",
+        "data{wsTicket,wsTicketExpiresAt}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/qa/sessions/{sessionId}/more",
+      "implementation": "planned",
+      "sourceCells": [
+        "POST /qa/sessions/{sessionId}/more",
+        "추가 질문 요청 (REST 대체 경로)",
+        "Idempotency-Key",
+        "202 data{askedCount,maxQuestions}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/qa/sessions/{sessionId}/end",
+      "implementation": "planned",
+      "sourceCells": [
+        "POST /qa/sessions/{sessionId}/end",
+        "여기서 마치기",
+        "Idempotency-Key",
+        "202 data{status:ENDED,reportReady}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/qa/sessions/{sessionId}/questions/{questionId}/evidence",
+      "implementation": "planned",
+      "sourceCells": [
+        "GET /qa/sessions/{sessionId}/questions/{questionId}/evidence",
+        "질문 근거 (요청 때만)",
+        "-",
+        "data{evidence[{kind:ANALYSIS or MATERIAL,ref,excerpt}]}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/qa/sessions/{sessionId}/report",
+      "implementation": "needs_v7_contract",
+      "sourceCells": [
+        "GET /qa/sessions/{sessionId}/report",
+        "질의응답 리포트",
+        "-",
+        "data{report:QaReport}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/projects/{projectId}/qa/sessions",
+      "implementation": "planned",
+      "sourceCells": [
+        "GET /projects/{projectId}/qa/sessions",
+        "세션 목록",
+        "page, size",
+        "data[{sessionId,baseRoundNo,status,askedCount,createdAt}]"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "DELETE",
+      "path": "/qa/sessions/{sessionId}",
+      "implementation": "planned",
+      "sourceCells": [
+        "DELETE /qa/sessions/{sessionId}",
+        "세션·기록 삭제 예약",
+        "-",
+        "204"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/expert/assignments",
+      "implementation": "excluded_by_erd_v7",
+      "sourceCells": [
+        "GET /expert/assignments",
+        "내 배정 목록",
+        "status?, page, size",
+        "data[{assignmentId,status,progress}] + page"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/expert/assignments/{assignmentId}",
+      "implementation": "excluded_by_erd_v7",
+      "sourceCells": [
+        "GET /expert/assignments/{assignmentId}",
+        "배정 상세 (영상 재생 URL·기준)",
+        "-",
+        "data{assignment,video{url,expiresAt},rubric}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "PUT",
+      "path": "/expert/assignments/{assignmentId}/draft",
+      "implementation": "excluded_by_erd_v7",
+      "sourceCells": [
+        "PUT /expert/assignments/{assignmentId}/draft",
+        "임시 저장",
+        "scores?, memo?, customItems?",
+        "data{savedAt}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/expert/assignments/{assignmentId}/evaluation",
+      "implementation": "excluded_by_erd_v7",
+      "sourceCells": [
+        "POST /expert/assignments/{assignmentId}/evaluation",
+        "최종 제출",
+        "scores, memo?, customItems?. Idempotency-Key",
+        "201 data{evaluationId}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/expert/assignments/{assignmentId}/skip",
+      "implementation": "excluded_by_erd_v7",
+      "sourceCells": [
+        "POST /expert/assignments/{assignmentId}/skip",
+        "건너뛰기",
+        "reason",
+        "204"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/expert/progress",
+      "implementation": "excluded_by_erd_v7",
+      "sourceCells": [
+        "GET /expert/progress",
+        "진행률",
+        "-",
+        "data{done,total}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/admin/dashboard",
+      "implementation": "planned",
+      "sourceCells": [
+        "GET /admin/dashboard",
+        "이용 현황",
+        "from?, to?",
+        "data{users,projects,analyses,successRate,avgDurationSec,qaUsage{sessions,avgAsked,endedEarlyRate}}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/admin/analyses",
+      "implementation": "planned",
+      "sourceCells": [
+        "GET /admin/analyses",
+        "분석 목록",
+        "status?, page, size",
+        "data[] + page"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/admin/validation",
+      "implementation": "excluded_by_erd_v7",
+      "sourceCells": [
+        "GET /admin/validation",
+        "AI 점수 vs 전문가 검증",
+        "versions?, page, size",
+        "data{summary,items[]}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/admin/calibrations",
+      "implementation": "excluded_by_erd_v7",
+      "sourceCells": [
+        "GET /admin/calibrations",
+        "보정 이력",
+        "page, size",
+        "data[] + page"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/admin/calibrations",
+      "implementation": "excluded_by_erd_v7",
+      "sourceCells": [
+        "POST /admin/calibrations",
+        "보정 실행",
+        "basis, memo?. Idempotency-Key",
+        "202 data{calibrationId,status}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/admin/experts",
+      "implementation": "excluded_by_erd_v7",
+      "sourceCells": [
+        "GET /admin/experts",
+        "평가자 목록·현황",
+        "page, size",
+        "data[] + page"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/admin/experts",
+      "implementation": "excluded_by_erd_v7",
+      "sourceCells": [
+        "POST /admin/experts",
+        "평가자 계정 생성",
+        "name, email. Idempotency-Key",
+        "201 data{user}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/admin/assignments",
+      "implementation": "excluded_by_erd_v7",
+      "sourceCells": [
+        "POST /admin/assignments",
+        "평가 배정",
+        "expertId, analysisIds. Idempotency-Key",
+        "201 data{created}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/admin/rubric",
+      "implementation": "needs_v7_contract",
+      "sourceCells": [
+        "GET /admin/rubric",
+        "평가 기준 조회",
+        "-",
+        "data{rubric{version,items[]}}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "PUT",
+      "path": "/admin/rubric",
+      "implementation": "needs_v7_contract",
+      "sourceCells": [
+        "PUT /admin/rubric",
+        "새 평가 기준 버전 생성",
+        "items[], memo?. Idempotency-Key",
+        "201 data{version}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/admin/users",
+      "implementation": "planned",
+      "sourceCells": [
+        "GET /admin/users",
+        "사용자 목록",
+        "role?, status?, page, size",
+        "data[] + page"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "PATCH",
+      "path": "/admin/users/{userId}",
+      "implementation": "planned",
+      "sourceCells": [
+        "PATCH /admin/users/{userId}",
+        "상태·역할 변경",
+        "status?",
+        "data{user}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/admin/criteria-candidates",
+      "implementation": "excluded_by_erd_v7",
+      "sourceCells": [
+        "GET /admin/criteria-candidates",
+        "평가 항목 후보 목록 (평가자 customItems 집계)",
+        "status?, page, size",
+        "data[{candidateId,name,count,avgScore,status}] + page"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "PATCH",
+      "path": "/admin/criteria-candidates/{candidateId}",
+      "implementation": "excluded_by_erd_v7",
+      "sourceCells": [
+        "PATCH /admin/criteria-candidates/{candidateId}",
+        "채택 또는 보류",
+        "status(ADOPTED or HELD), memo?",
+        "data{candidate}"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/admin/model-versions",
+      "implementation": "excluded_by_erd_v7",
+      "sourceCells": [
+        "GET /admin/model-versions",
+        "모델·평가기준·보정 버전 목록",
+        "-",
+        "data[{version,kind,status,createdAt,validationSummary}]"
+      ]
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/admin/model-versions/{version}/apply",
+      "implementation": "excluded_by_erd_v7",
+      "sourceCells": [
+        "POST /admin/model-versions/{version}/apply",
+        "검증 후 적용 (확인 필요)",
+        "memo?. Idempotency-Key",
+        "202 data{version,status}"
+      ]
+    }
+  ]
+}

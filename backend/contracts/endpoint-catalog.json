@@ -1,0 +1,397 @@
+{
+  "note": "현재 v3.5/v1.4 경로 목록. planned는 운영 앱에 아직 구현되지 않음. 계획 경로를 실제 API로 오인하지 말 것.",
+  "endpoints": [
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/api/v1/auth/signup",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/api/v1/auth/login",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/api/v1/auth/refresh",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/api/v1/auth/logout",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/api/v1/auth/password-reset",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/api/v1/auth/password-reset/confirm",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/me",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "PATCH",
+      "path": "/api/v1/me",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "PUT",
+      "path": "/api/v1/me/agreements",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "DELETE",
+      "path": "/api/v1/me",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/api/v1/projects",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/projects/{projectId}",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "PATCH",
+      "path": "/api/v1/projects/{projectId}",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "DELETE",
+      "path": "/api/v1/projects/{projectId}",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/api/v1/projects/{projectId}/materials",
+      "implementation": "deferred",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/projects/{projectId}/materials",
+      "implementation": "deferred",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "DELETE",
+      "path": "/api/v1/projects/{projectId}/materials/{materialId}",
+      "implementation": "deferred",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/api/v1/projects/{projectId}/uploads",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "PUT",
+      "path": "/api/v1/uploads/{uploadId}/content",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/api/v1/uploads/{uploadId}/complete",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "DELETE",
+      "path": "/api/v1/uploads/{uploadId}",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/projects/{projectId}/rounds/{roundNo}/video",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/projects/{projectId}/rounds",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/projects/{projectId}/rounds/{roundNo}/status",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/api/v1/projects/{projectId}/rounds/{roundNo}/retry",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/projects/{projectId}/rounds/{roundNo}/report",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/projects/{projectId}/rounds/{roundNo}/transcript",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/projects/{projectId}/compare",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "DELETE",
+      "path": "/api/v1/projects/{projectId}/rounds/{roundNo}",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/schedule",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/admin/dashboard",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/admin/analyses",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/admin/rubric",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "PUT",
+      "path": "/api/v1/admin/rubric",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/admin/users",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "PATCH",
+      "path": "/api/v1/admin/users/{userId}",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/healthz",
+      "implementation": "implemented",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/readyz",
+      "implementation": "planned",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "analysis-api",
+      "method": "POST",
+      "path": "/analysis/jobs",
+      "implementation": "planned",
+      "source": "analysis-api-v1.4.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/internal/analysis-jobs/{jobId}/video",
+      "implementation": "planned",
+      "source": "analysis-api-v1.4.md"
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/internal/analysis-jobs/{jobId}/utterances",
+      "implementation": "planned",
+      "source": "analysis-api-v1.4.md"
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/internal/analysis-jobs/{jobId}/events",
+      "implementation": "planned",
+      "source": "analysis-api-v1.4.md"
+    },
+    {
+      "service": "analysis-api",
+      "method": "GET",
+      "path": "/analysis/jobs/{jobId}",
+      "implementation": "planned",
+      "source": "analysis-api-v1.4.md"
+    },
+    {
+      "service": "analysis-api",
+      "method": "POST",
+      "path": "/analysis/jobs/{jobId}/cancel",
+      "implementation": "planned",
+      "source": "analysis-api-v1.4.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/projects/{projectId}/qa/eligibility",
+      "implementation": "deferred",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/api/v1/projects/{projectId}/qa/sessions",
+      "implementation": "deferred",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/qa/sessions/{sessionId}",
+      "implementation": "deferred",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/api/v1/qa/sessions/{sessionId}/ticket",
+      "implementation": "deferred",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/api/v1/qa/sessions/{sessionId}/more",
+      "implementation": "deferred",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "POST",
+      "path": "/api/v1/qa/sessions/{sessionId}/end",
+      "implementation": "deferred",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/qa/sessions/{sessionId}/questions/{questionId}/evidence",
+      "implementation": "deferred",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/qa/sessions/{sessionId}/report",
+      "implementation": "deferred",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "GET",
+      "path": "/api/v1/projects/{projectId}/qa/sessions",
+      "implementation": "deferred",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "DELETE",
+      "path": "/api/v1/qa/sessions/{sessionId}",
+      "implementation": "deferred",
+      "source": "user-api-v3.5.md"
+    },
+    {
+      "service": "api",
+      "method": "WS",
+      "path": "/api/v1/qa/sessions/{sessionId}/stream",
+      "implementation": "deferred",
+      "source": "user-api-v3.5.md"
+    }
+  ]
+}

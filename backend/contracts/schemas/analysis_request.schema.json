@@ -1,0 +1,45 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "jobId": {
+      "format": "uuid",
+      "title": "Jobid",
+      "type": "string"
+    },
+    "analysisId": {
+      "format": "uuid",
+      "title": "Analysisid",
+      "type": "string"
+    },
+    "attempt": {
+      "minimum": 1,
+      "title": "Attempt",
+      "type": "integer"
+    },
+    "modelVersion": {
+      "minLength": 1,
+      "title": "Modelversion",
+      "type": "string"
+    },
+    "rubricVersion": {
+      "minLength": 1,
+      "title": "Rubricversion",
+      "type": "string"
+    },
+    "targetMinutes": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Targetminutes",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "jobId",
+    "analysisId",
+    "attempt",
+    "modelVersion",
+    "rubricVersion"
+  ],
+  "title": "AnalysisRequest",
+  "type": "object"
+}

@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Vision experiment output v1",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "clipId",
+    "sourceStartSec",
+    "sourceEndSec",
+    "sampleDurationSeconds",
+    "vision",
+    "limitations",
+    "isScoringReady"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "vision-experiment-v1"
+    },
+    "isScoringReady": {
+      "const": false
+    },
+    "clipId": {
+      "type": "string"
+    },
+    "sourceStartSec": {
+      "type": "number",
+      "minimum": 0
+    },
+    "sourceEndSec": {
+      "type": "number",
+      "minimum": 0
+    },
+    "sampleDurationSeconds": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "vision": {
+      "type": "object",
+      "required": [
+        "gaze",
+        "handObservableSeconds",
+        "handStillSeconds",
+        "gestureEvents",
+        "criterionStatus",
+        "candidateEvents",
+        "bothWristsVisibleSeconds"
+      ],
+      "properties": {
+        "gaze": {
+          "type": "object",
+          "required": [
+            "observableSeconds",
+            "frontFacingSeconds",
+            "frontFacingRatio",
+            "coverageRatio",
+            "method"
+          ],
+          "properties": {
+            "observableSeconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "frontFacingSeconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "frontFacingRatio": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1
+            },
+            "coverageRatio": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "method": {
+              "type": "string"
+            }
+          }
+        },
+        "handObservableSeconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "handStillSeconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "bothWristsVisibleSeconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "gestureEvents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/event"
+          }
+        },
+        "candidateEvents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/event"
+          }
+        },
+        "criterionStatus": {
+          "type": "object",
+          "required": [
+            "HAND_STILLNESS",
+            "FACE_OCCLUSION",
+            "UNRELATED_OBJECT_TOUCH"
+          ],
+          "properties": {
+            "HAND_STILLNESS": {
+              "enum": [
+                "EVALUATED",
+                "UNOBSERVABLE"
+              ]
+            },
+            "FACE_OCCLUSION": {
+              "const": "CANDIDATE_ONLY"
+            },
+            "UNRELATED_OBJECT_TOUCH": {
+              "const": "PENDING_CONTEXT_JUDGMENT"
+            }
+          }
+        }
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "event": {
+      "type": "object",
+      "required": [
+        "eventId",
+        "kind",
+        "startSec",
+        "endSec",
+        "confidence"
+      ],
+      "properties": {
+        "eventId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "type": "string"
+        },
+        "startSec": {
+          "type": "number",
+          "minimum": 0
+        },
+        "endSec": {
+          "type": "number",
+          "minimum": 0
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    }
+  }
+}

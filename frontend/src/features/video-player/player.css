@@ -1,0 +1,5 @@
+/* 리포트 플레이어: 실제 <video> 가 있을 때의 배치 */
+.pv.vid video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#0f172a;border-radius:inherit;cursor:pointer}
+.pv.vid .big,.pv.vid .sg,.pv.vid .tm,.pv.vid .note2{z-index:2}
+.pv.vid:not(.paused) .big{opacity:0;transition:opacity .2s}
+.pv.vid:not(.paused):hover .big{opacity:.9}

@@ -1,0 +1,248 @@
+{
+  "schemaVersion": "vision-observation-v2-experiment",
+  "observationConfigVersion": "vision-20261111-v2-gap04-min6",
+  "sourceStartSec": 0,
+  "sourceEndSec": 62.8,
+  "sampleDurationSeconds": 62.8,
+  "isScoringReady": false,
+  "vision": {
+    "gaze": {
+      "observableSeconds": 49.4,
+      "frontFacingSeconds": 42.0,
+      "frontFacingRatio": 0.8502024291497976,
+      "coverageRatio": 0.7866242038216561,
+      "method": "EXPERIMENTAL_5_POINT_FACE_GEOMETRY"
+    },
+    "handObservableSeconds": 9.8,
+    "handStillSeconds": 0,
+    "bothWristsVisibleSeconds": 12.0,
+    "handCoverageRatio": 0.15605095541401276,
+    "gestureEvents": [],
+    "candidateEvents": [
+      {
+        "eventId": "vision-object_face_overlap_candidate-object-22-1",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 44.8,
+        "endSec": 49.0,
+        "confidence": null,
+        "evidenceRefs": [
+          "vision-object_face_overlap_candidate-object-22-1-evidence"
+        ],
+        "objectTrackId": "object-22",
+        "objectLabel": "cell phone",
+        "objectLabelConfidence": 0.577
+      }
+    ],
+    "interactionDiagnostics": {
+      "nearWristDetectionCount": 1,
+      "insufficientHistoryCount": 1,
+      "motionMismatchCount": 0,
+      "insufficientMotionCount": 0,
+      "comovingDetectionCount": 0,
+      "unit": "DETECTION_INSTANCES_NOT_EVENTS"
+    },
+    "unobservableIntervalsStatus": "GENERATED",
+    "unobservableIntervals": [
+      {
+        "criterionKey": "GAZE",
+        "startSec": 8.0,
+        "endSec": 8.2,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 8.6,
+        "endSec": 9.2,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 13.6,
+        "endSec": 14.0,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 15.6,
+        "endSec": 15.8,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 30.2,
+        "endSec": 31.0,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 31.6,
+        "endSec": 34.4,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 34.6,
+        "endSec": 36.4,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 36.6,
+        "endSec": 36.8,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 38.0,
+        "endSec": 38.2,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "GAZE",
+        "startSec": 38.6,
+        "endSec": 44.8,
+        "reasonCode": "NO_ASSOCIATED_FACE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 0,
+        "endSec": 4.0,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 4.0,
+        "endSec": 4.2,
+        "reasonCode": "TEMPORAL_WARMUP"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 4.2,
+        "endSec": 19.4,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 19.4,
+        "endSec": 20.4,
+        "reasonCode": "TEMPORAL_WARMUP"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 30.2,
+        "endSec": 31.0,
+        "reasonCode": "NO_BODY"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 31.0,
+        "endSec": 31.6,
+        "reasonCode": "TEMPORAL_WARMUP"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 31.6,
+        "endSec": 34.4,
+        "reasonCode": "NO_BODY"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 34.4,
+        "endSec": 34.6,
+        "reasonCode": "TEMPORAL_WARMUP"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 34.6,
+        "endSec": 36.4,
+        "reasonCode": "NO_BODY"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 36.4,
+        "endSec": 36.6,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 36.6,
+        "endSec": 36.8,
+        "reasonCode": "NO_BODY"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 36.8,
+        "endSec": 38.0,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 38.0,
+        "endSec": 38.2,
+        "reasonCode": "NO_BODY"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 38.2,
+        "endSec": 38.6,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 38.6,
+        "endSec": 44.8,
+        "reasonCode": "NO_BODY"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 44.8,
+        "endSec": 53.2,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 53.2,
+        "endSec": 53.4,
+        "reasonCode": "TEMPORAL_WARMUP"
+      },
+      {
+        "criterionKey": "HAND_STILLNESS",
+        "startSec": 53.4,
+        "endSec": 62.8,
+        "reasonCode": "WRISTS_OR_SHOULDERS_UNOBSERVABLE"
+      }
+    ],
+    "criterionStatus": {
+      "HAND_STILLNESS": "EVALUATED",
+      "FACE_OCCLUSION": "CANDIDATE_ONLY",
+      "UNRELATED_OBJECT_TOUCH": "NOT_EVALUATED"
+    }
+  },
+  "evidence": [
+    {
+      "evidenceId": "vision-object_face_overlap_candidate-object-22-1-evidence",
+      "sourceType": "VISION",
+      "startSec": 44.8,
+      "endSec": 49.0,
+      "description": "물건 마스크와 얼굴 박스의 겹침 후보; 실제 가림 미확정"
+    }
+  ],
+  "contextJudgments": [
+    {
+      "criterionKey": "UNRELATED_OBJECT_TOUCH",
+      "status": "NOT_RUN",
+      "verdict": null,
+      "reason": "LLM_NOT_EXECUTED",
+      "evidenceRefs": []
+    }
+  ],
+  "limitations": [
+    "점수 환산 보류; 이 결과는 루브릭 입력용 관찰값이며 최종 Report가 아님.",
+    "양손 정지는 손목 기준 5초; 손가락 움직임은 판정하지 않음.",
+    "카메라 정면은 얼굴 5점 기하의 추정이며 실제 눈동자 시선이 아님.",
+    "물건의 실제 얼굴 가림·접촉·발표 관련성은 확정하지 않음.",
+    "0.4초 물건 추적 ID만 유지하며 미검출 프레임은 보간하지 않음.",
+    "실험 임계값은 독립 정확도 검증 전; 미검출은 행동 부재가 아님.",
+    "Experimental image-x hand assignment; assignment confidence not calibrated"
+  ]
+}

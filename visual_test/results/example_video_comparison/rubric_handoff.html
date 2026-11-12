@@ -1,0 +1,460 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vision → 루브릭 전달 자료</title><style>body{font:16px/1.7 system-ui,sans-serif;color:#1b2940;background:#f4f7fb;margin:0;overflow-wrap:anywhere}main{max-width:1080px;margin:auto;padding:20px}section{background:white;margin:18px 0;padding:24px;border-radius:14px}h1,h2{line-height:1.3}pre{background:#15243b;color:#e9f2ff;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;border-radius:8px;font-size:13px}table{border-collapse:collapse;width:100%;table-layout:fixed}th,td{padding:9px;border:1px solid #d7e1eb;text-align:left}.notice{background:#fff2dc;border-left:4px solid #d68921;padding:13px}a{color:#0b61b1}</style><main><h1>Vision → 루브릭 담당자 전달 자료</h1><p><strong>결론:</strong> v3 실험 JSON에 손·얼굴 겹침 후보가 생성된다. 예시.mov의 저장된 5 FPS 검출값을 새 백엔드 사건 생성 코드로 다시 계산해 손 후보 7건, 물건 후보 1건을 확인했다. 21–27초의 실제 양손 정지는 여전히 놓친다. 자동 감점 근거로 확정할 단계는 아니다.</p><section><h2>1. 현재 실제 JSON 전체</h2><p>아래는 생략 없는 실측 결과다. MediaPipe 손 검출을 포함한 기존 원시 프레임 314개를 새 백엔드 <code>build_observation</code>에 재입력했다. 백엔드의 새 전체 영상 실행 결과라고 표시하지 않는다.</p><pre>{
+  &quot;schemaVersion&quot;: &quot;vision-observation-v3-experiment&quot;,
+  &quot;observationConfigVersion&quot;: &quot;vision-20261111-v3-hand-face-gap04-min6&quot;,
+  &quot;sourceStartSec&quot;: 0,
+  &quot;sourceEndSec&quot;: 62.8,
+  &quot;sampleDurationSeconds&quot;: 62.8,
+  &quot;isScoringReady&quot;: false,
+  &quot;vision&quot;: {
+    &quot;gaze&quot;: {
+      &quot;observableSeconds&quot;: 49.4,
+      &quot;frontFacingSeconds&quot;: 42.0,
+      &quot;frontFacingRatio&quot;: 0.8502024291497976,
+      &quot;coverageRatio&quot;: 0.7866242038216561,
+      &quot;method&quot;: &quot;EXPERIMENTAL_5_POINT_FACE_GEOMETRY&quot;
+    },
+    &quot;handObservableSeconds&quot;: 8.6,
+    &quot;handStillSeconds&quot;: 0,
+    &quot;bothWristsVisibleSeconds&quot;: 11.0,
+    &quot;handCoverageRatio&quot;: 0.13694267515923567,
+    &quot;gestureEvents&quot;: [],
+    &quot;candidateEvents&quot;: [
+      {
+        &quot;eventId&quot;: &quot;vision-hand_face_overlap_candidate-1&quot;,
+        &quot;kind&quot;: &quot;HAND_FACE_OVERLAP_CANDIDATE&quot;,
+        &quot;startSec&quot;: 2.2,
+        &quot;endSec&quot;: 6.6,
+        &quot;confidence&quot;: null,
+        &quot;evidenceRefs&quot;: [
+          &quot;vision-hand_face_overlap_candidate-1-evidence&quot;
+        ]
+      },
+      {
+        &quot;eventId&quot;: &quot;vision-hand_face_overlap_candidate-2&quot;,
+        &quot;kind&quot;: &quot;HAND_FACE_OVERLAP_CANDIDATE&quot;,
+        &quot;startSec&quot;: 8.2,
+        &quot;endSec&quot;: 8.6,
+        &quot;confidence&quot;: null,
+        &quot;evidenceRefs&quot;: [
+          &quot;vision-hand_face_overlap_candidate-2-evidence&quot;
+        ]
+      },
+      {
+        &quot;eventId&quot;: &quot;vision-hand_face_overlap_candidate-3&quot;,
+        &quot;kind&quot;: &quot;HAND_FACE_OVERLAP_CANDIDATE&quot;,
+        &quot;startSec&quot;: 9.2,
+        &quot;endSec&quot;: 13.6,
+        &quot;confidence&quot;: null,
+        &quot;evidenceRefs&quot;: [
+          &quot;vision-hand_face_overlap_candidate-3-evidence&quot;
+        ]
+      },
+      {
+        &quot;eventId&quot;: &quot;vision-hand_face_overlap_candidate-4&quot;,
+        &quot;kind&quot;: &quot;HAND_FACE_OVERLAP_CANDIDATE&quot;,
+        &quot;startSec&quot;: 14.0,
+        &quot;endSec&quot;: 15.6,
+        &quot;confidence&quot;: null,
+        &quot;evidenceRefs&quot;: [
+          &quot;vision-hand_face_overlap_candidate-4-evidence&quot;
+        ]
+      },
+      {
+        &quot;eventId&quot;: &quot;vision-hand_face_overlap_candidate-5&quot;,
+        &quot;kind&quot;: &quot;HAND_FACE_OVERLAP_CANDIDATE&quot;,
+        &quot;startSec&quot;: 19.6,
+        &quot;endSec&quot;: 20.2,
+        &quot;confidence&quot;: null,
+        &quot;evidenceRefs&quot;: [
+          &quot;vision-hand_face_overlap_candidate-5-evidence&quot;
+        ]
+      },
+      {
+        &quot;eventId&quot;: &quot;vision-hand_face_overlap_candidate-6&quot;,
+        &quot;kind&quot;: &quot;HAND_FACE_OVERLAP_CANDIDATE&quot;,
+        &quot;startSec&quot;: 44.8,
+        &quot;endSec&quot;: 49.0,
+        &quot;confidence&quot;: null,
+        &quot;evidenceRefs&quot;: [
+          &quot;vision-hand_face_overlap_candidate-6-evidence&quot;
+        ]
+      },
+      {
+        &quot;eventId&quot;: &quot;vision-hand_face_overlap_candidate-7&quot;,
+        &quot;kind&quot;: &quot;HAND_FACE_OVERLAP_CANDIDATE&quot;,
+        &quot;startSec&quot;: 52.2,
+        &quot;endSec&quot;: 53.8,
+        &quot;confidence&quot;: null,
+        &quot;evidenceRefs&quot;: [
+          &quot;vision-hand_face_overlap_candidate-7-evidence&quot;
+        ]
+      },
+      {
+        &quot;eventId&quot;: &quot;vision-object_face_overlap_candidate-object-22-1&quot;,
+        &quot;kind&quot;: &quot;OBJECT_FACE_OVERLAP_CANDIDATE&quot;,
+        &quot;startSec&quot;: 44.8,
+        &quot;endSec&quot;: 49.0,
+        &quot;confidence&quot;: null,
+        &quot;evidenceRefs&quot;: [
+          &quot;vision-object_face_overlap_candidate-object-22-1-evidence&quot;
+        ],
+        &quot;objectTrackId&quot;: &quot;object-22&quot;,
+        &quot;objectLabel&quot;: &quot;cell phone&quot;,
+        &quot;objectLabelConfidence&quot;: 0.577
+      }
+    ],
+    &quot;interactionDiagnostics&quot;: {
+      &quot;nearWristDetectionCount&quot;: 22,
+      &quot;insufficientHistoryCount&quot;: 19,
+      &quot;motionMismatchCount&quot;: 0,
+      &quot;insufficientMotionCount&quot;: 2,
+      &quot;comovingDetectionCount&quot;: 1,
+      &quot;unit&quot;: &quot;DETECTION_INSTANCES_NOT_EVENTS&quot;
+    },
+    &quot;unobservableIntervalsStatus&quot;: &quot;GENERATED&quot;,
+    &quot;unobservableIntervals&quot;: [
+      {
+        &quot;criterionKey&quot;: &quot;GAZE&quot;,
+        &quot;startSec&quot;: 8.0,
+        &quot;endSec&quot;: 8.2,
+        &quot;reasonCode&quot;: &quot;NO_ASSOCIATED_FACE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;GAZE&quot;,
+        &quot;startSec&quot;: 8.6,
+        &quot;endSec&quot;: 9.2,
+        &quot;reasonCode&quot;: &quot;NO_ASSOCIATED_FACE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;GAZE&quot;,
+        &quot;startSec&quot;: 13.6,
+        &quot;endSec&quot;: 14.0,
+        &quot;reasonCode&quot;: &quot;NO_ASSOCIATED_FACE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;GAZE&quot;,
+        &quot;startSec&quot;: 15.6,
+        &quot;endSec&quot;: 15.8,
+        &quot;reasonCode&quot;: &quot;NO_ASSOCIATED_FACE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;GAZE&quot;,
+        &quot;startSec&quot;: 30.2,
+        &quot;endSec&quot;: 31.0,
+        &quot;reasonCode&quot;: &quot;NO_ASSOCIATED_FACE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;GAZE&quot;,
+        &quot;startSec&quot;: 31.6,
+        &quot;endSec&quot;: 34.4,
+        &quot;reasonCode&quot;: &quot;NO_ASSOCIATED_FACE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;GAZE&quot;,
+        &quot;startSec&quot;: 34.6,
+        &quot;endSec&quot;: 36.4,
+        &quot;reasonCode&quot;: &quot;NO_ASSOCIATED_FACE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;GAZE&quot;,
+        &quot;startSec&quot;: 36.6,
+        &quot;endSec&quot;: 36.8,
+        &quot;reasonCode&quot;: &quot;NO_ASSOCIATED_FACE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;GAZE&quot;,
+        &quot;startSec&quot;: 38.0,
+        &quot;endSec&quot;: 38.2,
+        &quot;reasonCode&quot;: &quot;NO_ASSOCIATED_FACE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;GAZE&quot;,
+        &quot;startSec&quot;: 38.6,
+        &quot;endSec&quot;: 44.8,
+        &quot;reasonCode&quot;: &quot;NO_ASSOCIATED_FACE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 0,
+        &quot;endSec&quot;: 4.0,
+        &quot;reasonCode&quot;: &quot;WRISTS_OR_SHOULDERS_UNOBSERVABLE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 4.0,
+        &quot;endSec&quot;: 4.2,
+        &quot;reasonCode&quot;: &quot;TEMPORAL_WARMUP&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 4.2,
+        &quot;endSec&quot;: 19.4,
+        &quot;reasonCode&quot;: &quot;WRISTS_OR_SHOULDERS_UNOBSERVABLE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 19.4,
+        &quot;endSec&quot;: 20.4,
+        &quot;reasonCode&quot;: &quot;TEMPORAL_WARMUP&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 23.8,
+        &quot;endSec&quot;: 24.0,
+        &quot;reasonCode&quot;: &quot;WRISTS_OR_SHOULDERS_UNOBSERVABLE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 24.0,
+        &quot;endSec&quot;: 25.0,
+        &quot;reasonCode&quot;: &quot;TEMPORAL_WARMUP&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 30.2,
+        &quot;endSec&quot;: 31.0,
+        &quot;reasonCode&quot;: &quot;NO_BODY&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 31.0,
+        &quot;endSec&quot;: 31.6,
+        &quot;reasonCode&quot;: &quot;WRISTS_OR_SHOULDERS_UNOBSERVABLE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 31.6,
+        &quot;endSec&quot;: 34.4,
+        &quot;reasonCode&quot;: &quot;NO_BODY&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 34.4,
+        &quot;endSec&quot;: 34.6,
+        &quot;reasonCode&quot;: &quot;WRISTS_OR_SHOULDERS_UNOBSERVABLE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 34.6,
+        &quot;endSec&quot;: 36.4,
+        &quot;reasonCode&quot;: &quot;NO_BODY&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 36.4,
+        &quot;endSec&quot;: 36.6,
+        &quot;reasonCode&quot;: &quot;WRISTS_OR_SHOULDERS_UNOBSERVABLE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 36.6,
+        &quot;endSec&quot;: 36.8,
+        &quot;reasonCode&quot;: &quot;NO_BODY&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 36.8,
+        &quot;endSec&quot;: 38.0,
+        &quot;reasonCode&quot;: &quot;WRISTS_OR_SHOULDERS_UNOBSERVABLE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 38.0,
+        &quot;endSec&quot;: 38.2,
+        &quot;reasonCode&quot;: &quot;NO_BODY&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 38.2,
+        &quot;endSec&quot;: 38.6,
+        &quot;reasonCode&quot;: &quot;WRISTS_OR_SHOULDERS_UNOBSERVABLE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 38.6,
+        &quot;endSec&quot;: 44.8,
+        &quot;reasonCode&quot;: &quot;NO_BODY&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 44.8,
+        &quot;endSec&quot;: 53.2,
+        &quot;reasonCode&quot;: &quot;WRISTS_OR_SHOULDERS_UNOBSERVABLE&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 53.2,
+        &quot;endSec&quot;: 53.4,
+        &quot;reasonCode&quot;: &quot;TEMPORAL_WARMUP&quot;
+      },
+      {
+        &quot;criterionKey&quot;: &quot;HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: 53.4,
+        &quot;endSec&quot;: 62.8,
+        &quot;reasonCode&quot;: &quot;WRISTS_OR_SHOULDERS_UNOBSERVABLE&quot;
+      }
+    ],
+    &quot;criterionStatus&quot;: {
+      &quot;HAND_STILLNESS&quot;: &quot;EVALUATED&quot;,
+      &quot;FACE_OCCLUSION&quot;: &quot;CANDIDATE_ONLY&quot;,
+      &quot;UNRELATED_OBJECT_TOUCH&quot;: &quot;NOT_EVALUATED&quot;
+    }
+  },
+  &quot;evidence&quot;: [
+    {
+      &quot;evidenceId&quot;: &quot;vision-hand_face_overlap_candidate-1-evidence&quot;,
+      &quot;sourceType&quot;: &quot;VISION&quot;,
+      &quot;startSec&quot;: 2.2,
+      &quot;endSec&quot;: 6.6,
+      &quot;description&quot;: &quot;손 특징점 외곽과 얼굴 박스의 겹침 후보; 실제 가림 미확정&quot;
+    },
+    {
+      &quot;evidenceId&quot;: &quot;vision-hand_face_overlap_candidate-2-evidence&quot;,
+      &quot;sourceType&quot;: &quot;VISION&quot;,
+      &quot;startSec&quot;: 8.2,
+      &quot;endSec&quot;: 8.6,
+      &quot;description&quot;: &quot;손 특징점 외곽과 얼굴 박스의 겹침 후보; 실제 가림 미확정&quot;
+    },
+    {
+      &quot;evidenceId&quot;: &quot;vision-hand_face_overlap_candidate-3-evidence&quot;,
+      &quot;sourceType&quot;: &quot;VISION&quot;,
+      &quot;startSec&quot;: 9.2,
+      &quot;endSec&quot;: 13.6,
+      &quot;description&quot;: &quot;손 특징점 외곽과 얼굴 박스의 겹침 후보; 실제 가림 미확정&quot;
+    },
+    {
+      &quot;evidenceId&quot;: &quot;vision-hand_face_overlap_candidate-4-evidence&quot;,
+      &quot;sourceType&quot;: &quot;VISION&quot;,
+      &quot;startSec&quot;: 14.0,
+      &quot;endSec&quot;: 15.6,
+      &quot;description&quot;: &quot;손 특징점 외곽과 얼굴 박스의 겹침 후보; 실제 가림 미확정&quot;
+    },
+    {
+      &quot;evidenceId&quot;: &quot;vision-hand_face_overlap_candidate-5-evidence&quot;,
+      &quot;sourceType&quot;: &quot;VISION&quot;,
+      &quot;startSec&quot;: 19.6,
+      &quot;endSec&quot;: 20.2,
+      &quot;description&quot;: &quot;손 특징점 외곽과 얼굴 박스의 겹침 후보; 실제 가림 미확정&quot;
+    },
+    {
+      &quot;evidenceId&quot;: &quot;vision-hand_face_overlap_candidate-6-evidence&quot;,
+      &quot;sourceType&quot;: &quot;VISION&quot;,
+      &quot;startSec&quot;: 44.8,
+      &quot;endSec&quot;: 49.0,
+      &quot;description&quot;: &quot;손 특징점 외곽과 얼굴 박스의 겹침 후보; 실제 가림 미확정&quot;
+    },
+    {
+      &quot;evidenceId&quot;: &quot;vision-hand_face_overlap_candidate-7-evidence&quot;,
+      &quot;sourceType&quot;: &quot;VISION&quot;,
+      &quot;startSec&quot;: 52.2,
+      &quot;endSec&quot;: 53.8,
+      &quot;description&quot;: &quot;손 특징점 외곽과 얼굴 박스의 겹침 후보; 실제 가림 미확정&quot;
+    },
+    {
+      &quot;evidenceId&quot;: &quot;vision-object_face_overlap_candidate-object-22-1-evidence&quot;,
+      &quot;sourceType&quot;: &quot;VISION&quot;,
+      &quot;startSec&quot;: 44.8,
+      &quot;endSec&quot;: 49.0,
+      &quot;description&quot;: &quot;물건 마스크와 얼굴 박스의 겹침 후보; 실제 가림 미확정&quot;
+    }
+  ],
+  &quot;contextJudgments&quot;: [
+    {
+      &quot;criterionKey&quot;: &quot;UNRELATED_OBJECT_TOUCH&quot;,
+      &quot;status&quot;: &quot;NOT_RUN&quot;,
+      &quot;verdict&quot;: null,
+      &quot;reason&quot;: &quot;LLM_NOT_EXECUTED&quot;,
+      &quot;evidenceRefs&quot;: []
+    }
+  ],
+  &quot;limitations&quot;: [
+    &quot;점수 환산 보류; 이 결과는 루브릭 입력용 관찰값이며 최종 Report가 아님.&quot;,
+    &quot;양손 정지는 손목 기준 5초; 손가락 움직임은 판정하지 않음.&quot;,
+    &quot;카메라 정면은 얼굴 5점 기하의 추정이며 실제 눈동자 시선이 아님.&quot;,
+    &quot;물건의 실제 얼굴 가림·접촉·발표 관련성은 확정하지 않음.&quot;,
+    &quot;0.4초 물건 추적 ID만 유지하며 미검출 프레임은 보간하지 않음.&quot;,
+    &quot;실험 임계값은 독립 정확도 검증 전; 미검출은 행동 부재가 아님.&quot;,
+    &quot;손 특징점 외곽과 얼굴 박스의 2D 겹침은 실제 가림을 확정하지 않음.&quot;
+  ]
+}</pre></section><section><h2>2. 사용하는 모델과 역할</h2><table><tr><th>모델</th><th>Vision에서 받는 값</th><th>이 JSON에서 하는 일</th></tr><tr><td>YOLO11n-pose</td><td>몸통·어깨·손목 관절</td><td>양손 정지와 물건 근접 판단. 이번 백엔드 출력의 정지 시간은 이 모델 기준.</td></tr><tr><td>YOLO5Face</td><td>얼굴 박스·5개 특징점</td><td>얼굴 방향 비율, 손/물건 겹침의 얼굴 영역.</td></tr><tr><td>YOLO11n-seg</td><td>물건 종류·마스크</td><td>물건과 얼굴 겹침, 손목 근처 동반 이동 후보.</td></tr><tr><td>MediaPipe Hand Landmarker (새 입력)</td><td>손마다 21개 특징점</td><td>특징점 외곽과 얼굴 박스가 10% 이상 겹친 상태가 0.4초 이상 지속되면 손 가림 후보 생성. 양손 정지 계산에는 아직 사용하지 않는다.</td></tr></table><p>모델 파일은 로컬 경로에서 제공하며 저장소에 포함하지 않는다. Hand Landmarker 경로를 지정해야 새 손 사건이 나온다.</p></section><section><h2>3. 기존 JSON과 변경점</h2><table><tr><th>기존 v2</th><th>이번 v3</th><th>이유</th></tr><tr><td>schemaVersion = vision-observation-v2-experiment</td><td>vision-observation-v3-experiment</td><td>사건 종류가 늘어 소비자 계약을 구분한다.</td></tr><tr><td>candidateEvents에 물건 후보만 가능</td><td>HAND_FACE_OVERLAP_CANDIDATE 추가</td><td>손 가림 근거 구간을 루브릭에 전달한다.</td></tr><tr><td>손 모델 입력 없음</td><td>VisionModelPaths.hand (선택 경로) 및 hands 검출</td><td>손 영역을 손목 한 점보다 구체적으로 표현한다.</td></tr><tr><td>evidence에 손 가림 근거 없음</td><td>손 후보마다 evidenceId·시간·설명 추가</td><td>루브릭이 후보 구간과 근거를 연결한다.</td></tr></table><p>가림 확정값, 감점 점수, 시선 제외 사유는 아직 추가하지 않았다. 이번 변경은 후보 사건 생성만 다룬다.</p></section><section><h2>4. 확정한 실험 JSON 틀</h2><p>v3 백엔드 스키마에 맞춘 구조다. 문자열의 number/optional 표시는 아래 예시에서 자료형 설명을 위해 쓴 자리표시자다. 실제 값은 1절 JSON을 따른다.</p><pre>{
+  &quot;schemaVersion&quot;: &quot;vision-observation-v3-experiment&quot;,
+  &quot;observationConfigVersion&quot;: &quot;string&quot;,
+  &quot;sourceStartSec&quot;: &quot;number&quot;,
+  &quot;sourceEndSec&quot;: &quot;number&quot;,
+  &quot;sampleDurationSeconds&quot;: &quot;number&quot;,
+  &quot;isScoringReady&quot;: false,
+  &quot;vision&quot;: {
+    &quot;gaze&quot;: {
+      &quot;observableSeconds&quot;: &quot;number&quot;,
+      &quot;frontFacingSeconds&quot;: &quot;number&quot;,
+      &quot;frontFacingRatio&quot;: &quot;number|null&quot;,
+      &quot;coverageRatio&quot;: &quot;number|null&quot;,
+      &quot;method&quot;: &quot;string&quot;
+    },
+    &quot;handObservableSeconds&quot;: &quot;number&quot;,
+    &quot;handStillSeconds&quot;: &quot;number|null&quot;,
+    &quot;bothWristsVisibleSeconds&quot;: &quot;number&quot;,
+    &quot;handCoverageRatio&quot;: &quot;number|null&quot;,
+    &quot;gestureEvents&quot;: [
+      &quot;HAND_STILLNESS event&quot;
+    ],
+    &quot;candidateEvents&quot;: [
+      {
+        &quot;eventId&quot;: &quot;string&quot;,
+        &quot;kind&quot;: &quot;HAND_FACE_OVERLAP_CANDIDATE | OBJECT_FACE_OVERLAP_CANDIDATE | OBJECT_INTERACTION_CANDIDATE&quot;,
+        &quot;startSec&quot;: &quot;number&quot;,
+        &quot;endSec&quot;: &quot;number&quot;,
+        &quot;confidence&quot;: &quot;number|null&quot;,
+        &quot;evidenceRefs&quot;: [
+          &quot;evidenceId&quot;
+        ],
+        &quot;objectTrackId&quot;: &quot;optional string&quot;,
+        &quot;objectLabel&quot;: &quot;optional string&quot;,
+        &quot;objectLabelConfidence&quot;: &quot;optional number|null&quot;
+      }
+    ],
+    &quot;interactionDiagnostics&quot;: {
+      &quot;nearWristDetectionCount&quot;: &quot;integer&quot;,
+      &quot;insufficientHistoryCount&quot;: &quot;integer&quot;,
+      &quot;motionMismatchCount&quot;: &quot;integer&quot;,
+      &quot;insufficientMotionCount&quot;: &quot;integer&quot;,
+      &quot;comovingDetectionCount&quot;: &quot;integer&quot;,
+      &quot;unit&quot;: &quot;DETECTION_INSTANCES_NOT_EVENTS&quot;
+    },
+    &quot;unobservableIntervalsStatus&quot;: &quot;GENERATED&quot;,
+    &quot;unobservableIntervals&quot;: [
+      {
+        &quot;criterionKey&quot;: &quot;GAZE | HAND_STILLNESS&quot;,
+        &quot;startSec&quot;: &quot;number&quot;,
+        &quot;endSec&quot;: &quot;number&quot;,
+        &quot;reasonCode&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;criterionStatus&quot;: {
+      &quot;HAND_STILLNESS&quot;: &quot;EVALUATED | UNOBSERVABLE&quot;,
+      &quot;FACE_OCCLUSION&quot;: &quot;CANDIDATE_ONLY&quot;,
+      &quot;UNRELATED_OBJECT_TOUCH&quot;: &quot;NOT_EVALUATED&quot;
+    }
+  },
+  &quot;evidence&quot;: [
+    {
+      &quot;evidenceId&quot;: &quot;string&quot;,
+      &quot;sourceType&quot;: &quot;VISION&quot;,
+      &quot;startSec&quot;: &quot;number&quot;,
+      &quot;endSec&quot;: &quot;number&quot;,
+      &quot;description&quot;: &quot;string&quot;
+    }
+  ],
+  &quot;contextJudgments&quot;: [
+    {
+      &quot;criterionKey&quot;: &quot;UNRELATED_OBJECT_TOUCH&quot;,
+      &quot;status&quot;: &quot;NOT_RUN&quot;,
+      &quot;verdict&quot;: null,
+      &quot;reason&quot;: &quot;LLM_NOT_EXECUTED&quot;,
+      &quot;evidenceRefs&quot;: []
+    }
+  ],
+  &quot;limitations&quot;: [
+    &quot;string&quot;
+  ]
+}</pre><p><code>candidateEvents.kind</code>의 새 값은 손 특징점 외곽과 얼굴 박스의 2차원 겹침을 뜻한다. <code>confidence:null</code>은 행동 확률을 보정하지 않았다는 뜻이다. <code>evidenceRefs</code>는 같은 ID의 <code>evidence</code> 항목을 참조한다. <code>criterionStatus.FACE_OCCLUSION=CANDIDATE_ONLY</code>는 실제 가림 판정 완료를 뜻하지 않는다.</p></section><section><h2>5. 이번 영상의 구간별 사건</h2><table><tr><th>시간</th><th>종류</th><th>사건 ID</th></tr><tr><td>2.2–6.6초</td><td>HAND_FACE_OVERLAP_CANDIDATE</td><td>vision-hand_face_overlap_candidate-1</td></tr><tr><td>8.2–8.6초</td><td>HAND_FACE_OVERLAP_CANDIDATE</td><td>vision-hand_face_overlap_candidate-2</td></tr><tr><td>9.2–13.6초</td><td>HAND_FACE_OVERLAP_CANDIDATE</td><td>vision-hand_face_overlap_candidate-3</td></tr><tr><td>14.0–15.6초</td><td>HAND_FACE_OVERLAP_CANDIDATE</td><td>vision-hand_face_overlap_candidate-4</td></tr><tr><td>19.6–20.2초</td><td>HAND_FACE_OVERLAP_CANDIDATE</td><td>vision-hand_face_overlap_candidate-5</td></tr><tr><td>44.8–49.0초</td><td>HAND_FACE_OVERLAP_CANDIDATE</td><td>vision-hand_face_overlap_candidate-6</td></tr><tr><td>52.2–53.8초</td><td>HAND_FACE_OVERLAP_CANDIDATE</td><td>vision-hand_face_overlap_candidate-7</td></tr><tr><td>44.8–49.0초</td><td>OBJECT_FACE_OVERLAP_CANDIDATE</td><td>vision-object_face_overlap_candidate-object-22-1</td></tr></table><p>사용자가 확인한 21–27초 양손 정지는 <code>gestureEvents=[]</code>, <code>handStillSeconds=0</code>으로 누락됐다. 21.6–23.8초만 연속 정지로 계산돼 5초에 못 미쳤다. 이 영상의 손 후보도 실제 가림 정답과 일치하는 구간/오검출 구간을 개별 검토해야 한다.</p><p>얼굴 방향은 판정 가능 49.4초 중 정면 42.0초, 비율 85.02%다. 현재 손 가림 후보를 시선 분모에서 제외하지 않았으며 실제 눈동자 시선도 아니다. 손 정지 판정 가능 8.6초, 영상 전체 62.8초다.</p><p>물건과 손의 얼굴 겹침이 같은 44.8–49.0초에 중복 생성된다. 루브릭 담당자는 두 후보를 독립 감점 두 건으로 합산하면 안 된다. 발표 무관 물건 판정은 LLM_NOT_EXECUTED이며 별도 문맥 판단이 필요하다.</p></section><section><h2>6. 루브릭 연결 시 필요한 결정</h2><ol><li>손/물건 얼굴 겹침 후보를 실제 감점으로 인정할 검증 기준과 중복 처리 정책.</li><li>가림 구간을 시선 관찰 시간에서 제외할지, 제외한다면 어떤 근거 ID·사유를 전달할지.</li><li>양손 정지 21–27초 누락을 수정하고 새 영상에서 오검출을 확인한 뒤 5초 규칙을 사용할지.</li><li>루브릭 점수는 Vision에서 만들지 않는다. 현재 <code>isScoringReady=false</code>다.</li></ol><p class="notice">정식 사용자 API·DB Report 계약은 이번 변경 대상이 아니다. 이 v3은 Vision→루브릭 내부 실험 계약이다. 루브릭 소비자가 v2만 허용한다면 v3 사건 종류를 받을 수 있도록 스키마·계약 테스트를 함께 갱신해야 한다.</p></section></main></html>

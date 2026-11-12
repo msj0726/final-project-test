@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>ProPitch 백엔드 역할별 작업 가이드</title>
+  <style>
+    :root { --ink:#17283b; --muted:#52657a; --line:#dce5ed; --bg:#f3f7fa; --paper:#fff; --blue:#245cda; --mint:#007e77; --amber:#8b5700; --soft-blue:#eaf1ff; --soft-mint:#e6f6f2; --soft-amber:#fff3dc; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.65 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif; }
+    a { color:var(--blue); text-underline-offset:3px; }
+    code,pre { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    code { overflow-wrap:anywhere; font-size:.92em; }
+    .wrap { max-width:1160px; margin:auto; padding:0 24px; }
+    .hero { color:#fff; background:linear-gradient(125deg,#11243b 0%,#17365d 56%,#155d70 100%); padding:56px 0 48px; }
+    .eyebrow { margin:0 0 10px; color:#a9d5fa; font-weight:700; font-size:.82rem; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { margin:0; font-size:clamp(2rem,4vw,3.25rem); line-height:1.22; letter-spacing:-.04em; }
+    .hero p { max-width:770px; margin:18px 0 0; color:#dbe9f5; font-size:1.05rem; }
+    .meta { display:flex; flex-wrap:wrap; gap:8px; margin-top:26px; }
+    .meta span { border:1px solid #7da9bd; background:#ffffff12; border-radius:999px; padding:5px 12px; font-size:.84rem; }
+    nav { background:#fff; border-bottom:1px solid var(--line); }
+    nav .wrap { display:flex; flex-wrap:wrap; gap:6px 18px; padding-top:12px; padding-bottom:12px; }
+    nav a { color:#34516c; font-size:.88rem; font-weight:700; text-decoration:none; }
+    main { padding-top:28px; padding-bottom:64px; }
+    section { scroll-margin-top:24px; margin:0 0 28px; }
+    h2 { font-size:1.55rem; line-height:1.3; margin:0 0 14px; letter-spacing:-.025em; }
+    h3 { font-size:1.08rem; line-height:1.35; margin:0 0 8px; }
+    p { margin:0 0 10px; }
+    ul,ol { margin:8px 0 0; padding-left:21px; }
+    li { margin:5px 0; }
+    .card { background:var(--paper); border:1px solid var(--line); border-radius:16px; padding:22px; box-shadow:0 5px 22px #1b355009; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+    .three { grid-template-columns:repeat(3,minmax(0,1fr)); }
+    .lead { font-size:1.05rem; color:#354e66; }
+    .flow { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:8px; margin-top:14px; }
+    .flow div { min-height:104px; padding:12px; background:#fff; border:1px solid var(--line); border-radius:12px; }
+    .flow b { display:block; color:var(--blue); font-size:.76rem; margin-bottom:7px; }
+    .flow strong { display:block; line-height:1.35; }
+    .flow small { color:var(--muted); display:block; margin-top:5px; line-height:1.35; }
+    .tag { display:inline-block; border-radius:999px; padding:3px 9px; font-size:.73rem; font-weight:800; vertical-align:middle; }
+    .tag.blue { color:#1649a7; background:var(--soft-blue); }
+    .tag.mint { color:#00665f; background:var(--soft-mint); }
+    .tag.amber { color:var(--amber); background:var(--soft-amber); }
+    .person { border-top:5px solid var(--blue); }
+    .person.park { border-top-color:var(--mint); }
+    .person .intro { color:var(--muted); min-height:49px; }
+    .person h3 { font-size:1.38rem; }
+    .item { padding:13px 0; border-top:1px solid var(--line); }
+    .item:first-of-type { border-top:0; }
+    .item b { display:block; margin-bottom:3px; }
+    .item small { display:block; color:var(--muted); font-size:.84rem; }
+    .path { display:block; margin:4px 0; color:#344d63; font-size:.82rem; }
+    .table-wrap { overflow-x:auto; border:1px solid var(--line); border-radius:14px; background:#fff; }
+    table { width:100%; border-collapse:collapse; min-width:760px; }
+    th,td { text-align:left; vertical-align:top; padding:13px 15px; border-bottom:1px solid var(--line); }
+    th { background:#eef4f8; font-size:.83rem; white-space:nowrap; }
+    tr:last-child td { border-bottom:0; }
+    .step { display:grid; grid-template-columns:72px 1fr; gap:15px; padding:18px 0; border-bottom:1px solid var(--line); }
+    .step:last-child { border-bottom:0; }
+    .step-num { width:42px; height:42px; display:grid; place-items:center; border-radius:13px; background:var(--soft-blue); color:var(--blue); font-weight:900; }
+    .callout { border-left:4px solid #d49a32; background:var(--soft-amber); border-radius:0 12px 12px 0; padding:16px 18px; }
+    .callout.good { border-left-color:#20a296; background:var(--soft-mint); }
+    .prompt { white-space:pre-wrap; overflow-wrap:anywhere; margin:9px 0 0; padding:17px; background:#142b40; border-radius:12px; color:#e7f2fb; font-size:.82rem; line-height:1.6; }
+    .checklist { list-style:none; padding:0; }
+    .checklist li { position:relative; padding-left:27px; }
+    .checklist li:before { content:"□"; position:absolute; left:0; font-size:1.15rem; line-height:1.35; color:var(--blue); }
+    footer { padding:24px 0 38px; border-top:1px solid var(--line); color:var(--muted); font-size:.83rem; }
+    @media (max-width:850px) { .grid,.three { grid-template-columns:1fr; } .flow { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media (max-width:520px) { .wrap { padding:0 16px; } .hero { padding:38px 0; } .flow { grid-template-columns:1fr 1fr; } .card { padding:17px; } }
+    @media print { body { background:#fff; font-size:11px; } .hero { padding:22px 0; print-color-adjust:exact; } nav { display:none; } .card,.flow div { box-shadow:none; break-inside:avoid; } section { break-inside:avoid; } a { color:inherit; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">ProPitch · 백엔드 협업 가이드</p>
+      <h1>누가 어디까지 만들고,<br>어디서 연결할까?</h1>
+      <p>장민서: AI 작업과 결과를 DB·프론트로 연결. 박재흥: 사용자·프로젝트·영상의 생성과 접근을 책임. 각자 폴더 안의 구현은 자유롭게 하되 서로 넘기는 계약은 함께 고정한다.</p>
+      <div class="meta"><span>기준: 사용자 API v3.5</span><span>AI 내부 API v1.4</span><span>ERD v10</span><span>날짜·시간 배정 없음</span><span>기능 구현 상태를 뜻하지 않음</span></div>
+    </div>
+  </header>
+  <nav aria-label="문서 목차"><div class="wrap">
+    <a href="#overview">전체 흐름</a><a href="#owners">담당별 작업</a><a href="#handoff">인계 계약</a><a href="#sequence">진행 순서</a><a href="#decisions">확정·미확정</a><a href="#prompts">AI 코딩 지시문</a><a href="#done">완료 확인</a>
+  </div></nav>
+  <main class="wrap">
+    <section id="overview">
+      <h2>1. 한 건의 영상이 지나가는 경로</h2>
+      <p class="lead">프론트는 사용자 API만 호출한다. 분석 서버는 사용자 DB를 직접 수정하지 않는다.</p>
+      <div class="flow" aria-label="영상 업로드부터 리포트까지의 흐름">
+        <div><b>01 · 박재흥</b><strong>인증·프로젝트</strong><small>사용자와 소유권 확인</small></div>
+        <div><b>02 · 박재흥</b><strong>업로드·회차</strong><small>영상 검증 후 DB 저장</small></div>
+        <div><b>03 · 장민서</b><strong>분석 작업</strong><small>jobId 생성, AI 접수</small></div>
+        <div><b>04 · AI → 장민서</b><strong>전사·이벤트</strong><small>내부 API로 검증·저장</small></div>
+        <div><b>05 · 장민서</b><strong>결과 공개</strong><small>Report 커밋 후 DONE</small></div>
+        <div><b>06 · FE</b><strong>상태·리포트</strong><small>사용자 API로 조회</small></div>
+      </div>
+    </section>
+
+    <section id="owners">
+      <h2>2. 담당별 구현 틀</h2>
+      <div class="grid">
+        <article class="card person park">
+          <span class="tag mint">박재흥 · 사용자·영상 기반</span>
+          <h3>로그인부터 업로드 완료까지</h3>
+          <p class="intro">사용자가 자기 영상에만 접근할 수 있는 DB·API 기반을 만들고, 분석을 시작할 수 있는 회차를 인계한다.</p>
+          <div class="item"><b>① 공통 DB 기반</b><span>PostgreSQL 연결·세션·migration을 마련한다. ERD v10의 <code>users</code>, <code>auth_sessions</code>, <code>agreements</code>, <code>projects</code>, <code>uploads</code>, <code>rounds</code>를 우선 연결한다. <code>rubrics</code>의 활성 기준 선택은 강유성과 맞춘다.</span><small>산출물: 연결 가능한 DB 세션, 재실행 가능한 migration, 모델 사용 예시</small></div>
+          <div class="item"><b>② 인증·회원·동의</b><span>가입·로그인·토큰 갱신·로그아웃·내 정보와 동의 상태를 구현한다. 비밀번호 해시, 토큰 보관, 삭제 사용자 차단, USER/ADMIN 권한을 검증한다. 비밀번호 재설정·계정 삭제도 같은 영역에서 명세 순서로 확장한다.</span><small>경로: <code>/auth/*</code>, <code>/me</code> · 타인 자원 404, 역할 불일치 403</small></div>
+          <div class="item"><b>③ 프로젝트·영상 업로드</b><span>프로젝트 소유권과 활성 루브릭을 확인한다. 업로드 준비→바이너리 PUT→완료 단계에서 크기·해시·실제 미디어 형식·길이를 검증하고 <code>uploads.video_data</code>에 한 번 저장한다. 같은 완료 요청이 회차나 작업을 중복 생성하지 않게 한다.</span><small>경로: <code>POST /projects/{projectId}/uploads</code>, <code>PUT /uploads/{uploadId}/content</code>, <code>POST /uploads/{uploadId}/complete</code></small></div>
+          <div class="item"><b>④ 영상 접근과 실행 환경</b><span>사용자 재생용 Range 응답과 AI 전용 영상 스트림의 DB 읽기 기반을 제공한다. 브라우저용 재생 전용 URL 발급을 장민서·FE와 계약에 반영한다. 서비스 환경값과 실행 문서를 정리한다.</span><small>파일 영역: 새 인증·회원·프로젝트 라우터/서비스, <code>api/services/uploads</code>, <code>api/routers/uploads</code>, <code>api/models</code>, <code>api/migrations</code>, <code>infra/runtime</code></small></div>
+        </article>
+        <article class="card person">
+          <span class="tag blue">장민서 · AI·DB·FE 연결</span>
+          <h3>회차 접수부터 리포트 공개까지</h3>
+          <p class="intro">AI가 만든 작업 상태·전사·리포트를 현재 회차의 안전한 DB 기록으로 바꾸고, 프론트가 읽을 수 있게 한다.</p>
+          <div class="item"><b>① 분석 작업 접수</b><span>업로드 완료된 <code>rounds.id</code>를 <code>analysisId</code>로 사용한다. 최초 <code>attempt=1</code>, 재시도마다 새 <code>jobId</code>를 만든다. 모델·루브릭 버전을 고정해 <code>POST /analysis/jobs</code>로 접수하고 AI 실패를 영속 상태에 남긴다.</span><small>입력: 유효한 회차 ID·영상 길이·루브릭 버전·목표 시간 · 출력: 영속 작업 ID·QUEUED 상태</small></div>
+          <div class="item"><b>② AI 내부 API 수신</b><span>서비스 인증을 확인하고 <code>GET /internal/analysis-jobs/{jobId}/video</code>, <code>POST .../utterances</code>, <code>POST .../events</code>를 연결한다. 전사는 seq·시각·영상 길이·중복 스냅샷을 검증한다. 이벤트는 현재 attempt·eventId·상태 순서를 검증한다.</span><small>저장: <code>analysis_jobs</code>, <code>stt_utterances</code> · 잘못된 결과 422, 일시 장애 5xx</small></div>
+          <div class="item"><b>③ 최종 결과 저장</b><span>DONE의 <code>reportKey</code>를 받은 뒤 확정할 AI 내부 GET 결과 API로 Report JSON을 가져온다. 네 점수·버전·근거 시간·STT 완료를 검증한다. <code>reports</code>·<code>report_scores</code>·<code>report_segments</code>를 저장한 트랜잭션이 끝난 다음 DONE을 공개한다.</span><small>동일 eventId, 이전 attempt, 삭제 회차는 공개 결과를 덮어쓰지 않음</small></div>
+          <div class="item"><b>④ 프론트 조회 API</b><span>소유권을 확인해 상태·실패·전사·리포트를 기존 사용자 API 형식으로 반환한다. 정성 내용·구조 피드백은 합의한 <code>segments</code>·<code>coaching</code>에만 담고, 네 숫자 점수와 <code>contentCheck=null</code>을 유지한다. 실제 응답·오류 예시를 FE 담당자에게 제공한다.</span><small>경로: <code>GET /projects/{projectId}/rounds/{roundNo}/{status|report|transcript}</code> · 파일: <code>api/clients</code>, <code>api/services/jobs</code>, <code>api/routers/jobs</code>, <code>api/services/results</code>, <code>api/routers/results</code></small></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="handoff">
+      <h2>3. 서로 넘길 값과 호출 경계</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th>경계</th><th>주는 사람</th><th>받는 사람과 행동</th><th>인계 완료 조건</th></tr></thead>
+        <tbody>
+          <tr><td>업로드 완료</td><td>박재흥: 소유권·파일 검증 후 <code>projectId</code>, <code>roundNo</code>, <code>rounds.id</code>, <code>durationSec</code>, <code>rubricVersion</code>, <code>targetMinutes</code> 제공</td><td>장민서: 현재 회차에 작업을 한 번 기록하고 AI 접수</td><td>같은 <code>Idempotency-Key</code> 재호출에 회차·job 중복 없음. AI 접수 실패도 재시작 후 추적 가능</td></tr>
+          <tr><td>영상 읽기</td><td>박재흥: 영상 DB 읽기·Range 기반과 삭제/소유권 상태 제공</td><td>장민서: 현재 job과 서비스 자격 증명을 검증하는 AI 내부 라우터 연결</td><td>AI만 현재 job의 영상 스트림을 읽고, 삭제·오래된 작업은 거부</td></tr>
+          <tr><td>AI 결과</td><td>강유성·이지수: STT·점수·근거·Report JSON 생성</td><td>장민서: 계약 검증 후 현재 job의 DB 행에 저장</td><td>STT와 Report 커밋 전에는 공개 상태가 DONE이 아님</td></tr>
+          <tr><td>프론트 응답</td><td>장민서: 공개 상태·리포트·전사와 오류 예시 제공</td><td>이지영·김승혜: Vue API 클라이언트·화면 연결</td><td><code>VITE_API_MODE=real</code>에서 실제 응답으로 표시, 목업 응답과 혼동 없음</td></tr>
+          <tr><td>공용 파일</td><td>박재흥: DB 기반·<code>api/main.py</code>·환경 파일 정리</td><td>장민서: 분석 모델 요구사항과 라우터 등록 변경 전달</td><td>동일 migration 또는 공용 파일을 동시에 수정하지 않고, 병합 순서를 합의</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section id="sequence">
+      <h2>4. 날짜 대신 의존관계로 진행</h2>
+      <div class="card">
+        <div class="step"><div class="step-num">A</div><div><h3>계약을 먼저 잠근다</h3><p>두 BE·AI·FE 담당자가 새 AI 결과 GET의 경로·응답·인증, 정성 피드백의 <code>segments.kind</code> 값, 재생 URL의 만료·권한을 문서와 계약 모델에 적는다. 기존 v3.5/v1.4 필드명은 임의로 바꾸지 않는다.</p></div></div>
+        <div class="step"><div class="step-num">B</div><div><h3>DB와 업로드를 먼저 잇는다</h3><p>박재흥이 사용자→프로젝트→업로드→회차까지 만든다. 장민서는 그 사이 AI 클라이언트·콜백 검증을 합성 계약 입력으로 작성할 수 있지만, 실제 완료 판정은 업로드 경계와 합친 뒤 한다.</p></div></div>
+        <div class="step"><div class="step-num">C</div><div><h3>한 회차를 끝까지 흘려보낸다</h3><p>완료된 회차로 분석 접수→영상 접근→전사 저장→이벤트→Report 저장을 연결한다. 실제 AI 실행 결과만 성공으로 인정한다. 계약 fixture는 형식 확인에만 사용한다.</p></div></div>
+        <div class="step"><div class="step-num">D</div><div><h3>Vue 연결과 실패 경로를 확인한다</h3><p>프론트 담당자가 실제 서버 모드에서 상태·전사·리포트를 확인한다. 같은 업로드 완료 재호출, 중복/늦은 콜백, 실패 결과, 타인 접근, 영상 구간 이동을 함께 점검한다.</p></div></div>
+      </div>
+    </section>
+
+    <section id="decisions">
+      <h2>5. 결정된 방향과 남은 세부 계약</h2>
+      <div class="grid three">
+        <div class="card"><span class="tag mint">사용자 결정</span><h3>Report 가져오기</h3><p>AI 서비스에 <strong>내부 GET 결과 조회 API를 추가</strong>한다. 권장 경로는 <code>GET /analysis/jobs/{jobId}/report</code>. BE는 DONE 콜백의 <code>reportKey</code>를 현재 job과 대조한 뒤 이 API로 최종 JSON을 가져온다.</p><small>정확한 경로·응답·오류·보관/삭제는 AI 담당자와 명세에 확정해야 한다. 현재 v1.4에는 이 GET이 없다.</small></div>
+        <div class="card"><span class="tag mint">사용자 결정</span><h3>내용·구조 피드백</h3><p>새 숫자 점수 없이 기존 <code>segments</code>·<code>coaching</code>에 전사 기반 정성 피드백을 담는다. <code>contentCheck</code>는 계속 <code>null</code>이다.</p><small><code>kind</code> 값, 발화 구간 근거, 문장 작성 주체와 FE 표시 방식은 AI·FE 담당자와 고정한다.</small></div>
+        <div class="card"><span class="tag mint">사용자 결정</span><h3>실제 영상 재생</h3><p>BE가 <strong>짧게 유효한 재생 전용 URL</strong>을 발급한다. 해당 회차·사용자에만 묶고 삭제·만료를 검사하며 여러 Range 요청 동안 유효해야 한다.</p><small>발급 경로·만료 시간·토큰 전달 형식·로그 노출 방지와 재생 응답은 BE·FE가 계약에 추가한다. 현재 사용자 API v3.5의 Bearer 영상 GET만으로는 <code>&lt;video src&gt;</code> 재생이 안 된다.</small></div>
+      </div>
+      <div class="callout" style="margin-top:16px"><strong>다른 미정값:</strong> 활성 루브릭의 채점 수치·반올림, 서비스 인증 방식, 500 MiB DB 스트리밍 성능, 보관·실삭제 기간은 추측해 확정하지 않는다. 결정 전에는 관련 경계 밖의 구현을 진행하고, 실제 점수·용량 지원을 검증 없이 완료로 표시하지 않는다.</div>
+    </section>
+
+    <section id="prompts">
+      <h2>6. 바이브 코딩 시작 지시문</h2>
+      <p>각자 AI 도구에 아래 틀을 넣고 자기 작업 단위의 입력·출력과 변경 파일을 좁혀 진행한다. 매번 기존 호출부를 읽고, 한 동작마다 테스트와 실제 응답을 확인한다.</p>
+      <div class="grid">
+        <div class="card"><h3>박재흥에게</h3><pre class="prompt">ProPitch의 사용자·영상 기반을 구현해줘.
+먼저 backend/AGENTS.md, TEAM_RULES.md, docs/SPEC_ALIGNMENT.md,
+docs/specs/user-api-v3.5.md, specs/erd-v10.dbml을 읽어.
+담당: 인증·회원·동의·프로젝트·업로드·영상 접근,
+공통 DB 연결·migration·실행 환경.
+작업마다 수정 파일과 호출부, 입력/출력, 소유권·중복·실패 조건을
+먼저 적고 해당 동작만 구현해.
+업로드 완료 시 analysisId=rounds.id와 회차 문맥을
+장민서의 작업 접수 서비스에 넘길 경계를 명시해.
+분석 작업 로직과 AI 콜백 로직은 대신 구현하지 마.
+실제 DB와 API로 성공·타인 접근·중복 요청을 확인하고,
+구현하지 않은 경로·용량 한계를 완료라고 쓰지 마.</pre></div>
+        <div class="card"><h3>장민서에게</h3><pre class="prompt">ProPitch의 AI→DB→프론트 연결을 구현해줘.
+먼저 backend/AGENTS.md, TEAM_RULES.md, docs/SPEC_ALIGNMENT.md,
+docs/specs/analysis-api-v1.4.md, user-api-v3.5.md,
+specs/erd-v10.dbml과 FE shared/api 호출부를 읽어.
+담당: job/attempt 생성·AI 접수, 내부 영상·STT·이벤트 API,
+Report 조회·검증·저장, 사용자 상태·전사·리포트 조회 API.
+박재흥이 만든 DB 세션·회차·영상 접근 경계를 사용해.
+AI의 최종 Report GET은 사용자 결정 사항이나 아직 v1.4에
+없는 확장이다. AI 담당과 경로·응답을 문서화한 뒤 구현해.
+중복 eventId, 오래된 attempt, 삭제 회차, STT 미완료,
+잘못된 점수·근거 시간을 검증해. 커밋 전 DONE 금지.
+FE는 VITE_API_MODE=real에서 실제 응답으로 확인해.
+목업 점수나 계약 예시를 실제 분석 완료로 표시하지 마.</pre></div>
+      </div>
+    </section>
+
+    <section id="done">
+      <h2>7. 리뷰 전에 확인할 것</h2>
+      <div class="grid">
+        <div class="card"><h3>박재흥 체크</h3><ul class="checklist"><li>회원가입·로그인·동의·프로젝트가 DB에서 이어진다.</li><li>타인 프로젝트·영상은 응답하지 않는다.</li><li>파일 재전송·완료 재호출에도 영상·회차가 중복되지 않는다.</li><li>영상 실내용 검증과 Range 동작을 확인했다.</li><li>migration 적용·되돌리기와 실행 설정을 공유했다.</li></ul></div>
+        <div class="card"><h3>장민서 체크</h3><ul class="checklist"><li>한 회차의 jobId와 attempt가 DB에 남는다.</li><li>AI 영상 읽기·전사·이벤트는 서비스 인증과 현재 작업을 확인한다.</li><li>Report JSON과 STT가 저장·검증되기 전 DONE이 보이지 않는다.</li><li>중복/늦은/삭제된 작업 콜백으로 결과가 바뀌지 않는다.</li><li>FE가 실제 API로 상태·전사·리포트를 조회한다.</li></ul></div>
+      </div>
+      <div class="callout good" style="margin-top:16px"><strong>공통 완료 기준:</strong> 한 영상의 업로드부터 실제 AI 결과 표시까지 재현 가능하고, 실패·권한·중복 중 해당 경로를 테스트한다. PR에는 변경 파일·계약 변경·검증 명령·남은 한계를 적는다.</div>
+    </section>
+  </main>
+  <footer><div class="wrap">참고: <a href="https://github.com/seunghye3760-afk/ProPitch/blob/codex/backend-role-split-20261111/backend/docs/OWNERSHIP.md">새 담당 경계</a> · <a href="SPEC_ALIGNMENT.md">명세 정렬</a> · <a href="CONTRACT_DECISIONS.md">계약 결정</a> · <a href="specs/user-api-v3.5.md">사용자 API</a> · <a href="specs/analysis-api-v1.4.md">AI API</a> · <a href="specs/erd-v10.dbml">ERD v10</a><br>현재 체크아웃한 브랜치의 OWNERSHIP.md에는 이전 담당 표가 있을 수 있다. 이 문서는 작업 지침이며 구현 또는 통합 테스트 완료를 의미하지 않는다.</div></footer>
+</body>
+</html>

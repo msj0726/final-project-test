@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "javascriptErrors": [],
+  "clips": 9,
+  "modes": 4,
+  "timelineCells": 100,
+  "jsonDownloadValidated": true,
+  "videoPlayback": {
+    "duration": 10,
+    "width": 960,
+    "height": 666
+  },
+  "desktopOverflow": false,
+  "mobileOverflow": false
+}

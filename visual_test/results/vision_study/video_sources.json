@@ -1,0 +1,28 @@
+{
+  "retrieved": "2026-11-05",
+  "items": [
+    {
+      "id": "erik_hanberg_lightning_2024",
+      "title": "File:Erik Hanberg Wikimania Lightning Talk.webm",
+      "creator": "Erikemery",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "commons_page": "https://commons.wikimedia.org/wiki/File%3AErik_Hanberg_Wikimania_Lightning_Talk.webm",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Erik_Hanberg_Wikimania_Lightning_Talk.webm",
+      "bytes": 16405041,
+      "sha256": "f9b38e9570d235d9b70c7399a2a859c64fb9ca816d100d380d2a0d7e8270bfa0"
+    },
+    {
+      "id": "jack_andraka_talk_2013",
+      "title": "File:Jack Andraka - Detecting pancreatic cancer at 15.webm",
+      "creator": "TEDTalentSearch",
+      "license": "CC BY 2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5/",
+      "commons_page": "https://commons.wikimedia.org/wiki/File%3AJack_Andraka_-_Detecting_pancreatic_cancer_at_15.webm",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Jack_Andraka_-_Detecting_pancreatic_cancer_at_15.webm",
+      "bytes": 42780790,
+      "sha256": "a13304bc7513826b2d481419b5f76815127cf13084362d20f8ad60016afb5bdf"
+    }
+  ],
+  "note": "Original videos are retained for local research; facial movement and expression ground-truth labels are not provided."
+}

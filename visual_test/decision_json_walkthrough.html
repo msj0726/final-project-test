@@ -1,0 +1,46 @@
+<div class="notice good"><b>실제 장면: Jack 발표 영상 원본 70.003초.</b> 아래 이미지는 YOLO가 무대 장식을 <code>umbrella</code>로 잘못 검출한 예입니다. 바로 아래 JSON은 <b>이 한 프레임의 출력이 아니라 원본 65.0–75.0초 10초 구간의 집계</b>입니다. 같은 구간을 영상으로 보려면 4번에서 <code>jack_65</code>를 선택하고 플레이어 5초로 이동하세요.</div>
+<img src="__SCENE_IMAGE__" alt="Jack 원본 70.003초의 몸·얼굴 관절과 우산으로 잘못 검출한 무대 영역" style="display:block;width:100%;max-width:900px;border-radius:10px;margin:18px 0">
+<details open><summary>원본 65–75초의 실측 JSON 전체 보기</summary><pre id="walkthroughJson">__SCENE_JSON__</pre></details>
+<p><b>읽는 법:</b> <code>true/false</code>는 판정 가능한 프레임의 조건 충족 여부이고, <code>null</code>은 관찰·판단값이 없음을 뜻합니다. 시간은 원본 영상 시작을 0초로 한 초 단위이며, 구간 끝 <code>endSec</code>는 포함하지 않습니다. 아래 표는 이 JSON에 실제 들어 있는 루트·중첩 필드와 배열 원소까지 설명합니다.</p>
+<div class="table-wrap"><table><thead><tr><th>JSON 경로와 실제 값</th><th>무엇이며 왜 이 값인가</th></tr></thead><tbody>
+<tr><td><code>schemaVersion = "vision-observation-v2-experiment"</code></td><td>실험용 JSON 구조의 이름입니다. 지금 사용한 출력 코드가 이 버전의 필드 집합을 만들었기 때문에 기록했습니다. 공용 API에 채택된 버전은 아닙니다.</td></tr>
+<tr><td><code>observationConfigVersion = "vision-20261111-v2-gap04-min6"</code></td><td>관찰 규칙 설정의 식별자입니다. 물건 검출이 잠깐 끊겨도 ID는 0.4초 유지하고, 동반 이동에는 1초 안의 실제 관찰 6표본을 요구하는 최종 비교안을 뜻합니다. 이름이 정확도 검증을 뜻하지는 않습니다.</td></tr>
+<tr><td><code>clipId = "jack_65"</code></td><td>실험자가 붙인 구간 ID입니다. Jack 영상에서 65초에 시작한 구간이기 때문에 붙였습니다. 발표자의 추적 ID가 아닙니다.</td></tr>
+<tr><td><code>sourceVideo = "jack_andraka_talk_2013"</code></td><td>읽은 공개 영상의 파일 식별자입니다. 다른 발표 영상 결과와 섞이지 않도록 기록했습니다.</td></tr>
+<tr><td><code>sourceStartSec = 65.0</code>, <code>sourceEndSec = 75.0</code>, <code>sampleDurationSeconds = 10</code></td><td>원본 영상의 65초부터 75초 직전까지 10초입니다. 영상 플레이어의 0초는 원본 65초입니다. 원본에서 5 FPS로 50개 프레임을 골랐으므로 각 표본이 약 0.2초를 대표합니다.</td></tr>
+<tr><td><code>isScoringReady = false</code></td><td>사용자가 시선 점수 환산을 보류했고 제스처 감점·모델 정확도도 확정되지 않았기 때문에 최종 점수를 만들 준비가 되지 않았다는 표시입니다. JSON에는 실제 <code>score</code>나 <code>totalScore</code>가 없습니다.</td></tr>
+<tr><td><code>vision</code></td><td>영상에서 얻은 관찰값을 묶는 객체입니다. 그 안의 <code>gaze</code>는 눈동자 시선이 아닌 얼굴의 카메라 방향을 추정한 결과입니다.</td></tr>
+<tr><td><code>vision.gaze.observableSeconds = 10.0</code></td><td>50개 표본 모두에서 발표자와 연결된 얼굴 5점의 방향을 판정할 수 있다고 규칙이 판단했습니다. 50×0.2초 = 10초입니다. 얼굴 방향 판단의 정답률을 뜻하지 않습니다.</td></tr>
+<tr><td><code>vision.gaze.frontFacingSeconds = 4.4</code></td><td>그중 22개 표본이 정면 기하 조건을 충족했습니다. 22×0.2초 = 4.4초입니다. 얼굴이 실제로 카메라를 봤다는 독립 정답은 없습니다.</td></tr>
+<tr><td><code>vision.gaze.frontFacingRatio = 0.44000000000000006</code></td><td>4.4÷10.0으로 계산한 비율, 표시상 44%입니다. 끝의 긴 소수는 컴퓨터 부동소수점 표현 때문입니다. JSON 원본을 그대로 보여주기 위해 값을 바꾸지 않았습니다. 44점으로 채점하지 않았습니다.</td></tr>
+<tr><td><code>vision.gaze.coverageRatio = 1.0</code></td><td>정면 여부를 판정한 10초÷구간 전체 10초 = 100% 관찰률입니다. 정면을 향한 비율 44%와 다른 값입니다.</td></tr>
+<tr><td><code>vision.gaze.method = "EXPERIMENTAL_5_POINT_FACE_GEOMETRY"</code></td><td>YOLO5Face의 눈 2점·코·입 양끝 5점 배치를 이용한 실험 규칙입니다. 눈동자 모델이나 검증된 머리 각도 모델을 사용한 것이 아닙니다.</td></tr>
+<tr><td><code>vision.bothWristsVisibleSeconds = 10.0</code></td><td>이 구간 50개 표본 모두에서 양쪽 손목·어깨의 위치가 기본 신뢰도 조건을 충족했습니다. 50×0.2초 = 10초입니다.</td></tr>
+<tr><td><code>vision.handObservableSeconds = 9.0</code></td><td>양손목·어깨가 보이는 것만으로 정지 판정을 시작하지 않습니다. 최근 1초 연속 6표본 이력이 확보된 뒤의 45개 표본만 유효하므로 45×0.2초 = 9초입니다.</td></tr>
+<tr><td><code>vision.handCoverageRatio = 0.9</code></td><td>정지 판정 가능 시간 9.0초÷전체 10초 = 90%입니다. 손목 위치가 출력된 비율 100%와 다릅니다.</td></tr>
+<tr><td><code>vision.handStillSeconds = 0</code></td><td>9초를 실제로 판정했지만 5초 연속 정지 조건을 만족한 사건은 없었습니다. <code>null</code>이면 애초에 정지 판정 가능 시간이 0초였다는 뜻이므로 둘을 구별합니다.</td></tr>
+<tr><td><code>vision.gestureEvents = []</code></td><td>5초 연속 양손목 정지 사건이 생성되지 않았습니다. 정상 발표라는 평가나 손가락 움직임 측정 결과가 아닙니다.</td></tr>
+<tr><td><code>vision.candidateEvents = []</code></td><td>선택한 YOLO11n-seg의 물건 출력 중 손목 근접+동반 이동 또는 물건 마스크-얼굴 박스 겹침의 지속시간 조건을 통과한 사건이 없었습니다. 70.003초에 보이는 우산 오검출도 후보로 승격되지 않았습니다. 실제 물건이 없었다는 뜻은 아닙니다.</td></tr>
+<tr><td><code>vision.interactionDiagnostics</code></td><td>물건 후보가 0건인 과정을 확인하기 위한 진단 묶음입니다. 물건별 사건 수나 정확도 지표가 아니라 <b>프레임마다 나온 검출 인스턴스의 수</b>입니다.</td></tr>
+<tr><td><code>nearWristDetectionCount = 22</code></td><td>이 10초 구간에서 손목과 물건 박스가 설정 거리 안에 있었던 검출이 22건입니다. 무대 장식의 오검출도 들어갈 수 있어 접촉 22건이 아닙니다.</td></tr>
+<tr><td><code>insufficientHistoryCount = 18</code></td><td>22건 중 18건은 물건과 손목의 1초 연속 관찰이 충분하지 않아 동반 이동을 판단하지 못했습니다. 검출 단절·추적 조건이 영향을 줄 수 있으며 곧바로 비접촉으로 처리하지 않습니다.</td></tr>
+<tr><td><code>motionMismatchCount = 4</code></td><td>나머지 4건은 관찰 이력은 있었지만 실험용 이동 방향·차이 조건을 충족하지 못했습니다. 영상의 실제 접촉 정답과 비교해 나온 수가 아닙니다.</td></tr>
+<tr><td><code>insufficientMotionCount = 0</code></td><td>이력이 충분한 검출 중 손목이나 물건의 이동량이 최소치 미만이라는 이유로 제외된 건은 없었습니다. 이력 자체가 부족한 18건의 움직임을 평가했다는 뜻은 아닙니다.</td></tr>
+<tr><td><code>comovingDetectionCount = 0</code></td><td>동반 이동 규칙을 통과한 검출이 없었습니다. 물건 들기·만지기가 없었다고 결론 내릴 수 없습니다.</td></tr>
+<tr><td><code>unit = "DETECTION_INSTANCES_NOT_EVENTS"</code></td><td>위 다섯 수치의 단위가 행동 사건 수가 아닌 프레임별 모델 출력 수임을 명시합니다. 22 = 18+4+0+0은 이 구간의 분기별 건수입니다.</td></tr>
+<tr><td><code>vision.unobservableIntervalsStatus = "GENERATED"</code></td><td>관찰 불가 시간 구간을 생성하는 후처리가 실제로 실행됐다는 표시입니다. 빈 배열일 때에도 ‘생성하지 않음’과 구별할 수 있습니다.</td></tr>
+<tr><td><code>vision.unobservableIntervals[0].criterionKey = "HAND_STILLNESS"</code></td><td>이번 구간에서 기록한 관찰 불가 구간 1개가 양손 정지 판정에 관한 것임을 뜻합니다. 정면 방향에는 관찰 불가 구간이 없었습니다.</td></tr>
+<tr><td><code>vision.unobservableIntervals[0].startSec = 65.0</code>, <code>endSec = 66.0</code></td><td>원본 영상 65.0–66.0초의 첫 1초는 손목이 보이더라도 시간 이력이 채워지기 전이므로 정지 판정에서 제외했습니다. 끝 시각 66.0초는 이 구간에 포함하지 않습니다.</td></tr>
+<tr><td><code>vision.unobservableIntervals[0].reasonCode = "TEMPORAL_WARMUP"</code></td><td>모델이 손목을 못 찾았다는 뜻이 아니라, 정지를 계산할 연속 과거 위치가 부족했다는 뜻입니다. 그래서 손목 가시 시간 10초와 정지 판정 가능 시간 9초가 다릅니다.</td></tr>
+<tr><td><code>vision.criterionStatus.HAND_STILLNESS = "EVALUATED"</code></td><td>정지 판정 가능한 9초가 실제로 있어 계산을 시도했습니다. 사건이 0건인 것과 평가 미실행을 구분합니다.</td></tr>
+<tr><td><code>vision.criterionStatus.FACE_OCCLUSION = "CANDIDATE_ONLY"</code></td><td>얼굴 가림은 후보 추출 단계에 머뭅니다. 이번 구간 후보는 0개이며 실제 가림 판정을 검증하거나 감점하지 않았습니다.</td></tr>
+<tr><td><code>vision.criterionStatus.UNRELATED_OBJECT_TOUCH = "NOT_EVALUATED"</code></td><td>물건의 발표 관련성을 판단할 LLM을 실행하지 않았습니다. 근접 후보가 0개여도 ‘관련 없는 물건을 안 만짐’으로 단정하지 않습니다.</td></tr>
+<tr><td><code>evidence = []</code></td><td>이 구간은 확정 정지 사건과 가림·상호작용 후보가 모두 없어 참조할 사건 근거 배열도 비어 있습니다. 원시 프레임 관찰값까지 저장하지 않았다는 뜻은 아닙니다.</td></tr>
+<tr><td><code>contextJudgments[0].criterionKey = "UNRELATED_OBJECT_TOUCH"</code></td><td>LLM에 맡기기로 한 기준이 ‘발표와 무관한 물건 접촉’임을 표시합니다. 한 건의 판단 결과가 나왔다는 뜻은 아닙니다.</td></tr>
+<tr><td><code>contextJudgments[0].status = "NOT_RUN"</code>, <code>verdict = null</code></td><td>LLM을 호출하지 않았으므로 적용/미적용/판단 불가 중 어느 판정도 만들지 않았습니다. 실행 후 판단 불가 <code>UNDETERMINED</code>와 구분합니다.</td></tr>
+<tr><td><code>contextJudgments[0].reason = "LLM_NOT_EXECUTED"</code></td><td>verdict가 null인 직접적인 이유입니다. 모델이 애매하다고 대답했다는 뜻이 아닙니다.</td></tr>
+<tr><td><code>contextJudgments[0].evidenceRefs = []</code></td><td>전달할 상호작용 후보 사건이 없어 연결할 근거 ID도 없습니다. LLM 호출 여부와 근거가 없는 이유를 함께 확인합니다.</td></tr>
+<tr><td><code>limitations[0]–[6]</code></td><td>아래 일곱 문장은 이 결과를 사용할 때 반드시 같이 읽어야 할 한계입니다. 배열 번호는 JSON의 순서이며 점수나 사건 코드가 아닙니다.</td></tr>
+</tbody></table></div>
+<ol><li><b>점수 환산 보류:</b> 사용자가 정면 비율을 점수로 바꾸지 않기로 했으므로 score 필드가 없습니다.</li><li><b>손목 기준:</b> 정지는 손가락이 아니라 양손목 위치로만 판정했고 5초를 요구했습니다.</li><li><b>자료 범위:</b> 5 FPS 표본이며 기존에 살펴본 공개 영상이라 독립 정확도 시험이 아닙니다.</li><li><b>동반 이동 한계:</b> 1초의 이동을 요구하므로 물건을 움직이지 않고 드는 행동을 놓칠 수 있습니다.</li><li><b>추적 한계:</b> 같은 라벨·박스 겹침으로 임시 ID를 연결하고 0.4초 누락 동안만 ID를 보존합니다. 빈 프레임의 좌표·행동을 만들어 넣지 않았습니다.</li><li><b>물건 미검출:</b> 물건이 없다는 증거가 아닙니다. 그래서 물건 검출 재현율이나 물건 관찰률을 제시하지 않았습니다.</li><li><b>판정 미검증:</b> 얼굴 방향·가림·접촉의 정확도를 사람 정답으로 검증하지 않았고 LLM 관련성 판단을 실행하지 않았습니다.</li></ol>
+<p class="muted">이 표의 수치와 코드는 바로 위 JSON 파일에서 읽은 값입니다. 사람이 장면을 육안으로 확인한 설명은 독립 라벨이 아닙니다. 다른 구간을 살펴볼 때는 4번의 선택 메뉴에서 해당 JSON과 영상을 함께 확인하세요.</p>

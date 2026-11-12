@@ -1,0 +1,38 @@
+{
+  "additionalProperties": false,
+  "minProperties": 1,
+  "properties": {
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "topic": {
+      "title": "Topic",
+      "type": "string"
+    },
+    "finalDate": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Finaldate"
+    },
+    "targetMinutes": {
+      "minimum": 0,
+      "title": "Targetminutes",
+      "type": "integer"
+    },
+    "done": {
+      "title": "Done",
+      "type": "boolean"
+    }
+  },
+  "title": "ProjectPatch",
+  "type": "object"
+}

@@ -1,0 +1,9 @@
+{
+  "schemaValidFiles": 9,
+  "negativeSchemaChecks": 3,
+  "syntheticBehaviorChecks": 10,
+  "semanticChecksFrames": 450,
+  "videos": 36,
+  "decodedVideoFrames": 1800,
+  "result": "PASS"
+}

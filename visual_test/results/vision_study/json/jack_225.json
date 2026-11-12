@@ -1,0 +1,204 @@
+{
+  "schemaVersion": "vision-experiment-v1",
+  "clipId": "jack_225",
+  "sourceVideo": "jack_andraka_talk_2013",
+  "sourceStartSec": 225.0,
+  "sourceEndSec": 235.0,
+  "sampleDurationSeconds": 10,
+  "vision": {
+    "gaze": {
+      "observableSeconds": 9.8,
+      "frontFacingSeconds": 3.8,
+      "frontFacingRatio": 0.38775510204081626,
+      "coverageRatio": 0.9800000000000001,
+      "method": "EXPERIMENTAL_5_POINT_FACE_GEOMETRY"
+    },
+    "handObservableSeconds": 0.0,
+    "handStillSeconds": null,
+    "bothWristsVisibleSeconds": 0.8,
+    "gestureEvents": [],
+    "criterionStatus": {
+      "HAND_STILLNESS": "UNOBSERVABLE",
+      "FACE_OCCLUSION": "CANDIDATE_ONLY",
+      "UNRELATED_OBJECT_TOUCH": "PENDING_CONTEXT_JUDGMENT"
+    },
+    "candidateEvents": [
+      {
+        "eventId": "jack_225-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-darkness-1",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 226.4,
+        "endSec": 226.8,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "darkness",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_225-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-face-1",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 231.6,
+        "endSec": 232.0,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "face",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_225-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-folk rock artist-1",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 231.4,
+        "endSec": 232.2,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "folk rock artist",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_225-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-folk rock artist-2",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 232.6,
+        "endSec": 233.0,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "folk rock artist",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_225-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-hair color-1",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 225.0,
+        "endSec": 227.6,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "hair color",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_225-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-hair color-2",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 227.8,
+        "endSec": 231.2,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "hair color",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_225-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-hair color-3",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 231.4,
+        "endSec": 235.0,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "hair color",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_225-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-jazz artist-1",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 233.4,
+        "endSec": 234.8,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "jazz artist",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_225-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-martial artist-1",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 227.8,
+        "endSec": 228.6,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "martial artist",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_225-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-martial artist-2",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 229.2,
+        "endSec": 230.0,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "martial artist",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_225-YOLOE11S_PF-OBJECT_FACE_OVERLAP_CANDIDATE-politician-1",
+        "kind": "OBJECT_FACE_OVERLAP_CANDIDATE",
+        "startSec": 233.0,
+        "endSec": 233.4,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "politician",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_225-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-cuff-1",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 229.0,
+        "endSec": 231.0,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "cuff",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_225-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-lab coat-1",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 227.8,
+        "endSec": 228.8,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "lab coat",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_225-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-martial artist-1",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 227.8,
+        "endSec": 228.6,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "martial artist",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      },
+      {
+        "eventId": "jack_225-YOLOE11S_PF-OBJECT_INTERACTION_CANDIDATE-martial artist-2",
+        "kind": "OBJECT_INTERACTION_CANDIDATE",
+        "startSec": 229.2,
+        "endSec": 230.0,
+        "confidence": null,
+        "model": "YOLOE11S_PF",
+        "objectLabel": "martial artist",
+        "verdict": "UNDETERMINED",
+        "reason": "CANDIDATE_ONLY_NOT_CONTACT_OR_OCCLUSION_PROOF"
+      }
+    ]
+  },
+  "limitations": [
+    "실험용 임계값, 독립 정확도 검증 전, 실제 감점 없음",
+    "5 FPS 표본마다 0.2초를 대표하므로 시간은 표본 기반 추정",
+    "handObservableSeconds는 양손목·어깨 및 1초 연속 이력을 모두 확보한 시간",
+    "양손 정지는 손목 기준이며 손가락만의 움직임을 배제하지 못함",
+    "정면은 5개 얼굴 점의 기하학적 대리 지표, 실제 눈동자 시선 아님",
+    "물건/손 영역 겹침 및 근접은 가림/접촉의 확정 근거가 아님",
+    "LLM 미실행, 물건의 발표 관련성 미판정",
+    "가장 큰 단일 인물 선택은 발표자 신원을 보장하지 않음"
+  ],
+  "isScoringReady": false
+}

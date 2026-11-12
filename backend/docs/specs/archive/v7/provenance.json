@@ -1,0 +1,15 @@
+{
+  "precedence": "사용자 확인: 충돌 시 ERD v7 우선",
+  "sources": [
+    {
+      "originalName": "01_ProPitch API 명세 v3.2 — 사용자 API · 질의응답 실시간 중계_이지영.docx",
+      "storedName": "propitch-api-supplied.docx",
+      "sha256": "f52ae35b36fa32ae5abb7ddb1b91fee8a4d5dd180922c8b3b5789f3571170ac5"
+    },
+    {
+      "originalName": "01_ProPitch_ERD_v7.dbml",
+      "storedName": "propitch-erd-v7.dbml",
+      "sha256": "84b534efbf07eb8d929058709ea28e70bc3d1bc53933b921c4fcae7803907233"
+    }
+  ]
+}
