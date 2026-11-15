@@ -1,0 +1,98 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 18.68650708300993,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 407,
+    "output_tokens_details": {
+      "reasoning_tokens": 189
+    },
+    "total_tokens": 5208
+  },
+  "costUsdUpperBound": 0.013672,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[140,140.5],[143,160]],\"bothWristsStillCandidateIntervals\":[[143.5,146],[147,148],[149.5,150.5],[151.5,152],[153.5,155],[155.5,157.5]],\"handMotionStopSeconds\":[143.5,147,149.5,151.5,153.5,155.5],\"faceCoverEvents\":[{\"startSec\":159,\"endSec\":159.5,\"source\":\"HAND\",\"objectLabel\":null}],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[140.5,144.5],[147.5,148.5],[152.5,153.5],[158,158.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Times are approximate at 0.5-second sampling resolution; brief intervening movements may be missed.\",\"Wrists and any possible object contact below the frame cannot be assessed.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        140,
+        140.5
+      ],
+      [
+        143,
+        160
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        143.5,
+        146
+      ],
+      [
+        147,
+        148
+      ],
+      [
+        149.5,
+        150.5
+      ],
+      [
+        151.5,
+        152
+      ],
+      [
+        153.5,
+        155
+      ],
+      [
+        155.5,
+        157.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      143.5,
+      147,
+      149.5,
+      151.5,
+      153.5,
+      155.5
+    ],
+    "faceCoverEvents": [
+      {
+        "startSec": 159,
+        "endSec": 159.5,
+        "source": "HAND",
+        "objectLabel": null
+      }
+    ],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        140.5,
+        144.5
+      ],
+      [
+        147.5,
+        148.5
+      ],
+      [
+        152.5,
+        153.5
+      ],
+      [
+        158,
+        158.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Times are approximate at 0.5-second sampling resolution; brief intervening movements may be missed.",
+      "Wrists and any possible object contact below the frame cannot be assessed."
+    ]
+  },
+  "status": "OK"
+}

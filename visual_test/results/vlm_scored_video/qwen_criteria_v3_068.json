@@ -1,0 +1,54 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 34.363638833980076,
+  "inputTokens": 4499,
+  "outputTokens": 283,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [1360.0, 1371.0],\n    [1374.5, 1380.0]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [1360.0, 1371.0],\n    [1374.5, 1380.0]\n  ],\n  \"handMotionStopSeconds\": [\n    1360.0,\n    1371.0,\n    1374.5\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [1371.0, 1374.5]\n  ],\n  \"gazeUnobservableIntervals\": [\n    [1371.0, 1374.5]\n  ],\n  \"limitations\": [\n    \"Hand motion stop at 1371.0s inferred from visible hand separation and subsequent stillness.\",\n    \"Head off-target and gaze unobservable intervals overlap; face is visible but direction is off-target.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1360.0,
+        1371.0
+      ],
+      [
+        1374.5,
+        1380.0
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1360.0,
+        1371.0
+      ],
+      [
+        1374.5,
+        1380.0
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1360.0,
+      1371.0,
+      1374.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1371.0,
+        1374.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [
+      [
+        1371.0,
+        1374.5
+      ]
+    ],
+    "limitations": [
+      "Hand motion stop at 1371.0s inferred from visible hand separation and subsequent stillness.",
+      "Head off-target and gaze unobservable intervals overlap; face is visible but direction is off-target."
+    ]
+  },
+  "status": "OK"
+}

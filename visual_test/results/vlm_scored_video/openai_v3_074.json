@@ -1,0 +1,48 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 7.78222454097704,
+  "usage": {
+    "input_tokens": 1929,
+    "input_tokens_details": {
+      "cache_write_tokens": 1926,
+      "cached_tokens": 0
+    },
+    "output_tokens": 203,
+    "output_tokens_details": {
+      "reasoning_tokens": 103
+    },
+    "total_tokens": 2132
+  },
+  "costUsdUpperBound": 0.005888,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[1480,1486.24]],\"bothWristsStillCandidateIntervals\":[[1480,1480.5],[1483,1485]],\"handMotionStopSeconds\":[1483],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Sampling at 0.5-second intervals limits precise motion-stop timing.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1480,
+        1486.24
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1480,
+        1480.5
+      ],
+      [
+        1483,
+        1485
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1483
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Sampling at 0.5-second intervals limits precise motion-stop timing."
+    ]
+  },
+  "status": "OK"
+}

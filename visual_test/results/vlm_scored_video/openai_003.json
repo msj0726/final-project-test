@@ -1,0 +1,95 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 14.248627749999287,
+  "usage": {
+    "input_tokens": 4824,
+    "input_tokens_details": {
+      "cache_write_tokens": 4821,
+      "cached_tokens": 0
+    },
+    "output_tokens": 386,
+    "output_tokens_details": {
+      "reasoning_tokens": 133
+    },
+    "total_tokens": 5210
+  },
+  "costUsdUpperBound": 0.013508,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[60,61.5],[64.5,80]],\"bothWristsStillCandidateIntervals\":[[60,60.5],[64.5,67],[67.5,68.5],[69.5,70.5],[75,76.5]],\"handMotionStopSeconds\":[64.5,67.5,69.5,75],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetEvents\":[{\"startSec\":61.5,\"endSec\":64,\"reason\":\"DOWN\"},{\"startSec\":65,\"endSec\":65.5,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":68.5,\"endSec\":69,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":71,\"endSec\":72,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":77,\"endSec\":78.5,\"reason\":\"PRESENTATION_SCREEN\"}],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is approximate at 0.5-second sampling resolution.\",\"Wrists leave the frame during the forward lean; off-frame object contact cannot be determined.\",\"Head direction is a proxy, not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        60,
+        61.5
+      ],
+      [
+        64.5,
+        80
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        60,
+        60.5
+      ],
+      [
+        64.5,
+        67
+      ],
+      [
+        67.5,
+        68.5
+      ],
+      [
+        69.5,
+        70.5
+      ],
+      [
+        75,
+        76.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      64.5,
+      67.5,
+      69.5,
+      75
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetEvents": [
+      {
+        "startSec": 61.5,
+        "endSec": 64,
+        "reason": "DOWN"
+      },
+      {
+        "startSec": 65,
+        "endSec": 65.5,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 68.5,
+        "endSec": 69,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 71,
+        "endSec": 72,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 77,
+        "endSec": 78.5,
+        "reason": "PRESENTATION_SCREEN"
+      }
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is approximate at 0.5-second sampling resolution.",
+      "Wrists leave the frame during the forward lean; off-frame object contact cannot be determined.",
+      "Head direction is a proxy, not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

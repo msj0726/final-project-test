@@ -1,0 +1,100 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 13.05485112502356,
+  "usage": {
+    "input_tokens": 4843,
+    "input_tokens_details": {
+      "cache_write_tokens": 4840,
+      "cached_tokens": 0
+    },
+    "output_tokens": 347,
+    "output_tokens_details": {
+      "reasoning_tokens": 139
+    },
+    "total_tokens": 5190
+  },
+  "costUsdUpperBound": 0.013156,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[1281,1300]],\"bothWristsStillCandidateIntervals\":[[1281,1282.5],[1284,1285],[1287,1288],[1290,1291.5],[1293,1293.5],[1295,1297],[1298.5,1299]],\"handMotionStopSeconds\":[1281,1284,1287,1290,1293,1295,1298.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[1280,1281],[1281.5,1283],[1287,1289],[1291,1291.5],[1293.5,1294],[1297,1297.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits timing precision and may miss brief movements.\",\"Head direction is a proxy, not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1281,
+        1300
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1281,
+        1282.5
+      ],
+      [
+        1284,
+        1285
+      ],
+      [
+        1287,
+        1288
+      ],
+      [
+        1290,
+        1291.5
+      ],
+      [
+        1293,
+        1293.5
+      ],
+      [
+        1295,
+        1297
+      ],
+      [
+        1298.5,
+        1299
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1281,
+      1284,
+      1287,
+      1290,
+      1293,
+      1295,
+      1298.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1280,
+        1281
+      ],
+      [
+        1281.5,
+        1283
+      ],
+      [
+        1287,
+        1289
+      ],
+      [
+        1291,
+        1291.5
+      ],
+      [
+        1293.5,
+        1294
+      ],
+      [
+        1297,
+        1297.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits timing precision and may miss brief movements.",
+      "Head direction is a proxy, not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

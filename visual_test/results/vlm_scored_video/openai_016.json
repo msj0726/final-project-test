@@ -1,0 +1,89 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 10.217501250008354,
+  "usage": {
+    "input_tokens": 4824,
+    "input_tokens_details": {
+      "cache_write_tokens": 4821,
+      "cached_tokens": 0
+    },
+    "output_tokens": 307,
+    "output_tokens_details": {
+      "reasoning_tokens": 85
+    },
+    "total_tokens": 5131
+  },
+  "costUsdUpperBound": 0.012718,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[320,322.5],[323.5,330.5],[331.5,340]],\"bothWristsStillCandidateIntervals\":[[321.5,322.5],[323.5,325],[325.5,327.5],[328,330.5],[331.5,332.5],[333.5,334.5]],\"handMotionStopSeconds\":[321.5,325.5,328,333.5,336.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetEvents\":[{\"startSec\":323,\"endSec\":323.5,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":330.5,\"endSec\":331.5,\"reason\":\"PRESENTATION_SCREEN\"}],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits timing precision and detection of brief stops.\",\"Clasped hands and side-on poses sometimes obscure a wrist; excluded intervals are conservative.\",\"Head direction is not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        320,
+        322.5
+      ],
+      [
+        323.5,
+        330.5
+      ],
+      [
+        331.5,
+        340
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        321.5,
+        322.5
+      ],
+      [
+        323.5,
+        325
+      ],
+      [
+        325.5,
+        327.5
+      ],
+      [
+        328,
+        330.5
+      ],
+      [
+        331.5,
+        332.5
+      ],
+      [
+        333.5,
+        334.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      321.5,
+      325.5,
+      328,
+      333.5,
+      336.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetEvents": [
+      {
+        "startSec": 323,
+        "endSec": 323.5,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 330.5,
+        "endSec": 331.5,
+        "reason": "PRESENTATION_SCREEN"
+      }
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits timing precision and detection of brief stops.",
+      "Clasped hands and side-on poses sometimes obscure a wrist; excluded intervals are conservative.",
+      "Head direction is not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

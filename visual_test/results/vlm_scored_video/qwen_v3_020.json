@@ -1,0 +1,48 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.566575000004377,
+  "elapsedSeconds": 29.463942000002135,
+  "inputTokens": 4304,
+  "outputTokens": 198,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\":[\n[400,420]\n],\n\"bothWristsStillCandidateIntervals\":[\n[400,405],\n[407,420]\n],\n\"handMotionStopSeconds\":[\n405,\n407\n],\n\"faceCoverEvents\":[\n],\n\"unrelatedObjectTouchEvents\":[\n],\n\"headOffTargetIntervals\":[\n[409,410],\n[419,420]\n],\n\"gazeUnobservableIntervals\":[\n],\n\"limitations\":[\n\"Hand motion stop at 405s inferred from left hand lowering; right hand remains clasped, so simultaneous stop is uncertain.\",\n\"Head off-target at 409s and 419s is approximate based on visible body orientation, not verified eye gaze.\"\n]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        400,
+        420
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        400,
+        405
+      ],
+      [
+        407,
+        420
+      ]
+    ],
+    "handMotionStopSeconds": [
+      405,
+      407
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        409,
+        410
+      ],
+      [
+        419,
+        420
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Hand motion stop at 405s inferred from left hand lowering; right hand remains clasped, so simultaneous stop is uncertain.",
+      "Head off-target at 409s and 419s is approximate based on visible body orientation, not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

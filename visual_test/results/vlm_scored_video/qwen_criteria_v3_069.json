@@ -1,0 +1,99 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 42.24704325001221,
+  "inputTokens": 4499,
+  "outputTokens": 484,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [1380.0, 1381.0],\n    [1388.0, 1389.0],\n    [1391.0, 1392.0],\n    [1396.0, 1397.0],\n    [1399.0, 1400.0]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [1380.0, 1381.0],\n    [1388.0, 1389.0],\n    [1391.0, 1392.0],\n    [1396.0, 1397.0],\n    [1399.0, 1400.0]\n  ],\n  \"handMotionStopSeconds\": [\n    1381.0,\n    1388.0,\n    1391.0,\n    1396.0,\n    1399.0\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [1381.5, 1382.0],\n    [1384.5, 1385.0],\n    [1387.5, 1388.0],\n    [1389.0, 1390.0],\n    [1392.0, 1393.0],\n    [1395.0, 1396.0],\n    [1398.0, 1399.0]\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"limitations\": [\n    \"Hand motion stop detection based on visible hand position changes between frames.\",\n    \"Head off-target intervals inferred from head direction relative to the camera/screen.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1380.0,
+        1381.0
+      ],
+      [
+        1388.0,
+        1389.0
+      ],
+      [
+        1391.0,
+        1392.0
+      ],
+      [
+        1396.0,
+        1397.0
+      ],
+      [
+        1399.0,
+        1400.0
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1380.0,
+        1381.0
+      ],
+      [
+        1388.0,
+        1389.0
+      ],
+      [
+        1391.0,
+        1392.0
+      ],
+      [
+        1396.0,
+        1397.0
+      ],
+      [
+        1399.0,
+        1400.0
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1381.0,
+      1388.0,
+      1391.0,
+      1396.0,
+      1399.0
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1381.5,
+        1382.0
+      ],
+      [
+        1384.5,
+        1385.0
+      ],
+      [
+        1387.5,
+        1388.0
+      ],
+      [
+        1389.0,
+        1390.0
+      ],
+      [
+        1392.0,
+        1393.0
+      ],
+      [
+        1395.0,
+        1396.0
+      ],
+      [
+        1398.0,
+        1399.0
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Hand motion stop detection based on visible hand position changes between frames.",
+      "Head off-target intervals inferred from head direction relative to the camera/screen."
+    ]
+  },
+  "status": "OK"
+}

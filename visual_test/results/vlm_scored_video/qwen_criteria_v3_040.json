@@ -1,0 +1,91 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 44.566410708008334,
+  "inputTokens": 4457,
+  "outputTokens": 478,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [800.0, 814.0],\n    [819.0, 820.0]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [800.0, 814.0],\n    [819.0, 820.0]\n  ],\n  \"handMotionStopSeconds\": [\n    800.0,\n    801.0,\n    802.0,\n    803.0,\n    804.0,\n    805.0,\n    806.0,\n    807.0,\n    808.0,\n    809.0,\n    810.0,\n    811.0,\n    812.0,\n    813.0,\n    814.0,\n    819.0\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [814.0, 815.0],\n    [815.0, 816.0],\n    [816.0, 817.0],\n    [817.0, 818.0]\n  ],\n  \"gazeUnobservableIntervals\": [\n    [814.0, 815.0],\n    [815.0, 816.0],\n    [816.0, 817.0],\n    [817.0, 818.0]\n  ],\n  \"limitations\": [\n    \"Hand motion stop detection based on visible frames only; continuous motion may be inferred between stops.\",\n    \"Head direction and gaze unobservable intervals are approximations based on head orientation, not precise eye tracking.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        800.0,
+        814.0
+      ],
+      [
+        819.0,
+        820.0
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        800.0,
+        814.0
+      ],
+      [
+        819.0,
+        820.0
+      ]
+    ],
+    "handMotionStopSeconds": [
+      800.0,
+      801.0,
+      802.0,
+      803.0,
+      804.0,
+      805.0,
+      806.0,
+      807.0,
+      808.0,
+      809.0,
+      810.0,
+      811.0,
+      812.0,
+      813.0,
+      814.0,
+      819.0
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        814.0,
+        815.0
+      ],
+      [
+        815.0,
+        816.0
+      ],
+      [
+        816.0,
+        817.0
+      ],
+      [
+        817.0,
+        818.0
+      ]
+    ],
+    "gazeUnobservableIntervals": [
+      [
+        814.0,
+        815.0
+      ],
+      [
+        815.0,
+        816.0
+      ],
+      [
+        816.0,
+        817.0
+      ],
+      [
+        817.0,
+        818.0
+      ]
+    ],
+    "limitations": [
+      "Hand motion stop detection based on visible frames only; continuous motion may be inferred between stops.",
+      "Head direction and gaze unobservable intervals are approximations based on head orientation, not precise eye tracking."
+    ]
+  },
+  "status": "OK"
+}

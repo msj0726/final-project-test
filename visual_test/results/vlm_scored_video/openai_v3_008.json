@@ -1,0 +1,88 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 10.252376499993261,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 323,
+    "output_tokens_details": {
+      "reasoning_tokens": 154
+    },
+    "total_tokens": 5124
+  },
+  "costUsdUpperBound": 0.012832,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[160,180]],\"bothWristsStillCandidateIntervals\":[[160,161],[161.5,162.5],[164,165],[166.5,168.5],[169.5,170.5],[172,180]],\"handMotionStopSeconds\":[161.5,163,164,166.5,169.5,171,172],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[163,163.5],[165,166],[168.5,169.5],[173.5,174]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits transition timing and detection of brief movements.\",\"Head direction is a proxy, not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        160,
+        180
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        160,
+        161
+      ],
+      [
+        161.5,
+        162.5
+      ],
+      [
+        164,
+        165
+      ],
+      [
+        166.5,
+        168.5
+      ],
+      [
+        169.5,
+        170.5
+      ],
+      [
+        172,
+        180
+      ]
+    ],
+    "handMotionStopSeconds": [
+      161.5,
+      163,
+      164,
+      166.5,
+      169.5,
+      171,
+      172
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        163,
+        163.5
+      ],
+      [
+        165,
+        166
+      ],
+      [
+        168.5,
+        169.5
+      ],
+      [
+        173.5,
+        174
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits transition timing and detection of brief movements.",
+      "Head direction is a proxy, not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

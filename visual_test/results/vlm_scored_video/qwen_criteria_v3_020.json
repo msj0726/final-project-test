@@ -1,0 +1,10 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 33.92540795801324,
+  "inputTokens": 4457,
+  "outputTokens": 274,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [400.0, 405.0],\n    [406.0, 419.0]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [400.0, 405.0],\n    [406.0, 419.0]\n  ],\n  \"handMotionStopSeconds\": [\n    405.0,\n    406.0,\n    419.0\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [405.0, 406.0],\n    [419.0, 419.0]\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"limitations\": [\n    \"Hand motion stop at 405.0s inferred from visible hand retraction; precise stop time may vary slightly.\",\n    \"Head off-target at 419.0s is a single-frame event; duration is minimal and may be negligible.\"\n  ]\n}",
+  "status": "INVALID_OUTPUT",
+  "error": "interval outside window"
+}

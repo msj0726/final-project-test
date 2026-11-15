@@ -1,0 +1,58 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 34.46568937500706,
+  "inputTokens": 4457,
+  "outputTokens": 283,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [260.0, 262.0],\n    [264.0, 279.5]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [260.0, 262.0],\n    [264.0, 279.5]\n  ],\n  \"handMotionStopSeconds\": [\n    262.0,\n    264.0,\n    270.0,\n    279.5\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [262.0, 264.0],\n    [265.5, 270.0],\n    [270.0, 279.5]\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"limitations\": [\n    \"Wrist visibility is intermittent due to arm movement and occlusion by the presenter's body.\",\n    \"Head direction is inferred from body orientation and gaze direction, not precise eye tracking.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        260.0,
+        262.0
+      ],
+      [
+        264.0,
+        279.5
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        260.0,
+        262.0
+      ],
+      [
+        264.0,
+        279.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      262.0,
+      264.0,
+      270.0,
+      279.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        262.0,
+        264.0
+      ],
+      [
+        265.5,
+        270.0
+      ],
+      [
+        270.0,
+        279.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Wrist visibility is intermittent due to arm movement and occlusion by the presenter's body.",
+      "Head direction is inferred from body orientation and gaze direction, not precise eye tracking."
+    ]
+  },
+  "status": "OK"
+}

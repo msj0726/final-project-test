@@ -1,0 +1,22 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.566575000004377,
+  "elapsedSeconds": 28.003148666000925,
+  "inputTokens": 4346,
+  "outputTokens": 144,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\":[],\n\"bothWristsStillCandidateIntervals\":[],\n\"handMotionStopSeconds\":[],\n\"faceCoverEvents\":[],\n\"unrelatedObjectTouchEvents\":[],\n\"headOffTargetIntervals\":[],\n\"gazeUnobservableIntervals\":[],\n\"limitations\":[\n\"Presenter's head turns significantly left towards the screen from 1327.5s to 1329.0s, then returns to frontal view, making precise off-target interval calculation difficult without continuous tracking.\",\n\"Hand movements are frequent and dynamic throughout the sequence, preventing the identification of stable 'stillness candidate' intervals.\"\n]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillCandidateIntervals": [],
+    "handMotionStopSeconds": [],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Presenter's head turns significantly left towards the screen from 1327.5s to 1329.0s, then returns to frontal view, making precise off-target interval calculation difficult without continuous tracking.",
+      "Hand movements are frequent and dynamic throughout the sequence, preventing the identification of stable 'stillness candidate' intervals."
+    ]
+  },
+  "status": "OK"
+}

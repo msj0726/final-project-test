@@ -1,0 +1,75 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 12.224810791987693,
+  "usage": {
+    "input_tokens": 4824,
+    "input_tokens_details": {
+      "cache_write_tokens": 4821,
+      "cached_tokens": 0
+    },
+    "output_tokens": 337,
+    "output_tokens_details": {
+      "reasoning_tokens": 153
+    },
+    "total_tokens": 5161
+  },
+  "costUsdUpperBound": 0.013018,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[20.5,40]],\"bothWristsStillCandidateIntervals\":[[21,21.5],[22,26.5],[29,30.5],[37.5,39]],\"handMotionStopSeconds\":[21,29,37.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetEvents\":[{\"startSec\":24.5,\"endSec\":25,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":27.5,\"endSec\":28,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":39,\"endSec\":40,\"reason\":\"PRESENTATION_SCREEN\"}],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is limited to 0.5-second samples; brief motions or stops between frames may be missed.\",\"Head direction is not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        20.5,
+        40
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        21,
+        21.5
+      ],
+      [
+        22,
+        26.5
+      ],
+      [
+        29,
+        30.5
+      ],
+      [
+        37.5,
+        39
+      ]
+    ],
+    "handMotionStopSeconds": [
+      21,
+      29,
+      37.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetEvents": [
+      {
+        "startSec": 24.5,
+        "endSec": 25,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 27.5,
+        "endSec": 28,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 39,
+        "endSec": 40,
+        "reason": "PRESENTATION_SCREEN"
+      }
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is limited to 0.5-second samples; brief motions or stops between frames may be missed.",
+      "Head direction is not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

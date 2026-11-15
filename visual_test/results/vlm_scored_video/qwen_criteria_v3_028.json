@@ -1,0 +1,79 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 40.117551125003956,
+  "inputTokens": 4457,
+  "outputTokens": 361,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [560.0, 561.5],\n    [565.0, 579.5]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [560.0, 561.5],\n    [565.0, 566.5],\n    [567.0, 568.0],\n    [575.0, 576.0],\n    [578.0, 579.5]\n  ],\n  \"handMotionStopSeconds\": [\n    561.5,\n    566.5,\n    568.0,\n    576.0,\n    578.0\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [562.0, 565.0],\n    [568.5, 570.0],\n    [571.5, 575.0],\n    [576.5, 578.0],\n    [579.5, 580.0]\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"limitations\": [\n    \"Hand motion stop detection is approximate based on visible stillness.\",\n    \"Head direction is inferred from body orientation and screen interaction.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        560.0,
+        561.5
+      ],
+      [
+        565.0,
+        579.5
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        560.0,
+        561.5
+      ],
+      [
+        565.0,
+        566.5
+      ],
+      [
+        567.0,
+        568.0
+      ],
+      [
+        575.0,
+        576.0
+      ],
+      [
+        578.0,
+        579.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      561.5,
+      566.5,
+      568.0,
+      576.0,
+      578.0
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        562.0,
+        565.0
+      ],
+      [
+        568.5,
+        570.0
+      ],
+      [
+        571.5,
+        575.0
+      ],
+      [
+        576.5,
+        578.0
+      ],
+      [
+        579.5,
+        580.0
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Hand motion stop detection is approximate based on visible stillness.",
+      "Head direction is inferred from body orientation and screen interaction."
+    ]
+  },
+  "status": "OK"
+}

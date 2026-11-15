@@ -1,0 +1,86 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 8.260765332990559,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 262,
+    "output_tokens_details": {
+      "reasoning_tokens": 88
+    },
+    "total_tokens": 5063
+  },
+  "costUsdUpperBound": 0.012222,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[360,364],[368,380]],\"bothWristsStillCandidateIntervals\":[[360,361.5],[362.5,363.5],[368.5,371],[372,373.5],[374.5,377.5],[379,380]],\"handMotionStopSeconds\":[362.5,368.5,372,374.5,379],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[363.5,368],[372.5,374.5],[378,380]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Sampling every 0.5 seconds limits transition timing.\",\"The lowered hand's contact and any object's relevance are not visible during 364–367.5 seconds.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        360,
+        364
+      ],
+      [
+        368,
+        380
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        360,
+        361.5
+      ],
+      [
+        362.5,
+        363.5
+      ],
+      [
+        368.5,
+        371
+      ],
+      [
+        372,
+        373.5
+      ],
+      [
+        374.5,
+        377.5
+      ],
+      [
+        379,
+        380
+      ]
+    ],
+    "handMotionStopSeconds": [
+      362.5,
+      368.5,
+      372,
+      374.5,
+      379
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        363.5,
+        368
+      ],
+      [
+        372.5,
+        374.5
+      ],
+      [
+        378,
+        380
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Sampling every 0.5 seconds limits transition timing.",
+      "The lowered hand's contact and any object's relevance are not visible during 364–367.5 seconds."
+    ]
+  },
+  "status": "OK"
+}

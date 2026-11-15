@@ -1,0 +1,92 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 15.780654625006719,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 310,
+    "output_tokens_details": {
+      "reasoning_tokens": 117
+    },
+    "total_tokens": 5111
+  },
+  "costUsdUpperBound": 0.012702,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[760.5,780]],\"bothWristsStillCandidateIntervals\":[[761,761.5],[762.5,763],[763.5,768.5],[770.5,773],[774.5,775.5],[776,777],[778.5,779.5]],\"handMotionStopSeconds\":[761,762.5,763.5,770.5,774.5,776,778.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[760,760.5],[761.5,763],[765,766],[771.5,772.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is approximate to the 0.5-second sampling; brief motions between frames may be missed.\",\"Head direction is a proxy, not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        760.5,
+        780
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        761,
+        761.5
+      ],
+      [
+        762.5,
+        763
+      ],
+      [
+        763.5,
+        768.5
+      ],
+      [
+        770.5,
+        773
+      ],
+      [
+        774.5,
+        775.5
+      ],
+      [
+        776,
+        777
+      ],
+      [
+        778.5,
+        779.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      761,
+      762.5,
+      763.5,
+      770.5,
+      774.5,
+      776,
+      778.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        760,
+        760.5
+      ],
+      [
+        761.5,
+        763
+      ],
+      [
+        765,
+        766
+      ],
+      [
+        771.5,
+        772.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is approximate to the 0.5-second sampling; brief motions between frames may be missed.",
+      "Head direction is a proxy, not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

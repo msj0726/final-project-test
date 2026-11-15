@@ -1,0 +1,89 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 11.292033500008984,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 312,
+    "output_tokens_details": {
+      "reasoning_tokens": 124
+    },
+    "total_tokens": 5113
+  },
+  "costUsdUpperBound": 0.012722,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[60,61.5],[64.5,80]],\"bothWristsStillCandidateIntervals\":[[60,60.5],[64.5,67],[67.5,68.5],[69.5,70.5],[75,76.5]],\"handMotionStopSeconds\":[64.5,67.5,69.5,75],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[61.5,64.5],[65,66],[68.5,69],[71,72],[77,78.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is approximate to the 0.5-second sampling; head direction is not verified eye gaze.\",\"Hands leave the lower frame during the forward lean; any object contact there is unobservable.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        60,
+        61.5
+      ],
+      [
+        64.5,
+        80
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        60,
+        60.5
+      ],
+      [
+        64.5,
+        67
+      ],
+      [
+        67.5,
+        68.5
+      ],
+      [
+        69.5,
+        70.5
+      ],
+      [
+        75,
+        76.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      64.5,
+      67.5,
+      69.5,
+      75
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        61.5,
+        64.5
+      ],
+      [
+        65,
+        66
+      ],
+      [
+        68.5,
+        69
+      ],
+      [
+        71,
+        72
+      ],
+      [
+        77,
+        78.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is approximate to the 0.5-second sampling; head direction is not verified eye gaze.",
+      "Hands leave the lower frame during the forward lean; any object contact there is unobservable."
+    ]
+  },
+  "status": "OK"
+}

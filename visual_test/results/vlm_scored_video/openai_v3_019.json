@@ -1,0 +1,78 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 11.522927709011128,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 288,
+    "output_tokens_details": {
+      "reasoning_tokens": 131
+    },
+    "total_tokens": 5089
+  },
+  "costUsdUpperBound": 0.012482,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[380,393.5],[394.5,400]],\"bothWristsStillCandidateIntervals\":[[381,382.5],[383,385],[385.5,388.5],[391.5,393],[395,396.5],[398,398.5]],\"handMotionStopSeconds\":[381,383,385.5,395,398],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[393,394.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits motion-stop timing.\",\"The lowered hand and any contact below the frame at 393.5–394 seconds are unobservable.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        380,
+        393.5
+      ],
+      [
+        394.5,
+        400
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        381,
+        382.5
+      ],
+      [
+        383,
+        385
+      ],
+      [
+        385.5,
+        388.5
+      ],
+      [
+        391.5,
+        393
+      ],
+      [
+        395,
+        396.5
+      ],
+      [
+        398,
+        398.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      381,
+      383,
+      385.5,
+      395,
+      398
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        393,
+        394.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits motion-stop timing.",
+      "The lowered hand and any contact below the frame at 393.5–394 seconds are unobservable."
+    ]
+  },
+  "status": "OK"
+}

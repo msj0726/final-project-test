@@ -1,0 +1,104 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 8.604293749987846,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 295,
+    "output_tokens_details": {
+      "reasoning_tokens": 111
+    },
+    "total_tokens": 5096
+  },
+  "costUsdUpperBound": 0.012552,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[460,480]],\"bothWristsStillCandidateIntervals\":[[461,462],[463,464],[465.5,466],[467,468.5],[470.5,471],[475,475.5],[476,477],[478.5,479]],\"handMotionStopSeconds\":[461,463,465.5,467,470.5,475,476,478.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[460.5,462],[462,463],[466.5,468.5],[469,469.5],[473,475],[475,475.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits stop timing and detection of brief movements; head direction is not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        460,
+        480
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        461,
+        462
+      ],
+      [
+        463,
+        464
+      ],
+      [
+        465.5,
+        466
+      ],
+      [
+        467,
+        468.5
+      ],
+      [
+        470.5,
+        471
+      ],
+      [
+        475,
+        475.5
+      ],
+      [
+        476,
+        477
+      ],
+      [
+        478.5,
+        479
+      ]
+    ],
+    "handMotionStopSeconds": [
+      461,
+      463,
+      465.5,
+      467,
+      470.5,
+      475,
+      476,
+      478.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        460.5,
+        462
+      ],
+      [
+        462,
+        463
+      ],
+      [
+        466.5,
+        468.5
+      ],
+      [
+        469,
+        469.5
+      ],
+      [
+        473,
+        475
+      ],
+      [
+        475,
+        475.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits stop timing and detection of brief movements; head direction is not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

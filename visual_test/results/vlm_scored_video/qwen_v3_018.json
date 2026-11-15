@@ -1,0 +1,22 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.566575000004377,
+  "elapsedSeconds": 26.50152220900054,
+  "inputTokens": 4304,
+  "outputTokens": 125,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\":[],\n\"bothWristsStillCandidateIntervals\":[],\n\"handMotionStopSeconds\":[],\n\"faceCoverEvents\":[],\n\"unrelatedObjectTouchEvents\":[],\n\"headOffTargetIntervals\":[],\n\"gazeUnobservableIntervals\":[],\n\"limitations\":[\n\"Presenter's head turns toward the screen at 367.0s, making gaze direction unobservable for the remainder of the window.\",\n\"Both wrists are not simultaneously visible in any sampled frame; only one wrist or forearm is typically seen.\"\n]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillCandidateIntervals": [],
+    "handMotionStopSeconds": [],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Presenter's head turns toward the screen at 367.0s, making gaze direction unobservable for the remainder of the window.",
+      "Both wrists are not simultaneously visible in any sampled frame; only one wrist or forearm is typically seen."
+    ]
+  },
+  "status": "OK"
+}

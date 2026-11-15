@@ -1,0 +1,22 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.566575000004377,
+  "elapsedSeconds": 25.624583166994853,
+  "inputTokens": 4304,
+  "outputTokens": 101,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\":[],\n\"bothWristsStillCandidateIntervals\":[],\n\"handMotionStopSeconds\":[],\n\"faceCoverEvents\":[],\n\"unrelatedObjectTouchEvents\":[],\n\"headOffTargetIntervals\":[],\n\"gazeUnobservableIntervals\":[],\n\"limitations\":[\n\"Hand motion is continuous and frequent; no clear stop moments observed.\",\n\"Both wrists are rarely simultaneously visible; intervals are empty.\"\n]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillCandidateIntervals": [],
+    "handMotionStopSeconds": [],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Hand motion is continuous and frequent; no clear stop moments observed.",
+      "Both wrists are rarely simultaneously visible; intervals are empty."
+    ]
+  },
+  "status": "OK"
+}

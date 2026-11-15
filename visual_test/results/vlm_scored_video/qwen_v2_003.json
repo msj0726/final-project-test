@@ -1,0 +1,10 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.8757312500092667,
+  "elapsedSeconds": 28.197091416979674,
+  "inputTokens": 4301,
+  "outputTokens": 148,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\":[[60,80]],\n\"bothWristsStillCandidateIntervals\":[[60,61.5]],\n\"handMotionStopSeconds\":[61.5],\n\"faceCoverEvents\":[],\n\"unrelatedObjectTouchEvents\":[],\n\"headOffTargetIntervals\":[[65,66],[71,72],[77,80]],\n\"offTargetCategories\":[[65,66],\"PRESENTATION_SCREEN\",[[71,72],\"PRESENTATION_SCREEN\",[[77,80],\"PRESENTATION_SCREEN\"]],\n\"gazeUnobservableIntervals\":[],\n\"limitations\":[]\n}",
+  "status": "INVALID_OUTPUT",
+  "error": "Expecting ',' delimiter: line 9 column 28 (char 375)"
+}

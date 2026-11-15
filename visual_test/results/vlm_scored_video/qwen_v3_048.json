@@ -1,0 +1,68 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.566575000004377,
+  "elapsedSeconds": 29.49939287500456,
+  "inputTokens": 4304,
+  "outputTokens": 193,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\": [[960, 968], [969, 971], [972, 979]],\n\"bothWristsStillCandidateIntervals\": [[960, 968], [969, 971], [972, 979]],\n\"handMotionStopSeconds\": [968, 969, 971, 972, 979],\n\"faceCoverEvents\": [],\n\"unrelatedObjectTouchEvents\": [],\n\"headOffTargetIntervals\": [[967, 968], [969, 971], [972, 973], [976, 977]],\n\"gazeUnobservableIntervals\": [],\n\"limitations\": []\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        960,
+        968
+      ],
+      [
+        969,
+        971
+      ],
+      [
+        972,
+        979
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        960,
+        968
+      ],
+      [
+        969,
+        971
+      ],
+      [
+        972,
+        979
+      ]
+    ],
+    "handMotionStopSeconds": [
+      968,
+      969,
+      971,
+      972,
+      979
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        967,
+        968
+      ],
+      [
+        969,
+        971
+      ],
+      [
+        972,
+        973
+      ],
+      [
+        976,
+        977
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": []
+  },
+  "status": "OK"
+}

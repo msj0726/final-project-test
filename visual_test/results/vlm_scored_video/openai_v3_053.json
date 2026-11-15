@@ -1,0 +1,87 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 8.208461833011825,
+  "usage": {
+    "input_tokens": 4843,
+    "input_tokens_details": {
+      "cache_write_tokens": 4840,
+      "cached_tokens": 0
+    },
+    "output_tokens": 246,
+    "output_tokens_details": {
+      "reasoning_tokens": 49
+    },
+    "total_tokens": 5089
+  },
+  "costUsdUpperBound": 0.012146,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[1060,1066],[1069.5,1080]],\"bothWristsStillCandidateIntervals\":[[1060,1060.5],[1061,1063],[1063.5,1064.5],[1070,1070.5],[1072,1073.5],[1074,1074.5],[1075.5,1080]],\"handMotionStopSeconds\":[1061,1063.5,1070,1072,1074,1075.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[1066,1069.5],[1071,1072]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is limited to 0.5-second samples.\",\"Hands extend below the frame during the forward lean; any object contact there is unobservable.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1060,
+        1066
+      ],
+      [
+        1069.5,
+        1080
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1060,
+        1060.5
+      ],
+      [
+        1061,
+        1063
+      ],
+      [
+        1063.5,
+        1064.5
+      ],
+      [
+        1070,
+        1070.5
+      ],
+      [
+        1072,
+        1073.5
+      ],
+      [
+        1074,
+        1074.5
+      ],
+      [
+        1075.5,
+        1080
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1061,
+      1063.5,
+      1070,
+      1072,
+      1074,
+      1075.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1066,
+        1069.5
+      ],
+      [
+        1071,
+        1072
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is limited to 0.5-second samples.",
+      "Hands extend below the frame during the forward lean; any object contact there is unobservable."
+    ]
+  },
+  "status": "OK"
+}

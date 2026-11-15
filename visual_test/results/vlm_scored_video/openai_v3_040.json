@@ -1,0 +1,93 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 11.246389957988868,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 258,
+    "output_tokens_details": {
+      "reasoning_tokens": 62
+    },
+    "total_tokens": 5059
+  },
+  "costUsdUpperBound": 0.012182,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[800,814.5],[817,820]],\"bothWristsStillCandidateIntervals\":[[800,800.5],[801.5,802.5],[803.5,805],[807,808.5],[809,809.5],[810.5,811.5],[812,813.5],[818.5,819]],\"handMotionStopSeconds\":[801.5,803.5,807,809,810.5,812,818.5,819.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[805.5,806.5],[814.5,818.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits stop timing and interval precision.\",\"Hands drop below the frame around 815–816.5 seconds; contact there cannot be assessed.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        800,
+        814.5
+      ],
+      [
+        817,
+        820
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        800,
+        800.5
+      ],
+      [
+        801.5,
+        802.5
+      ],
+      [
+        803.5,
+        805
+      ],
+      [
+        807,
+        808.5
+      ],
+      [
+        809,
+        809.5
+      ],
+      [
+        810.5,
+        811.5
+      ],
+      [
+        812,
+        813.5
+      ],
+      [
+        818.5,
+        819
+      ]
+    ],
+    "handMotionStopSeconds": [
+      801.5,
+      803.5,
+      807,
+      809,
+      810.5,
+      812,
+      818.5,
+      819.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        805.5,
+        806.5
+      ],
+      [
+        814.5,
+        818.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits stop timing and interval precision.",
+      "Hands drop below the frame around 815–816.5 seconds; contact there cannot be assessed."
+    ]
+  },
+  "status": "OK"
+}

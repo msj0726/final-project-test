@@ -1,0 +1,171 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.7662611669802573,
+  "elapsedSeconds": 56.82159958302509,
+  "inputTokens": 4457,
+  "outputTokens": 792,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [100.0, 100.5],\n    [104.0, 109.5],\n    [112.5, 119.5]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [104.0, 105.0],\n    [105.5, 106.5],\n    [107.0, 108.0],\n    [108.5, 109.5],\n    [112.5, 113.5],\n    [114.0, 115.5],\n    [117.5, 119.5]\n  ],\n  \"handMotionStopSeconds\": [\n    100.5,\n    104.0,\n    105.0,\n    105.5,\n    106.5,\n    107.0,\n    108.0,\n    108.5,\n    109.5,\n    112.5,\n    113.5,\n    114.0,\n    115.5,\n    117.5,\n    118.0,\n    119.5\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [100.5, 101.0],\n    [101.0, 101.5],\n    [101.5, 102.0],\n    [102.0, 102.5],\n    [102.5, 103.0],\n    [103.0, 103.5],\n    [103.5, 104.0],\n    [110.0, 111.5],\n    [111.5, 112.0],\n    [115.5, 116.5],\n    [116.5, 117.0]\n  ],\n  \"gazeUnobservableIntervals\": [\n    [100.5, 101.0],\n    [101.0, 101.5],\n    [101.5, 102.0],\n    [102.0, 102.5],\n    [102.5, 103.0],\n    [103.0, 103.5],\n    [103.5, 104.0],\n    [110.0, 111.5],\n    [111.5, 112.0],\n    [115.5, 116.5],\n    [116.5, 117.0]\n  ],\n  \"limitations\": [\n    \"Hand motion stop detection is based on visible stillness between frames, not continuous motion analysis.\",\n    \"Gaze direction is inferred from head orientation, not direct eye tracking.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        100.0,
+        100.5
+      ],
+      [
+        104.0,
+        109.5
+      ],
+      [
+        112.5,
+        119.5
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        104.0,
+        105.0
+      ],
+      [
+        105.5,
+        106.5
+      ],
+      [
+        107.0,
+        108.0
+      ],
+      [
+        108.5,
+        109.5
+      ],
+      [
+        112.5,
+        113.5
+      ],
+      [
+        114.0,
+        115.5
+      ],
+      [
+        117.5,
+        119.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      100.5,
+      104.0,
+      105.0,
+      105.5,
+      106.5,
+      107.0,
+      108.0,
+      108.5,
+      109.5,
+      112.5,
+      113.5,
+      114.0,
+      115.5,
+      117.5,
+      118.0,
+      119.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        100.5,
+        101.0
+      ],
+      [
+        101.0,
+        101.5
+      ],
+      [
+        101.5,
+        102.0
+      ],
+      [
+        102.0,
+        102.5
+      ],
+      [
+        102.5,
+        103.0
+      ],
+      [
+        103.0,
+        103.5
+      ],
+      [
+        103.5,
+        104.0
+      ],
+      [
+        110.0,
+        111.5
+      ],
+      [
+        111.5,
+        112.0
+      ],
+      [
+        115.5,
+        116.5
+      ],
+      [
+        116.5,
+        117.0
+      ]
+    ],
+    "gazeUnobservableIntervals": [
+      [
+        100.5,
+        101.0
+      ],
+      [
+        101.0,
+        101.5
+      ],
+      [
+        101.5,
+        102.0
+      ],
+      [
+        102.0,
+        102.5
+      ],
+      [
+        102.5,
+        103.0
+      ],
+      [
+        103.0,
+        103.5
+      ],
+      [
+        103.5,
+        104.0
+      ],
+      [
+        110.0,
+        111.5
+      ],
+      [
+        111.5,
+        112.0
+      ],
+      [
+        115.5,
+        116.5
+      ],
+      [
+        116.5,
+        117.0
+      ]
+    ],
+    "limitations": [
+      "Hand motion stop detection is based on visible stillness between frames, not continuous motion analysis.",
+      "Gaze direction is inferred from head orientation, not direct eye tracking."
+    ]
+  },
+  "status": "OK"
+}

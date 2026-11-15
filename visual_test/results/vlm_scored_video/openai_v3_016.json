@@ -1,0 +1,90 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 10.389474499999778,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 295,
+    "output_tokens_details": {
+      "reasoning_tokens": 114
+    },
+    "total_tokens": 5096
+  },
+  "costUsdUpperBound": 0.012552,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[320,322.5],[323.5,330],[331.5,340]],\"bothWristsStillCandidateIntervals\":[[321.5,322.5],[324,325],[325.5,327.5],[328,330],[332,333],[333.5,334.5],[336.5,337]],\"handMotionStopSeconds\":[321.5,325.5,328,333.5,336.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[322.5,323.5],[330.5,331.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits stop timing and detection of brief events.\",\"Overlapping hands and side-on poses intermittently obscure a wrist.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        320,
+        322.5
+      ],
+      [
+        323.5,
+        330
+      ],
+      [
+        331.5,
+        340
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        321.5,
+        322.5
+      ],
+      [
+        324,
+        325
+      ],
+      [
+        325.5,
+        327.5
+      ],
+      [
+        328,
+        330
+      ],
+      [
+        332,
+        333
+      ],
+      [
+        333.5,
+        334.5
+      ],
+      [
+        336.5,
+        337
+      ]
+    ],
+    "handMotionStopSeconds": [
+      321.5,
+      325.5,
+      328,
+      333.5,
+      336.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        322.5,
+        323.5
+      ],
+      [
+        330.5,
+        331.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits stop timing and detection of brief events.",
+      "Overlapping hands and side-on poses intermittently obscure a wrist."
+    ]
+  },
+  "status": "OK"
+}

@@ -1,0 +1,173 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 56.82259404202341,
+  "inputTokens": 4499,
+  "outputTokens": 843,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [1223.0, 1223.5],\n    [1224.0, 1239.5]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [1224.0, 1227.0],\n    [1231.5, 1232.5],\n    [1235.5, 1236.5],\n    [1239.0, 1239.5]\n  ],\n  \"handMotionStopSeconds\": [\n    1223.5,\n    1227.0,\n    1231.5,\n    1232.5,\n    1235.5,\n    1236.5,\n    1239.0\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [1225.0, 1225.5],\n    [1225.5, 1226.0],\n    [1226.0, 1226.5],\n    [1226.5, 1227.0],\n    [1227.0, 1227.5],\n    [1227.5, 1228.0],\n    [1228.0, 1228.5],\n    [1228.5, 1229.0],\n    [1229.0, 1229.5],\n    [1229.5, 1230.0],\n    [1230.0, 1230.5],\n    [1230.5, 1231.0],\n    [1231.0, 1231.5],\n    [1231.5, 1232.0],\n    [1232.0, 1232.5],\n    [1232.5, 1233.0],\n    [1233.0, 1233.5],\n    [1233.5, 1234.0],\n    [1234.0, 1234.5],\n    [1234.5, 1235.0],\n    [1235.0, 1235.5],\n    [1235.5, 1236.0],\n    [1236.0, 1236.5],\n    [1236.5, 1237.0],\n    [1237.0, 1237.5],\n    [1237.5, 1238.0],\n    [1238.0, 1238.5],\n    [1238.5, 1239.0],\n    [1239.0, 1239.5]\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"limitations\": [\n    \"Hand motion stop detection is based on visible hand/forearm movement cessation, not continuous frame-by-frame tracking.\",\n    \"Head off-target intervals are inferred from large directional changes or looking down/up, not precise eye contact.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1223.0,
+        1223.5
+      ],
+      [
+        1224.0,
+        1239.5
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1224.0,
+        1227.0
+      ],
+      [
+        1231.5,
+        1232.5
+      ],
+      [
+        1235.5,
+        1236.5
+      ],
+      [
+        1239.0,
+        1239.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1223.5,
+      1227.0,
+      1231.5,
+      1232.5,
+      1235.5,
+      1236.5,
+      1239.0
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1225.0,
+        1225.5
+      ],
+      [
+        1225.5,
+        1226.0
+      ],
+      [
+        1226.0,
+        1226.5
+      ],
+      [
+        1226.5,
+        1227.0
+      ],
+      [
+        1227.0,
+        1227.5
+      ],
+      [
+        1227.5,
+        1228.0
+      ],
+      [
+        1228.0,
+        1228.5
+      ],
+      [
+        1228.5,
+        1229.0
+      ],
+      [
+        1229.0,
+        1229.5
+      ],
+      [
+        1229.5,
+        1230.0
+      ],
+      [
+        1230.0,
+        1230.5
+      ],
+      [
+        1230.5,
+        1231.0
+      ],
+      [
+        1231.0,
+        1231.5
+      ],
+      [
+        1231.5,
+        1232.0
+      ],
+      [
+        1232.0,
+        1232.5
+      ],
+      [
+        1232.5,
+        1233.0
+      ],
+      [
+        1233.0,
+        1233.5
+      ],
+      [
+        1233.5,
+        1234.0
+      ],
+      [
+        1234.0,
+        1234.5
+      ],
+      [
+        1234.5,
+        1235.0
+      ],
+      [
+        1235.0,
+        1235.5
+      ],
+      [
+        1235.5,
+        1236.0
+      ],
+      [
+        1236.0,
+        1236.5
+      ],
+      [
+        1236.5,
+        1237.0
+      ],
+      [
+        1237.0,
+        1237.5
+      ],
+      [
+        1237.5,
+        1238.0
+      ],
+      [
+        1238.0,
+        1238.5
+      ],
+      [
+        1238.5,
+        1239.0
+      ],
+      [
+        1239.0,
+        1239.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Hand motion stop detection is based on visible hand/forearm movement cessation, not continuous frame-by-frame tracking.",
+      "Head off-target intervals are inferred from large directional changes or looking down/up, not precise eye contact."
+    ]
+  },
+  "status": "OK"
+}

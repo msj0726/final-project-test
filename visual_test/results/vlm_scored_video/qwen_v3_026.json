@@ -1,0 +1,10 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.566575000004377,
+  "elapsedSeconds": 25.02340729199932,
+  "inputTokens": 4304,
+  "outputTokens": 84,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\":[],\n\"bothWristsStillCandidateIntervals\":[],\n\"handMotionStopSeconds\":[],\n\"faceCoverEvents\":[],\n\"unrelatedObjectTouchEvents\":[],\n\"headOffTargetIntervals\":[525.5, 528.5],\n\"gazeUnobservableIntervals\":[],\n\"limitations\":[]\n}",
+  "status": "INVALID_OUTPUT",
+  "error": "invalid interval"
+}

@@ -1,0 +1,92 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 7.375853207980981,
+  "usage": {
+    "input_tokens": 4843,
+    "input_tokens_details": {
+      "cache_write_tokens": 4840,
+      "cached_tokens": 0
+    },
+    "output_tokens": 360,
+    "output_tokens_details": {
+      "reasoning_tokens": 141
+    },
+    "total_tokens": 5203
+  },
+  "costUsdUpperBound": 0.013286,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[1080,1100]],\"bothWristsStillCandidateIntervals\":[[1080,1080.5],[1082,1083],[1085.5,1086.5],[1087.5,1089],[1089.5,1090.5],[1091,1092],[1094,1096.5],[1098.5,1100]],\"handMotionStopSeconds\":[1082,1085.5,1087.5,1089.5,1091,1094,1098.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[1080.5,1081.5],[1082.5,1083.5],[1089,1090.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is approximate at 0.5-second sampling; brief intervening movements may be missed.\",\"Head direction is a proxy, not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1080,
+        1100
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1080,
+        1080.5
+      ],
+      [
+        1082,
+        1083
+      ],
+      [
+        1085.5,
+        1086.5
+      ],
+      [
+        1087.5,
+        1089
+      ],
+      [
+        1089.5,
+        1090.5
+      ],
+      [
+        1091,
+        1092
+      ],
+      [
+        1094,
+        1096.5
+      ],
+      [
+        1098.5,
+        1100
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1082,
+      1085.5,
+      1087.5,
+      1089.5,
+      1091,
+      1094,
+      1098.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1080.5,
+        1081.5
+      ],
+      [
+        1082.5,
+        1083.5
+      ],
+      [
+        1089,
+        1090.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is approximate at 0.5-second sampling; brief intervening movements may be missed.",
+      "Head direction is a proxy, not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

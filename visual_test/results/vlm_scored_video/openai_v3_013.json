@@ -1,0 +1,87 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 14.84259870799724,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 325,
+    "output_tokens_details": {
+      "reasoning_tokens": 163
+    },
+    "total_tokens": 5126
+  },
+  "costUsdUpperBound": 0.012852,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[260,268],[270.5,280]],\"bothWristsStillCandidateIntervals\":[[260.5,262],[264,265],[265.5,266.5],[271,274],[276,279.5]],\"handMotionStopSeconds\":[260.5,263,264,265.5,271,276],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[262,263.5],[264,265],[265.5,267.5],[278,279.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits precise motion-stop and interval boundaries.\",\"Head direction is a proxy, not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        260,
+        268
+      ],
+      [
+        270.5,
+        280
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        260.5,
+        262
+      ],
+      [
+        264,
+        265
+      ],
+      [
+        265.5,
+        266.5
+      ],
+      [
+        271,
+        274
+      ],
+      [
+        276,
+        279.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      260.5,
+      263,
+      264,
+      265.5,
+      271,
+      276
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        262,
+        263.5
+      ],
+      [
+        264,
+        265
+      ],
+      [
+        265.5,
+        267.5
+      ],
+      [
+        278,
+        279.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits precise motion-stop and interval boundaries.",
+      "Head direction is a proxy, not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

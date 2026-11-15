@@ -1,0 +1,44 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 31.74915408398374,
+  "inputTokens": 4499,
+  "outputTokens": 218,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [ 1181.0, 1199.5 ]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [ 1181.0, 1199.5 ]\n  ],\n  \"handMotionStopSeconds\": [\n    1181.0,\n    1199.5\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [ 1180.0, 1181.0 ],\n    [ 1188.0, 1189.5 ]\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"limitations\": [\n    \"Hand motion stop detection based on visible hand position stability.\",\n    \"Head direction inferred from body orientation and gaze direction.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1181.0,
+        1199.5
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1181.0,
+        1199.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1181.0,
+      1199.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1180.0,
+        1181.0
+      ],
+      [
+        1188.0,
+        1189.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Hand motion stop detection based on visible hand position stability.",
+      "Head direction inferred from body orientation and gaze direction."
+    ]
+  },
+  "status": "OK"
+}

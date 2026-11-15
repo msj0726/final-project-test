@@ -1,0 +1,90 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 14.159974250011146,
+  "usage": {
+    "input_tokens": 4824,
+    "input_tokens_details": {
+      "cache_write_tokens": 4821,
+      "cached_tokens": 0
+    },
+    "output_tokens": 341,
+    "output_tokens_details": {
+      "reasoning_tokens": 117
+    },
+    "total_tokens": 5165
+  },
+  "costUsdUpperBound": 0.013058,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[160,180]],\"bothWristsStillCandidateIntervals\":[[160,161],[161.5,162.5],[164,165],[166.5,168.5],[169.5,170.5],[172,180]],\"handMotionStopSeconds\":[161.5,164,166.5,169.5,172],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetEvents\":[{\"startSec\":163,\"endSec\":163.5,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":165,\"endSec\":166,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":168.5,\"endSec\":169.5,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":173.5,\"endSec\":174,\"reason\":\"PRESENTATION_SCREEN\"}],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is approximate at 0.5-second sampling; brief intervening movements may be missed.\",\"Head direction is a proxy, not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        160,
+        180
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        160,
+        161
+      ],
+      [
+        161.5,
+        162.5
+      ],
+      [
+        164,
+        165
+      ],
+      [
+        166.5,
+        168.5
+      ],
+      [
+        169.5,
+        170.5
+      ],
+      [
+        172,
+        180
+      ]
+    ],
+    "handMotionStopSeconds": [
+      161.5,
+      164,
+      166.5,
+      169.5,
+      172
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetEvents": [
+      {
+        "startSec": 163,
+        "endSec": 163.5,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 165,
+        "endSec": 166,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 168.5,
+        "endSec": 169.5,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 173.5,
+        "endSec": 174,
+        "reason": "PRESENTATION_SCREEN"
+      }
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is approximate at 0.5-second sampling; brief intervening movements may be missed.",
+      "Head direction is a proxy, not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

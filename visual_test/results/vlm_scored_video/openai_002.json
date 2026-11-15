@@ -1,0 +1,67 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 8.550434000004316,
+  "usage": {
+    "input_tokens": 4824,
+    "input_tokens_details": {
+      "cache_write_tokens": 4821,
+      "cached_tokens": 0
+    },
+    "output_tokens": 253,
+    "output_tokens_details": {
+      "reasoning_tokens": 79
+    },
+    "total_tokens": 5077
+  },
+  "costUsdUpperBound": 0.012178,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[40,46.5],[47,60]],\"bothWristsStillCandidateIntervals\":[[41,42.5],[48.5,53.5],[55,58.5]],\"handMotionStopSeconds\":[41,47.5,49,55],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetEvents\":[{\"startSec\":42.5,\"endSec\":43,\"reason\":\"PRESENTATION_SCREEN\"}],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is approximate at 0.5-second sampling; brief movements between frames may be missed.\",\"Wrists are localized at sleeve cuffs; one wrist leaves the frame at 46.5 seconds.\",\"Mild downward glances do not clearly establish floor-directed head orientation.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        40,
+        46.5
+      ],
+      [
+        47,
+        60
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        41,
+        42.5
+      ],
+      [
+        48.5,
+        53.5
+      ],
+      [
+        55,
+        58.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      41,
+      47.5,
+      49,
+      55
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetEvents": [
+      {
+        "startSec": 42.5,
+        "endSec": 43,
+        "reason": "PRESENTATION_SCREEN"
+      }
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is approximate at 0.5-second sampling; brief movements between frames may be missed.",
+      "Wrists are localized at sleeve cuffs; one wrist leaves the frame at 46.5 seconds.",
+      "Mild downward glances do not clearly establish floor-directed head orientation."
+    ]
+  },
+  "status": "OK"
+}

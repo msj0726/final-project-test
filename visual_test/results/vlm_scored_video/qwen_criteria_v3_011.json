@@ -1,0 +1,62 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 35.81681941699935,
+  "inputTokens": 4457,
+  "outputTokens": 320,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [220.0, 231.5],\n    [235.5, 239.5]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [220.0, 231.5],\n    [235.5, 239.5]\n  ],\n  \"handMotionStopSeconds\": [\n    220.0,\n    225.5,\n    231.5,\n    235.5,\n    239.5\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [\n    {\n      \"startSec\": 232.0,\n      \"endSec\": 235.0,\n      \"objectLabel\": \"cup\",\n      \"reason\": \"touching unrelated object\"\n    }\n  ],\n  \"headOffTargetIntervals\": [\n    [231.5, 235.0],\n    [238.5, 239.5]\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"limitations\": [\n    \"Hand motion stop detection based on visible stillness between movement frames.\",\n    \"Head direction inferred from body orientation and screen interaction.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        220.0,
+        231.5
+      ],
+      [
+        235.5,
+        239.5
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        220.0,
+        231.5
+      ],
+      [
+        235.5,
+        239.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      220.0,
+      225.5,
+      231.5,
+      235.5,
+      239.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [
+      {
+        "startSec": 232.0,
+        "endSec": 235.0,
+        "objectLabel": "cup",
+        "reason": "touching unrelated object"
+      }
+    ],
+    "headOffTargetIntervals": [
+      [
+        231.5,
+        235.0
+      ],
+      [
+        238.5,
+        239.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Hand motion stop detection based on visible stillness between movement frames.",
+      "Head direction inferred from body orientation and screen interaction."
+    ]
+  },
+  "status": "OK"
+}

@@ -1,0 +1,24 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.566575000004377,
+  "elapsedSeconds": 30.077854875009507,
+  "inputTokens": 4346,
+  "outputTokens": 208,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\":[],\n\"bothWristsStillCandidateIntervals\":[],\n\"handMotionStopSeconds\":[],\n\"faceCoverEvents\":[],\n\"unrelatedObjectTouchEvents\":[],\n\"headOffTargetIntervals\":[],\n\"gazeUnobservableIntervals\":[],\n\"limitations\":[\n\"Presenter's face is partially obscured by hair and angle in frames 1176.0s-1178.5s, making gaze direction unobservable during this period.\",\n\"Presenter's head turns slightly off-target (towards screen) in frames 1173.0s-1178.5s, but not significantly enough to be classified as off-target (>60 degrees).\",\n\"Presenter's hands are often clasped or gesturing, making it difficult to determine if both wrists are visible and still.\",\n\"Presenter's hands are often moving, making it difficult to determine if hand motion has stopped.\"\n]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillCandidateIntervals": [],
+    "handMotionStopSeconds": [],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Presenter's face is partially obscured by hair and angle in frames 1176.0s-1178.5s, making gaze direction unobservable during this period.",
+      "Presenter's head turns slightly off-target (towards screen) in frames 1173.0s-1178.5s, but not significantly enough to be classified as off-target (>60 degrees).",
+      "Presenter's hands are often clasped or gesturing, making it difficult to determine if both wrists are visible and still.",
+      "Presenter's hands are often moving, making it difficult to determine if hand motion has stopped."
+    ]
+  },
+  "status": "OK"
+}

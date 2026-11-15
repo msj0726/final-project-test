@@ -1,0 +1,91 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 8.741093416989315,
+  "usage": {
+    "input_tokens": 4843,
+    "input_tokens_details": {
+      "cache_write_tokens": 4840,
+      "cached_tokens": 0
+    },
+    "output_tokens": 262,
+    "output_tokens_details": {
+      "reasoning_tokens": 44
+    },
+    "total_tokens": 5105
+  },
+  "costUsdUpperBound": 0.012306,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[1360,1371.5],[1374,1380]],\"bothWristsStillCandidateIntervals\":[[1360,1362],[1363,1366],[1368.5,1369.5],[1370.5,1371],[1374.5,1377],[1377.5,1378],[1378.5,1379]],\"handMotionStopSeconds\":[1363,1368.5,1370.5,1374.5,1377.5,1378.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[1364.5,1365.5],[1371,1374],[1374.5,1375.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Wrist visibility is lost near the lower frame edge during the forward lean.\",\"Any contact with controls below the frame cannot be assessed; head direction is not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1360,
+        1371.5
+      ],
+      [
+        1374,
+        1380
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1360,
+        1362
+      ],
+      [
+        1363,
+        1366
+      ],
+      [
+        1368.5,
+        1369.5
+      ],
+      [
+        1370.5,
+        1371
+      ],
+      [
+        1374.5,
+        1377
+      ],
+      [
+        1377.5,
+        1378
+      ],
+      [
+        1378.5,
+        1379
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1363,
+      1368.5,
+      1370.5,
+      1374.5,
+      1377.5,
+      1378.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1364.5,
+        1365.5
+      ],
+      [
+        1371,
+        1374
+      ],
+      [
+        1374.5,
+        1375.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Wrist visibility is lost near the lower frame edge during the forward lean.",
+      "Any contact with controls below the frame cannot be assessed; head direction is not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

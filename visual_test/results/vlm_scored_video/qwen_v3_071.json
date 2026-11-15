@@ -1,0 +1,31 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.566575000004377,
+  "elapsedSeconds": 28.06801183297648,
+  "inputTokens": 4346,
+  "outputTokens": 159,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\":[],\n\"bothWristsStillCandidateIntervals\":[],\n\"handMotionStopSeconds\":[],\n\"faceCoverEvents\":[],\n\"unrelatedObjectTouchEvents\":[],\n\"headOffTargetIntervals\":[[1429.0, 1430.0], [1436.0, 1440.0]],\n\"gazeUnobservableIntervals\":[],\n\"limitations\":[ \"Hand/wrist visibility is intermittent due to occlusion by the presenter's own body and clothing folds, preventing reliable detection of both wrists for the entire window.\", \"Head off-target intervals are inferred from head pose (looking down or to the side) rather than verified eye gaze.\" ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillCandidateIntervals": [],
+    "handMotionStopSeconds": [],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1429.0,
+        1430.0
+      ],
+      [
+        1436.0,
+        1440.0
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Hand/wrist visibility is intermittent due to occlusion by the presenter's own body and clothing folds, preventing reliable detection of both wrists for the entire window.",
+      "Head off-target intervals are inferred from head pose (looking down or to the side) rather than verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

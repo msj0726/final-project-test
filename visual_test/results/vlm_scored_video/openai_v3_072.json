@@ -1,0 +1,119 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 19.40511387499282,
+  "usage": {
+    "input_tokens": 4843,
+    "input_tokens_details": {
+      "cache_write_tokens": 4840,
+      "cached_tokens": 0
+    },
+    "output_tokens": 419,
+    "output_tokens_details": {
+      "reasoning_tokens": 132
+    },
+    "total_tokens": 5262
+  },
+  "costUsdUpperBound": 0.013876,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[1440,1440.5],[1443.5,1460]],\"bothWristsStillCandidateIntervals\":[[1443.5,1444.5],[1445,1446],[1446.5,1447.5],[1448,1449.5],[1450.5,1453.5],[1455.5,1457],[1459,1460]],\"handMotionStopSeconds\":[1443.5,1445.5,1447,1448,1450.5,1455.5,1459],\"faceCoverEvents\":[{\"startSec\":1446,\"endSec\":1446.5,\"source\":\"HAND\",\"objectLabel\":null}],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[1441,1442],[1442.5,1443],[1444.5,1445],[1447,1447.5],[1449,1450],[1454,1455],[1457.5,1458],[1459.5,1460]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is approximate at 0.5-second sampling; head direction is not verified eye gaze.\",\"The reaching hand and any contacted object are outside the frame during 1440.5–1443.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1440,
+        1440.5
+      ],
+      [
+        1443.5,
+        1460
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1443.5,
+        1444.5
+      ],
+      [
+        1445,
+        1446
+      ],
+      [
+        1446.5,
+        1447.5
+      ],
+      [
+        1448,
+        1449.5
+      ],
+      [
+        1450.5,
+        1453.5
+      ],
+      [
+        1455.5,
+        1457
+      ],
+      [
+        1459,
+        1460
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1443.5,
+      1445.5,
+      1447,
+      1448,
+      1450.5,
+      1455.5,
+      1459
+    ],
+    "faceCoverEvents": [
+      {
+        "startSec": 1446,
+        "endSec": 1446.5,
+        "source": "HAND",
+        "objectLabel": null
+      }
+    ],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1441,
+        1442
+      ],
+      [
+        1442.5,
+        1443
+      ],
+      [
+        1444.5,
+        1445
+      ],
+      [
+        1447,
+        1447.5
+      ],
+      [
+        1449,
+        1450
+      ],
+      [
+        1454,
+        1455
+      ],
+      [
+        1457.5,
+        1458
+      ],
+      [
+        1459.5,
+        1460
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is approximate at 0.5-second sampling; head direction is not verified eye gaze.",
+      "The reaching hand and any contacted object are outside the frame during 1440.5–1443."
+    ]
+  },
+  "status": "OK"
+}

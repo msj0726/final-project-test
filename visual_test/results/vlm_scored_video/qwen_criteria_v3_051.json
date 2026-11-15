@@ -1,0 +1,10 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 43.641146542009665,
+  "inputTokens": 4499,
+  "outputTokens": 518,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [1020.0, 1039.5]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [1020.0, 1022.0],\n    [1022.5, 1024.0],\n    [1024.5, 1026.0],\n    [1026.5, 1028.0],\n    [1028.5, 1030.0],\n    [1030.5, 1032.0],\n    [1032.5, 1034.0],\n    [1034.5, 1036.0],\n    [1036.5, 1038.0]\n  ],\n  \"handMotionStopSeconds\": [\n    1022.0,\n    1024.0,\n    1026.0,\n    1028.0,\n    1030.0,\n    1032.0,\n    1034.0,\n    1036.0,\n    1038.0\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [1022.0, 1022.5],\n    [1024.0, 1024.5],\n    [1026.0, 1026.5],\n    [1028.0, 1028.5],\n    [1030.0, 1030.5],\n    [1032.0, 1032.5],\n    [1034.0, 1034.5],\n    [1036.0, 1036.5],\n    [1038.0, 1039.5]\n  ],\n  \"gazeUnobservableIntervals\": []\n}",
+  "status": "INVALID_OUTPUT",
+  "error": "missing or extra keys"
+}

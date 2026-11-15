@@ -1,0 +1,85 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 7.6506438329815865,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 273,
+    "output_tokens_details": {
+      "reasoning_tokens": 108
+    },
+    "total_tokens": 5074
+  },
+  "costUsdUpperBound": 0.012332,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[580,600]],\"bothWristsStillCandidateIntervals\":[[581,582.5],[583.5,586],[587.5,588.5],[589.5,592.5],[594,595.5]],\"handMotionStopSeconds\":[581,583.5,587.5,589.5,594],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[580,580.5],[586.5,587],[590.5,591],[596,596.5],[598.5,600]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is approximate at 0.5-second sampling; head direction does not verify eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        580,
+        600
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        581,
+        582.5
+      ],
+      [
+        583.5,
+        586
+      ],
+      [
+        587.5,
+        588.5
+      ],
+      [
+        589.5,
+        592.5
+      ],
+      [
+        594,
+        595.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      581,
+      583.5,
+      587.5,
+      589.5,
+      594
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        580,
+        580.5
+      ],
+      [
+        586.5,
+        587
+      ],
+      [
+        590.5,
+        591
+      ],
+      [
+        596,
+        596.5
+      ],
+      [
+        598.5,
+        600
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is approximate at 0.5-second sampling; head direction does not verify eye gaze."
+    ]
+  },
+  "status": "OK"
+}

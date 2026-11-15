@@ -1,0 +1,53 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 33.719287625019206,
+  "inputTokens": 4457,
+  "outputTokens": 268,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [380.0, 393.0],\n    [395.0, 399.5]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [380.0, 393.0],\n    [395.0, 399.5]\n  ],\n  \"handMotionStopSeconds\": [\n    393.0,\n    395.0\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [393.0, 394.5]\n  ],\n  \"gazeUnobservableIntervals\": [\n    [393.0, 394.5]\n  ],\n  \"limitations\": [\n    \"Hand motion stop at 393.0s inferred from visible hand retraction; precise stop time may vary slightly.\",\n    \"Head off-target interval at 393.0s inferred from body lean and gaze direction; exact angle not measurable.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        380.0,
+        393.0
+      ],
+      [
+        395.0,
+        399.5
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        380.0,
+        393.0
+      ],
+      [
+        395.0,
+        399.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      393.0,
+      395.0
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        393.0,
+        394.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [
+      [
+        393.0,
+        394.5
+      ]
+    ],
+    "limitations": [
+      "Hand motion stop at 393.0s inferred from visible hand retraction; precise stop time may vary slightly.",
+      "Head off-target interval at 393.0s inferred from body lean and gaze direction; exact angle not measurable."
+    ]
+  },
+  "status": "OK"
+}

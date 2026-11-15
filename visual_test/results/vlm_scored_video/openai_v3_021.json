@@ -1,0 +1,81 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 9.012369625008432,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 281,
+    "output_tokens_details": {
+      "reasoning_tokens": 117
+    },
+    "total_tokens": 5082
+  },
+  "costUsdUpperBound": 0.012412,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[420,425.5],[429,440]],\"bothWristsStillCandidateIntervals\":[[420,422.5],[423.5,425],[429.5,433],[433.5,437],[438.5,440]],\"handMotionStopSeconds\":[423.5,429.5,433.5,438.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[425.5,429],[429.5,431],[435,436]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits event timing precision.\",\"The reaching hand and any contacted object are out of frame at 425.5–428.5 seconds.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        420,
+        425.5
+      ],
+      [
+        429,
+        440
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        420,
+        422.5
+      ],
+      [
+        423.5,
+        425
+      ],
+      [
+        429.5,
+        433
+      ],
+      [
+        433.5,
+        437
+      ],
+      [
+        438.5,
+        440
+      ]
+    ],
+    "handMotionStopSeconds": [
+      423.5,
+      429.5,
+      433.5,
+      438.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        425.5,
+        429
+      ],
+      [
+        429.5,
+        431
+      ],
+      [
+        435,
+        436
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits event timing precision.",
+      "The reaching hand and any contacted object are out of frame at 425.5–428.5 seconds."
+    ]
+  },
+  "status": "OK"
+}

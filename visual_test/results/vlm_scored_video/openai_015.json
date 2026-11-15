@@ -1,0 +1,105 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 8.551155124994693,
+  "usage": {
+    "input_tokens": 4824,
+    "input_tokens_details": {
+      "cache_write_tokens": 4821,
+      "cached_tokens": 0
+    },
+    "output_tokens": 348,
+    "output_tokens_details": {
+      "reasoning_tokens": 75
+    },
+    "total_tokens": 5172
+  },
+  "costUsdUpperBound": 0.013128,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[300,306],[310.5,311.5],[312,320]],\"bothWristsStillCandidateIntervals\":[[300,300.5],[303,303.5],[304.5,305],[312.5,313.5],[314.5,315.5],[318.5,320]],\"handMotionStopSeconds\":[303,304.5,312.5,314.5,317,318.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetEvents\":[{\"startSec\":306,\"endSec\":309,\"reason\":\"DOWN\"},{\"startSec\":309.5,\"endSec\":310.5,\"reason\":\"DOWN\"},{\"startSec\":311.5,\"endSec\":312,\"reason\":\"DOWN\"},{\"startSec\":312.5,\"endSec\":313.5,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":315.5,\"endSec\":316.5,\"reason\":\"PRESENTATION_SCREEN\"}],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is approximate at 0.5-second sampling resolution.\",\"Hands leave the lower frame during forward reaches; contact with any off-screen object and its relevance cannot be determined.\",\"Head direction is a proxy, not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        300,
+        306
+      ],
+      [
+        310.5,
+        311.5
+      ],
+      [
+        312,
+        320
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        300,
+        300.5
+      ],
+      [
+        303,
+        303.5
+      ],
+      [
+        304.5,
+        305
+      ],
+      [
+        312.5,
+        313.5
+      ],
+      [
+        314.5,
+        315.5
+      ],
+      [
+        318.5,
+        320
+      ]
+    ],
+    "handMotionStopSeconds": [
+      303,
+      304.5,
+      312.5,
+      314.5,
+      317,
+      318.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetEvents": [
+      {
+        "startSec": 306,
+        "endSec": 309,
+        "reason": "DOWN"
+      },
+      {
+        "startSec": 309.5,
+        "endSec": 310.5,
+        "reason": "DOWN"
+      },
+      {
+        "startSec": 311.5,
+        "endSec": 312,
+        "reason": "DOWN"
+      },
+      {
+        "startSec": 312.5,
+        "endSec": 313.5,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 315.5,
+        "endSec": 316.5,
+        "reason": "PRESENTATION_SCREEN"
+      }
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is approximate at 0.5-second sampling resolution.",
+      "Hands leave the lower frame during forward reaches; contact with any off-screen object and its relevance cannot be determined.",
+      "Head direction is a proxy, not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

@@ -1,0 +1,22 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.566575000004377,
+  "elapsedSeconds": 27.31401679100236,
+  "inputTokens": 4304,
+  "outputTokens": 143,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\":[],\n\"bothWristsStillCandidateIntervals\":[],\n\"handMotionStopSeconds\":[],\n\"faceCoverEvents\":[],\n\"unrelatedObjectTouchEvents\":[],\n\"headOffTargetIntervals\":[],\n\"gazeUnobservableIntervals\":[],\n\"limitations\":[ \"Right wrist joint not reliably detected in frames 740.0-740.5s and 741.0s, preventing 'both wrists visible' confirmation.\", \"Right wrist joint not reliably detected in frames 741.5s-759.5s, preventing 'both wrists visible' confirmation.\" ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillCandidateIntervals": [],
+    "handMotionStopSeconds": [],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Right wrist joint not reliably detected in frames 740.0-740.5s and 741.0s, preventing 'both wrists visible' confirmation.",
+      "Right wrist joint not reliably detected in frames 741.5s-759.5s, preventing 'both wrists visible' confirmation."
+    ]
+  },
+  "status": "OK"
+}

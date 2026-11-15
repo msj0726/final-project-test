@@ -1,0 +1,91 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 9.297690458013676,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 330,
+    "output_tokens_details": {
+      "reasoning_tokens": 153
+    },
+    "total_tokens": 5131
+  },
+  "costUsdUpperBound": 0.012902,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[400,405],[406.5,420]],\"bothWristsStillCandidateIntervals\":[[400,401.5],[402,404],[407,408.5],[409.5,411],[412.5,414],[415,417],[417.5,418.5]],\"handMotionStopSeconds\":[402,407,409.5,412.5,415,417.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[405,406.5],[409.5,410],[419,419.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is limited to 0.5-second samples.\",\"The reaching hand and any contacted object are outside the frame at 405–406 seconds.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        400,
+        405
+      ],
+      [
+        406.5,
+        420
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        400,
+        401.5
+      ],
+      [
+        402,
+        404
+      ],
+      [
+        407,
+        408.5
+      ],
+      [
+        409.5,
+        411
+      ],
+      [
+        412.5,
+        414
+      ],
+      [
+        415,
+        417
+      ],
+      [
+        417.5,
+        418.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      402,
+      407,
+      409.5,
+      412.5,
+      415,
+      417.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        405,
+        406.5
+      ],
+      [
+        409.5,
+        410
+      ],
+      [
+        419,
+        419.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is limited to 0.5-second samples.",
+      "The reaching hand and any contacted object are outside the frame at 405–406 seconds."
+    ]
+  },
+  "status": "OK"
+}

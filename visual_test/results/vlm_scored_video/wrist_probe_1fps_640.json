@@ -1,0 +1,20 @@
+{
+  "variant": "1fps_640",
+  "frames": 20,
+  "elapsedSeconds": 33.435447875002865,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\":[],\n\"bothWristsStillCandidateIntervals\":[],\n\"handMotionStopSeconds\":[],\n\"faceCoverEvents\":[],\n\"unrelatedObjectTouchEvents\":[],\n\"headOffTargetIntervals\":[],\n\"gazeUnobservableIntervals\":[],\n\"limitations\":[\n\"Right wrist joint not consistently detectable across frames; left wrist visible but cannot confirm both wrists for stillness or visibility rules.\",\n\"Hand motion stops inferred from gesture transitions (e.g., 161-162s, 165-166s, 169-170s) but lack precise endpoint confirmation due to sampling gaps.\"\n]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillCandidateIntervals": [],
+    "handMotionStopSeconds": [],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Right wrist joint not consistently detectable across frames; left wrist visible but cannot confirm both wrists for stillness or visibility rules.",
+      "Hand motion stops inferred from gesture transitions (e.g., 161-162s, 165-166s, 169-170s) but lack precise endpoint confirmation due to sampling gaps."
+    ]
+  },
+  "status": "OK"
+}

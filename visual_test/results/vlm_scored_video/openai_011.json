@@ -1,0 +1,91 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 9.472757250012364,
+  "usage": {
+    "input_tokens": 4824,
+    "input_tokens_details": {
+      "cache_write_tokens": 4821,
+      "cached_tokens": 0
+    },
+    "output_tokens": 325,
+    "output_tokens_details": {
+      "reasoning_tokens": 94
+    },
+    "total_tokens": 5149
+  },
+  "costUsdUpperBound": 0.012898,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[220,232],[235,240]],\"bothWristsStillCandidateIntervals\":[[221.5,223],[224,225],[226.5,228],[229.5,231.5],[235.5,238],[239.5,240]],\"handMotionStopSeconds\":[221.5,224,226.5,229.5,235.5,239.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetEvents\":[{\"startSec\":232,\"endSec\":235,\"reason\":\"DOWN\"},{\"startSec\":235,\"endSec\":236,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":238.5,\"endSec\":239,\"reason\":\"PRESENTATION_SCREEN\"}],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is limited to 0.5-second samples; subtle wrist movement may be unresolved.\",\"One wrist is out of frame during the forward lean; contact with any off-screen object and its relevance cannot be determined.\",\"Head direction is a proxy, not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        220,
+        232
+      ],
+      [
+        235,
+        240
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        221.5,
+        223
+      ],
+      [
+        224,
+        225
+      ],
+      [
+        226.5,
+        228
+      ],
+      [
+        229.5,
+        231.5
+      ],
+      [
+        235.5,
+        238
+      ],
+      [
+        239.5,
+        240
+      ]
+    ],
+    "handMotionStopSeconds": [
+      221.5,
+      224,
+      226.5,
+      229.5,
+      235.5,
+      239.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetEvents": [
+      {
+        "startSec": 232,
+        "endSec": 235,
+        "reason": "DOWN"
+      },
+      {
+        "startSec": 235,
+        "endSec": 236,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 238.5,
+        "endSec": 239,
+        "reason": "PRESENTATION_SCREEN"
+      }
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is limited to 0.5-second samples; subtle wrist movement may be unresolved.",
+      "One wrist is out of frame during the forward lean; contact with any off-screen object and its relevance cannot be determined.",
+      "Head direction is a proxy, not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

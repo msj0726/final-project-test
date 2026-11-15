@@ -1,0 +1,106 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 29.905448042001808,
+  "usage": {
+    "input_tokens": 4824,
+    "input_tokens_details": {
+      "cache_write_tokens": 4821,
+      "cached_tokens": 0
+    },
+    "output_tokens": 359,
+    "output_tokens_details": {
+      "reasoning_tokens": 55
+    },
+    "total_tokens": 5183
+  },
+  "costUsdUpperBound": 0.013238,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[140,140.5],[143,160]],\"bothWristsStillCandidateIntervals\":[[143.5,146.5],[147,148.5],[149.5,150.5],[151.5,152],[153.5,155],[155.5,156.5],[157,157.5]],\"handMotionStopSeconds\":[143.5,147,149.5,151.5,153.5,155.5,157],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetEvents\":[{\"startSec\":140.5,\"endSec\":143,\"reason\":\"DOWN\"},{\"startSec\":143.5,\"endSec\":144.5,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":147.5,\"endSec\":148.5,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":152.5,\"endSec\":153.5,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":158,\"endSec\":158.5,\"reason\":\"PRESENTATION_SCREEN\"}],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is limited to 0.5-second samples; brief intervening movements may be missed.\",\"Wrists are cropped near the bottom edge from 140.5 to 143 seconds.\",\"Head direction is a proxy, not verified eye gaze; the temple touch at 159 seconds does not clearly obscure the face.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        140,
+        140.5
+      ],
+      [
+        143,
+        160
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        143.5,
+        146.5
+      ],
+      [
+        147,
+        148.5
+      ],
+      [
+        149.5,
+        150.5
+      ],
+      [
+        151.5,
+        152
+      ],
+      [
+        153.5,
+        155
+      ],
+      [
+        155.5,
+        156.5
+      ],
+      [
+        157,
+        157.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      143.5,
+      147,
+      149.5,
+      151.5,
+      153.5,
+      155.5,
+      157
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetEvents": [
+      {
+        "startSec": 140.5,
+        "endSec": 143,
+        "reason": "DOWN"
+      },
+      {
+        "startSec": 143.5,
+        "endSec": 144.5,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 147.5,
+        "endSec": 148.5,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 152.5,
+        "endSec": 153.5,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 158,
+        "endSec": 158.5,
+        "reason": "PRESENTATION_SCREEN"
+      }
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is limited to 0.5-second samples; brief intervening movements may be missed.",
+      "Wrists are cropped near the bottom edge from 140.5 to 143 seconds.",
+      "Head direction is a proxy, not verified eye gaze; the temple touch at 159 seconds does not clearly obscure the face."
+    ]
+  },
+  "status": "OK"
+}

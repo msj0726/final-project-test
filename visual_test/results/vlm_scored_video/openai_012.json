@@ -1,0 +1,91 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 10.754641458013793,
+  "usage": {
+    "input_tokens": 4824,
+    "input_tokens_details": {
+      "cache_write_tokens": 4821,
+      "cached_tokens": 0
+    },
+    "output_tokens": 390,
+    "output_tokens_details": {
+      "reasoning_tokens": 188
+    },
+    "total_tokens": 5214
+  },
+  "costUsdUpperBound": 0.013548,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[240,260]],\"bothWristsStillCandidateIntervals\":[[241,242],[245,245.5],[246,246.5],[248.5,249],[250,252],[254,254.5],[255,255.5],[256.5,258.5]],\"handMotionStopSeconds\":[241,245,246,247.5,248.5,250,254,255,256.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetEvents\":[{\"startSec\":245.5,\"endSec\":247,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":252.5,\"endSec\":254,\"reason\":\"PRESENTATION_SCREEN\"}],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is approximate at 0.5-second sampling; wrist locations are estimated at sleeve-hand boundaries. Head direction does not establish eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        240,
+        260
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        241,
+        242
+      ],
+      [
+        245,
+        245.5
+      ],
+      [
+        246,
+        246.5
+      ],
+      [
+        248.5,
+        249
+      ],
+      [
+        250,
+        252
+      ],
+      [
+        254,
+        254.5
+      ],
+      [
+        255,
+        255.5
+      ],
+      [
+        256.5,
+        258.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      241,
+      245,
+      246,
+      247.5,
+      248.5,
+      250,
+      254,
+      255,
+      256.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetEvents": [
+      {
+        "startSec": 245.5,
+        "endSec": 247,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 252.5,
+        "endSec": 254,
+        "reason": "PRESENTATION_SCREEN"
+      }
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is approximate at 0.5-second sampling; wrist locations are estimated at sleeve-hand boundaries. Head direction does not establish eye gaze."
+    ]
+  },
+  "status": "OK"
+}

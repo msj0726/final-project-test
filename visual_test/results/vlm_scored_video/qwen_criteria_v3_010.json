@@ -1,0 +1,189 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 60.489835999993375,
+  "inputTokens": 4457,
+  "outputTokens": 931,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [200.0, 201.0],\n    [202.0, 202.5],\n    [202.5, 203.0],\n    [204.0, 205.0],\n    [205.5, 206.0],\n    [207.5, 208.0],\n    [208.5, 209.0],\n    [210.5, 211.0],\n    [211.5, 212.0],\n    [212.5, 213.0],\n    [213.5, 214.0],\n    [214.5, 215.0],\n    [215.5, 216.0],\n    [216.5, 217.0],\n    [217.5, 218.0],\n    [218.5, 219.0],\n    [219.5, 220.0]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [200.0, 201.0],\n    [202.0, 202.5],\n    [202.5, 203.0],\n    [204.0, 205.0],\n    [205.5, 206.0],\n    [207.5, 208.0],\n    [208.5, 209.0],\n    [210.5, 211.0],\n    [211.5, 212.0],\n    [212.5, 213.0],\n    [213.5, 214.0],\n    [214.5, 215.0],\n    [215.5, 216.0],\n    [216.5, 217.0],\n    [217.5, 218.0],\n    [218.5, 219.0],\n    [219.5, 220.0]\n  ],\n  \"handMotionStopSeconds\": [\n    201.0,\n    202.5,\n    203.0,\n    205.0,\n    206.0,\n    207.5,\n    208.0,\n    209.0,\n    210.5,\n    211.0,\n    211.5,\n    212.0,\n    212.5,\n    213.0,\n    213.5,\n    214.0,\n    214.5,\n    215.0,\n    215.5,\n    216.0,\n    216.5,\n    217.0,\n    217.5,\n    218.0,\n    218.5,\n    219.0,\n    219.5,\n    220.0\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [],\n  \"gazeUnobservableIntervals\": [],\n  \"limitations\": [\n    \"Hand motion stop detection is based on visible frame-to-frame changes; continuous motion may be underestimated.\",\n    \"Both wrists still candidate intervals are inferred from relative position stability; minor camera jitter is allowed.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        200.0,
+        201.0
+      ],
+      [
+        202.0,
+        202.5
+      ],
+      [
+        202.5,
+        203.0
+      ],
+      [
+        204.0,
+        205.0
+      ],
+      [
+        205.5,
+        206.0
+      ],
+      [
+        207.5,
+        208.0
+      ],
+      [
+        208.5,
+        209.0
+      ],
+      [
+        210.5,
+        211.0
+      ],
+      [
+        211.5,
+        212.0
+      ],
+      [
+        212.5,
+        213.0
+      ],
+      [
+        213.5,
+        214.0
+      ],
+      [
+        214.5,
+        215.0
+      ],
+      [
+        215.5,
+        216.0
+      ],
+      [
+        216.5,
+        217.0
+      ],
+      [
+        217.5,
+        218.0
+      ],
+      [
+        218.5,
+        219.0
+      ],
+      [
+        219.5,
+        220.0
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        200.0,
+        201.0
+      ],
+      [
+        202.0,
+        202.5
+      ],
+      [
+        202.5,
+        203.0
+      ],
+      [
+        204.0,
+        205.0
+      ],
+      [
+        205.5,
+        206.0
+      ],
+      [
+        207.5,
+        208.0
+      ],
+      [
+        208.5,
+        209.0
+      ],
+      [
+        210.5,
+        211.0
+      ],
+      [
+        211.5,
+        212.0
+      ],
+      [
+        212.5,
+        213.0
+      ],
+      [
+        213.5,
+        214.0
+      ],
+      [
+        214.5,
+        215.0
+      ],
+      [
+        215.5,
+        216.0
+      ],
+      [
+        216.5,
+        217.0
+      ],
+      [
+        217.5,
+        218.0
+      ],
+      [
+        218.5,
+        219.0
+      ],
+      [
+        219.5,
+        220.0
+      ]
+    ],
+    "handMotionStopSeconds": [
+      201.0,
+      202.5,
+      203.0,
+      205.0,
+      206.0,
+      207.5,
+      208.0,
+      209.0,
+      210.5,
+      211.0,
+      211.5,
+      212.0,
+      212.5,
+      213.0,
+      213.5,
+      214.0,
+      214.5,
+      215.0,
+      215.5,
+      216.0,
+      216.5,
+      217.0,
+      217.5,
+      218.0,
+      218.5,
+      219.0,
+      219.5,
+      220.0
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Hand motion stop detection is based on visible frame-to-frame changes; continuous motion may be underestimated.",
+      "Both wrists still candidate intervals are inferred from relative position stability; minor camera jitter is allowed."
+    ]
+  },
+  "status": "OK"
+}

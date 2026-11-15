@@ -1,0 +1,81 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 10.253915458015399,
+  "usage": {
+    "input_tokens": 4843,
+    "input_tokens_details": {
+      "cache_write_tokens": 4840,
+      "cached_tokens": 0
+    },
+    "output_tokens": 298,
+    "output_tokens_details": {
+      "reasoning_tokens": 121
+    },
+    "total_tokens": 5141
+  },
+  "costUsdUpperBound": 0.012666,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[1100,1114.5],[1115,1117]],\"bothWristsStillCandidateIntervals\":[[1100,1101.5],[1103,1103.5],[1104.5,1105],[1108.5,1112.5],[1115,1116.5]],\"handMotionStopSeconds\":[1103,1107,1108.5,1115],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[1101,1102.5],[1110,1111],[1117,1120]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits motion-stop timing.\",\"Hands descend outside the frame near the end; any object contact there is unobservable.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1100,
+        1114.5
+      ],
+      [
+        1115,
+        1117
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1100,
+        1101.5
+      ],
+      [
+        1103,
+        1103.5
+      ],
+      [
+        1104.5,
+        1105
+      ],
+      [
+        1108.5,
+        1112.5
+      ],
+      [
+        1115,
+        1116.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1103,
+      1107,
+      1108.5,
+      1115
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1101,
+        1102.5
+      ],
+      [
+        1110,
+        1111
+      ],
+      [
+        1117,
+        1120
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits motion-stop timing.",
+      "Hands descend outside the frame near the end; any object contact there is unobservable."
+    ]
+  },
+  "status": "OK"
+}

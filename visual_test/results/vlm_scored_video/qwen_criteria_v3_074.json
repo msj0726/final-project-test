@@ -1,0 +1,39 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 17.703474290989107,
+  "inputTokens": 1937,
+  "outputTokens": 203,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [1480.0, 1486.24]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [1480.0, 1486.24]\n  ],\n  \"handMotionStopSeconds\": [\n    1480.0\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [1484.5, 1486.24]\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"limitations\": [\n    \"Hand motion stop inferred from static pose at 1480.0s.\",\n    \"Head off-target interval inferred from head turn at 1484.5s.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1480.0,
+        1486.24
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1480.0,
+        1486.24
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1480.0
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1484.5,
+        1486.24
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Hand motion stop inferred from static pose at 1480.0s.",
+      "Head off-target interval inferred from head turn at 1484.5s."
+    ]
+  },
+  "status": "OK"
+}

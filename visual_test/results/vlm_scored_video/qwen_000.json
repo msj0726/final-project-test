@@ -1,0 +1,40 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 5.069050958001753,
+  "elapsedSeconds": 31.651047708000988,
+  "inputTokens": 4260,
+  "outputTokens": 227,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [5.0, 20.0]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [5.0, 14.5]\n  ],\n  \"handMotionStopSeconds\": [\n    5.0\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetEvents\": [\n    {\n      \"startSec\": 3.0,\n      \"endSec\": 3.5,\n      \"reason\": \"LARGE_TURN\"\n    }\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"limitations\": [\n    \"Hand motion stop at 5.0s inferred from transition from active gesture to static hold; precise stop time may vary slightly.\",\n    \"Head off-target event at 3.0s-3.5s is a large turn away from camera; exact angle not measurable from frames.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        5.0,
+        20.0
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        5.0,
+        14.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      5.0
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetEvents": [
+      {
+        "startSec": 3.0,
+        "endSec": 3.5,
+        "reason": "LARGE_TURN"
+      }
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Hand motion stop at 5.0s inferred from transition from active gesture to static hold; precise stop time may vary slightly.",
+      "Head off-target event at 3.0s-3.5s is a large turn away from camera; exact angle not measurable from frames."
+    ]
+  },
+  "status": "OK"
+}

@@ -1,0 +1,3135 @@
+{
+  "sourcePath": "/Users/minseojang/Downloads/05_[사업제안발표] (1).mp4",
+  "durationSeconds": 1486.24,
+  "evaluationType": "REUSED_SINGLE_UNLABELLED_VIDEO_PROMPT_SELECTION",
+  "isScoringReady": false,
+  "notEvaluatedItems": [
+    "SPEECH_RATE",
+    "FLUENCY"
+  ],
+  "promptVariants": {
+    "openai": "baseline-v3",
+    "qwen": "baseline-v3",
+    "qwen_criteria": "criteria-explicit-v1"
+  },
+  "scores": {
+    "openai": {
+      "model": "openai",
+      "validWindows": 75,
+      "totalWindows": 75,
+      "failures": [],
+      "semanticIssues": [],
+      "motionStillnessConflicts": [],
+      "inferenceSeconds": 869.96,
+      "apiCostUsdUpperBound": 0.952494,
+      "gesture": {
+        "score": 30,
+        "rawDeduction": 238,
+        "appliedDeduction": 70,
+        "deductions": {
+          "handMotionExcess": 217,
+          "handStillness": 18,
+          "faceOcclusion": 3,
+          "unrelatedObjectTouch": 0
+        },
+        "handCoverageRatio": 0.9267,
+        "handObservableSeconds": 1377.24,
+        "handStillnessEvents": [
+          [
+            5.5,
+            10.5
+          ],
+          [
+            172,
+            180
+          ],
+          [
+            354,
+            361.5
+          ],
+          [
+            443,
+            448.5
+          ],
+          [
+            449.5,
+            455.5
+          ],
+          [
+            616,
+            621.5
+          ],
+          [
+            627,
+            632
+          ],
+          [
+            660,
+            667.5
+          ],
+          [
+            736,
+            741
+          ],
+          [
+            763.5,
+            768.5
+          ],
+          [
+            902.5,
+            910.5
+          ],
+          [
+            919,
+            924
+          ],
+          [
+            957.5,
+            962.5
+          ],
+          [
+            1075.5,
+            1080.5
+          ],
+          [
+            1190,
+            1195.5
+          ],
+          [
+            1197,
+            1203.5
+          ],
+          [
+            1255,
+            1261
+          ],
+          [
+            1341,
+            1353
+          ]
+        ],
+        "faceOcclusionEvents": [
+          [
+            159,
+            159.5
+          ],
+          [
+            846,
+            846.5
+          ],
+          [
+            1446,
+            1446.5
+          ]
+        ],
+        "unrelatedObjectTouchEvents": [],
+        "minuteMotionCounts": [
+          {
+            "startSec": 0,
+            "endSec": 60,
+            "handMotionCount": 10,
+            "allowedCount": 8,
+            "excessCount": 2
+          },
+          {
+            "startSec": 60,
+            "endSec": 120,
+            "handMotionCount": 15,
+            "allowedCount": 8,
+            "excessCount": 7
+          },
+          {
+            "startSec": 120,
+            "endSec": 180,
+            "handMotionCount": 18,
+            "allowedCount": 8,
+            "excessCount": 10
+          },
+          {
+            "startSec": 180,
+            "endSec": 240,
+            "handMotionCount": 19,
+            "allowedCount": 8,
+            "excessCount": 11
+          },
+          {
+            "startSec": 240,
+            "endSec": 300,
+            "handMotionCount": 20,
+            "allowedCount": 8,
+            "excessCount": 12
+          },
+          {
+            "startSec": 300,
+            "endSec": 360,
+            "handMotionCount": 14,
+            "allowedCount": 8,
+            "excessCount": 6
+          },
+          {
+            "startSec": 360,
+            "endSec": 420,
+            "handMotionCount": 16,
+            "allowedCount": 8,
+            "excessCount": 8
+          },
+          {
+            "startSec": 420,
+            "endSec": 480,
+            "handMotionCount": 17,
+            "allowedCount": 8,
+            "excessCount": 9
+          },
+          {
+            "startSec": 480,
+            "endSec": 540,
+            "handMotionCount": 18,
+            "allowedCount": 8,
+            "excessCount": 10
+          },
+          {
+            "startSec": 540,
+            "endSec": 600,
+            "handMotionCount": 17,
+            "allowedCount": 8,
+            "excessCount": 9
+          },
+          {
+            "startSec": 600,
+            "endSec": 660,
+            "handMotionCount": 14,
+            "allowedCount": 8,
+            "excessCount": 6
+          },
+          {
+            "startSec": 660,
+            "endSec": 720,
+            "handMotionCount": 18,
+            "allowedCount": 8,
+            "excessCount": 10
+          },
+          {
+            "startSec": 720,
+            "endSec": 780,
+            "handMotionCount": 17,
+            "allowedCount": 8,
+            "excessCount": 9
+          },
+          {
+            "startSec": 780,
+            "endSec": 840,
+            "handMotionCount": 17,
+            "allowedCount": 8,
+            "excessCount": 9
+          },
+          {
+            "startSec": 840,
+            "endSec": 900,
+            "handMotionCount": 20,
+            "allowedCount": 8,
+            "excessCount": 12
+          },
+          {
+            "startSec": 900,
+            "endSec": 960,
+            "handMotionCount": 13,
+            "allowedCount": 8,
+            "excessCount": 5
+          },
+          {
+            "startSec": 960,
+            "endSec": 1020,
+            "handMotionCount": 16,
+            "allowedCount": 8,
+            "excessCount": 8
+          },
+          {
+            "startSec": 1020,
+            "endSec": 1080,
+            "handMotionCount": 21,
+            "allowedCount": 8,
+            "excessCount": 13
+          },
+          {
+            "startSec": 1080,
+            "endSec": 1140,
+            "handMotionCount": 19,
+            "allowedCount": 8,
+            "excessCount": 11
+          },
+          {
+            "startSec": 1140,
+            "endSec": 1200,
+            "handMotionCount": 15,
+            "allowedCount": 8,
+            "excessCount": 7
+          },
+          {
+            "startSec": 1200,
+            "endSec": 1260,
+            "handMotionCount": 12,
+            "allowedCount": 8,
+            "excessCount": 4
+          },
+          {
+            "startSec": 1260,
+            "endSec": 1320,
+            "handMotionCount": 20,
+            "allowedCount": 8,
+            "excessCount": 12
+          },
+          {
+            "startSec": 1320,
+            "endSec": 1380,
+            "handMotionCount": 13,
+            "allowedCount": 8,
+            "excessCount": 5
+          },
+          {
+            "startSec": 1380,
+            "endSec": 1440,
+            "handMotionCount": 21,
+            "allowedCount": 8,
+            "excessCount": 13
+          },
+          {
+            "startSec": 1440,
+            "endSec": 1486.24,
+            "handMotionCount": 15,
+            "allowedCount": 6,
+            "excessCount": 9
+          }
+        ]
+      },
+      "gaze": {
+        "score": 32,
+        "observableSeconds": 1484.74,
+        "unobservableSeconds": 1.5,
+        "coverageRatio": 0.999,
+        "offTargetSeconds": 326.0,
+        "offTargetRatio": 0.2196,
+        "offTargetIntervals": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            3.5
+          ],
+          [
+            13.5,
+            16
+          ],
+          [
+            24,
+            25.5
+          ],
+          [
+            27.5,
+            28
+          ],
+          [
+            39,
+            40
+          ],
+          [
+            42.5,
+            43
+          ],
+          [
+            50,
+            51
+          ],
+          [
+            61.5,
+            64.5
+          ],
+          [
+            65,
+            66
+          ],
+          [
+            68.5,
+            69
+          ],
+          [
+            71,
+            72
+          ],
+          [
+            77,
+            78.5
+          ],
+          [
+            80.5,
+            81
+          ],
+          [
+            83.5,
+            84
+          ],
+          [
+            87.5,
+            90
+          ],
+          [
+            91,
+            93
+          ],
+          [
+            97,
+            98
+          ],
+          [
+            101,
+            102
+          ],
+          [
+            102.5,
+            103.5
+          ],
+          [
+            109.5,
+            110.5
+          ],
+          [
+            113.5,
+            114
+          ],
+          [
+            115.5,
+            117
+          ],
+          [
+            117.5,
+            118.5
+          ],
+          [
+            120.5,
+            121.5
+          ],
+          [
+            140.5,
+            144.5
+          ],
+          [
+            147.5,
+            148.5
+          ],
+          [
+            152.5,
+            153.5
+          ],
+          [
+            158,
+            158.5
+          ],
+          [
+            163,
+            163.5
+          ],
+          [
+            165,
+            166
+          ],
+          [
+            168.5,
+            169.5
+          ],
+          [
+            173.5,
+            174
+          ],
+          [
+            180,
+            181.5
+          ],
+          [
+            192.5,
+            194
+          ],
+          [
+            196,
+            197.5
+          ],
+          [
+            204,
+            205.5
+          ],
+          [
+            207.5,
+            208.5
+          ],
+          [
+            215,
+            216.5
+          ],
+          [
+            232,
+            236
+          ],
+          [
+            238.5,
+            239
+          ],
+          [
+            245,
+            247
+          ],
+          [
+            252.5,
+            254.5
+          ],
+          [
+            262,
+            263.5
+          ],
+          [
+            264,
+            265
+          ],
+          [
+            265.5,
+            267.5
+          ],
+          [
+            278,
+            279.5
+          ],
+          [
+            280,
+            281.5
+          ],
+          [
+            305.5,
+            313.5
+          ],
+          [
+            315.5,
+            316.5
+          ],
+          [
+            322.5,
+            323.5
+          ],
+          [
+            330.5,
+            331.5
+          ],
+          [
+            344,
+            345
+          ],
+          [
+            363.5,
+            368
+          ],
+          [
+            372.5,
+            374.5
+          ],
+          [
+            378,
+            380
+          ],
+          [
+            393,
+            394.5
+          ],
+          [
+            405,
+            406.5
+          ],
+          [
+            409.5,
+            410
+          ],
+          [
+            419,
+            419.5
+          ],
+          [
+            425.5,
+            429
+          ],
+          [
+            429.5,
+            431
+          ],
+          [
+            435,
+            436
+          ],
+          [
+            441,
+            442
+          ],
+          [
+            446.5,
+            447.5
+          ],
+          [
+            451.5,
+            453
+          ],
+          [
+            453.5,
+            454.5
+          ],
+          [
+            460.5,
+            463
+          ],
+          [
+            466.5,
+            468.5
+          ],
+          [
+            469,
+            469.5
+          ],
+          [
+            473,
+            475.5
+          ],
+          [
+            486.5,
+            489
+          ],
+          [
+            493,
+            494.5
+          ],
+          [
+            502.5,
+            505
+          ],
+          [
+            506,
+            507
+          ],
+          [
+            507.5,
+            508.5
+          ],
+          [
+            510.5,
+            511
+          ],
+          [
+            517,
+            518
+          ],
+          [
+            525,
+            528
+          ],
+          [
+            537.5,
+            540
+          ],
+          [
+            543.5,
+            546
+          ],
+          [
+            549,
+            550.5
+          ],
+          [
+            552.5,
+            553.5
+          ],
+          [
+            561.5,
+            566.5
+          ],
+          [
+            572,
+            572.5
+          ],
+          [
+            576,
+            577.5
+          ],
+          [
+            580,
+            580.5
+          ],
+          [
+            586.5,
+            587
+          ],
+          [
+            590.5,
+            591
+          ],
+          [
+            596,
+            596.5
+          ],
+          [
+            598.5,
+            601
+          ],
+          [
+            602,
+            602.5
+          ],
+          [
+            603,
+            604
+          ],
+          [
+            605,
+            606.5
+          ],
+          [
+            611,
+            612
+          ],
+          [
+            612.5,
+            613
+          ],
+          [
+            618,
+            620
+          ],
+          [
+            625.5,
+            626
+          ],
+          [
+            633,
+            635
+          ],
+          [
+            637,
+            638
+          ],
+          [
+            640,
+            641.5
+          ],
+          [
+            648,
+            649
+          ],
+          [
+            652.5,
+            653.5
+          ],
+          [
+            657,
+            658
+          ],
+          [
+            661.5,
+            662.5
+          ],
+          [
+            664.5,
+            665.5
+          ],
+          [
+            671,
+            671.5
+          ],
+          [
+            679.5,
+            681
+          ],
+          [
+            699.5,
+            703.5
+          ],
+          [
+            712,
+            713
+          ],
+          [
+            720,
+            721.5
+          ],
+          [
+            731,
+            732
+          ],
+          [
+            739,
+            740
+          ],
+          [
+            756.5,
+            757
+          ],
+          [
+            757.5,
+            760.5
+          ],
+          [
+            761.5,
+            763
+          ],
+          [
+            765,
+            766
+          ],
+          [
+            771.5,
+            772.5
+          ],
+          [
+            780,
+            781
+          ],
+          [
+            786,
+            787.5
+          ],
+          [
+            789.5,
+            790
+          ],
+          [
+            796.5,
+            797
+          ],
+          [
+            805.5,
+            806.5
+          ],
+          [
+            814.5,
+            818.5
+          ],
+          [
+            821,
+            822
+          ],
+          [
+            826.5,
+            827.5
+          ],
+          [
+            830.5,
+            832
+          ],
+          [
+            833.5,
+            835
+          ],
+          [
+            841.5,
+            842.5
+          ],
+          [
+            846.5,
+            847.5
+          ],
+          [
+            859.5,
+            860.5
+          ],
+          [
+            868.5,
+            872.5
+          ],
+          [
+            880,
+            881
+          ],
+          [
+            886,
+            887
+          ],
+          [
+            908,
+            908.5
+          ],
+          [
+            915.5,
+            919
+          ],
+          [
+            921.5,
+            922.5
+          ],
+          [
+            926,
+            927
+          ],
+          [
+            930,
+            931.5
+          ],
+          [
+            932.5,
+            933.5
+          ],
+          [
+            935,
+            937
+          ],
+          [
+            940.5,
+            941
+          ],
+          [
+            944.5,
+            945.5
+          ],
+          [
+            956,
+            957
+          ],
+          [
+            968.5,
+            973
+          ],
+          [
+            976,
+            977.5
+          ],
+          [
+            982,
+            983.5
+          ],
+          [
+            991.5,
+            992
+          ],
+          [
+            996.5,
+            997
+          ],
+          [
+            1003,
+            1004.5
+          ],
+          [
+            1010.5,
+            1013.5
+          ],
+          [
+            1014,
+            1015.5
+          ],
+          [
+            1017,
+            1017.5
+          ],
+          [
+            1022,
+            1023
+          ],
+          [
+            1033,
+            1034
+          ],
+          [
+            1038,
+            1039
+          ],
+          [
+            1042.5,
+            1044.5
+          ],
+          [
+            1051,
+            1052.5
+          ],
+          [
+            1059,
+            1059.5
+          ],
+          [
+            1066,
+            1069.5
+          ],
+          [
+            1071,
+            1072
+          ],
+          [
+            1080.5,
+            1081.5
+          ],
+          [
+            1082.5,
+            1083.5
+          ],
+          [
+            1089,
+            1090.5
+          ],
+          [
+            1101,
+            1102.5
+          ],
+          [
+            1110,
+            1111
+          ],
+          [
+            1117,
+            1120.5
+          ],
+          [
+            1121,
+            1121.5
+          ],
+          [
+            1128.5,
+            1129.5
+          ],
+          [
+            1131.5,
+            1132.5
+          ],
+          [
+            1134,
+            1135
+          ],
+          [
+            1138,
+            1139
+          ],
+          [
+            1145,
+            1147
+          ],
+          [
+            1151.5,
+            1153
+          ],
+          [
+            1165,
+            1165.5
+          ],
+          [
+            1172.5,
+            1173.5
+          ],
+          [
+            1176,
+            1178.5
+          ],
+          [
+            1179.5,
+            1180.5
+          ],
+          [
+            1188,
+            1190
+          ],
+          [
+            1194,
+            1194.5
+          ],
+          [
+            1200,
+            1202.5
+          ],
+          [
+            1207.5,
+            1208.5
+          ],
+          [
+            1215,
+            1216
+          ],
+          [
+            1219,
+            1222.5
+          ],
+          [
+            1225,
+            1226
+          ],
+          [
+            1227.5,
+            1228.5
+          ],
+          [
+            1230.5,
+            1231
+          ],
+          [
+            1231.5,
+            1232
+          ],
+          [
+            1232.5,
+            1233.5
+          ],
+          [
+            1235,
+            1236
+          ],
+          [
+            1237,
+            1238
+          ],
+          [
+            1240.5,
+            1241.5
+          ],
+          [
+            1247,
+            1248.5
+          ],
+          [
+            1249.5,
+            1250.5
+          ],
+          [
+            1251.5,
+            1253
+          ],
+          [
+            1255,
+            1255.5
+          ],
+          [
+            1257,
+            1257.5
+          ],
+          [
+            1262,
+            1262.5
+          ],
+          [
+            1277.5,
+            1281
+          ],
+          [
+            1281.5,
+            1283
+          ],
+          [
+            1287,
+            1289
+          ],
+          [
+            1291,
+            1291.5
+          ],
+          [
+            1293.5,
+            1294
+          ],
+          [
+            1297,
+            1297.5
+          ],
+          [
+            1307,
+            1308.5
+          ],
+          [
+            1315.5,
+            1316.5
+          ],
+          [
+            1324.5,
+            1327
+          ],
+          [
+            1327.5,
+            1328.5
+          ],
+          [
+            1331.5,
+            1332.5
+          ],
+          [
+            1339,
+            1341
+          ],
+          [
+            1342.5,
+            1343.5
+          ],
+          [
+            1346,
+            1347
+          ],
+          [
+            1347.5,
+            1348
+          ],
+          [
+            1350.5,
+            1351.5
+          ],
+          [
+            1357,
+            1357.5
+          ],
+          [
+            1364.5,
+            1365.5
+          ],
+          [
+            1371,
+            1374
+          ],
+          [
+            1374.5,
+            1375.5
+          ],
+          [
+            1381.5,
+            1383
+          ],
+          [
+            1384.5,
+            1386
+          ],
+          [
+            1387,
+            1387.5
+          ],
+          [
+            1389,
+            1390.5
+          ],
+          [
+            1392,
+            1393.5
+          ],
+          [
+            1395.5,
+            1396.5
+          ],
+          [
+            1398.5,
+            1399
+          ],
+          [
+            1404.5,
+            1405.5
+          ],
+          [
+            1408.5,
+            1409.5
+          ],
+          [
+            1421,
+            1421.5
+          ],
+          [
+            1429,
+            1430
+          ],
+          [
+            1436.5,
+            1439.5
+          ],
+          [
+            1441,
+            1442
+          ],
+          [
+            1442.5,
+            1443
+          ],
+          [
+            1444.5,
+            1445
+          ],
+          [
+            1447,
+            1447.5
+          ],
+          [
+            1449,
+            1450
+          ],
+          [
+            1454,
+            1455
+          ],
+          [
+            1457.5,
+            1458
+          ],
+          [
+            1459.5,
+            1460
+          ],
+          [
+            1468,
+            1468.5
+          ]
+        ]
+      },
+      "visualTwoItemMean": 31,
+      "warnings": [
+        "60도는 보정된 각도 측정이 아닌 VLM의 큰 방향 전환 추정값입니다.",
+        "초당 2프레임에서 완료 손동작과 짧은 가림이 누락될 수 있습니다.",
+        "양손목 관찰률 자체도 사람 정답으로 검증되지 않았습니다.",
+        "발표 관련성에는 음성 전사가 제공되지 않았습니다.",
+        "총 원감점 238점이 70점 상한에 도달해 제스처는 최저 30점입니다. 상한을 넘는 행동 차이는 점수에 나타나지 않습니다.",
+        "동일 영상에서 모델별 완료 손동작 수가 크게 다릅니다. 사람 정답 없이 과다·과소 계수 여부를 확정할 수 없습니다."
+      ]
+    },
+    "qwen": {
+      "model": "qwen",
+      "validWindows": 71,
+      "totalWindows": 75,
+      "failures": [
+        {
+          "windowId": "011",
+          "reason": "invalid interval"
+        },
+        {
+          "windowId": "015",
+          "reason": "Invalid control character at: line 10 column 76 (char 310)"
+        },
+        {
+          "windowId": "026",
+          "reason": "invalid interval"
+        },
+        {
+          "windowId": "046",
+          "reason": "Expecting ',' delimiter: line 7 column 37 (char 194)"
+        }
+      ],
+      "semanticIssues": [],
+      "motionStillnessConflicts": [
+        {
+          "windowId": "005",
+          "handMotionStopSeconds": [
+            117
+          ]
+        },
+        {
+          "windowId": "054",
+          "handMotionStopSeconds": [
+            1090,
+            1098
+          ]
+        }
+      ],
+      "inferenceSeconds": 1917.26,
+      "apiCostUsdUpperBound": 0,
+      "gesture": {
+        "score": 82,
+        "rawDeduction": 18,
+        "appliedDeduction": 18,
+        "deductions": {
+          "handMotionExcess": 2,
+          "handStillness": 16,
+          "faceOcclusion": 0,
+          "unrelatedObjectTouch": 0
+        },
+        "handCoverageRatio": 0.1682,
+        "handObservableSeconds": 250.0,
+        "handStillnessEvents": [
+          [
+            5.0,
+            14.5
+          ],
+          [
+            21.0,
+            27.0
+          ],
+          [
+            70.5,
+            76.5
+          ],
+          [
+            113,
+            120
+          ],
+          [
+            380,
+            393
+          ],
+          [
+            395,
+            405
+          ],
+          [
+            407,
+            420
+          ],
+          [
+            620,
+            625
+          ],
+          [
+            627,
+            636
+          ],
+          [
+            789.0,
+            814
+          ],
+          [
+            960,
+            968
+          ],
+          [
+            972,
+            979
+          ],
+          [
+            1060,
+            1066
+          ],
+          [
+            1070,
+            1080
+          ],
+          [
+            1085,
+            1100
+          ],
+          [
+            1244,
+            1260
+          ]
+        ],
+        "faceOcclusionEvents": [],
+        "unrelatedObjectTouchEvents": [],
+        "minuteMotionCounts": [
+          {
+            "startSec": 0,
+            "endSec": 60,
+            "handMotionCount": 2,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 60,
+            "endSec": 120,
+            "handMotionCount": 9,
+            "allowedCount": 8,
+            "excessCount": 1
+          },
+          {
+            "startSec": 120,
+            "endSec": 180,
+            "handMotionCount": 0,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 180,
+            "endSec": 240,
+            "handMotionCount": 0,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 240,
+            "endSec": 300,
+            "handMotionCount": 0,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 300,
+            "endSec": 360,
+            "handMotionCount": 0,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 360,
+            "endSec": 420,
+            "handMotionCount": 4,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 420,
+            "endSec": 480,
+            "handMotionCount": 0,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 480,
+            "endSec": 540,
+            "handMotionCount": 0,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 540,
+            "endSec": 600,
+            "handMotionCount": 0,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 600,
+            "endSec": 660,
+            "handMotionCount": 3,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 660,
+            "endSec": 720,
+            "handMotionCount": 0,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 720,
+            "endSec": 780,
+            "handMotionCount": 0,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 780,
+            "endSec": 840,
+            "handMotionCount": 4,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 840,
+            "endSec": 900,
+            "handMotionCount": 0,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 900,
+            "endSec": 960,
+            "handMotionCount": 0,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 960,
+            "endSec": 1020,
+            "handMotionCount": 9,
+            "allowedCount": 8,
+            "excessCount": 1
+          },
+          {
+            "startSec": 1020,
+            "endSec": 1080,
+            "handMotionCount": 2,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 1080,
+            "endSec": 1140,
+            "handMotionCount": 3,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 1140,
+            "endSec": 1200,
+            "handMotionCount": 0,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 1200,
+            "endSec": 1260,
+            "handMotionCount": 4,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 1260,
+            "endSec": 1320,
+            "handMotionCount": 0,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 1320,
+            "endSec": 1380,
+            "handMotionCount": 0,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 1380,
+            "endSec": 1440,
+            "handMotionCount": 0,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 1440,
+            "endSec": 1486.24,
+            "handMotionCount": 0,
+            "allowedCount": 6,
+            "excessCount": 0
+          }
+        ]
+      },
+      "gaze": {
+        "score": 99,
+        "observableSeconds": 1406.24,
+        "unobservableSeconds": 80,
+        "coverageRatio": 0.9462,
+        "offTargetSeconds": 74.0,
+        "offTargetRatio": 0.0526,
+        "offTargetIntervals": [
+          [
+            3.0,
+            3.5
+          ],
+          [
+            13.5,
+            14.5
+          ],
+          [
+            24.0,
+            25.0
+          ],
+          [
+            27.5,
+            28.0
+          ],
+          [
+            39.0,
+            40.0
+          ],
+          [
+            61.5,
+            64.5
+          ],
+          [
+            65,
+            66.5
+          ],
+          [
+            67,
+            68.5
+          ],
+          [
+            71,
+            72.5
+          ],
+          [
+            77,
+            79.5
+          ],
+          [
+            87,
+            90
+          ],
+          [
+            100,
+            101
+          ],
+          [
+            109,
+            110
+          ],
+          [
+            115,
+            117
+          ],
+          [
+            393,
+            395
+          ],
+          [
+            409,
+            410
+          ],
+          [
+            419,
+            420
+          ],
+          [
+            562,
+            565
+          ],
+          [
+            568,
+            570
+          ],
+          [
+            571,
+            575
+          ],
+          [
+            576,
+            578
+          ],
+          [
+            579,
+            580
+          ],
+          [
+            632,
+            634
+          ],
+          [
+            637,
+            638
+          ],
+          [
+            780.0,
+            781.0
+          ],
+          [
+            786.0,
+            789.0
+          ],
+          [
+            790.0,
+            791.0
+          ],
+          [
+            814,
+            818
+          ],
+          [
+            866,
+            871
+          ],
+          [
+            908,
+            909
+          ],
+          [
+            918,
+            919
+          ],
+          [
+            967,
+            968
+          ],
+          [
+            969,
+            971
+          ],
+          [
+            972,
+            973
+          ],
+          [
+            976,
+            977
+          ],
+          [
+            982,
+            983
+          ],
+          [
+            991.5,
+            992
+          ],
+          [
+            996.5,
+            997
+          ],
+          [
+            1065,
+            1066
+          ],
+          [
+            1078,
+            1079
+          ],
+          [
+            1089,
+            1090
+          ],
+          [
+            1241,
+            1242
+          ],
+          [
+            1248,
+            1249
+          ],
+          [
+            1252,
+            1253
+          ],
+          [
+            1429.0,
+            1430.0
+          ],
+          [
+            1436.0,
+            1440.0
+          ]
+        ]
+      },
+      "visualTwoItemMean": 91,
+      "warnings": [
+        "60도는 보정된 각도 측정이 아닌 VLM의 큰 방향 전환 추정값입니다.",
+        "초당 2프레임에서 완료 손동작과 짧은 가림이 누락될 수 있습니다.",
+        "양손목 관찰률 자체도 사람 정답으로 검증되지 않았습니다.",
+        "발표 관련성에는 음성 전사가 제공되지 않았습니다.",
+        "양손목을 영상의 50% 이상 함께 관찰할 수 없어 제스처 점수 해석에 주의가 필요합니다. 화면 밖 자체는 감점하지 않았습니다.",
+        "모델 출력 실패 4구간은 행동 없음으로 간주하지 않았습니다. 점수는 관찰된 감점만 반영합니다.",
+        "2개 구간에서 손동작 종료가 같은 모델의 양손 정지 후보 안에 있어 제스처 사건의 일관성이 부족합니다. 임시 점수에는 두 출력을 모두 반영했습니다.",
+        "동일 영상에서 모델별 완료 손동작 수가 크게 다릅니다. 사람 정답 없이 과다·과소 계수 여부를 확정할 수 없습니다."
+      ]
+    },
+    "qwen_criteria": {
+      "model": "qwen_criteria",
+      "validWindows": 72,
+      "totalWindows": 75,
+      "failures": [
+        {
+          "windowId": "020",
+          "reason": "interval outside window"
+        },
+        {
+          "windowId": "025",
+          "reason": "interval outside window"
+        },
+        {
+          "windowId": "051",
+          "reason": "missing or extra keys"
+        }
+      ],
+      "semanticIssues": [
+        {
+          "windowId": "003",
+          "reason": "OFF_TARGET_AND_UNOBSERVABLE_OVERLAP"
+        },
+        {
+          "windowId": "005",
+          "reason": "OFF_TARGET_AND_UNOBSERVABLE_OVERLAP"
+        },
+        {
+          "windowId": "015",
+          "reason": "OFF_TARGET_AND_UNOBSERVABLE_OVERLAP"
+        },
+        {
+          "windowId": "019",
+          "reason": "OFF_TARGET_AND_UNOBSERVABLE_OVERLAP"
+        },
+        {
+          "windowId": "026",
+          "reason": "OFF_TARGET_AND_UNOBSERVABLE_OVERLAP"
+        },
+        {
+          "windowId": "040",
+          "reason": "OFF_TARGET_AND_UNOBSERVABLE_OVERLAP"
+        },
+        {
+          "windowId": "043",
+          "reason": "OFF_TARGET_AND_UNOBSERVABLE_OVERLAP"
+        },
+        {
+          "windowId": "048",
+          "reason": "OFF_TARGET_AND_UNOBSERVABLE_OVERLAP"
+        },
+        {
+          "windowId": "055",
+          "reason": "OFF_TARGET_AND_UNOBSERVABLE_OVERLAP"
+        },
+        {
+          "windowId": "058",
+          "reason": "OFF_TARGET_AND_UNOBSERVABLE_OVERLAP"
+        },
+        {
+          "windowId": "060",
+          "reason": "OFF_TARGET_AND_UNOBSERVABLE_OVERLAP"
+        },
+        {
+          "windowId": "063",
+          "reason": "OFF_TARGET_AND_UNOBSERVABLE_OVERLAP"
+        },
+        {
+          "windowId": "068",
+          "reason": "OFF_TARGET_AND_UNOBSERVABLE_OVERLAP"
+        },
+        {
+          "windowId": "071",
+          "reason": "OFF_TARGET_AND_UNOBSERVABLE_OVERLAP"
+        }
+      ],
+      "motionStillnessConflicts": [
+        {
+          "windowId": "006",
+          "handMotionStopSeconds": [
+            135.5
+          ]
+        },
+        {
+          "windowId": "008",
+          "handMotionStopSeconds": [
+            170.0
+          ]
+        },
+        {
+          "windowId": "011",
+          "handMotionStopSeconds": [
+            225.5
+          ]
+        },
+        {
+          "windowId": "013",
+          "handMotionStopSeconds": [
+            270.0
+          ]
+        },
+        {
+          "windowId": "022",
+          "handMotionStopSeconds": [
+            455.5,
+            457.0
+          ]
+        },
+        {
+          "windowId": "026",
+          "handMotionStopSeconds": [
+            535.5
+          ]
+        },
+        {
+          "windowId": "034",
+          "handMotionStopSeconds": [
+            681.0,
+            682.0,
+            683.0,
+            684.0,
+            685.0,
+            686.0,
+            687.0,
+            688.0,
+            689.0,
+            690.0,
+            691.0,
+            692.0,
+            693.0,
+            694.0,
+            695.0,
+            696.0,
+            697.0,
+            698.0
+          ]
+        },
+        {
+          "windowId": "040",
+          "handMotionStopSeconds": [
+            801.0,
+            802.0,
+            803.0,
+            804.0,
+            805.0,
+            806.0,
+            807.0,
+            808.0,
+            809.0,
+            810.0,
+            811.0,
+            812.0,
+            813.0
+          ]
+        },
+        {
+          "windowId": "045",
+          "handMotionStopSeconds": [
+            902.0
+          ]
+        },
+        {
+          "windowId": "067",
+          "handMotionStopSeconds": [
+            1355.5
+          ]
+        }
+      ],
+      "inferenceSeconds": 3021.66,
+      "apiCostUsdUpperBound": 0,
+      "gesture": {
+        "score": 30,
+        "rawDeduction": 265,
+        "appliedDeduction": 70,
+        "deductions": {
+          "handMotionExcess": 186,
+          "handStillness": 78,
+          "faceOcclusion": 0,
+          "unrelatedObjectTouch": 1
+        },
+        "handCoverageRatio": 0.7921,
+        "handObservableSeconds": 1177.24,
+        "handStillnessEvents": [
+          [
+            5.0,
+            14.5
+          ],
+          [
+            20.0,
+            29.5
+          ],
+          [
+            30.0,
+            39.5
+          ],
+          [
+            44.0,
+            59.5
+          ],
+          [
+            64.5,
+            69.5
+          ],
+          [
+            70.0,
+            76.5
+          ],
+          [
+            82.0,
+            87.5
+          ],
+          [
+            90.5,
+            99.5
+          ],
+          [
+            120.0,
+            125.0
+          ],
+          [
+            125.5,
+            139.5
+          ],
+          [
+            144.0,
+            159.0
+          ],
+          [
+            163.5,
+            179.5
+          ],
+          [
+            182.0,
+            189.5
+          ],
+          [
+            190.5,
+            199.5
+          ],
+          [
+            219.5,
+            231.5
+          ],
+          [
+            240.0,
+            259.5
+          ],
+          [
+            264.0,
+            279.5
+          ],
+          [
+            282.0,
+            291.5
+          ],
+          [
+            312.5,
+            319.5
+          ],
+          [
+            320.0,
+            329.5
+          ],
+          [
+            330.0,
+            339.5
+          ],
+          [
+            341.5,
+            364.0
+          ],
+          [
+            368.0,
+            393.0
+          ],
+          [
+            420.0,
+            425.0
+          ],
+          [
+            443.0,
+            459.5
+          ],
+          [
+            489.5,
+            495.5
+          ],
+          [
+            528.0,
+            539.5
+          ],
+          [
+            551.0,
+            559.0
+          ],
+          [
+            600.0,
+            605.0
+          ],
+          [
+            612.0,
+            625.0
+          ],
+          [
+            627.5,
+            632.5
+          ],
+          [
+            660.0,
+            669.5
+          ],
+          [
+            670.0,
+            676.0
+          ],
+          [
+            680.0,
+            699.5
+          ],
+          [
+            720.0,
+            731.0
+          ],
+          [
+            731.5,
+            739.5
+          ],
+          [
+            740.0,
+            757.5
+          ],
+          [
+            761.0,
+            769.0
+          ],
+          [
+            770.0,
+            779.5
+          ],
+          [
+            785.5,
+            799.5
+          ],
+          [
+            800.0,
+            814.0
+          ],
+          [
+            819.0,
+            825.5
+          ],
+          [
+            828.0,
+            839.5
+          ],
+          [
+            840.0,
+            846.0
+          ],
+          [
+            849.5,
+            859.5
+          ],
+          [
+            860.0,
+            866.0
+          ],
+          [
+            866.5,
+            879.5
+          ],
+          [
+            880.0,
+            889.0
+          ],
+          [
+            890.0,
+            899.0
+          ],
+          [
+            900.0,
+            915.0
+          ],
+          [
+            919.0,
+            928.5
+          ],
+          [
+            954.0,
+            959.5
+          ],
+          [
+            1002.0,
+            1010.0
+          ],
+          [
+            1013.5,
+            1020.0
+          ],
+          [
+            1040.0,
+            1051.0
+          ],
+          [
+            1053.0,
+            1059.5
+          ],
+          [
+            1060.0,
+            1065.5
+          ],
+          [
+            1070.0,
+            1079.5
+          ],
+          [
+            1081.5,
+            1099.5
+          ],
+          [
+            1111.0,
+            1117.0
+          ],
+          [
+            1128.0,
+            1139.5
+          ],
+          [
+            1143.0,
+            1149.5
+          ],
+          [
+            1150.0,
+            1159.5
+          ],
+          [
+            1160.0,
+            1175.5
+          ],
+          [
+            1181.0,
+            1199.5
+          ],
+          [
+            1200.0,
+            1208.0
+          ],
+          [
+            1210.0,
+            1219.0
+          ],
+          [
+            1244.5,
+            1259.5
+          ],
+          [
+            1286.0,
+            1297.0
+          ],
+          [
+            1300.0,
+            1311.0
+          ],
+          [
+            1312.0,
+            1319.5
+          ],
+          [
+            1327.0,
+            1339.5
+          ],
+          [
+            1341.0,
+            1359.5
+          ],
+          [
+            1360.0,
+            1371.0
+          ],
+          [
+            1374.5,
+            1381.0
+          ],
+          [
+            1399.0,
+            1416.0
+          ],
+          [
+            1461.0,
+            1479.5
+          ],
+          [
+            1480.0,
+            1486.24
+          ]
+        ],
+        "faceOcclusionEvents": [],
+        "unrelatedObjectTouchEvents": [
+          {
+            "startSec": 232.0,
+            "endSec": 235.0,
+            "objectLabel": "cup",
+            "reason": "touching unrelated object"
+          }
+        ],
+        "minuteMotionCounts": [
+          {
+            "startSec": 0,
+            "endSec": 60,
+            "handMotionCount": 7,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 60,
+            "endSec": 120,
+            "handMotionCount": 19,
+            "allowedCount": 8,
+            "excessCount": 11
+          },
+          {
+            "startSec": 120,
+            "endSec": 180,
+            "handMotionCount": 22,
+            "allowedCount": 8,
+            "excessCount": 14
+          },
+          {
+            "startSec": 180,
+            "endSec": 240,
+            "handMotionCount": 24,
+            "allowedCount": 8,
+            "excessCount": 16
+          },
+          {
+            "startSec": 240,
+            "endSec": 300,
+            "handMotionCount": 23,
+            "allowedCount": 8,
+            "excessCount": 15
+          },
+          {
+            "startSec": 300,
+            "endSec": 360,
+            "handMotionCount": 26,
+            "allowedCount": 8,
+            "excessCount": 18
+          },
+          {
+            "startSec": 360,
+            "endSec": 420,
+            "handMotionCount": 8,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 420,
+            "endSec": 480,
+            "handMotionCount": 13,
+            "allowedCount": 8,
+            "excessCount": 5
+          },
+          {
+            "startSec": 480,
+            "endSec": 540,
+            "handMotionCount": 9,
+            "allowedCount": 8,
+            "excessCount": 1
+          },
+          {
+            "startSec": 540,
+            "endSec": 600,
+            "handMotionCount": 16,
+            "allowedCount": 8,
+            "excessCount": 8
+          },
+          {
+            "startSec": 600,
+            "endSec": 660,
+            "handMotionCount": 14,
+            "allowedCount": 8,
+            "excessCount": 6
+          },
+          {
+            "startSec": 660,
+            "endSec": 720,
+            "handMotionCount": 28,
+            "allowedCount": 8,
+            "excessCount": 20
+          },
+          {
+            "startSec": 720,
+            "endSec": 780,
+            "handMotionCount": 6,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 780,
+            "endSec": 840,
+            "handMotionCount": 19,
+            "allowedCount": 8,
+            "excessCount": 11
+          },
+          {
+            "startSec": 840,
+            "endSec": 900,
+            "handMotionCount": 9,
+            "allowedCount": 8,
+            "excessCount": 1
+          },
+          {
+            "startSec": 900,
+            "endSec": 960,
+            "handMotionCount": 10,
+            "allowedCount": 8,
+            "excessCount": 2
+          },
+          {
+            "startSec": 960,
+            "endSec": 1020,
+            "handMotionCount": 20,
+            "allowedCount": 8,
+            "excessCount": 12
+          },
+          {
+            "startSec": 1020,
+            "endSec": 1080,
+            "handMotionCount": 6,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 1080,
+            "endSec": 1140,
+            "handMotionCount": 30,
+            "allowedCount": 8,
+            "excessCount": 22
+          },
+          {
+            "startSec": 1140,
+            "endSec": 1200,
+            "handMotionCount": 8,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 1200,
+            "endSec": 1260,
+            "handMotionCount": 11,
+            "allowedCount": 8,
+            "excessCount": 3
+          },
+          {
+            "startSec": 1260,
+            "endSec": 1320,
+            "handMotionCount": 14,
+            "allowedCount": 8,
+            "excessCount": 6
+          },
+          {
+            "startSec": 1320,
+            "endSec": 1380,
+            "handMotionCount": 6,
+            "allowedCount": 8,
+            "excessCount": 0
+          },
+          {
+            "startSec": 1380,
+            "endSec": 1440,
+            "handMotionCount": 15,
+            "allowedCount": 8,
+            "excessCount": 7
+          },
+          {
+            "startSec": 1440,
+            "endSec": 1486.24,
+            "handMotionCount": 14,
+            "allowedCount": 6,
+            "excessCount": 8
+          }
+        ]
+      },
+      "gaze": {
+        "score": 30,
+        "observableSeconds": 1373.24,
+        "unobservableSeconds": 113.0,
+        "coverageRatio": 0.924,
+        "offTargetSeconds": 310.24,
+        "offTargetRatio": 0.2259,
+        "offTargetIntervals": [
+          [
+            3.0,
+            3.5
+          ],
+          [
+            13.5,
+            14.5
+          ],
+          [
+            27.5,
+            28.5
+          ],
+          [
+            39.0,
+            39.5
+          ],
+          [
+            42.0,
+            42.5
+          ],
+          [
+            46.5,
+            47.0
+          ],
+          [
+            54.0,
+            54.5
+          ],
+          [
+            65.0,
+            69.5
+          ],
+          [
+            77.0,
+            79.5
+          ],
+          [
+            87.5,
+            90.5
+          ],
+          [
+            91.5,
+            92.5
+          ],
+          [
+            93.5,
+            94.5
+          ],
+          [
+            120.0,
+            121.0
+          ],
+          [
+            130.5,
+            131.5
+          ],
+          [
+            143.5,
+            159.0
+          ],
+          [
+            161.0,
+            161.5
+          ],
+          [
+            165.0,
+            166.0
+          ],
+          [
+            169.0,
+            170.0
+          ],
+          [
+            173.0,
+            174.0
+          ],
+          [
+            180.0,
+            182.0
+          ],
+          [
+            193.0,
+            193.5
+          ],
+          [
+            231.5,
+            235.0
+          ],
+          [
+            238.5,
+            239.5
+          ],
+          [
+            245.5,
+            246.5
+          ],
+          [
+            252.5,
+            255.0
+          ],
+          [
+            262.0,
+            264.0
+          ],
+          [
+            265.5,
+            279.5
+          ],
+          [
+            322.5,
+            323.5
+          ],
+          [
+            330.5,
+            331.5
+          ],
+          [
+            343.5,
+            344.5
+          ],
+          [
+            364.0,
+            368.0
+          ],
+          [
+            373.0,
+            375.0
+          ],
+          [
+            378.0,
+            380.0
+          ],
+          [
+            425.0,
+            429.0
+          ],
+          [
+            435.0,
+            439.5
+          ],
+          [
+            441.0,
+            442.5
+          ],
+          [
+            446.5,
+            448.0
+          ],
+          [
+            451.5,
+            453.0
+          ],
+          [
+            460.0,
+            461.0
+          ],
+          [
+            466.5,
+            469.0
+          ],
+          [
+            472.5,
+            476.0
+          ],
+          [
+            479.5,
+            480.0
+          ],
+          [
+            487.0,
+            489.0
+          ],
+          [
+            493.5,
+            495.0
+          ],
+          [
+            525.5,
+            528.0
+          ],
+          [
+            540.0,
+            541.0
+          ],
+          [
+            541.5,
+            542.5
+          ],
+          [
+            549.0,
+            550.0
+          ],
+          [
+            551.0,
+            559.0
+          ],
+          [
+            562.0,
+            565.0
+          ],
+          [
+            568.5,
+            570.0
+          ],
+          [
+            571.5,
+            575.0
+          ],
+          [
+            576.5,
+            578.0
+          ],
+          [
+            579.5,
+            581.0
+          ],
+          [
+            586.5,
+            587.5
+          ],
+          [
+            588.5,
+            589.0
+          ],
+          [
+            590.5,
+            591.0
+          ],
+          [
+            592.5,
+            593.0
+          ],
+          [
+            594.5,
+            595.0
+          ],
+          [
+            596.5,
+            597.0
+          ],
+          [
+            598.0,
+            599.5
+          ],
+          [
+            605.0,
+            612.0
+          ],
+          [
+            625.0,
+            626.0
+          ],
+          [
+            632.5,
+            633.5
+          ],
+          [
+            637.0,
+            638.0
+          ],
+          [
+            641.0,
+            641.5
+          ],
+          [
+            648.5,
+            649.5
+          ],
+          [
+            652.5,
+            653.5
+          ],
+          [
+            655.5,
+            656.0
+          ],
+          [
+            659.5,
+            660.0
+          ],
+          [
+            669.5,
+            670.0
+          ],
+          [
+            679.5,
+            680.0
+          ],
+          [
+            698.0,
+            699.5
+          ],
+          [
+            702.0,
+            702.5
+          ],
+          [
+            704.5,
+            705.5
+          ],
+          [
+            709.0,
+            709.5
+          ],
+          [
+            714.0,
+            714.5
+          ],
+          [
+            717.0,
+            717.5
+          ],
+          [
+            731.0,
+            731.5
+          ],
+          [
+            757.5,
+            761.0
+          ],
+          [
+            765.0,
+            766.0
+          ],
+          [
+            769.0,
+            770.0
+          ],
+          [
+            771.0,
+            772.0
+          ],
+          [
+            775.0,
+            776.0
+          ],
+          [
+            777.0,
+            778.0
+          ],
+          [
+            785.0,
+            785.5
+          ],
+          [
+            786.0,
+            789.5
+          ],
+          [
+            790.0,
+            791.5
+          ],
+          [
+            821.0,
+            822.0
+          ],
+          [
+            826.0,
+            827.0
+          ],
+          [
+            831.0,
+            836.0
+          ],
+          [
+            846.0,
+            848.0
+          ],
+          [
+            859.0,
+            859.5
+          ],
+          [
+            886.0,
+            887.0
+          ],
+          [
+            908.0,
+            908.5
+          ],
+          [
+            915.0,
+            918.0
+          ],
+          [
+            924.5,
+            927.0
+          ],
+          [
+            933.0,
+            939.5
+          ],
+          [
+            944.5,
+            945.0
+          ],
+          [
+            946.5,
+            947.0
+          ],
+          [
+            949.5,
+            950.0
+          ],
+          [
+            951.5,
+            952.0
+          ],
+          [
+            953.5,
+            954.0
+          ],
+          [
+            956.5,
+            957.0
+          ],
+          [
+            967.0,
+            967.5
+          ],
+          [
+            981.5,
+            988.0
+          ],
+          [
+            992.0,
+            992.5
+          ],
+          [
+            1001.5,
+            1002.0
+          ],
+          [
+            1003.5,
+            1020.0
+          ],
+          [
+            1042.0,
+            1043.5
+          ],
+          [
+            1051.0,
+            1052.5
+          ],
+          [
+            1059.0,
+            1059.5
+          ],
+          [
+            1065.5,
+            1066.5
+          ],
+          [
+            1068.0,
+            1069.5
+          ],
+          [
+            1078.5,
+            1079.5
+          ],
+          [
+            1080.0,
+            1081.0
+          ],
+          [
+            1081.5,
+            1099.5
+          ],
+          [
+            1101.0,
+            1102.0
+          ],
+          [
+            1110.0,
+            1111.0
+          ],
+          [
+            1120.0,
+            1121.0
+          ],
+          [
+            1128.5,
+            1139.5
+          ],
+          [
+            1142.0,
+            1142.5
+          ],
+          [
+            1145.5,
+            1147.0
+          ],
+          [
+            1152.0,
+            1153.0
+          ],
+          [
+            1175.5,
+            1176.0
+          ],
+          [
+            1180.0,
+            1181.0
+          ],
+          [
+            1188.0,
+            1189.5
+          ],
+          [
+            1208.0,
+            1209.0
+          ],
+          [
+            1225.0,
+            1239.5
+          ],
+          [
+            1241.5,
+            1244.0
+          ],
+          [
+            1247.5,
+            1249.0
+          ],
+          [
+            1252.0,
+            1254.5
+          ],
+          [
+            1280.0,
+            1281.0
+          ],
+          [
+            1297.0,
+            1298.0
+          ],
+          [
+            1307.0,
+            1309.0
+          ],
+          [
+            1315.0,
+            1317.0
+          ],
+          [
+            1324.0,
+            1329.0
+          ],
+          [
+            1339.0,
+            1339.5
+          ],
+          [
+            1340.0,
+            1341.0
+          ],
+          [
+            1346.0,
+            1347.0
+          ],
+          [
+            1351.0,
+            1352.0
+          ],
+          [
+            1381.5,
+            1382.0
+          ],
+          [
+            1384.5,
+            1385.0
+          ],
+          [
+            1387.5,
+            1388.0
+          ],
+          [
+            1389.0,
+            1390.0
+          ],
+          [
+            1392.0,
+            1393.0
+          ],
+          [
+            1395.0,
+            1396.0
+          ],
+          [
+            1398.0,
+            1399.0
+          ],
+          [
+            1405.0,
+            1405.5
+          ],
+          [
+            1408.5,
+            1409.5
+          ],
+          [
+            1429.0,
+            1429.5
+          ],
+          [
+            1441.5,
+            1442.0
+          ],
+          [
+            1444.5,
+            1445.0
+          ],
+          [
+            1447.0,
+            1447.5
+          ],
+          [
+            1449.5,
+            1450.0
+          ],
+          [
+            1452.5,
+            1453.0
+          ],
+          [
+            1455.0,
+            1455.5
+          ],
+          [
+            1457.5,
+            1458.0
+          ],
+          [
+            1459.5,
+            1461.0
+          ],
+          [
+            1468.0,
+            1469.0
+          ],
+          [
+            1484.5,
+            1486.24
+          ]
+        ]
+      },
+      "visualTwoItemMean": 30,
+      "warnings": [
+        "60도는 보정된 각도 측정이 아닌 VLM의 큰 방향 전환 추정값입니다.",
+        "초당 2프레임에서 완료 손동작과 짧은 가림이 누락될 수 있습니다.",
+        "양손목 관찰률 자체도 사람 정답으로 검증되지 않았습니다.",
+        "발표 관련성에는 음성 전사가 제공되지 않았습니다.",
+        "모델 출력 실패 3구간은 행동 없음으로 간주하지 않았습니다. 점수는 관찰된 감점만 반영합니다.",
+        "모델 출력의 관찰 조건 충돌 14건은 집계에서 보수적으로 제외·조정했습니다.",
+        "10개 구간에서 손동작 종료가 같은 모델의 양손 정지 후보 안에 있어 제스처 사건의 일관성이 부족합니다. 임시 점수에는 두 출력을 모두 반영했습니다.",
+        "총 원감점 265점이 70점 상한에 도달해 제스처는 최저 30점입니다. 상한을 넘는 행동 차이는 점수에 나타나지 않습니다.",
+        "동일 영상에서 모델별 완료 손동작 수가 크게 다릅니다. 사람 정답 없이 과다·과소 계수 여부를 확정할 수 없습니다."
+      ]
+    }
+  }
+}

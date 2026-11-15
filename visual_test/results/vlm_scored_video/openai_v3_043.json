@@ -1,0 +1,83 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 12.458508749987232,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 352,
+    "output_tokens_details": {
+      "reasoning_tokens": 175
+    },
+    "total_tokens": 5153
+  },
+  "costUsdUpperBound": 0.013122,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[860,866.5],[870.5,880]],\"bothWristsStillCandidateIntervals\":[[863,864.5],[865.5,866],[871,871.5],[873.5,874.5],[875.5,876],[876.5,880]],\"handMotionStopSeconds\":[863,865.5,871,873.5,875.5,876.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[860,860.5],[868.5,872.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is approximate at 0.5-second sampling resolution.\",\"Hands leave the frame during the forward lean; object contact and wrist motion there cannot be determined.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        860,
+        866.5
+      ],
+      [
+        870.5,
+        880
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        863,
+        864.5
+      ],
+      [
+        865.5,
+        866
+      ],
+      [
+        871,
+        871.5
+      ],
+      [
+        873.5,
+        874.5
+      ],
+      [
+        875.5,
+        876
+      ],
+      [
+        876.5,
+        880
+      ]
+    ],
+    "handMotionStopSeconds": [
+      863,
+      865.5,
+      871,
+      873.5,
+      875.5,
+      876.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        860,
+        860.5
+      ],
+      [
+        868.5,
+        872.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is approximate at 0.5-second sampling resolution.",
+      "Hands leave the frame during the forward lean; object contact and wrist motion there cannot be determined."
+    ]
+  },
+  "status": "OK"
+}

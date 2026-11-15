@@ -1,0 +1,119 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 44.454665333003504,
+  "inputTokens": 4457,
+  "outputTokens": 546,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [960.0, 962.5],\n    [964.0, 966.5],\n    [968.0, 969.0],\n    [971.5, 972.5],\n    [973.0, 975.5],\n    [978.0, 979.5]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [960.0, 962.5],\n    [964.0, 966.5],\n    [968.0, 969.0],\n    [971.5, 972.5],\n    [973.0, 975.5],\n    [978.0, 979.5]\n  ],\n  \"handMotionStopSeconds\": [\n    962.5,\n    964.0,\n    966.5,\n    968.0,\n    971.5,\n    973.0,\n    975.5,\n    978.0\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [967.0, 967.5],\n    [968.5, 969.5],\n    [971.0, 971.5],\n    [972.0, 972.5],\n    [976.0, 977.5]\n  ],\n  \"gazeUnobservableIntervals\": [\n    [968.5, 969.5],\n    [971.0, 971.5],\n    [972.0, 972.5],\n    [976.0, 977.5]\n  ],\n  \"limitations\": [\n    \"Hand motion stop detection relies on visible hand position changes; occlusions may cause missed stops.\",\n    \"Head direction is inferred from body orientation and head position, not precise eye gaze.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        960.0,
+        962.5
+      ],
+      [
+        964.0,
+        966.5
+      ],
+      [
+        968.0,
+        969.0
+      ],
+      [
+        971.5,
+        972.5
+      ],
+      [
+        973.0,
+        975.5
+      ],
+      [
+        978.0,
+        979.5
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        960.0,
+        962.5
+      ],
+      [
+        964.0,
+        966.5
+      ],
+      [
+        968.0,
+        969.0
+      ],
+      [
+        971.5,
+        972.5
+      ],
+      [
+        973.0,
+        975.5
+      ],
+      [
+        978.0,
+        979.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      962.5,
+      964.0,
+      966.5,
+      968.0,
+      971.5,
+      973.0,
+      975.5,
+      978.0
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        967.0,
+        967.5
+      ],
+      [
+        968.5,
+        969.5
+      ],
+      [
+        971.0,
+        971.5
+      ],
+      [
+        972.0,
+        972.5
+      ],
+      [
+        976.0,
+        977.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [
+      [
+        968.5,
+        969.5
+      ],
+      [
+        971.0,
+        971.5
+      ],
+      [
+        972.0,
+        972.5
+      ],
+      [
+        976.0,
+        977.5
+      ]
+    ],
+    "limitations": [
+      "Hand motion stop detection relies on visible hand position changes; occlusions may cause missed stops.",
+      "Head direction is inferred from body orientation and head position, not precise eye gaze."
+    ]
+  },
+  "status": "OK"
+}

@@ -1,0 +1,96 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 10.779412499978207,
+  "usage": {
+    "input_tokens": 4843,
+    "input_tokens_details": {
+      "cache_write_tokens": 4840,
+      "cached_tokens": 0
+    },
+    "output_tokens": 282,
+    "output_tokens_details": {
+      "reasoning_tokens": 58
+    },
+    "total_tokens": 5125
+  },
+  "costUsdUpperBound": 0.012506,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[1460,1465],[1465.5,1472],[1472.5,1479],[1479.5,1480]],\"bothWristsStillCandidateIntervals\":[[1461.5,1463],[1463.5,1464],[1465.5,1466.5],[1467,1467.5],[1469.5,1471],[1472.5,1476],[1477,1478.5],[1479.5,1480]],\"handMotionStopSeconds\":[1461.5,1463.5,1465.5,1469.5,1472.5,1477,1479.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[1468,1468.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits motion-stop timing and may miss brief events.\",\"Sleeve cuffs and overlapping hands reduce wrist-joint precision.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1460,
+        1465
+      ],
+      [
+        1465.5,
+        1472
+      ],
+      [
+        1472.5,
+        1479
+      ],
+      [
+        1479.5,
+        1480
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1461.5,
+        1463
+      ],
+      [
+        1463.5,
+        1464
+      ],
+      [
+        1465.5,
+        1466.5
+      ],
+      [
+        1467,
+        1467.5
+      ],
+      [
+        1469.5,
+        1471
+      ],
+      [
+        1472.5,
+        1476
+      ],
+      [
+        1477,
+        1478.5
+      ],
+      [
+        1479.5,
+        1480
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1461.5,
+      1463.5,
+      1465.5,
+      1469.5,
+      1472.5,
+      1477,
+      1479.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1468,
+        1468.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits motion-stop timing and may miss brief events.",
+      "Sleeve cuffs and overlapping hands reduce wrist-joint precision."
+    ]
+  },
+  "status": "OK"
+}

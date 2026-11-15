@@ -1,0 +1,38 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.566575000004377,
+  "elapsedSeconds": 26.63072899999679,
+  "inputTokens": 4346,
+  "outputTokens": 116,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\":[[1085,1100]],\n\"bothWristsStillCandidateIntervals\":[[1085,1100]],\n\"handMotionStopSeconds\":[1085,1090,1098],\n\"faceCoverEvents\":[],\n\"unrelatedObjectTouchEvents\":[],\n\"headOffTargetIntervals\":[[1089,1090]],\n\"gazeUnobservableIntervals\":[],\n\"limitations\":[]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1085,
+        1100
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1085,
+        1100
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1085,
+      1090,
+      1098
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1089,
+        1090
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": []
+  },
+  "status": "OK"
+}

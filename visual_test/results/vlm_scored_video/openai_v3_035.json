@@ -1,0 +1,78 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 10.423486999992747,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 294,
+    "output_tokens_details": {
+      "reasoning_tokens": 128
+    },
+    "total_tokens": 5095
+  },
+  "costUsdUpperBound": 0.012542,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[702.5,720]],\"bothWristsStillCandidateIntervals\":[[702.5,704],[706,709],[710,710.5],[711.5,713.5],[718.5,720]],\"handMotionStopSeconds\":[702.5,706,710,711.5,718.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[700,702.5],[702.5,703.5],[712,713]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Wrists are cropped or not both locatable before 702.5 seconds.\",\"Half-second sampling limits motion-stop and interval precision; head direction is not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        702.5,
+        720
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        702.5,
+        704
+      ],
+      [
+        706,
+        709
+      ],
+      [
+        710,
+        710.5
+      ],
+      [
+        711.5,
+        713.5
+      ],
+      [
+        718.5,
+        720
+      ]
+    ],
+    "handMotionStopSeconds": [
+      702.5,
+      706,
+      710,
+      711.5,
+      718.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        700,
+        702.5
+      ],
+      [
+        702.5,
+        703.5
+      ],
+      [
+        712,
+        713
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Wrists are cropped or not both locatable before 702.5 seconds.",
+      "Half-second sampling limits motion-stop and interval precision; head direction is not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

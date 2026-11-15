@@ -1,0 +1,76 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 11.79239904199494,
+  "usage": {
+    "input_tokens": 4824,
+    "input_tokens_details": {
+      "cache_write_tokens": 4821,
+      "cached_tokens": 0
+    },
+    "output_tokens": 279,
+    "output_tokens_details": {
+      "reasoning_tokens": 107
+    },
+    "total_tokens": 5103
+  },
+  "costUsdUpperBound": 0.012438,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[120,140]],\"bothWristsStillCandidateIntervals\":[[120,120.5],[122.5,124.5],[125.5,127],[127,128],[129,130],[136,140]],\"handMotionStopSeconds\":[122.5,125.5,127,129,136],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetEvents\":[{\"startSec\":120.5,\"endSec\":121.5,\"reason\":\"PRESENTATION_SCREEN\"}],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits event timing and detection of brief movements.\",\"Wrist locations are estimated at sleeve cuffs; subtle finger adjustments are not treated as wrist motion.\",\"Head direction is not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        120,
+        140
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        120,
+        120.5
+      ],
+      [
+        122.5,
+        124.5
+      ],
+      [
+        125.5,
+        127
+      ],
+      [
+        127,
+        128
+      ],
+      [
+        129,
+        130
+      ],
+      [
+        136,
+        140
+      ]
+    ],
+    "handMotionStopSeconds": [
+      122.5,
+      125.5,
+      127,
+      129,
+      136
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetEvents": [
+      {
+        "startSec": 120.5,
+        "endSec": 121.5,
+        "reason": "PRESENTATION_SCREEN"
+      }
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits event timing and detection of brief movements.",
+      "Wrist locations are estimated at sleeve cuffs; subtle finger adjustments are not treated as wrist motion.",
+      "Head direction is not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

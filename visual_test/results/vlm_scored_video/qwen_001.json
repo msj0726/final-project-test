@@ -1,0 +1,224 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.701749583007768,
+  "elapsedSeconds": 60.108856667007785,
+  "inputTokens": 4281,
+  "outputTokens": 937,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [20.0, 20.5],\n    [20.5, 21.0],\n    [21.0, 21.5],\n    [21.5, 22.0],\n    [22.0, 22.5],\n    [22.5, 23.0],\n    [23.0, 23.5],\n    [23.5, 24.0],\n    [24.0, 24.5],\n    [24.5, 25.0],\n    [25.0, 25.5],\n    [25.5, 26.0],\n    [26.0, 26.5],\n    [26.5, 27.0],\n    [27.0, 27.5],\n    [27.5, 28.0],\n    [28.0, 28.5],\n    [28.5, 29.0],\n    [29.0, 29.5],\n    [29.5, 30.0],\n    [30.0, 30.5],\n    [30.5, 31.0],\n    [31.0, 31.5],\n    [31.5, 32.0],\n    [32.0, 32.5],\n    [32.5, 33.0],\n    [33.0, 33.5],\n    [33.5, 34.0],\n    [34.0, 34.5],\n    [34.5, 35.0],\n    [35.0, 35.5],\n    [35.5, 36.0],\n    [36.0, 36.5],\n    [36.5, 37.0],\n    [37.0, 37.5],\n    [37.5, 38.0],\n    [38.0, 38.5],\n    [38.5, 39.0],\n    [39.0, 39.5]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [21.0, 24.0],\n    [29.0, 31.0],\n    [37.5, 39.0]\n  ],\n  \"handMotionStopSeconds\": [\n    21.0,\n    29.0,\n    37.5\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetEvents\": [\n    {\n      \"startSec\": 24.0,\n      \"endSec\": 25.0,\n      \"reason\": \"DOWN\"\n    },\n    {\n      \"startSec\": 25.0,\n      \"endSec\": 26.0,\n      \"reason\": \"DOWN\"\n    },\n    {\n      \"startSec\": 26.0,\n      \"endSec\": 27.0,\n      \"reason\": \"DOWN\"\n    },\n    {\n      \"startSec\": 27.0,\n      \"endSec\": 28.0,\n      \"reason\": \"PRESENTATION_SCREEN\"\n    },\n    {\n      \"startSec\": 28.0,\n      \"endSec\": 28.5,\n      \"reason\": \"PRESENTATION_SCREEN\"\n    },\n    {\n      \"startSec\": 39.0,\n      \"endSec\": 39.5,\n      \"reason\": \"PRESENTATION_SCREEN\"\n    }\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"limitations\": []\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        20.0,
+        20.5
+      ],
+      [
+        20.5,
+        21.0
+      ],
+      [
+        21.0,
+        21.5
+      ],
+      [
+        21.5,
+        22.0
+      ],
+      [
+        22.0,
+        22.5
+      ],
+      [
+        22.5,
+        23.0
+      ],
+      [
+        23.0,
+        23.5
+      ],
+      [
+        23.5,
+        24.0
+      ],
+      [
+        24.0,
+        24.5
+      ],
+      [
+        24.5,
+        25.0
+      ],
+      [
+        25.0,
+        25.5
+      ],
+      [
+        25.5,
+        26.0
+      ],
+      [
+        26.0,
+        26.5
+      ],
+      [
+        26.5,
+        27.0
+      ],
+      [
+        27.0,
+        27.5
+      ],
+      [
+        27.5,
+        28.0
+      ],
+      [
+        28.0,
+        28.5
+      ],
+      [
+        28.5,
+        29.0
+      ],
+      [
+        29.0,
+        29.5
+      ],
+      [
+        29.5,
+        30.0
+      ],
+      [
+        30.0,
+        30.5
+      ],
+      [
+        30.5,
+        31.0
+      ],
+      [
+        31.0,
+        31.5
+      ],
+      [
+        31.5,
+        32.0
+      ],
+      [
+        32.0,
+        32.5
+      ],
+      [
+        32.5,
+        33.0
+      ],
+      [
+        33.0,
+        33.5
+      ],
+      [
+        33.5,
+        34.0
+      ],
+      [
+        34.0,
+        34.5
+      ],
+      [
+        34.5,
+        35.0
+      ],
+      [
+        35.0,
+        35.5
+      ],
+      [
+        35.5,
+        36.0
+      ],
+      [
+        36.0,
+        36.5
+      ],
+      [
+        36.5,
+        37.0
+      ],
+      [
+        37.0,
+        37.5
+      ],
+      [
+        37.5,
+        38.0
+      ],
+      [
+        38.0,
+        38.5
+      ],
+      [
+        38.5,
+        39.0
+      ],
+      [
+        39.0,
+        39.5
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        21.0,
+        24.0
+      ],
+      [
+        29.0,
+        31.0
+      ],
+      [
+        37.5,
+        39.0
+      ]
+    ],
+    "handMotionStopSeconds": [
+      21.0,
+      29.0,
+      37.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetEvents": [
+      {
+        "startSec": 24.0,
+        "endSec": 25.0,
+        "reason": "DOWN"
+      },
+      {
+        "startSec": 25.0,
+        "endSec": 26.0,
+        "reason": "DOWN"
+      },
+      {
+        "startSec": 26.0,
+        "endSec": 27.0,
+        "reason": "DOWN"
+      },
+      {
+        "startSec": 27.0,
+        "endSec": 28.0,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 28.0,
+        "endSec": 28.5,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 39.0,
+        "endSec": 39.5,
+        "reason": "PRESENTATION_SCREEN"
+      }
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": []
+  },
+  "status": "OK"
+}

@@ -1,0 +1,80 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 39.972770583000965,
+  "inputTokens": 4499,
+  "outputTokens": 405,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [1100.0, 1102.0],\n    [1103.0, 1105.0],\n    [1108.0, 1110.0],\n    [1111.0, 1117.0]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [1100.0, 1102.0],\n    [1103.0, 1105.0],\n    [1108.0, 1110.0],\n    [1111.0, 1117.0]\n  ],\n  \"handMotionStopSeconds\": [\n    1102.0,\n    1105.0,\n    1108.0,\n    1110.0,\n    1117.0\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [1101.0, 1102.0],\n    [1110.0, 1111.0],\n    [1117.0, 1120.0]\n  ],\n  \"gazeUnobservableIntervals\": [\n    [1117.0, 1120.0]\n  ],\n  \"limitations\": [\n    \"Hand motion stop detection relies on visible hand position changes between frames; continuous motion may be underestimated.\",\n    \"Head direction is inferred from body orientation and head position, not precise eye tracking.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1100.0,
+        1102.0
+      ],
+      [
+        1103.0,
+        1105.0
+      ],
+      [
+        1108.0,
+        1110.0
+      ],
+      [
+        1111.0,
+        1117.0
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1100.0,
+        1102.0
+      ],
+      [
+        1103.0,
+        1105.0
+      ],
+      [
+        1108.0,
+        1110.0
+      ],
+      [
+        1111.0,
+        1117.0
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1102.0,
+      1105.0,
+      1108.0,
+      1110.0,
+      1117.0
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1101.0,
+        1102.0
+      ],
+      [
+        1110.0,
+        1111.0
+      ],
+      [
+        1117.0,
+        1120.0
+      ]
+    ],
+    "gazeUnobservableIntervals": [
+      [
+        1117.0,
+        1120.0
+      ]
+    ],
+    "limitations": [
+      "Hand motion stop detection relies on visible hand position changes between frames; continuous motion may be underestimated.",
+      "Head direction is inferred from body orientation and head position, not precise eye tracking."
+    ]
+  },
+  "status": "OK"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.566575000004377,
+  "elapsedSeconds": 26.96819970800425,
+  "inputTokens": 4304,
+  "outputTokens": 129,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\":[],\n\"bothWristsStillCandidateIntervals\":[],\n\"handMotionStopSeconds\":[],\n\"faceCoverEvents\":[],\n\"unrelatedObjectTouchEvents\":[],\n\"headOffTargetIntervals\":[],\n\"gazeUnobservableIntervals\":[],\n\"limitations\":[ \"Wrist joints are not clearly visible in the provided frames, preventing the identification of both wrists.\", \"Hand movements are continuous and expressive throughout the window, with no distinct stop points observed.\", \"The presenter's head remains consistently facing forward towards the audience, with no significant off-target intervals.\"]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillCandidateIntervals": [],
+    "handMotionStopSeconds": [],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Wrist joints are not clearly visible in the provided frames, preventing the identification of both wrists.",
+      "Hand movements are continuous and expressive throughout the window, with no distinct stop points observed.",
+      "The presenter's head remains consistently facing forward towards the audience, with no significant off-target intervals."
+    ]
+  },
+  "status": "OK"
+}

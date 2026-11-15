@@ -1,0 +1,81 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 15.153744875016855,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 288,
+    "output_tokens_details": {
+      "reasoning_tokens": 129
+    },
+    "total_tokens": 5089
+  },
+  "costUsdUpperBound": 0.012482,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[780,791],[791.5,800]],\"bothWristsStillCandidateIntervals\":[[781.5,784.5],[786,789],[794,797],[797.5,800]],\"handMotionStopSeconds\":[781.5,786,794,797.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[780,781],[786,787.5],[789.5,790],[796.5,797]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits stop timing and may miss brief events.\",\"Overlapping hands obscure one wrist around 791 seconds; head direction is not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        780,
+        791
+      ],
+      [
+        791.5,
+        800
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        781.5,
+        784.5
+      ],
+      [
+        786,
+        789
+      ],
+      [
+        794,
+        797
+      ],
+      [
+        797.5,
+        800
+      ]
+    ],
+    "handMotionStopSeconds": [
+      781.5,
+      786,
+      794,
+      797.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        780,
+        781
+      ],
+      [
+        786,
+        787.5
+      ],
+      [
+        789.5,
+        790
+      ],
+      [
+        796.5,
+        797
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits stop timing and may miss brief events.",
+      "Overlapping hands obscure one wrist around 791 seconds; head direction is not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

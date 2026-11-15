@@ -1,0 +1,24 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.566575000004377,
+  "elapsedSeconds": 28.560291415982647,
+  "inputTokens": 4304,
+  "outputTokens": 170,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\":[],\n\"bothWristsStillCandidateIntervals\":[],\n\"handMotionStopSeconds\":[],\n\"faceCoverEvents\":[],\n\"unrelatedObjectTouchEvents\":[],\n\"headOffTargetIntervals\":[],\n\"gazeUnobservableIntervals\":[],\n\"limitations\":[ \"Wrist joints not detectable in frames 760.0-760.5; both wrists visible only from 761.0 onwards.\", \"Hand motion observed throughout the window; no clear stop point identified.\", \"Head direction shifts from frontal to off-target (screen) around 761.5s and remains off-target.\", \"Gaze direction cannot be determined from head pose alone; gazeUnobservableIntervals remains empty as face is visible.\" ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillCandidateIntervals": [],
+    "handMotionStopSeconds": [],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Wrist joints not detectable in frames 760.0-760.5; both wrists visible only from 761.0 onwards.",
+      "Hand motion observed throughout the window; no clear stop point identified.",
+      "Head direction shifts from frontal to off-target (screen) around 761.5s and remains off-target.",
+      "Gaze direction cannot be determined from head pose alone; gazeUnobservableIntervals remains empty as face is visible."
+    ]
+  },
+  "status": "OK"
+}

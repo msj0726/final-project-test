@@ -1,0 +1,92 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 8.290975417010486,
+  "usage": {
+    "input_tokens": 4843,
+    "input_tokens_details": {
+      "cache_write_tokens": 4840,
+      "cached_tokens": 0
+    },
+    "output_tokens": 265,
+    "output_tokens_details": {
+      "reasoning_tokens": 65
+    },
+    "total_tokens": 5108
+  },
+  "costUsdUpperBound": 0.012336,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[1240,1245],[1245.5,1260]],\"bothWristsStillCandidateIntervals\":[[1240,1241.5],[1243,1243.5],[1246.5,1247.5],[1249,1252],[1255,1260]],\"handMotionStopSeconds\":[1243,1246.5,1249,1255],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[1240.5,1241.5],[1247,1248.5],[1249.5,1250.5],[1251.5,1253],[1255,1255.5],[1257,1257.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Boundaries are approximate at 0.5-second sampling; head direction does not establish eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1240,
+        1245
+      ],
+      [
+        1245.5,
+        1260
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1240,
+        1241.5
+      ],
+      [
+        1243,
+        1243.5
+      ],
+      [
+        1246.5,
+        1247.5
+      ],
+      [
+        1249,
+        1252
+      ],
+      [
+        1255,
+        1260
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1243,
+      1246.5,
+      1249,
+      1255
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1240.5,
+        1241.5
+      ],
+      [
+        1247,
+        1248.5
+      ],
+      [
+        1249.5,
+        1250.5
+      ],
+      [
+        1251.5,
+        1253
+      ],
+      [
+        1255,
+        1255.5
+      ],
+      [
+        1257,
+        1257.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Boundaries are approximate at 0.5-second sampling; head direction does not establish eye gaze."
+    ]
+  },
+  "status": "OK"
+}

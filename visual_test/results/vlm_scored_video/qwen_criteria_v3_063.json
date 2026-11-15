@@ -1,0 +1,83 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 40.059268916986184,
+  "inputTokens": 4499,
+  "outputTokens": 428,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [1260.0, 1278.0],\n    [1278.5, 1280.0]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [1260.0, 1262.0],\n    [1262.5, 1265.0],\n    [1266.0, 1268.0],\n    [1268.5, 1271.0],\n    [1271.5, 1274.0],\n    [1274.5, 1277.0],\n    [1277.5, 1278.0],\n    [1278.5, 1280.0]\n  ],\n  \"handMotionStopSeconds\": [\n    1262.0,\n    1265.0,\n    1268.0,\n    1271.0,\n    1274.0,\n    1277.0,\n    1278.0,\n    1280.0\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [1278.0, 1280.0]\n  ],\n  \"gazeUnobservableIntervals\": [\n    [1278.0, 1280.0]\n  ],\n  \"limitations\": [\n    \"Hand motion stop times are inferred from visible stillness between gestures.\",\n    \"Head off-target and gaze unobservable intervals overlap due to head-down posture.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1260.0,
+        1278.0
+      ],
+      [
+        1278.5,
+        1280.0
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1260.0,
+        1262.0
+      ],
+      [
+        1262.5,
+        1265.0
+      ],
+      [
+        1266.0,
+        1268.0
+      ],
+      [
+        1268.5,
+        1271.0
+      ],
+      [
+        1271.5,
+        1274.0
+      ],
+      [
+        1274.5,
+        1277.0
+      ],
+      [
+        1277.5,
+        1278.0
+      ],
+      [
+        1278.5,
+        1280.0
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1262.0,
+      1265.0,
+      1268.0,
+      1271.0,
+      1274.0,
+      1277.0,
+      1278.0,
+      1280.0
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1278.0,
+        1280.0
+      ]
+    ],
+    "gazeUnobservableIntervals": [
+      [
+        1278.0,
+        1280.0
+      ]
+    ],
+    "limitations": [
+      "Hand motion stop times are inferred from visible stillness between gestures.",
+      "Head off-target and gaze unobservable intervals overlap due to head-down posture."
+    ]
+  },
+  "status": "OK"
+}

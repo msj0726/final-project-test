@@ -1,0 +1,7 @@
+{
+  "variant": "1fps_presenter_crop",
+  "elapsedSeconds": 40.29173599998467,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[160.0,180.0]],\"bothWristsStillCandidateIntervals\":[[166.0,179.0]],\"handMotionStopSeconds\":[166.0,171.0],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[162.0,163.0],[165.0,166.0],[169.0,170.0]],\"limitations\":[]}",
+  "status": "INVALID_OUTPUT",
+  "error": "missing or extra keys"
+}

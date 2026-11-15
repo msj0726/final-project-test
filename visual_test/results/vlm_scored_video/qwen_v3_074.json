@@ -1,0 +1,22 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.566575000004377,
+  "elapsedSeconds": 13.541010124987224,
+  "inputTokens": 1784,
+  "outputTokens": 121,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\":[],\n\"bothWristsStillCandidateIntervals\":[],\n\"handMotionStopSeconds\":[],\n\"faceCoverEvents\":[],\n\"unrelatedObjectTouchEvents\":[],\n\"headOffTargetIntervals\":[],\n\"gazeUnobservableIntervals\":[],\n\"limitations\":[\n\"Both wrists are not clearly visible in the provided frames; only one wrist is consistently observed, preventing wrist visibility and stillness detection.\",\n\"Head direction is frontal or unclear in most frames, so no off-target intervals are marked.\"\n]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillCandidateIntervals": [],
+    "handMotionStopSeconds": [],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Both wrists are not clearly visible in the provided frames; only one wrist is consistently observed, preventing wrist visibility and stillness detection.",
+      "Head direction is frontal or unclear in most frames, so no off-target intervals are marked."
+    ]
+  },
+  "status": "OK"
+}

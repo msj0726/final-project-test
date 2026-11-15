@@ -1,0 +1,86 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 10.740075374982553,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 309,
+    "output_tokens_details": {
+      "reasoning_tokens": 143
+    },
+    "total_tokens": 5110
+  },
+  "costUsdUpperBound": 0.012692,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[960,963.5],[964,968.5],[971.5,980]],\"bothWristsStillCandidateIntervals\":[[960,962.5],[964,966],[967,968],[973,974],[975,976],[978,979]],\"handMotionStopSeconds\":[964,967,973,975,978],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[968.5,973],[976,977.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is approximate at 0.5-second sampling; head direction is not verified eye gaze.\",\"Hands drop below frame near 969–971 seconds; any object contact there is unobservable.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        960,
+        963.5
+      ],
+      [
+        964,
+        968.5
+      ],
+      [
+        971.5,
+        980
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        960,
+        962.5
+      ],
+      [
+        964,
+        966
+      ],
+      [
+        967,
+        968
+      ],
+      [
+        973,
+        974
+      ],
+      [
+        975,
+        976
+      ],
+      [
+        978,
+        979
+      ]
+    ],
+    "handMotionStopSeconds": [
+      964,
+      967,
+      973,
+      975,
+      978
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        968.5,
+        973
+      ],
+      [
+        976,
+        977.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is approximate at 0.5-second sampling; head direction is not verified eye gaze.",
+      "Hands drop below frame near 969–971 seconds; any object contact there is unobservable."
+    ]
+  },
+  "status": "OK"
+}

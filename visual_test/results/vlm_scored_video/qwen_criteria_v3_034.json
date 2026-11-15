@@ -1,0 +1,58 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 38.85696312499931,
+  "inputTokens": 4457,
+  "outputTokens": 366,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [680.0, 699.5]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [680.0, 699.5]\n  ],\n  \"handMotionStopSeconds\": [\n    680.0,\n    681.0,\n    682.0,\n    683.0,\n    684.0,\n    685.0,\n    686.0,\n    687.0,\n    688.0,\n    689.0,\n    690.0,\n    691.0,\n    692.0,\n    693.0,\n    694.0,\n    695.0,\n    696.0,\n    697.0,\n    698.0,\n    699.0\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [698.0, 699.5]\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"limitations\": [\n    \"Hand motion stop detection is based on visible frame-to-frame changes; continuous motion may be under-sampled.\",\n    \"Head off-target intervals are inferred from body orientation and lack precise eye-tracking data.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        680.0,
+        699.5
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        680.0,
+        699.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      680.0,
+      681.0,
+      682.0,
+      683.0,
+      684.0,
+      685.0,
+      686.0,
+      687.0,
+      688.0,
+      689.0,
+      690.0,
+      691.0,
+      692.0,
+      693.0,
+      694.0,
+      695.0,
+      696.0,
+      697.0,
+      698.0,
+      699.0
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        698.0,
+        699.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Hand motion stop detection is based on visible frame-to-frame changes; continuous motion may be under-sampled.",
+      "Head off-target intervals are inferred from body orientation and lack precise eye-tracking data."
+    ]
+  },
+  "status": "OK"
+}

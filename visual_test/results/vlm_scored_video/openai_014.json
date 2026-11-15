@@ -1,0 +1,70 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 9.226366833987413,
+  "usage": {
+    "input_tokens": 4824,
+    "input_tokens_details": {
+      "cache_write_tokens": 4821,
+      "cached_tokens": 0
+    },
+    "output_tokens": 250,
+    "output_tokens_details": {
+      "reasoning_tokens": 101
+    },
+    "total_tokens": 5074
+  },
+  "costUsdUpperBound": 0.012148,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[280,300]],\"bothWristsStillCandidateIntervals\":[[283.5,285],[286,287],[288,289],[290.5,291.5],[296,297.5]],\"handMotionStopSeconds\":[283.5,286,288,290.5,296],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetEvents\":[{\"startSec\":280,\"endSec\":280.5,\"reason\":\"PRESENTATION_SCREEN\"}],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits timing precision and may miss brief movements; sleeve cuffs and image resolution limit wrist localization precision.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        280,
+        300
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        283.5,
+        285
+      ],
+      [
+        286,
+        287
+      ],
+      [
+        288,
+        289
+      ],
+      [
+        290.5,
+        291.5
+      ],
+      [
+        296,
+        297.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      283.5,
+      286,
+      288,
+      290.5,
+      296
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetEvents": [
+      {
+        "startSec": 280,
+        "endSec": 280.5,
+        "reason": "PRESENTATION_SCREEN"
+      }
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits timing precision and may miss brief movements; sleeve cuffs and image resolution limit wrist localization precision."
+    ]
+  },
+  "status": "OK"
+}

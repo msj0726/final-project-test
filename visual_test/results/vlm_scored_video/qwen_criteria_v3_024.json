@@ -1,0 +1,64 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 35.16596974999993,
+  "inputTokens": 4457,
+  "outputTokens": 305,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [480.0, 485.5],\n    [486.0, 499.5]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [482.0, 483.5],\n    [486.0, 487.5],\n    [489.5, 495.5],\n    [496.5, 499.5]\n  ],\n  \"handMotionStopSeconds\": [\n    483.5,\n    487.5,\n    489.5,\n    495.5,\n    496.5,\n    499.5\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [487.0, 489.0],\n    [493.5, 495.0]\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"limitations\": [\n    \"Hand motion stop detection based on visible stillness between gestures.\",\n    \"Head direction inferred from body orientation and screen interaction.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        480.0,
+        485.5
+      ],
+      [
+        486.0,
+        499.5
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        482.0,
+        483.5
+      ],
+      [
+        486.0,
+        487.5
+      ],
+      [
+        489.5,
+        495.5
+      ],
+      [
+        496.5,
+        499.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      483.5,
+      487.5,
+      489.5,
+      495.5,
+      496.5,
+      499.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        487.0,
+        489.0
+      ],
+      [
+        493.5,
+        495.0
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Hand motion stop detection based on visible stillness between gestures.",
+      "Head direction inferred from body orientation and screen interaction."
+    ]
+  },
+  "status": "OK"
+}

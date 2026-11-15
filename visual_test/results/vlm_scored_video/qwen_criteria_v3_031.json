@@ -1,0 +1,77 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 39.22328633299912,
+  "inputTokens": 4457,
+  "outputTokens": 371,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [620.0, 625.0],\n    [626.0, 627.0],\n    [627.5, 632.5],\n    [636.0, 639.5]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [620.0, 625.0],\n    [627.5, 632.5],\n    [636.0, 639.5]\n  ],\n  \"handMotionStopSeconds\": [\n    625.0,\n    626.0,\n    627.0,\n    627.5,\n    632.5,\n    636.0\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [625.0, 626.0],\n    [632.5, 633.5],\n    [637.0, 638.0]\n  ],\n  \"gazeUnobservableIntervals\": [\n    [633.5, 636.0]\n  ],\n  \"limitations\": [\n    \"Hand motion stop detection relies on visible hand/forearm movement cessation; occluded hands are not counted.\",\n    \"Head direction is inferred from body orientation and screen proximity, not precise eye tracking.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        620.0,
+        625.0
+      ],
+      [
+        626.0,
+        627.0
+      ],
+      [
+        627.5,
+        632.5
+      ],
+      [
+        636.0,
+        639.5
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        620.0,
+        625.0
+      ],
+      [
+        627.5,
+        632.5
+      ],
+      [
+        636.0,
+        639.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      625.0,
+      626.0,
+      627.0,
+      627.5,
+      632.5,
+      636.0
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        625.0,
+        626.0
+      ],
+      [
+        632.5,
+        633.5
+      ],
+      [
+        637.0,
+        638.0
+      ]
+    ],
+    "gazeUnobservableIntervals": [
+      [
+        633.5,
+        636.0
+      ]
+    ],
+    "limitations": [
+      "Hand motion stop detection relies on visible hand/forearm movement cessation; occluded hands are not counted.",
+      "Head direction is inferred from body orientation and screen proximity, not precise eye tracking."
+    ]
+  },
+  "status": "OK"
+}

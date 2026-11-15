@@ -1,0 +1,85 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 9.922581332997652,
+  "usage": {
+    "input_tokens": 4824,
+    "input_tokens_details": {
+      "cache_write_tokens": 4821,
+      "cached_tokens": 0
+    },
+    "output_tokens": 324,
+    "output_tokens_details": {
+      "reasoning_tokens": 132
+    },
+    "total_tokens": 5148
+  },
+  "costUsdUpperBound": 0.012888,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[180,200]],\"bothWristsStillCandidateIntervals\":[[180.5,181],[182.5,183.5],[184,185],[186.5,188],[191,193],[195.5,198],[199,200]],\"handMotionStopSeconds\":[180.5,182.5,184,186.5,191,195.5,199],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetEvents\":[{\"startSec\":180,\"endSec\":181.5,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":192.5,\"endSec\":194,\"reason\":\"PRESENTATION_SCREEN\"}],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits timing precision and may miss brief movements. Wrist locations are estimated at sleeve cuffs; head direction does not verify eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        180,
+        200
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        180.5,
+        181
+      ],
+      [
+        182.5,
+        183.5
+      ],
+      [
+        184,
+        185
+      ],
+      [
+        186.5,
+        188
+      ],
+      [
+        191,
+        193
+      ],
+      [
+        195.5,
+        198
+      ],
+      [
+        199,
+        200
+      ]
+    ],
+    "handMotionStopSeconds": [
+      180.5,
+      182.5,
+      184,
+      186.5,
+      191,
+      195.5,
+      199
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetEvents": [
+      {
+        "startSec": 180,
+        "endSec": 181.5,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 192.5,
+        "endSec": 194,
+        "reason": "PRESENTATION_SCREEN"
+      }
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits timing precision and may miss brief movements. Wrist locations are estimated at sleeve cuffs; head direction does not verify eye gaze."
+    ]
+  },
+  "status": "OK"
+}

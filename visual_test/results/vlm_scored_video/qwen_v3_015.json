@@ -1,0 +1,10 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.566575000004377,
+  "elapsedSeconds": 25.66564141699928,
+  "inputTokens": 4304,
+  "outputTokens": 104,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\":[],\n\"bothWristsStillCandidateIntervals\":[],\n\"handMotionStopSeconds\":[],\n\"faceCoverEvents\":[],\n\"unrelatedObjectTouchEvents\":[],\n\"headOffTargetIntervals\":[],\n\"gazeUnobservableIntervals\":[],\n\"limitations\":[\n\"Hand motion is continuous and dynamic; no clear stop points were observed.\nBoth wrists are rarely simultaneously visible; intervals are limited to brief moments.\"\n]\n}",
+  "status": "INVALID_OUTPUT",
+  "error": "Invalid control character at: line 10 column 76 (char 310)"
+}

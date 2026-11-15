@@ -1,0 +1,82 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 11.172496582992608,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 294,
+    "output_tokens_details": {
+      "reasoning_tokens": 137
+    },
+    "total_tokens": 5095
+  },
+  "costUsdUpperBound": 0.012542,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[740,758]],\"bothWristsStillCandidateIntervals\":[[740,741],[741.5,743.5],[744,746],[747.5,750.5],[752,752.5],[753.5,755],[756,757]],\"handMotionStopSeconds\":[741.5,747.5,752,753.5,756],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[756.5,757],[757.5,760]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits motion-stop timing.\",\"Contact below the frame near the end cannot be identified or assessed for relevance.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        740,
+        758
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        740,
+        741
+      ],
+      [
+        741.5,
+        743.5
+      ],
+      [
+        744,
+        746
+      ],
+      [
+        747.5,
+        750.5
+      ],
+      [
+        752,
+        752.5
+      ],
+      [
+        753.5,
+        755
+      ],
+      [
+        756,
+        757
+      ]
+    ],
+    "handMotionStopSeconds": [
+      741.5,
+      747.5,
+      752,
+      753.5,
+      756
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        756.5,
+        757
+      ],
+      [
+        757.5,
+        760
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits motion-stop timing.",
+      "Contact below the frame near the end cannot be identified or assessed for relevance."
+    ]
+  },
+  "status": "OK"
+}

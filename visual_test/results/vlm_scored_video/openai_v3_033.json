@@ -1,0 +1,86 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 10.043481875007274,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 309,
+    "output_tokens_details": {
+      "reasoning_tokens": 136
+    },
+    "total_tokens": 5110
+  },
+  "costUsdUpperBound": 0.012692,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[660,680]],\"bothWristsStillCandidateIntervals\":[[660,667.5],[668,669],[669.5,670.5],[671,671.5],[672,675],[676.5,679.5]],\"handMotionStopSeconds\":[668,669.5,671,672,676.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[661.5,662.5],[664.5,665.5],[671,671.5],[679.5,680]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits motion-stop timing; small finger movements are not treated as wrist movement.\",\"Head direction is a proxy, not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        660,
+        680
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        660,
+        667.5
+      ],
+      [
+        668,
+        669
+      ],
+      [
+        669.5,
+        670.5
+      ],
+      [
+        671,
+        671.5
+      ],
+      [
+        672,
+        675
+      ],
+      [
+        676.5,
+        679.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      668,
+      669.5,
+      671,
+      672,
+      676.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        661.5,
+        662.5
+      ],
+      [
+        664.5,
+        665.5
+      ],
+      [
+        671,
+        671.5
+      ],
+      [
+        679.5,
+        680
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits motion-stop timing; small finger movements are not treated as wrist movement.",
+      "Head direction is a proxy, not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

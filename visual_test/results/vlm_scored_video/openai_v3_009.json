@@ -1,0 +1,88 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 15.213858875009464,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 369,
+    "output_tokens_details": {
+      "reasoning_tokens": 191
+    },
+    "total_tokens": 5170
+  },
+  "costUsdUpperBound": 0.013292,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[180,200]],\"bothWristsStillCandidateIntervals\":[[180.5,181],[182.5,183.5],[184,185.5],[186.5,188],[191,192.5],[195.5,198],[199,200]],\"handMotionStopSeconds\":[180.5,182.5,184,186.5,191,195.5,199],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[180,181.5],[192.5,194],[196,197.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is approximate at 0.5-second sampling; brief intervening movements may be missed.\",\"Head direction is a proxy, not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        180,
+        200
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        180.5,
+        181
+      ],
+      [
+        182.5,
+        183.5
+      ],
+      [
+        184,
+        185.5
+      ],
+      [
+        186.5,
+        188
+      ],
+      [
+        191,
+        192.5
+      ],
+      [
+        195.5,
+        198
+      ],
+      [
+        199,
+        200
+      ]
+    ],
+    "handMotionStopSeconds": [
+      180.5,
+      182.5,
+      184,
+      186.5,
+      191,
+      195.5,
+      199
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        180,
+        181.5
+      ],
+      [
+        192.5,
+        194
+      ],
+      [
+        196,
+        197.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is approximate at 0.5-second sampling; brief intervening movements may be missed.",
+      "Head direction is a proxy, not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

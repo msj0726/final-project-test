@@ -1,0 +1,93 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 9.420894125010818,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 284,
+    "output_tokens_details": {
+      "reasoning_tokens": 116
+    },
+    "total_tokens": 5085
+  },
+  "costUsdUpperBound": 0.012442,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[600,620]],\"bothWristsStillCandidateIntervals\":[[601,605],[606.5,608.5],[609.5,610.5],[612.5,613.5],[616,620]],\"handMotionStopSeconds\":[601,606.5,609.5,612.5,616],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[600,601],[602,602.5],[603,604],[605,606.5],[611,612],[612.5,613],[618,620]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits stop timing and may miss brief movements; head direction does not establish eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        600,
+        620
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        601,
+        605
+      ],
+      [
+        606.5,
+        608.5
+      ],
+      [
+        609.5,
+        610.5
+      ],
+      [
+        612.5,
+        613.5
+      ],
+      [
+        616,
+        620
+      ]
+    ],
+    "handMotionStopSeconds": [
+      601,
+      606.5,
+      609.5,
+      612.5,
+      616
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        600,
+        601
+      ],
+      [
+        602,
+        602.5
+      ],
+      [
+        603,
+        604
+      ],
+      [
+        605,
+        606.5
+      ],
+      [
+        611,
+        612
+      ],
+      [
+        612.5,
+        613
+      ],
+      [
+        618,
+        620
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits stop timing and may miss brief movements; head direction does not establish eye gaze."
+    ]
+  },
+  "status": "OK"
+}

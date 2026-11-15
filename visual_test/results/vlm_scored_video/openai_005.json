@@ -1,0 +1,102 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 11.471441249974305,
+  "usage": {
+    "input_tokens": 4824,
+    "input_tokens_details": {
+      "cache_write_tokens": 4821,
+      "cached_tokens": 0
+    },
+    "output_tokens": 439,
+    "output_tokens_details": {
+      "reasoning_tokens": 165
+    },
+    "total_tokens": 5263
+  },
+  "costUsdUpperBound": 0.014038,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[100,103.5],[104,120]],\"bothWristsStillCandidateIntervals\":[[100,100.5],[104,105],[106.5,108],[110.5,111.5],[113,115.5],[117.5,118.5],[119.5,120]],\"handMotionStopSeconds\":[104,105.5,106.5,108.5,110.5,113,117.5,119.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetEvents\":[{\"startSec\":101,\"endSec\":102,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":109.5,\"endSec\":110.5,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":113.5,\"endSec\":114,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":115.5,\"endSec\":117,\"reason\":\"PRESENTATION_SCREEN\"}],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is approximate at 0.5-second sampling; brief movements between frames may be missed.\",\"Sleeve cuffs and clasped hands limit wrist precision; one wrist is not locatable at 103.5 seconds.\",\"Head direction is a proxy, not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        100,
+        103.5
+      ],
+      [
+        104,
+        120
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        100,
+        100.5
+      ],
+      [
+        104,
+        105
+      ],
+      [
+        106.5,
+        108
+      ],
+      [
+        110.5,
+        111.5
+      ],
+      [
+        113,
+        115.5
+      ],
+      [
+        117.5,
+        118.5
+      ],
+      [
+        119.5,
+        120
+      ]
+    ],
+    "handMotionStopSeconds": [
+      104,
+      105.5,
+      106.5,
+      108.5,
+      110.5,
+      113,
+      117.5,
+      119.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetEvents": [
+      {
+        "startSec": 101,
+        "endSec": 102,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 109.5,
+        "endSec": 110.5,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 113.5,
+        "endSec": 114,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 115.5,
+        "endSec": 117,
+        "reason": "PRESENTATION_SCREEN"
+      }
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is approximate at 0.5-second sampling; brief movements between frames may be missed.",
+      "Sleeve cuffs and clasped hands limit wrist precision; one wrist is not locatable at 103.5 seconds.",
+      "Head direction is a proxy, not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

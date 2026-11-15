@@ -1,0 +1,87 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 9.841383124992717,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 262,
+    "output_tokens_details": {
+      "reasoning_tokens": 86
+    },
+    "total_tokens": 5063
+  },
+  "costUsdUpperBound": 0.012222,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[220,232],[235,240]],\"bothWristsStillCandidateIntervals\":[[221.5,222.5],[223.5,225],[226.5,228],[229.5,231],[235.5,238],[239.5,240]],\"handMotionStopSeconds\":[221.5,223.5,226.5,229.5,235.5,239.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[232,235],[235,236],[238.5,239]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Sampling every 0.5 seconds limits motion-stop timing.\",\"Hands extend below frame during the forward lean; any contacted object and its relevance are unclear.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        220,
+        232
+      ],
+      [
+        235,
+        240
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        221.5,
+        222.5
+      ],
+      [
+        223.5,
+        225
+      ],
+      [
+        226.5,
+        228
+      ],
+      [
+        229.5,
+        231
+      ],
+      [
+        235.5,
+        238
+      ],
+      [
+        239.5,
+        240
+      ]
+    ],
+    "handMotionStopSeconds": [
+      221.5,
+      223.5,
+      226.5,
+      229.5,
+      235.5,
+      239.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        232,
+        235
+      ],
+      [
+        235,
+        236
+      ],
+      [
+        238.5,
+        239
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Sampling every 0.5 seconds limits motion-stop timing.",
+      "Hands extend below frame during the forward lean; any contacted object and its relevance are unclear."
+    ]
+  },
+  "status": "OK"
+}

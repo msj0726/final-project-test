@@ -1,0 +1,91 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 11.770829624991165,
+  "usage": {
+    "input_tokens": 4843,
+    "input_tokens_details": {
+      "cache_write_tokens": 4840,
+      "cached_tokens": 0
+    },
+    "output_tokens": 420,
+    "output_tokens_details": {
+      "reasoning_tokens": 196
+    },
+    "total_tokens": 5263
+  },
+  "costUsdUpperBound": 0.013886,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[1000,1011],[1013.5,1020]],\"bothWristsStillCandidateIntervals\":[[1001.5,1002],[1003,1007],[1008.5,1010.5],[1013.5,1014.5],[1015.5,1017.5],[1018,1019]],\"handMotionStopSeconds\":[1001.5,1003,1008.5,1013.5,1015.5,1018],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[1003,1004.5],[1010.5,1013.5],[1014,1015.5],[1017,1017.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is approximate to the 0.5-second sampling; head direction does not verify eye gaze.\",\"Hands leave the frame during the forward lean; any off-frame object contact cannot be assessed.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1000,
+        1011
+      ],
+      [
+        1013.5,
+        1020
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1001.5,
+        1002
+      ],
+      [
+        1003,
+        1007
+      ],
+      [
+        1008.5,
+        1010.5
+      ],
+      [
+        1013.5,
+        1014.5
+      ],
+      [
+        1015.5,
+        1017.5
+      ],
+      [
+        1018,
+        1019
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1001.5,
+      1003,
+      1008.5,
+      1013.5,
+      1015.5,
+      1018
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1003,
+        1004.5
+      ],
+      [
+        1010.5,
+        1013.5
+      ],
+      [
+        1014,
+        1015.5
+      ],
+      [
+        1017,
+        1017.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is approximate to the 0.5-second sampling; head direction does not verify eye gaze.",
+      "Hands leave the frame during the forward lean; any off-frame object contact cannot be assessed."
+    ]
+  },
+  "status": "OK"
+}

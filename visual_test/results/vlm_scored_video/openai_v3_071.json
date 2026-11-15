@@ -1,0 +1,86 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 13.150603042013245,
+  "usage": {
+    "input_tokens": 4843,
+    "input_tokens_details": {
+      "cache_write_tokens": 4840,
+      "cached_tokens": 0
+    },
+    "output_tokens": 470,
+    "output_tokens_details": {
+      "reasoning_tokens": 263
+    },
+    "total_tokens": 5313
+  },
+  "costUsdUpperBound": 0.014386,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[1420,1436.5],[1439.5,1440]],\"bothWristsStillCandidateIntervals\":[[1420,1421],[1422.5,1424],[1425.5,1426.5],[1428.5,1430],[1430.5,1432],[1433.5,1435.5]],\"handMotionStopSeconds\":[1422.5,1425.5,1428.5,1430.5,1433.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[1421,1421.5],[1429,1430],[1436.5,1439.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Sampling at 0.5-second intervals limits event timing precision.\",\"Hands extend below the frame after 1436; object contact there cannot be determined.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1420,
+        1436.5
+      ],
+      [
+        1439.5,
+        1440
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1420,
+        1421
+      ],
+      [
+        1422.5,
+        1424
+      ],
+      [
+        1425.5,
+        1426.5
+      ],
+      [
+        1428.5,
+        1430
+      ],
+      [
+        1430.5,
+        1432
+      ],
+      [
+        1433.5,
+        1435.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1422.5,
+      1425.5,
+      1428.5,
+      1430.5,
+      1433.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1421,
+        1421.5
+      ],
+      [
+        1429,
+        1430
+      ],
+      [
+        1436.5,
+        1439.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Sampling at 0.5-second intervals limits event timing precision.",
+      "Hands extend below the frame after 1436; object contact there cannot be determined."
+    ]
+  },
+  "status": "OK"
+}

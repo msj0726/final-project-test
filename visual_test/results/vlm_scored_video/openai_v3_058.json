@@ -1,0 +1,85 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 12.002216332999524,
+  "usage": {
+    "input_tokens": 4843,
+    "input_tokens_details": {
+      "cache_write_tokens": 4840,
+      "cached_tokens": 0
+    },
+    "output_tokens": 315,
+    "output_tokens_details": {
+      "reasoning_tokens": 112
+    },
+    "total_tokens": 5158
+  },
+  "costUsdUpperBound": 0.012836,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[1160,1176],[1179,1180]],\"bothWristsStillCandidateIntervals\":[[1160,1162.5],[1164,1167],[1168.5,1170.5],[1174.5,1175.5],[1179,1180]],\"handMotionStopSeconds\":[1164,1168.5,1174.5,1179],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[1165,1165.5],[1172.5,1173.5],[1176,1178.5],[1179.5,1180]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is limited to 0.5-second samples; head direction is not verified eye gaze.\",\"Hands and any contacted objects are below frame during the forward lean; contact and relevance cannot be determined.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1160,
+        1176
+      ],
+      [
+        1179,
+        1180
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1160,
+        1162.5
+      ],
+      [
+        1164,
+        1167
+      ],
+      [
+        1168.5,
+        1170.5
+      ],
+      [
+        1174.5,
+        1175.5
+      ],
+      [
+        1179,
+        1180
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1164,
+      1168.5,
+      1174.5,
+      1179
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1165,
+        1165.5
+      ],
+      [
+        1172.5,
+        1173.5
+      ],
+      [
+        1176,
+        1178.5
+      ],
+      [
+        1179.5,
+        1180
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is limited to 0.5-second samples; head direction is not verified eye gaze.",
+      "Hands and any contacted objects are below frame during the forward lean; contact and relevance cannot be determined."
+    ]
+  },
+  "status": "OK"
+}

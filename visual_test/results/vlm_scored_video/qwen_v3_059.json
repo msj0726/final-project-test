@@ -1,0 +1,22 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.566575000004377,
+  "elapsedSeconds": 26.15449320798507,
+  "inputTokens": 4346,
+  "outputTokens": 110,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\":[],\n\"bothWristsStillCandidateIntervals\":[],\n\"handMotionStopSeconds\":[],\n\"faceCoverEvents\":[],\n\"unrelatedObjectTouchEvents\":[],\n\"headOffTargetIntervals\":[],\n\"gazeUnobservableIntervals\":[],\n\"limitations\":[\n\"Right wrist not consistently visible; left wrist often occluded by hand or body.\",\n\"Head direction varies between frontal and slightly left; off-target intervals omitted due to ambiguity.\"\n]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillCandidateIntervals": [],
+    "handMotionStopSeconds": [],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Right wrist not consistently visible; left wrist often occluded by hand or body.",
+      "Head direction varies between frontal and slightly left; off-target intervals omitted due to ambiguity."
+    ]
+  },
+  "status": "OK"
+}

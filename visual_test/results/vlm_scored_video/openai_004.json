@@ -1,0 +1,101 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 11.083176915999502,
+  "usage": {
+    "input_tokens": 4824,
+    "input_tokens_details": {
+      "cache_write_tokens": 4821,
+      "cached_tokens": 0
+    },
+    "output_tokens": 394,
+    "output_tokens_details": {
+      "reasoning_tokens": 131
+    },
+    "total_tokens": 5218
+  },
+  "costUsdUpperBound": 0.013588,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[80,87.5],[90,100]],\"bothWristsStillCandidateIntervals\":[[82,83],[85.5,87],[91,92.5],[92.5,93.5],[94.5,97],[99,100]],\"handMotionStopSeconds\":[82,85.5,91,92.5,94.5,99],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetEvents\":[{\"startSec\":80.5,\"endSec\":81,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":83.5,\"endSec\":84,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":87.5,\"endSec\":90,\"reason\":\"DOWN\"},{\"startSec\":91,\"endSec\":93,\"reason\":\"PRESENTATION_SCREEN\"},{\"startSec\":97,\"endSec\":98,\"reason\":\"PRESENTATION_SCREEN\"}],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is approximate at 0.5-second sampling; wrist locations are estimated at sleeve cuffs.\",\"Hands leave the frame during the forward lean; any off-screen object contact and its relevance cannot be determined.\",\"Head direction is a proxy, not verified eye gaze.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        80,
+        87.5
+      ],
+      [
+        90,
+        100
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        82,
+        83
+      ],
+      [
+        85.5,
+        87
+      ],
+      [
+        91,
+        92.5
+      ],
+      [
+        92.5,
+        93.5
+      ],
+      [
+        94.5,
+        97
+      ],
+      [
+        99,
+        100
+      ]
+    ],
+    "handMotionStopSeconds": [
+      82,
+      85.5,
+      91,
+      92.5,
+      94.5,
+      99
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetEvents": [
+      {
+        "startSec": 80.5,
+        "endSec": 81,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 83.5,
+        "endSec": 84,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 87.5,
+        "endSec": 90,
+        "reason": "DOWN"
+      },
+      {
+        "startSec": 91,
+        "endSec": 93,
+        "reason": "PRESENTATION_SCREEN"
+      },
+      {
+        "startSec": 97,
+        "endSec": 98,
+        "reason": "PRESENTATION_SCREEN"
+      }
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is approximate at 0.5-second sampling; wrist locations are estimated at sleeve cuffs.",
+      "Hands leave the frame during the forward lean; any off-screen object contact and its relevance cannot be determined.",
+      "Head direction is a proxy, not verified eye gaze."
+    ]
+  },
+  "status": "OK"
+}

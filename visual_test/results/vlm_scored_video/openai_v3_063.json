@@ -1,0 +1,88 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 11.966993874986656,
+  "usage": {
+    "input_tokens": 4843,
+    "input_tokens_details": {
+      "cache_write_tokens": 4840,
+      "cached_tokens": 0
+    },
+    "output_tokens": 361,
+    "output_tokens_details": {
+      "reasoning_tokens": 161
+    },
+    "total_tokens": 5204
+  },
+  "costUsdUpperBound": 0.013296,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[1260,1275.5],[1276,1276.5],[1277,1278]],\"bothWristsStillCandidateIntervals\":[[1260,1261],[1262.5,1264.5],[1268,1269],[1271,1271.5],[1273,1275],[1277,1277.5]],\"handMotionStopSeconds\":[1261.5,1262.5,1266,1268,1271,1273,1277],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[1262,1262.5],[1277.5,1280]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Half-second sampling limits stop timing and brief-event detection.\",\"Wrists leave the frame near the end; no hand stillness or object contact is inferred there.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1260,
+        1275.5
+      ],
+      [
+        1276,
+        1276.5
+      ],
+      [
+        1277,
+        1278
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1260,
+        1261
+      ],
+      [
+        1262.5,
+        1264.5
+      ],
+      [
+        1268,
+        1269
+      ],
+      [
+        1271,
+        1271.5
+      ],
+      [
+        1273,
+        1275
+      ],
+      [
+        1277,
+        1277.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1261.5,
+      1262.5,
+      1266,
+      1268,
+      1271,
+      1273,
+      1277
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1262,
+        1262.5
+      ],
+      [
+        1277.5,
+        1280
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Half-second sampling limits stop timing and brief-event detection.",
+      "Wrists leave the frame near the end; no hand stillness or object contact is inferred there."
+    ]
+  },
+  "status": "OK"
+}

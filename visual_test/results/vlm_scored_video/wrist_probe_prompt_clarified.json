@@ -1,0 +1,19 @@
+{
+  "variant": "1fps_640_prompt_clarified",
+  "elapsedSeconds": 32.79671104202862,
+  "rawResponse": "{\n\"bothWristsVisibleIntervals\":[],\n\"bothWristsStillCandidateIntervals\":[],\n\"handMotionStopSeconds\":[],\n\"faceCoverEvents\":[],\n\"unrelatedObjectTouchEvents\":[],\n\"headOffTargetIntervals\":[],\n\"gazeUnobservableIntervals\":[],\n\"limitations\":[\n\"Right wrist joint not consistently visible across frames; left wrist often occluded by hand or clothing.\",\n\"Hand motion direction and stop timing inferred from limited frame resolution.\"\n]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [],
+    "bothWristsStillCandidateIntervals": [],
+    "handMotionStopSeconds": [],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Right wrist joint not consistently visible across frames; left wrist often occluded by hand or clothing.",
+      "Hand motion direction and stop timing inferred from limited frame resolution."
+    ]
+  },
+  "status": "OK"
+}

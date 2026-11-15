@@ -1,0 +1,106 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 45.31355395799619,
+  "inputTokens": 4499,
+  "outputTokens": 547,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [1420.0, 1421.0],\n    [1421.5, 1422.0],\n    [1422.5, 1423.5],\n    [1424.0, 1425.5],\n    [1426.0, 1427.5],\n    [1428.0, 1429.0],\n    [1430.0, 1433.5],\n    [1434.0, 1436.0]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [1420.0, 1421.0],\n    [1422.5, 1423.5],\n    [1424.0, 1425.5],\n    [1426.0, 1427.5],\n    [1428.0, 1429.0],\n    [1430.0, 1433.5],\n    [1434.0, 1436.0]\n  ],\n  \"handMotionStopSeconds\": [\n    1421.0,\n    1423.5,\n    1425.5,\n    1427.5,\n    1429.0,\n    1433.5,\n    1436.0\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [1429.0, 1429.5],\n    [1436.0, 1439.5]\n  ],\n  \"gazeUnobservableIntervals\": [\n    [1436.0, 1439.5]\n  ],\n  \"limitations\": [\n    \"Hand motion stop detection relies on visible hand position changes between frames; occlusions or rapid movements may lead to missed stops.\",\n    \"Head direction is inferred from body orientation and head position, not direct eye tracking, which may reduce accuracy for subtle gaze shifts.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1420.0,
+        1421.0
+      ],
+      [
+        1421.5,
+        1422.0
+      ],
+      [
+        1422.5,
+        1423.5
+      ],
+      [
+        1424.0,
+        1425.5
+      ],
+      [
+        1426.0,
+        1427.5
+      ],
+      [
+        1428.0,
+        1429.0
+      ],
+      [
+        1430.0,
+        1433.5
+      ],
+      [
+        1434.0,
+        1436.0
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1420.0,
+        1421.0
+      ],
+      [
+        1422.5,
+        1423.5
+      ],
+      [
+        1424.0,
+        1425.5
+      ],
+      [
+        1426.0,
+        1427.5
+      ],
+      [
+        1428.0,
+        1429.0
+      ],
+      [
+        1430.0,
+        1433.5
+      ],
+      [
+        1434.0,
+        1436.0
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1421.0,
+      1423.5,
+      1425.5,
+      1427.5,
+      1429.0,
+      1433.5,
+      1436.0
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1429.0,
+        1429.5
+      ],
+      [
+        1436.0,
+        1439.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [
+      [
+        1436.0,
+        1439.5
+      ]
+    ],
+    "limitations": [
+      "Hand motion stop detection relies on visible hand position changes between frames; occlusions or rapid movements may lead to missed stops.",
+      "Head direction is inferred from body orientation and head position, not direct eye tracking, which may reduce accuracy for subtle gaze shifts."
+    ]
+  },
+  "status": "OK"
+}

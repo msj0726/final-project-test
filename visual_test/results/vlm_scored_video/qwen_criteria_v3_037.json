@@ -1,0 +1,40 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 31.7604807500029,
+  "inputTokens": 4457,
+  "outputTokens": 200,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [740.0, 757.5]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [740.0, 757.5]\n  ],\n  \"handMotionStopSeconds\": [\n    740.0,\n    757.5\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [757.5, 760.0]\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"limitations\": [\n    \"Hand motion stop at 740.0s inferred from initial stillness.\",\n    \"Head off-target at 757.5s inferred from downward gaze.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        740.0,
+        757.5
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        740.0,
+        757.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      740.0,
+      757.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        757.5,
+        760.0
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Hand motion stop at 740.0s inferred from initial stillness.",
+      "Head off-target at 757.5s inferred from downward gaze."
+    ]
+  },
+  "status": "OK"
+}

@@ -1,0 +1,90 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 14.531278417009162,
+  "usage": {
+    "input_tokens": 4801,
+    "input_tokens_details": {
+      "cache_write_tokens": 4798,
+      "cached_tokens": 0
+    },
+    "output_tokens": 456,
+    "output_tokens_details": {
+      "reasoning_tokens": 277
+    },
+    "total_tokens": 5257
+  },
+  "costUsdUpperBound": 0.014162,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[560,562],[564.5,573.5],[575,580]],\"bothWristsStillCandidateIntervals\":[[560,561.5],[565,567.5],[570.5,571],[571.5,573],[575,576],[578.5,579]],\"handMotionStopSeconds\":[565,570.5,571.5,575,578.5],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[561.5,566.5],[572,572.5],[576,577.5]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Sampling at 0.5-second intervals limits timing precision.\",\"Hands near the lower frame edge are sometimes cropped; any contact below the frame is unobservable.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        560,
+        562
+      ],
+      [
+        564.5,
+        573.5
+      ],
+      [
+        575,
+        580
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        560,
+        561.5
+      ],
+      [
+        565,
+        567.5
+      ],
+      [
+        570.5,
+        571
+      ],
+      [
+        571.5,
+        573
+      ],
+      [
+        575,
+        576
+      ],
+      [
+        578.5,
+        579
+      ]
+    ],
+    "handMotionStopSeconds": [
+      565,
+      570.5,
+      571.5,
+      575,
+      578.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        561.5,
+        566.5
+      ],
+      [
+        572,
+        572.5
+      ],
+      [
+        576,
+        577.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Sampling at 0.5-second intervals limits timing precision.",
+      "Hands near the lower frame edge are sometimes cropped; any contact below the frame is unobservable."
+    ]
+  },
+  "status": "OK"
+}

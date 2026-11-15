@@ -1,0 +1,63 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 35.129610625008354,
+  "inputTokens": 4457,
+  "outputTokens": 306,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [840.0, 846.0],\n    [848.0, 849.0],\n    [849.5, 859.5]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [840.0, 846.0],\n    [849.5, 859.5]\n  ],\n  \"handMotionStopSeconds\": [\n    846.0,\n    848.0,\n    849.0,\n    849.5,\n    859.5\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [846.0, 847.0],\n    [847.0, 848.0],\n    [859.0, 859.5]\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"limitations\": [\n    \"Hand motion stop detection based on visible frame transitions; continuous motion may be underestimated.\",\n    \"Head direction inferred from body orientation and gaze proxy; precise yaw angle not measured.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        840.0,
+        846.0
+      ],
+      [
+        848.0,
+        849.0
+      ],
+      [
+        849.5,
+        859.5
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        840.0,
+        846.0
+      ],
+      [
+        849.5,
+        859.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      846.0,
+      848.0,
+      849.0,
+      849.5,
+      859.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        846.0,
+        847.0
+      ],
+      [
+        847.0,
+        848.0
+      ],
+      [
+        859.0,
+        859.5
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Hand motion stop detection based on visible frame transitions; continuous motion may be underestimated.",
+      "Head direction inferred from body orientation and gaze proxy; precise yaw angle not measured."
+    ]
+  },
+  "status": "OK"
+}

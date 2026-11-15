@@ -1,0 +1,89 @@
+{
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "loadSeconds": 2.922717500012368,
+  "elapsedSeconds": 40.38409487501485,
+  "inputTokens": 4457,
+  "outputTokens": 429,
+  "rawResponse": "{\n  \"bothWristsVisibleIntervals\": [\n    [460.0, 462.0],\n    [462.5, 463.5],\n    [465.0, 466.5],\n    [469.0, 472.5],\n    [476.0, 479.5]\n  ],\n  \"bothWristsStillCandidateIntervals\": [\n    [460.0, 462.0],\n    [462.5, 463.5],\n    [465.0, 466.5],\n    [469.0, 472.5],\n    [476.0, 479.5]\n  ],\n  \"handMotionStopSeconds\": [\n    462.0,\n    463.5,\n    466.5,\n    469.0,\n    472.5,\n    476.0,\n    479.5\n  ],\n  \"faceCoverEvents\": [],\n  \"unrelatedObjectTouchEvents\": [],\n  \"headOffTargetIntervals\": [\n    [460.0, 461.0],\n    [466.5, 469.0],\n    [472.5, 476.0],\n    [479.5, 480.0]\n  ],\n  \"gazeUnobservableIntervals\": [],\n  \"limitations\": [\n    \"Hand motion stop detection based on visible hand/forearm stillness; continuous motion at every frame not counted.\",\n    \"Head off-target intervals inferred from large turns or looking down/up; exact yaw angle not measured.\"\n  ]\n}",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        460.0,
+        462.0
+      ],
+      [
+        462.5,
+        463.5
+      ],
+      [
+        465.0,
+        466.5
+      ],
+      [
+        469.0,
+        472.5
+      ],
+      [
+        476.0,
+        479.5
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        460.0,
+        462.0
+      ],
+      [
+        462.5,
+        463.5
+      ],
+      [
+        465.0,
+        466.5
+      ],
+      [
+        469.0,
+        472.5
+      ],
+      [
+        476.0,
+        479.5
+      ]
+    ],
+    "handMotionStopSeconds": [
+      462.0,
+      463.5,
+      466.5,
+      469.0,
+      472.5,
+      476.0,
+      479.5
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        460.0,
+        461.0
+      ],
+      [
+        466.5,
+        469.0
+      ],
+      [
+        472.5,
+        476.0
+      ],
+      [
+        479.5,
+        480.0
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Hand motion stop detection based on visible hand/forearm stillness; continuous motion at every frame not counted.",
+      "Head off-target intervals inferred from large turns or looking down/up; exact yaw angle not measured."
+    ]
+  },
+  "status": "OK"
+}

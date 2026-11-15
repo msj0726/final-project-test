@@ -1,0 +1,85 @@
+{
+  "model": "gpt-6.1-sol",
+  "elapsedSeconds": 13.481803542003036,
+  "usage": {
+    "input_tokens": 4843,
+    "input_tokens_details": {
+      "cache_write_tokens": 4840,
+      "cached_tokens": 0
+    },
+    "output_tokens": 383,
+    "output_tokens_details": {
+      "reasoning_tokens": 182
+    },
+    "total_tokens": 5226
+  },
+  "costUsdUpperBound": 0.013516,
+  "rawResponse": "{\"bothWristsVisibleIntervals\":[[1320,1325],[1327,1340]],\"bothWristsStillCandidateIntervals\":[[1320,1321.5],[1323,1324],[1329,1331.5],[1332.5,1335.5],[1336,1340]],\"handMotionStopSeconds\":[1323,1329,1332.5,1336],\"faceCoverEvents\":[],\"unrelatedObjectTouchEvents\":[],\"headOffTargetIntervals\":[[1324.5,1327],[1327.5,1328.5],[1331.5,1332.5],[1339,1340]],\"gazeUnobservableIntervals\":[],\"limitations\":[\"Timing is limited to 0.5-second samples; head direction is not verified eye gaze.\",\"Hands drop below frame around 1325–1326.5; any object contact there is unobservable.\"]}",
+  "responseStatus": "completed",
+  "result": {
+    "bothWristsVisibleIntervals": [
+      [
+        1320,
+        1325
+      ],
+      [
+        1327,
+        1340
+      ]
+    ],
+    "bothWristsStillCandidateIntervals": [
+      [
+        1320,
+        1321.5
+      ],
+      [
+        1323,
+        1324
+      ],
+      [
+        1329,
+        1331.5
+      ],
+      [
+        1332.5,
+        1335.5
+      ],
+      [
+        1336,
+        1340
+      ]
+    ],
+    "handMotionStopSeconds": [
+      1323,
+      1329,
+      1332.5,
+      1336
+    ],
+    "faceCoverEvents": [],
+    "unrelatedObjectTouchEvents": [],
+    "headOffTargetIntervals": [
+      [
+        1324.5,
+        1327
+      ],
+      [
+        1327.5,
+        1328.5
+      ],
+      [
+        1331.5,
+        1332.5
+      ],
+      [
+        1339,
+        1340
+      ]
+    ],
+    "gazeUnobservableIntervals": [],
+    "limitations": [
+      "Timing is limited to 0.5-second samples; head direction is not verified eye gaze.",
+      "Hands drop below frame around 1325–1326.5; any object contact there is unobservable."
+    ]
+  },
+  "status": "OK"
+}
